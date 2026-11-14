@@ -38,3 +38,13 @@ Implementation agent: Codex (GPT-6 family). Application LLM is configured by the
 - Demo data includes a synthetic user and conversation. Landing topics are available to all users. A standalone saved-search feature and preseeded publication records are absent.
 - Display and response preferences are available. The interface remains English. Tested responsive coverage is Chromium desktop and mobile emulation.
 - A deployment with multiple workers needs shared rate limiting and cache coordination. This is a research demonstration. The independent benchmark suite is outside Round 1 verification.
+
+## Manual acceptance review
+
+The user completed a guided manual review on November 13, 2026. The outcome is partial acceptance, with full platform acceptance still pending. The review contains 30 checks, records the user's save-feedback proposal, and distinguishes observed results from unverified behavior.
+
+The English [manual acceptance report](manual-acceptance/report.html) includes 29 embedded application screenshots. Download the HTML file and open it in a browser to inspect the formatted report and expandable evidence. The English [structured results](manual-acceptance/results.json) provide check-level outcomes and issue records.
+
+Recorded issues include inconsistent sign-out feedback, corrupted PDF/Markdown disclaimer text, duplicated reference punctuation and a five-character input minimum without explanatory feedback. One Chinese query returned no publications. Live model generation remains unverified because the model was unconfigured.
+
+The manual environment used a local backend-port adjustment to 8021 in README.md and frontend/vite.config.ts after an initial conflict on port 8000. That adjustment preceded the user's instruction to record issues without repairs. This report documents the adjusted environment and preserves the original release tag as its baseline.

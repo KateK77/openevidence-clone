@@ -1,0 +1,363 @@
+{
+  "project": "MedEvidence AI",
+  "report_language": "English",
+  "report_date": "2026-11-13",
+  "timezone": "America/Chicago",
+  "baseline_tag": "v0.1.0-r1",
+  "baseline_commit": "9af00a92ace1df276f0a3bab918cabca498161cf",
+  "outcome": "Partial acceptance; full platform acceptance not achieved",
+  "method": "User-performed manual steps with screenshots, pasted exports and explicit confirmations",
+  "product_repairs_during_reporting": false,
+  "local_environment_delta": "README.md and frontend/vite.config.ts target port 8021 after a port-conflict adjustment made before the no-repair instruction.",
+  "embedded_screenshot_count": 29,
+  "excluded_screenshot_filenames": [
+    "codex-clipboard-33193c7e-819c-4cd6-82dd-59a51a2daff9.png",
+    "codex-clipboard-4c933382-1df3-46d4-9361-7e1dba7bb3a1.png"
+  ],
+  "exclusion_reason": "Screenshots contain unrelated background applications. Observations remain recorded.",
+  "checks": [
+    {
+      "id": 1,
+      "check": "Homepage loading",
+      "result": "Initial failure; retest passed",
+      "observations": "The initial homepage displayed HTTP 500. Port 8000 was occupied by CareConnect while the MedEvidence frontend targeted the same port. MedEvidence was moved to port 8021. Health and proxied session checks returned HTTP 200, and the user confirmed the homepage recovered. This change preceded the instruction to record issues without making repairs.",
+      "evidence_filenames": [
+        "codex-clipboard-b1b2ad79-320c-480f-84a1-56c166e7a3b2.png"
+      ]
+    },
+    {
+      "id": 2,
+      "check": "Account A registration and automatic sign-in",
+      "result": "Passed",
+      "observations": "Following registration instructions, the user supplied a homepage screenshot showing acceptance_a. An earlier invalid-login message occurred while the user was on the sign-in form before registration and was not classified as a registration defect.",
+      "evidence_filenames": [
+        "codex-clipboard-006b3d09-8ef5-473f-934d-608a000283f4.png",
+        "codex-clipboard-9d911341-0f81-4059-8f3f-2f2e05f98027.png"
+      ]
+    },
+    {
+      "id": 3,
+      "check": "Sign-out and subsequent sign-in",
+      "result": "Issue found",
+      "observations": "Clicking Sign out produced Authentication credentials were not provided. while the Profile page retained account A. Refreshing displayed the sign-in page. Subsequent password sign-in succeeded. Immediate sign-out feedback and displayed identity were inconsistent. The root cause was not established.",
+      "evidence_filenames": [
+        "codex-clipboard-a9445b6c-70dc-4126-9ae4-b7f5670b2853.png",
+        "codex-clipboard-851efc41-746d-4920-a437-6129a9ccb661.png",
+        "codex-clipboard-2039ae55-0488-4521-8ff6-56efe0e11fd0.png"
+      ]
+    },
+    {
+      "id": 4,
+      "check": "Lookup by PMID",
+      "result": "Passed",
+      "observations": "Searching for 33567185 returned a publication with a visible title, journal, year and matching PMID link.",
+      "evidence_filenames": [
+        "codex-clipboard-a85642bf-8a3c-494c-8daa-dc5235081354.png"
+      ]
+    },
+    {
+      "id": 5,
+      "check": "Publication details and source consistency",
+      "result": "Passed with observation",
+      "observations": "Expanded details were compared with PubMed text supplied by the user. Title, authors, DOI and abstract agreed. The application date 2021 02 10 matches the electronic publication date. PubMed also lists the issue date 2021 Mar 18. The application does not label the date type.",
+      "evidence_filenames": [
+        "codex-clipboard-776aa384-d541-4df3-97af-c3b515b6f09b.png"
+      ]
+    },
+    {
+      "id": 6,
+      "check": "Save publication and retain it after refresh",
+      "result": "Passed",
+      "observations": "Saved publications displayed PMID 33567185 and the control changed to Remove from library. The user explicitly confirmed that the publication remained after refreshing.",
+      "evidence_filenames": [
+        "codex-clipboard-a8631c9a-8809-4dfe-a4c5-cd2d72f1d689.png",
+        "codex-clipboard-e6ab8d9a-c3ab-4231-954f-155c7db71b56.png"
+      ]
+    },
+    {
+      "id": 7,
+      "check": "Publication collection update",
+      "result": "Passed",
+      "observations": "The collection was set to Obesity research. The user explicitly confirmed that the screenshot showing this name was taken after refreshing.",
+      "evidence_filenames": [
+        "codex-clipboard-e13772f8-742d-43dd-a5e7-c81cfcb619bf.png"
+      ]
+    },
+    {
+      "id": 8,
+      "check": "Search saved publications",
+      "result": "Passed",
+      "observations": "Three screenshots established a match for the collection name, an empty result for an unmatched keyword, and restoration of the publication after clearing the search.",
+      "evidence_filenames": [
+        "codex-clipboard-3c418e48-c4d3-47de-b2e0-21922892f19b.png",
+        "codex-clipboard-cd7fcda8-f945-4ce0-b8d1-41fb592d8ee2.png",
+        "codex-clipboard-e04e30e8-a5d6-4192-a890-e4c921fe8261.png"
+      ]
+    },
+    {
+      "id": 9,
+      "check": "Submit a research question",
+      "result": "Retrieval-only flow passed",
+      "observations": "The GLP-1 obesity question opened a conversation showing Retrieval only, the missing-model notice and 12 PubMed records. Loading feedback was not separately confirmed. Actual model synthesis was unavailable.",
+      "evidence_filenames": [
+        "codex-clipboard-0d001ccb-70ba-46f0-b038-2d8bf5e6b9db.png"
+      ]
+    },
+    {
+      "id": 10,
+      "check": "Evidence table and retrieval provenance",
+      "result": "Content and provenance display passed",
+      "observations": "The pasted table contained 12 distinct PMIDs with years, publication types and source links. Relevant findings and limitations were explicitly Unavailable. Expanded provenance displayed evidence review intent and two queries reporting 12 candidate PMIDs each. Candidate sets may overlap. Pasted text did not independently establish table layout or the authenticity of every source.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 11,
+      "check": "Save answer and reopen it",
+      "result": "Passed",
+      "observations": "A screenshot showed the question in Saved Answers. The user confirmed persistence after refresh and successful reopening. The Save answer to Unsave answer button transition was not separately evidenced.",
+      "evidence_filenames": [
+        "codex-clipboard-559ccc08-f94c-44bf-a28c-db4e608cb0ce.png"
+      ]
+    },
+    {
+      "id": 12,
+      "check": "PDF export",
+      "result": "Text-quality issues found",
+      "observations": "The PDF opened and contained the question, retrieval status and 12 references. Screenshots confirmed corrupted characters in the disclaimer and doubled periods after publication titles. Reference paragraphs were separated normally and the final DOI was complete. Earlier concerns about joined entries and a truncated DOI were not reproduced in the actual PDF screenshots.",
+      "evidence_filenames": [
+        "codex-clipboard-d4ba2b2d-cf1c-41ec-8656-1717b8b71c5f.png",
+        "codex-clipboard-13914892-043b-4757-973d-2aaf58b3337b.png"
+      ]
+    },
+    {
+      "id": 13,
+      "check": "Markdown export",
+      "result": "Text-quality issues found",
+      "observations": "The user-provided export text contained the question and 12 references, but the disclaimer contained corrupted characters and publication titles had doubled final periods. Raw file bytes and Markdown renderer compatibility were not independently inspected.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 14,
+      "check": "BibTeX export",
+      "result": "Content completeness passed",
+      "observations": "All 12 entries had unique citation keys and title, author, journal, year, DOI and URL fields. Accented characters were legible. Reference-manager import, bibliography rendering and corporate-author interpretation remain unverified.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 15,
+      "check": "CSV export",
+      "result": "Content and structure passed",
+      "observations": "The supplied CSV had seven columns and 12 records with distinct PMIDs. Titles containing commas were quoted, multiple authors used semicolon separators, and accented characters were legible. Spreadsheet import and original file encoding were not independently tested.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 16,
+      "check": "Follow-up in the existing conversation",
+      "result": "Conversation append passed",
+      "observations": "The original question and the limitations follow-up appeared in chronological order. Both displayed retrieval-only status and 12 PubMed records. This does not validate model-generated synthesis.",
+      "evidence_filenames": [
+        "codex-clipboard-3344e39f-4384-49d6-a035-d204d35de8d8.png"
+      ]
+    },
+    {
+      "id": 17,
+      "check": "Context carried into follow-up retrieval",
+      "result": "Query context passed",
+      "observations": "The research intent was limitations. The focused query included GLP-1, obesity treatment and limitations. The broader query retained the preceding topic. This establishes topic carryover in query construction. Clinical relevance and model understanding were not evaluated.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 18,
+      "check": "Rename, search history and reopen",
+      "result": "Partially passed",
+      "observations": "A screenshot showed the new title Acceptance GLP-1 review and the same text in the history search field. The user supplied the thread/1 URL and later explicitly confirmed that both turns remained when reopening from history. Refreshing and pressing Search in this particular step were not independently confirmed, so search-filter behavior has only partial evidence.",
+      "evidence_filenames": [
+        "codex-clipboard-3ad80597-9ce4-489b-80e6-4bdf5d520973.png"
+      ]
+    },
+    {
+      "id": 19,
+      "check": "Test account B sign-in",
+      "result": "Passed",
+      "observations": "A screenshot showed acceptance_b signed in. Private/incognito browsing mode was not independently established by that screenshot.",
+      "evidence_filenames": [
+        "codex-clipboard-2c533faa-544b-45c2-8024-b3a597295d7c.png"
+      ]
+    },
+    {
+      "id": 20,
+      "check": "Account B accesses account A conversation URL",
+      "result": "Tested conversation passed",
+      "observations": "An initial anonymous request displayed the sign-in gate. After account B identity was confirmed, the user followed instructions to open thread/1 and reported No Conversation matches the given query. No account A conversation content was reported. Other resource endpoints and raw HTTP status were not tested.",
+      "evidence_filenames": [
+        "codex-clipboard-244130dc-df45-4487-b341-9cf8f95057c7.png"
+      ]
+    },
+    {
+      "id": 21,
+      "check": "History and saved-item list isolation",
+      "result": "Passed by user confirmation",
+      "observations": "The user explicitly confirmed that account B had empty Research History, Saved Answers and Saved publications lists.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 22,
+      "check": "Save personal preferences",
+      "result": "Passed",
+      "observations": "After explicitly reporting F5, the user supplied a screenshot showing Chinese, Detailed and Compact with Preferences saved. Actual generated language/detail behavior was unavailable, and display-density changes were not compared before and after.",
+      "evidence_filenames": [
+        "codex-clipboard-025b4a18-1823-433f-b9db-09c8c2d482dd.png"
+      ]
+    },
+    {
+      "id": 23,
+      "check": "Save profile",
+      "result": "Passed by user confirmation",
+      "observations": "The user answered OK after instructions to save Test / Researcher, refresh, and verify retained names and the unchanged acceptance_b username. No independent screenshot was supplied for those values.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 24,
+      "check": "Publication year filter",
+      "result": "Passed",
+      "observations": "Two screenshots showed the known PMID returned for 2021 and excluded for 2020, with other visible filters unchanged.",
+      "evidence_filenames": [
+        "codex-clipboard-0420601a-b414-4f5c-bbe6-e48eed8932de.png",
+        "codex-clipboard-be969dc2-63db-43ab-8f84-add3fd46c1b9.png"
+      ]
+    },
+    {
+      "id": 25,
+      "check": "Publication type filter",
+      "result": "Passed by user confirmation",
+      "observations": "The user confirmed that Randomized Controlled Trial returned the known publication and Review returned no result.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 26,
+      "check": "Remove a saved publication",
+      "result": "Removal passed",
+      "observations": "After removal and refresh instructions, the user reported that the publication disappeared. Removal was confirmed by that report. Refresh execution and the absence of error messages were not separately stated.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 27,
+      "check": "Unsave an answer",
+      "result": "Passed",
+      "observations": "A screenshot showed an empty saved-answer list. The user explicitly confirmed that both conversation turns remained available through history. Refresh execution was not separately reported.",
+      "evidence_filenames": [
+        "codex-clipboard-e2267706-7452-4e7b-8d64-63e85e70960a.png"
+      ]
+    },
+    {
+      "id": 28,
+      "check": "Delete the test conversation",
+      "result": "Passed by user report",
+      "observations": "After deletion instructions, the old URL returned a conversation-not-found message. In a later bundled confirmation, the user answered yes when asked whether the deleted item had disappeared from refreshed history. No separate post-deletion history screenshot was supplied.",
+      "evidence_filenames": []
+    },
+    {
+      "id": 29,
+      "check": "Input validation, newline handling and language follow-up",
+      "result": "Partially passed; issues recorded",
+      "observations": "The user confirmed empty-input handling and Shift+Enter behavior, then reported that short Chinese input and a single word could not be submitted. Read-only inspection found a five-character minimum in both frontend and backend with no visible explanation. Subsequent tests confirmed that the Chinese question meaning How is diabetes treated? and obesity could both be submitted. The Chinese query returned no publications; obesity returned 12. These queries concern different topics and are not a controlled language comparison.",
+      "evidence_filenames": [
+        "codex-clipboard-b70c16d3-5a9c-4680-8626-4e0efe4ca7cd.png",
+        "codex-clipboard-fdb2383d-25e6-4009-8f05-e77a633192d1.png",
+        "codex-clipboard-50a37782-b94c-4a04-9e28-ed8fe4960765.png"
+      ]
+    },
+    {
+      "id": 30,
+      "check": "Narrow viewport usability",
+      "result": "Partially passed",
+      "observations": "Screenshots established that the drawer could open in a narrow desktop window and that the homepage input and submit button had no apparent overlap. Evidence Library navigation, automatic drawer closing, narrow-screen search and wide-table interaction were not separately demonstrated. The Profile entry was partly below the visible drawer area; its scroll accessibility remains unverified.",
+      "evidence_filenames": [
+        "codex-clipboard-4c933382-1df3-46d4-9361-7e1dba7bb3a1.png",
+        "codex-clipboard-33193c7e-819c-4cd6-82dd-59a51a2daff9.png"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "ISS-01",
+      "category": "Configuration blocker",
+      "title": "Live AI synthesis remains unverified",
+      "observation": "Every inspected answer used Retrieval only and Settings displayed Unconfigured. LLM_MODEL and LLM_API_KEY were missing.",
+      "impact": "Live generation, multilingual responses, claim support and generation-stage citation validation cannot receive acceptance approval. Missing configuration does not establish a defect in generation implementation.",
+      "proposed_followup": "Configure an available model for a separate live-generation acceptance test."
+    },
+    {
+      "id": "ISS-02",
+      "category": "Functional issue",
+      "title": "Sign-out reports an authentication error and retains stale identity",
+      "observation": "Sign out produced a missing-authentication message while Profile still displayed the account. Refreshing showed the signed-out state.",
+      "impact": "Immediate feedback did not reliably communicate whether sign-out had completed. Root cause remains undetermined.",
+      "proposed_followup": "Investigate sign-out requests and client-state transitions, then retest successful and failed outcomes."
+    },
+    {
+      "id": "ISS-03",
+      "category": "Export issue",
+      "title": "Corrupted disclaimer in PDF and Markdown",
+      "observation": "Corruption appeared where the disclaimer contains an em dash, in both the PDF screenshot and pasted Markdown text.",
+      "impact": "The disclaimer and exported report lose text fidelity.",
+      "proposed_followup": "Check source text encoding and export/font handling, then validate both formats."
+    },
+    {
+      "id": "ISS-04",
+      "category": "Export issue",
+      "title": "Doubled periods after publication titles",
+      "observation": "Multiple PDF and Markdown references ended titles with two periods. The same additional punctuation was not visible in BibTeX or CSV.",
+      "impact": "Reference formatting quality is affected.",
+      "proposed_followup": "Normalize terminal punctuation when composing reference strings and verify each export format."
+    },
+    {
+      "id": "ISS-05",
+      "category": "Input usability issue",
+      "title": "Five-character minimum blocks meaningful short queries",
+      "observation": "Code inspection confirmed a five-character minimum after trimming. The user reported disabled submission for short terms. No minimum-length explanation is shown beside the control.",
+      "impact": "Users can infer that Chinese or single-word queries are unsupported. This threshold was an implementation choice absent from the explicit original requirements.",
+      "proposed_followup": "Review the length rule and provide clear validation feedback, including coverage for short Chinese medical terms."
+    },
+    {
+      "id": "OBS-01",
+      "category": "Retrieval coverage observation",
+      "title": "The tested Chinese query returned no publications",
+      "observation": "The Chinese question meaning How is diabetes treated? was accepted but showed No publications available. The separate query obesity returned 12 records.",
+      "impact": "This establishes failure to retrieve for one Chinese example. It does not establish a universal Chinese-language failure because an equivalent English control was not tested.",
+      "proposed_followup": "Compare equivalent Chinese and English questions and examine normalization, translation and terminology mapping."
+    },
+    {
+      "id": "OBS-02",
+      "category": "User usability proposal",
+      "title": "Save confirmation is not sufficiently apparent",
+      "observation": "The user reported that the page does not visibly change enough after saving to tell whether it succeeded. Specific affected controls were not identified. Earlier evidence included Preferences saved., Remove from library and successful persistence.",
+      "impact": "Record a discoverability and consistency concern in save feedback. The observation does not establish data loss or missing feedback for every control.",
+      "proposed_followup": "Show Saving while pending and Saved after success. Disable repeated saving while content is unchanged, re-enable after edits, and provide actionable failure feedback. This incorporates the user proposal without implementing a repair."
+    },
+    {
+      "id": "OBS-03",
+      "category": "Navigation observation",
+      "title": "Answer and publication collections are easy to confuse",
+      "observation": "The user looked for saved publications in Saved Answers and needed directions to Evidence Library > Saved publications.",
+      "impact": "Locating previously saved material required extra guidance.",
+      "proposed_followup": "Review labels, explanatory copy and collection entry points."
+    },
+    {
+      "id": "OBS-04",
+      "category": "Metadata presentation observation",
+      "title": "Publication date type is unlabeled",
+      "observation": "The displayed date matched the electronic publication date, while PubMed also provided an issue-publication date.",
+      "impact": "The displayed value is sourced, but the meaning of the date may be unclear.",
+      "proposed_followup": "Label electronic and issue-publication dates explicitly where available."
+    },
+    {
+      "id": "ENV-01",
+      "category": "Previously addressed environment issue",
+      "title": "Local backend port conflict",
+      "observation": "The initial HTTP 500 occurred with CareConnect occupying port 8000, which was also targeted by the MedEvidence frontend.",
+      "impact": "A port adjustment to 8021 and successful retest occurred before the instruction to record issues without repairs.",
+      "proposed_followup": "Preserve both the initial failure and local configuration delta in the acceptance history. Retest success applies to that adjusted environment."
+    }
+  ]
+}
