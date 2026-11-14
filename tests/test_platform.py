@@ -45,6 +45,7 @@ def mock_search(monkeypatch, settings):
     settings.LLM_API_KEY = ''
     monkeypatch.setattr(pubmed, 'search_ids', lambda *a, **kw: ['123'])
     monkeypatch.setattr(pubmed, 'records', lambda ids: [RECORD.copy()] if '123' in ids else [])
+    monkeypatch.setattr(pubmed, 'summaries', lambda ids: {})
 
 
 def ask(client, question='What evidence exists about synthetic fixtures?', **extra):
@@ -108,7 +109,7 @@ def test_library_preferences_and_validation(register, mock_search):
     assert client.get('/api/articles/456/').status_code == 404
     assert client.get('/api/articles/?q=synthetic&year=hello').status_code == 400
     assert client.get('/api/articles/?q=123&article_type=Clinical+Trial').json()[0]['pmid'] == '123'
-    assert ask(client, '  no ').status_code == 400
+    assert ask(client, '   ').status_code == 400
     url = '/api/articles/123/save/'
     for _ in range(2):
         assert client.put(url, {'collection': 'Methods'}, format='json').status_code == 200
@@ -139,6 +140,8 @@ def test_pubmed_interfaces(monkeypatch):
     </MedlineCitation></PubmedArticle></PubmedArticleSet>'''
     def get(url, **kwargs):
         content = xml if 'efetch' in url else b'{"esearchresult":{"idlist":["123"]}}'
+        if 'esummary' in url:
+            content = b'{"result":{"123":{"title":"Mixed markup"}}}'
         return SimpleNamespace(content=content, status_code=200, raise_for_status=lambda: None)
     request = Mock(side_effect=get)
     monkeypatch.setattr(pubmed.requests, 'get', request)
@@ -150,7 +153,7 @@ def test_pubmed_interfaces(monkeypatch):
     assert result[0]['authors'] == []
     assert 'free full text[sb]' in request.call_args_list[0].kwargs['params']['term']
     pubmed.search('fixture', filters)
-    assert request.call_count == 2
+    assert request.call_count == 3
 
 
 @pytest.mark.parametrize('value,expected', [(requests.Timeout(), 'timed out'), (429, 'limit')])

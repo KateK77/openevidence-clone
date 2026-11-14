@@ -27,12 +27,16 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 ]
-DATABASES = {'default': dj_database_url.config(
-    default=f'sqlite:///{BASE_DIR / "local.sqlite3"}', conn_max_age=0,
+DATABASES = {'default': dj_database_url.parse(
+    os.getenv('DATABASE_URL') or f'sqlite:///{BASE_DIR / "local.sqlite3"}', conn_max_age=0,
 )}
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 USE_TZ = True
 SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_NAME = 'medevidence_session_v2'
+CSRF_COOKIE_NAME = 'medevidence_csrf_v2'
+SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'Lax'
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_SSL_REDIRECT = not DEBUG
@@ -52,7 +56,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PARSER_CLASSES': ['rest_framework.parsers.JSONParser'],
     'DEFAULT_THROTTLE_RATES': {'auth': '12/min', 'research': '8/min', 'literature': '24/min'},
 }
-SPECTACULAR_SETTINGS = {'TITLE': 'MedEvidence AI API', 'VERSION': '0.1.0'}
+SPECTACULAR_SETTINGS = {'TITLE': 'MedEvidence AI API', 'VERSION': '2.0.0'}
 NCBI_EMAIL = os.getenv('NCBI_EMAIL', '')
 NCBI_API_KEY = os.getenv('NCBI_API_KEY', '')
 LLM_BASE_URL = os.getenv('LLM_BASE_URL', 'https://api.openai.com/v1').rstrip('/')

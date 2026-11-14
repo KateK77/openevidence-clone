@@ -6,6 +6,7 @@ import requests
 from django.conf import settings
 
 from . import pubmed
+from .query_language import normalize_query
 
 STOP = set('a an and are as at be between can current did do does for from had has have how in into is it its me of on or our should that the their there these they this those to use using was were what when where which who why will with would evidence research study studies show tell more about them recent available based compared findings'.split())
 STATUS = ('supported', 'tentative', 'insufficient')
@@ -34,8 +35,9 @@ def query_plan(question, previous):
     intent = ('comparison' if re.search(r'\b(vs|versus|compar\w+|difference\w+)\b', question, re.I)
               else 'limitations' if re.search(r'\b(limitations|risks|safety)\b', question, re.I)
               else 'evidence review')
-    if previous and (len(words) < 5 or re.search(r'\b(it|they|these|those|that)\b', question, re.I)):
-        words = list(dict.fromkeys(tokens(previous[-1])[:9] + words))
+    if previous and (set(words) <= {'limitations', 'risks', 'safety', 'efficacy'} or re.search(r'\b(it|they|these|those|that)\b', question, re.I)):
+        context = next((p for p in reversed(previous) if set(tokens(p)) - {'limitations', 'risks', 'safety', 'efficacy'}), previous[0])
+        words = list(dict.fromkeys(tokens(context)[:9] + words))
     words = words[:15]
     if not words:
         return intent, [], []
@@ -45,7 +47,11 @@ def query_plan(question, previous):
 
 
 def retrieve(question, previous):
-    intent, queries, words = query_plan(question, previous)
+    normalization = normalize_query(question)
+    history = [normalize_query(p)['normalized'] for p in previous]
+    intent, queries, words = query_plan(normalization['normalized'], history)
+    if not normalization['normalized']:
+        queries = []
     scores = defaultdict(float)
     runs = []
     for query in queries:
@@ -62,7 +68,7 @@ def retrieve(question, previous):
     unique = {}
     for article in sorted(articles, key=relevance):
         unique.setdefault(article['doi'].casefold() or article['pmid'], article)
-    return list(unique.values())[:12], {'intent': intent, 'searches': runs}
+    return list(unique.values())[:12], {'intent': intent, 'searches': runs, 'normalization': normalization}
 
 
 def validate_answer(data, abstracts):
@@ -97,8 +103,10 @@ def validate_answer(data, abstracts):
 
 
 def synthesize(question, previous, articles, preferences):
+    if not articles:
+        return 'insufficient', '', {'message': 'No publications were retrieved for this query. Try different medical keywords or fewer constraints. A zero-result search does not establish an absence of evidence.'}
     if not (settings.LLM_MODEL and settings.LLM_API_KEY):
-        return 'retrieval_only', '', {'message': 'AI generation requires LLM_MODEL and LLM_API_KEY.'}
+        return 'retrieval_only', '', {'message': 'Publications retrieved. AI synthesis is not configured on this server; no generated findings or limitations are available. You can inspect and save the source abstracts.'}
     context = [{'pmid': a['pmid'], 'title': a['title'], 'types': a['types'], 'abstract': a['abstract'][:3500]}
                for a in articles if not any(t in a['types'] for t in ('Retracted Publication', 'Retraction of Publication'))
                and a['abstract']][:8]

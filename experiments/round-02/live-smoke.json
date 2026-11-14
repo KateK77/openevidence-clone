@@ -1,0 +1,89 @@
+{
+  "kind": "Real Django + React + live PubMed smoke test",
+  "checks": [
+    {
+      "name": "Registration and authenticated session survive a page reload",
+      "result": "pass"
+    },
+    {
+      "name": "Short Chinese clinical query maps to English and retrieves live PubMed records",
+      "result": "pass"
+    },
+    {
+      "name": "Answer save is visible and persists after reload",
+      "result": "pass"
+    },
+    {
+      "name": "Structured evidence table remains contained on a narrow screen",
+      "result": "pass"
+    },
+    {
+      "name": "PDF downloads through authenticated export endpoint",
+      "result": "pass"
+    },
+    {
+      "name": "Markdown disclaimer is valid Unicode",
+      "result": "pass"
+    },
+    {
+      "name": "Official ESearch + ESummary + EFetch resolves known PMID and separate publication dates",
+      "result": "pass"
+    },
+    {
+      "name": "Publication collection persists",
+      "result": "pass"
+    },
+    {
+      "name": "Preferences persist with visible save confirmation",
+      "result": "pass"
+    },
+    {
+      "name": "Profile save and immediate logout clear the authenticated UI",
+      "result": "pass"
+    },
+    {
+      "name": "Saved answer remains after sign-out and sign-in",
+      "result": "pass"
+    },
+    {
+      "name": "Mobile drawer reaches Profile without page overflow",
+      "result": "pass"
+    },
+    {
+      "name": "Second account cannot access the first account answer, history, or saved publications",
+      "result": "pass"
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "result": "pass"
+    }
+  ],
+  "screenshots": [
+    "screenshots/home-desktop.png",
+    "screenshots/answer-desktop.png",
+    "screenshots/home-mobile.png",
+    "screenshots/navigation-mobile.png"
+  ],
+  "model_configured": false,
+  "chinese_query": {
+    "normalized": "diabetes mellitus treatment",
+    "records": 12,
+    "pmids": [
+      "30641727",
+      "37295292",
+      "39566204",
+      "29168921",
+      "15293979",
+      "35506975",
+      "38625582",
+      "36091798",
+      "39273161",
+      "29504478",
+      "29257914",
+      "33141238"
+    ],
+    "status": "retrieval_only"
+  },
+  "result": "pass",
+  "finished_at": "2026-11-14T03:41:04.181Z"
+}

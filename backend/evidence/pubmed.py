@@ -54,6 +54,24 @@ def node_text(node):
     return ''.join(node.itertext()).strip() if node is not None else ''
 
 
+def publication_date(node):
+    if node is None:
+        return ''
+    return ' '.join(filter(None, (node.findtext(k) for k in ('Year', 'Month', 'Day')))) or node.findtext('MedlineDate', '')
+
+
+def summaries(ids):
+    """Fetch official summary metadata; EFetch remains authoritative for abstracts."""
+    import json
+    if not ids:
+        return {}
+    try:
+        result = json.loads(fetch('esummary', id=','.join(ids), retmode='json'))['result']
+        return {pmid: result[pmid] for pmid in ids if isinstance(result.get(pmid), dict)}
+    except (KeyError, TypeError, ValueError):
+        raise LiteratureError('PubMed returned an invalid summary response.') from None
+
+
 def records(ids):
     ids = [str(pmid) for pmid in ids if PMID.fullmatch(str(pmid))]
     if not ids:
@@ -70,13 +88,9 @@ def records(ids):
         article = item.find('MedlineCitation/Article')
         if pmid not in ids or article is None:
             continue
-        date_node = article.find('ArticleDate')
-        if date_node is None:
-            date_node = article.find('Journal/JournalIssue/PubDate')
-        date = ''
-        if date_node is not None:
-            date = ' '.join(filter(None, (date_node.findtext(k) for k in ('Year', 'Month', 'Day'))))
-            date = date or date_node.findtext('MedlineDate', '')
+        electronic_date = publication_date(article.find('ArticleDate[@DateType="Electronic"]'))
+        issue_date = publication_date(article.find('Journal/JournalIssue/PubDate'))
+        date = electronic_date or issue_date or publication_date(article.find('ArticleDate'))
         year = re.search(r'\b\d{4}\b', date)
         authors = []
         for author in article.findall('AuthorList/Author'):
@@ -93,6 +107,8 @@ def records(ids):
         output.append({
             'pmid': pmid, 'title': node_text(article.find('ArticleTitle')), 'authors': authors,
             'journal': article.findtext('Journal/Title', ''), 'date': date,
+            'electronic_date': electronic_date, 'issue_date': issue_date,
+            'date_type': 'Electronic publication' if electronic_date else 'Journal issue' if issue_date else 'Publication date (type unavailable)',
             'year': int(year.group()) if year else None, 'abstract': '\n\n'.join(sections),
             'types': [node_text(t) for t in article.findall('PublicationTypeList/PublicationType')],
             'doi': item.findtext('PubmedData/ArticleIdList/ArticleId[@IdType="doi"]', ''),
@@ -126,5 +142,8 @@ def filter_term(term, filters):
 
 def search(term, filters):
     ids = search_ids(filter_term(term, filters), sort=filters.get('sort', 'relevance'))
+    summary = summaries(ids)
     by_id = {article['pmid']: article for article in records(ids)}
+    for pmid, article in by_id.items():
+        article['summary_title'] = summary.get(pmid, {}).get('title', '')
     return [by_id[pmid] for pmid in dict.fromkeys(ids) if pmid in by_id]

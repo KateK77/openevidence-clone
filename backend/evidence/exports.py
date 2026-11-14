@@ -1,14 +1,15 @@
 import csv
 import io
+from pathlib import Path
 from xml.sax.saxutils import escape
 
 from django.http import HttpResponse
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.cidfonts import UnicodeCIDFont
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.platypus import KeepTogether, Paragraph, SimpleDocTemplate, Spacer
 
-DISCLAIMER = 'RESEARCH DEMONSTRATION â€” NOT FOR CLINICAL USE.'
+DISCLAIMER = 'RESEARCH DEMONSTRATION — NOT FOR CLINICAL USE.'
 
 
 def references(turn):
@@ -29,8 +30,17 @@ def markdown(turn):
         lines.append('')
     lines.extend(['## Retrieved publications', ''])
     for ref in references(turn):
-        lines.append(f'- {ref["title"]}. {ref["journal"]}, {ref["date"]}. [PMID {ref["pmid"]}]({ref["url"]})'
+        lines.append(f'- {ref["title"].rstrip(". ")}. {ref["journal"]}, {ref["date"]} ({ref.get("date_type", "publication date; type unavailable")}). [PMID {ref["pmid"]}]({ref["url"]})'
                      + (f' DOI: {ref["doi"]}' if ref['doi'] else ''))
+    lines.extend(['', '## Retrieval provenance', '',
+                  f'Pipeline: {turn.provenance.get("pipeline_version", "Legacy snapshot")}',
+                  'Citation checks: source membership and exact abstract excerpts; clinical claim support requires review.'])
+    normalization = turn.provenance.get('normalization', {})
+    if normalization:
+        lines.extend([f'Query mapping: {normalization.get("method", "")}',
+                      f'Search terms: {normalization.get("normalized", "")}'])
+    for search in turn.provenance.get('searches', []):
+        lines.append(f'- {search["query"]} ({len(search["pmids"])} PMIDs)')
     return '\n'.join(lines)
 
 
@@ -56,7 +66,7 @@ def export(turn, kind):
         writer.writerow(fields)
         for ref in references(turn):
             writer.writerow([csv_cell('; '.join(ref[k]) if k == 'authors' else ref[k]) for k in fields])
-        body, media = buffer.getvalue(), 'text/csv; charset=utf-8'
+        body, media = '\ufeff' + buffer.getvalue(), 'text/csv; charset=utf-8'
     elif kind == 'bib':
         entries = []
         for ref in references(turn):
@@ -67,17 +77,29 @@ def export(turn, kind):
         body, media = '\n\n'.join(entries), 'application/x-bibtex; charset=utf-8'
     else:
         buffer = io.BytesIO()
-        pdfmetrics.registerFont(UnicodeCIDFont('STSong-Light'))
-        style = getSampleStyleSheet()['BodyText']
-        style.fontName = 'STSong-Light'
+        if 'ResearchSans' not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont('ResearchSans', str(Path(__file__).parent / 'fonts/ResearchSans-Regular.ttf')))
+        styles = getSampleStyleSheet()
+        for name in ['BodyText', 'Heading1', 'Heading2']:
+            styles[name].fontName = 'ResearchSans'
+            styles[name].leading = 16 if name == 'BodyText' else 24
+            styles[name].wordWrap = 'CJK'
+        style = styles['BodyText']
         story = []
         for line in markdown(turn).splitlines():
             if line:
                 clean = reformat_pdf_line(line)
-                story.append(Paragraph(clean, style))
+                selected = styles['Heading1'] if line.startswith('# ') else styles['Heading2'] if line.startswith('## ') else style
+                paragraph = Paragraph(clean, selected)
+                story.append(KeepTogether([paragraph]) if line.startswith('- ') else paragraph)
             else:
                 story.append(Spacer(1, 6))
-        SimpleDocTemplate(buffer, title='MedEvidence AI Research Report').build(story)
+        def footer(canvas, doc):
+            canvas.setFont('Helvetica', 8)
+            canvas.drawString(44, 28, 'MedEvidence AI 2.0 | Research demonstration')
+            canvas.drawRightString(doc.pagesize[0] - 44, 28, f'Page {doc.page}')
+        SimpleDocTemplate(buffer, title='MedEvidence AI Research Report',
+                          leftMargin=44, rightMargin=44, topMargin=42, bottomMargin=48).build(story, onFirstPage=footer, onLaterPages=footer)
         body, media = buffer.getvalue(), 'application/pdf'
     response = HttpResponse(body, content_type=media)
     response['Content-Disposition'] = f'attachment; filename="medevidence-{turn.pk}.{kind}"'

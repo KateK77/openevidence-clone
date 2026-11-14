@@ -52,3 +52,13 @@ class SavedPublication(models.Model):
 
     class Meta:
         constraints = [models.UniqueConstraint(fields=['owner', 'publication'], name='unique_saved_publication')]
+
+
+class SavedSearch(models.Model):
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    fingerprint = models.CharField(max_length=64)
+    filters = models.JSONField()
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [models.UniqueConstraint(fields=['owner', 'fingerprint'], name='unique_saved_search')]

@@ -19,7 +19,7 @@ from rest_framework.response import Response
 from rest_framework.throttling import SimpleRateThrottle, UserRateThrottle
 
 from . import exports, pubmed, rag, serializers as s
-from .models import Conversation, Evidence, Preferences, Publication, SavedPublication, Turn
+from .models import Conversation, Evidence, Preferences, Publication, SavedPublication, SavedSearch, Turn
 
 
 class AuthThrottle(SimpleRateThrottle):
@@ -47,7 +47,8 @@ def validated(serializer, data, **kwargs):
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def health(request):
-    return Response({'status': 'ok', 'generation_configured': bool(settings.LLM_API_KEY and settings.LLM_MODEL)})
+    return Response({'service': 'medevidence', 'version': '2.0.0', 'status': 'ok', 'port': request.META.get('SERVER_PORT'),
+                     'generation_configured': bool(settings.LLM_API_KEY and settings.LLM_MODEL)})
 
 
 @extend_schema(responses=dict)
@@ -56,7 +57,8 @@ def health(request):
 @permission_classes([AllowAny])
 def session(request):
     return Response({'user': s.Profile(request.user).data if request.user.is_authenticated else None,
-                     'csrf': get_token(request), 'model': settings.LLM_MODEL})
+                     'csrf': get_token(request), 'model': settings.LLM_MODEL,
+                     'generation_configured': bool(settings.LLM_API_KEY and settings.LLM_MODEL)})
 
 
 @extend_schema(request=s.Credentials, responses={201: dict})
@@ -96,6 +98,8 @@ def sign_in(request):
 
 @extend_schema(request=None, responses=dict)
 @api_view(['POST'])
+@permission_classes([AllowAny])
+@csrf_protect
 def sign_out(request):
     logout(request)
     return Response({'user': None, 'csrf': get_token(request)})
@@ -183,11 +187,14 @@ def ask(request):
     options, _ = Preferences.objects.get_or_create(user=request.user)
     sources = []
     provenance = {'retrieved_at': timezone.now().isoformat(), 'previous_questions': previous,
-                  'generation_preferences': s.Settings(options).data, 'pipeline_version': 'round-01'}
+                  'generation_preferences': s.Settings(options).data, 'pipeline_version': 'round-02',
+                  'citation_validation': 'Retrieved PMID membership and verbatim abstract excerpts; not independent claim verification.'}
     try:
         sources, trace = rag.retrieve(question, previous)
         provenance.update(trace)
         status, model, result = rag.synthesize(question, previous, sources, options)
+        if trace.get('normalization', {}).get('notice') and not sources:
+            result['message'] = trace['normalization']['notice']
     except pubmed.LiteratureError as error:
         status, model, result = 'retrieval_error', '', {'message': str(error)}
     provenance['completed_at'] = timezone.now().isoformat()
@@ -247,7 +254,10 @@ def articles(request):
         elif re.fullmatch(r'10\.\d{4,9}/[^\s"\[\]]+', term, re.I):
             records = pubmed.search(f'"{term}"[aid]', filters)
         else:
-            records = pubmed.search(term, filters)
+            normalized = rag.normalize_query(term)
+            if not normalized['normalized']:
+                return Response({'detail': normalized['notice']}, status=422)
+            records = pubmed.search(normalized['normalized'], filters)
     except pubmed.LiteratureError as error:
         return Response({'detail': str(error)}, status=503)
     return Response(records)
@@ -299,3 +309,23 @@ def save_article(request, identifier):
 def saved_articles(request):
     items = SavedPublication.objects.filter(owner=request.user).select_related('publication').order_by('-created')
     return Response([{**row.publication.record, 'collection': row.collection} for row in items])
+
+
+@extend_schema(request=s.LiteratureQuery, responses=dict)
+@api_view(['GET', 'POST'])
+def saved_searches(request):
+    if request.method == 'POST':
+        import hashlib
+        import json
+        data = validated(s.LiteratureQuery, request.data)
+        fingerprint = hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+        row, created = SavedSearch.objects.get_or_create(owner=request.user, fingerprint=fingerprint, defaults={'filters': data})
+        return Response({'id': row.pk, 'filters': row.filters}, status=201 if created else 200)
+    return Response([{'id': row.pk, 'filters': row.filters} for row in SavedSearch.objects.filter(owner=request.user).order_by('-created')])
+
+
+@extend_schema(responses={204: None})
+@api_view(['DELETE'])
+def saved_search(request, pk):
+    get_object_or_404(SavedSearch, pk=pk, owner=request.user).delete()
+    return Response(status=204)

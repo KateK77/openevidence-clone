@@ -11,7 +11,7 @@ class Credentials(serializers.Serializer):
 
 
 class Question(serializers.Serializer):
-    question = serializers.CharField(min_length=5, max_length=2000, trim_whitespace=True)
+    question = serializers.CharField(min_length=1, max_length=2000, trim_whitespace=True)
     conversation = serializers.IntegerField(min_value=1, required=False)
 
 

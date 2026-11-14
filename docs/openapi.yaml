@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: MedEvidence AI API
-  version: 0.1.0
+  version: 2.0.0
 paths:
   /api/answers/{id}/:
     get:
@@ -371,6 +371,7 @@ paths:
       - logout
       security:
       - cookieAuth: []
+      - {}
       responses:
         '200':
           content:
@@ -467,6 +468,57 @@ paths:
                   type: object
                   additionalProperties: {}
           description: ''
+  /api/saved-searches/:
+    get:
+      operationId: saved_searches_retrieve
+      tags:
+      - saved-searches
+      security:
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+    post:
+      operationId: saved_searches_create
+      tags:
+      - saved-searches
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LiteratureQuery'
+        required: true
+      security:
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+  /api/saved-searches/{id}/:
+    delete:
+      operationId: saved_searches_destroy
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - saved-searches
+      security:
+      - cookieAuth: []
+      responses:
+        '204':
+          description: No response body
   /api/schema/:
     get:
       operationId: schema_retrieve
@@ -662,6 +714,20 @@ paths:
           description: ''
 components:
   schemas:
+    ArticleTypeEnum:
+      enum:
+      - Clinical Trial
+      - Randomized Controlled Trial
+      - Review
+      - Systematic Review
+      - Meta-Analysis
+      type: string
+      description: |-
+        * `Clinical Trial` - Clinical Trial
+        * `Randomized Controlled Trial` - Randomized Controlled Trial
+        * `Review` - Review
+        * `Systematic Review` - Systematic Review
+        * `Meta-Analysis` - Meta-Analysis
     Collection:
       type: object
       properties:
@@ -713,6 +779,29 @@ components:
         * `Chinese` - Chinese
         * `Spanish` - Spanish
         * `French` - French
+    LiteratureQuery:
+      type: object
+      properties:
+        q:
+          type: string
+          maxLength: 400
+        year:
+          type: integer
+          maximum: 2100
+          minimum: 1800
+        journal:
+          type: string
+          maxLength: 100
+        article_type:
+          $ref: '#/components/schemas/ArticleTypeEnum'
+        free:
+          type: boolean
+        sort:
+          allOf:
+          - $ref: '#/components/schemas/SortEnum'
+          default: relevance
+      required:
+      - q
     PatchedProfile:
       type: object
       properties:
@@ -764,7 +853,7 @@ components:
         question:
           type: string
           maxLength: 2000
-          minLength: 5
+          minLength: 1
         conversation:
           type: integer
           minimum: 1
@@ -783,8 +872,16 @@ components:
       - detail
       - display
       - language
+    SortEnum:
+      enum:
+      - relevance
+      - pub date
+      type: string
+      description: |-
+        * `relevance` - relevance
+        * `pub date` - pub date
   securitySchemes:
     cookieAuth:
       type: apiKey
       in: cookie
-      name: sessionid
+      name: medevidence_session_v2

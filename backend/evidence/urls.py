@@ -23,4 +23,6 @@ urlpatterns = [
     path('api/articles/<str:identifier>/', v.article),
     path('api/articles/<str:identifier>/save/', v.save_article),
     path('api/saved-articles/', v.saved_articles),
+    path('api/saved-searches/', v.saved_searches),
+    path('api/saved-searches/<int:pk>/', v.saved_search),
 ]

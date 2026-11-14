@@ -1,0 +1,34 @@
+{
+  "round": 2,
+  "version": "2.0.0",
+  "release_tag": "v2.0.0-r2",
+  "baseline_commit": "56256603ee3b10ef5bea359a73ea1a23fa4ec517",
+  "branch": "v2-round-02",
+  "repository": "KateK77/openevidence-clone",
+  "visibility": "private",
+  "generated_at": "2026-11-14T03:44:16.916480+00:00",
+  "report_language": "English",
+  "checks": {
+    "backend_passed": 27,
+    "backend_opt_in_skipped": 1,
+    "frontend_passed": 9,
+    "browser_passed": 14,
+    "real_browser_checks_passed": 14,
+    "live_pubmed_contract_passed": 1,
+    "frontend_build": true,
+    "django_checks": true,
+    "schema_validation": true,
+    "pdf_visual_review": true,
+    "local_start_stop": true
+  },
+  "model_configured": false,
+  "limitations": [
+    "Live model-provider generation was not exercised. Both LLM_MODEL and LLM_API_KEY must be configured server-side before accepting the AI synthesis workflow.",
+    "Citation validation checks retrieved PMID membership and exact abstract excerpts. It does not independently prove that a clinical interpretation is supported.",
+    "Chinese query support is a limited terminology glossary, not unrestricted translation. Unmapped terms require reformulation or English medical keywords.",
+    "Evidence retrieval is limited to PubMed abstracts and metadata. Retrieval ranking and search recall have not been clinically validated.",
+    "PostgreSQL, production multi-worker operation, load testing, and a formal security/accessibility audit were not exercised.",
+    "The reported passes are automated and agent-inspected checks. They are not a substitute for the user's second manual acceptance round."
+  ],
+  "readiness": "Ready for Round 2 manual acceptance in retrieval-only mode; live AI synthesis acceptance remains pending configuration."
+}
