@@ -1,0 +1,24 @@
+{
+  "round": 1,
+  "date": "2026-11-13",
+  "timezone": "America/Chicago",
+  "implementation_commit": "2fd3909c08cdf65d2105818e572184da30c0d40a",
+  "release_tag": "v0.1.0-r1",
+  "agent": "Codex (GPT-6 family)",
+  "application_model": "operator-configured",
+  "checks": {
+    "pytest_passed": 13,
+    "live_pubmed_passed": true,
+    "vitest_passed": 2,
+    "playwright_passed": 2,
+    "django_checks_passed": true,
+    "openapi_validated": true,
+    "frontend_build_passed": true,
+    "npm_audit_vulnerabilities": 0
+  },
+  "known_limitations": [
+    "Live LLM and PostgreSQL not exercised",
+    "Abstract-only synthesis with manual claim verification",
+    "See results.md for scope and limitations"
+  ]
+}
