@@ -123,6 +123,7 @@ The [portfolio release report](experiments/portfolio-release/REPORT.md) records 
 | Production build | Passed | TypeScript and Vite |
 | Docker + disposable PostgreSQL | 6 checks passed | Startup, migrations, SPA delivery, seed idempotence and concurrent reservations |
 | Public HTTPS smoke | **17 passed, 1 failed (94.4%)** | Real browser, deployed PostgreSQL, PubMed and configured application model |
+| GitHub Actions | [Passed on main](https://github.com/KateK77/openevidence-clone/actions/runs/43834431102) and deployment branch | Complete CI at 31f1a2c; later evidence-only changes retain application code |
 | Native OpenAI CUA | **Not executed** | 100 frozen cases remain NOT_RUN; paid execution is not authorized |
 
 **Playwright is not native Computer Use API testing.** The frozen native-CUA suite remains on [evaluation/medevidence-native-cua-100](https://github.com/KateK77/openevidence-clone/tree/evaluation/medevidence-native-cua-100). No native-CUA pass rate is claimed. Its baseline predates these portfolio changes. See the [evaluation index](docs/evaluation.md).

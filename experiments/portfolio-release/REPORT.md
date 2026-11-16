@@ -92,3 +92,9 @@ The PostgreSQL smoke exercised migration/startup, SPA/static routing, 404 behavi
 - Call caps bound volume, not an exact invoice. Provider billing visibility was not tested.
 - No clinical validation, sustained load test, general medical translation, full-text coverage or accessibility certification is claimed.
 - The frozen 100 native-CUA cases remain NOT_RUN. Paid execution needs explicit approval and reliable budget controls. [Evaluation index](../../docs/evaluation.md).
+
+## GitHub Actions verification
+
+Both complete CI runs passed for commit 31f1a2ce9d216bdb7e816e69feabcf0bde7be6e7: [main](https://github.com/KateK77/openevidence-clone/actions/runs/43834431102) and [v3-round-03](https://github.com/KateK77/openevidence-clone/actions/runs/43834431112). This includes backend, frontend, desktop/mobile browser tests, both production container profiles, and the PostgreSQL public-demo concurrency smoke. [Recorded run metadata](github-actions.json).
+
+The subsequent evidence-only commit records these completed runs and a fully loaded mobile gallery capture. It changes no backend, frontend, deployment configuration or application tests. The published smoke runner now also waits for mobile session bootstrap before capturing; the exact previously executed runners remain archived. No additional research/model request was made for that recapture.

@@ -156,7 +156,7 @@ async function login(p, name) {
     try { await login(p, 'portfolio_reader'); const r = await p.request.get(base + '/api/answers/' + answer.id + '/'); if (r.status() !== 404) throw Error('Cross-account access was not denied'); return { status: r.status() }; } finally { await c.close(); }
   }, !!answer);
   await check('P16', 'Medium', 'Mobile dashboard and evidence table have no page overflow; drawer can close', async () => {
-    await page.setViewportSize({ width: 390, height: 844 }); await page.goto(base); await expect(page.getByRole('heading', { name: /Better questions/ })).toBeVisible();
+    await page.setViewportSize({ width: 390, height: 844 }); await page.goto(base); await expect(page.locator('.account')).toContainText('portfolio_researcher'); await expect(page.locator('.mode-banner')).toBeVisible(); await expect(page.getByRole('heading', { name: /Better questions/ })).toBeVisible();
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw Error('Dashboard horizontal overflow'); await shot('08-mobile-dashboard');
     await page.getByRole('button', { name: 'Open menu' }).click(); await page.getByRole('button', { name: 'Close menu', exact: true }).click();
     if (!answerURL) throw Error('Evidence-table prerequisite missing'); { await page.goto(answerURL); await page.getByRole('button', { name: 'Evidence table', exact: true }).click(); await expect(page.getByRole('table')).toBeVisible(); if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw Error('Evidence table page overflow'); }
@@ -169,4 +169,3 @@ async function login(p, name) {
 })().catch(e => { report.fatal = e.message; process.exitCode = 1; }).finally(async () => {
   report.finished_at = new Date().toISOString(); report.counts = Object.fromEntries(['PASS', 'FAIL', 'NOT_RUN'].map(s => [s, report.checks.filter(x => x.result === s).length])); save(); console.log(JSON.stringify({ report: path.relative(root, out), counts: report.counts })); if (browser) await browser.close();
 });
-

@@ -14,6 +14,8 @@ Application commit: c903b65ce3f8f49fe72416ca8948d215a0690a49.
 | [05-saved-publications.png](05-saved-publications.png) | https://medevidence-ai-v3.onrender.com/publications | 2026-11-16T08:41:51.177Z | c66b4a3fdbf4ff37cb84343dd07505366432aca851b53d3581e203ae757037b3 |
 | [03-evidence-synthesis.png](03-evidence-synthesis.png) | https://medevidence-ai-v3.onrender.com/answer/5 | 2026-11-16T08:41:57.852Z | df61f68ae4301e662884c5dcd57fd210c963867f60eed16b7cbb62fffc102e49 |
 | [06-conversation-history.png](06-conversation-history.png) | https://medevidence-ai-v3.onrender.com/history | 2026-11-16T08:42:07.199Z | e47cfc8540192c6625ca92e12b7fc9fd9a6b3dee46871d603437e3a7ec80cc33 |
-| [08-mobile-dashboard.png](08-mobile-dashboard.png) | https://medevidence-ai-v3.onrender.com/ | 2026-11-16T08:42:10.969Z | 75c2b43d390f77d07406080feaba52bdf4ead64cba8d5d5b59af5f89cdc3d1fb |
+| [08-mobile-dashboard.png](08-mobile-dashboard.png) | https://medevidence-ai-v3.onrender.com/ | 2026-11-16T08:56:00.867Z | 685c4108170c40f28742f8987f4a86268f52868af7b4119838c28f3cbd273952 |
 
 [Per-step evidence and immutable captures](../../experiments/portfolio-release/public-2026-11-16T08-41-45-564Z). Initial-run images remain in their own directory. Only synthetic demo identifiers and public publications appear; no session tokens or provider keys are included.
+
+The selected mobile image was recaptured after session bootstrap and mode-banner loading, using [this read-only capture](../../scripts/portfolio_capture_mobile.cjs). [Capture metadata](../../experiments/portfolio-release/mobile-gallery-capture.json) and [archived image](../../experiments/portfolio-release/mobile-gallery.png). No model call was made. Original smoke-run images remain unchanged.
