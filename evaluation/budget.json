@@ -1,0 +1,223 @@
+{
+  "model": "gpt-5.4",
+  "as_of": "2026-11-16",
+  "actual_paid_calls": 0,
+  "actual_estimated_spend_usd": 0,
+  "absolute_project_cap_usd": 5,
+  "prices_usd_per_million": {
+    "input": 2.5,
+    "cached_input": 0.25,
+    "output": 15
+  },
+  "separate_native_tool_fee_usd_assumption": 0,
+  "app_provider_cost_assumption": "0 only with a verified no-paid/local application model; otherwise BLOCKED",
+  "method": "Planning scenarios, not measured token counts. Full original tasks; no cache discount or successful-mock substitution.",
+  "scenarios": {
+    "optimistic": {
+      "by_difficulty": [
+        {
+          "difficulty": 1,
+          "tasks": 10,
+          "responses_per_task": 2,
+          "responses": 20,
+          "input_tokens_per_response": 2400,
+          "output_tokens_per_response": 45,
+          "input_tokens": 48000,
+          "output_tokens": 900,
+          "estimated_usd": 0.1335
+        },
+        {
+          "difficulty": 2,
+          "tasks": 20,
+          "responses_per_task": 4,
+          "responses": 80,
+          "input_tokens_per_response": 2800,
+          "output_tokens_per_response": 60,
+          "input_tokens": 224000,
+          "output_tokens": 4800,
+          "estimated_usd": 0.632
+        },
+        {
+          "difficulty": 3,
+          "tasks": 30,
+          "responses_per_task": 7,
+          "responses": 210,
+          "input_tokens_per_response": 3200,
+          "output_tokens_per_response": 90,
+          "input_tokens": 672000,
+          "output_tokens": 18900,
+          "estimated_usd": 1.9635
+        },
+        {
+          "difficulty": 4,
+          "tasks": 25,
+          "responses_per_task": 10,
+          "responses": 250,
+          "input_tokens_per_response": 3800,
+          "output_tokens_per_response": 120,
+          "input_tokens": 950000,
+          "output_tokens": 30000,
+          "estimated_usd": 2.825
+        },
+        {
+          "difficulty": 5,
+          "tasks": 15,
+          "responses_per_task": 15,
+          "responses": 225,
+          "input_tokens_per_response": 4600,
+          "output_tokens_per_response": 160,
+          "input_tokens": 1035000,
+          "output_tokens": 36000,
+          "estimated_usd": 3.1275
+        }
+      ],
+      "responses": 785,
+      "input_tokens": 2929000,
+      "output_tokens": 90600,
+      "estimated_usd": 8.6815
+    },
+    "central": {
+      "by_difficulty": [
+        {
+          "difficulty": 1,
+          "tasks": 10,
+          "responses_per_task": 3,
+          "responses": 30,
+          "input_tokens_per_response": 2600,
+          "output_tokens_per_response": 50,
+          "input_tokens": 78000,
+          "output_tokens": 1500,
+          "estimated_usd": 0.2175
+        },
+        {
+          "difficulty": 2,
+          "tasks": 20,
+          "responses_per_task": 5,
+          "responses": 100,
+          "input_tokens_per_response": 3100,
+          "output_tokens_per_response": 70,
+          "input_tokens": 310000,
+          "output_tokens": 7000,
+          "estimated_usd": 0.88
+        },
+        {
+          "difficulty": 3,
+          "tasks": 30,
+          "responses_per_task": 9,
+          "responses": 270,
+          "input_tokens_per_response": 3600,
+          "output_tokens_per_response": 110,
+          "input_tokens": 972000,
+          "output_tokens": 29700,
+          "estimated_usd": 2.8755
+        },
+        {
+          "difficulty": 4,
+          "tasks": 25,
+          "responses_per_task": 13,
+          "responses": 325,
+          "input_tokens_per_response": 4400,
+          "output_tokens_per_response": 150,
+          "input_tokens": 1430000,
+          "output_tokens": 48750,
+          "estimated_usd": 4.30625
+        },
+        {
+          "difficulty": 5,
+          "tasks": 15,
+          "responses_per_task": 20,
+          "responses": 300,
+          "input_tokens_per_response": 5500,
+          "output_tokens_per_response": 200,
+          "input_tokens": 1650000,
+          "output_tokens": 60000,
+          "estimated_usd": 5.025
+        }
+      ],
+      "responses": 1025,
+      "input_tokens": 4440000,
+      "output_tokens": 146950,
+      "estimated_usd": 13.30425
+    },
+    "conservative": {
+      "by_difficulty": [
+        {
+          "difficulty": 1,
+          "tasks": 10,
+          "responses_per_task": 4,
+          "responses": 40,
+          "input_tokens_per_response": 3200,
+          "output_tokens_per_response": 80,
+          "input_tokens": 128000,
+          "output_tokens": 3200,
+          "estimated_usd": 0.368
+        },
+        {
+          "difficulty": 2,
+          "tasks": 20,
+          "responses_per_task": 7,
+          "responses": 140,
+          "input_tokens_per_response": 3800,
+          "output_tokens_per_response": 100,
+          "input_tokens": 532000,
+          "output_tokens": 14000,
+          "estimated_usd": 1.54
+        },
+        {
+          "difficulty": 3,
+          "tasks": 30,
+          "responses_per_task": 12,
+          "responses": 360,
+          "input_tokens_per_response": 4500,
+          "output_tokens_per_response": 150,
+          "input_tokens": 1620000,
+          "output_tokens": 54000,
+          "estimated_usd": 4.86
+        },
+        {
+          "difficulty": 4,
+          "tasks": 25,
+          "responses_per_task": 18,
+          "responses": 450,
+          "input_tokens_per_response": 5500,
+          "output_tokens_per_response": 220,
+          "input_tokens": 2475000,
+          "output_tokens": 99000,
+          "estimated_usd": 7.6725
+        },
+        {
+          "difficulty": 5,
+          "tasks": 15,
+          "responses_per_task": 28,
+          "responses": 420,
+          "input_tokens_per_response": 7000,
+          "output_tokens_per_response": 300,
+          "input_tokens": 2940000,
+          "output_tokens": 126000,
+          "estimated_usd": 9.24
+        }
+      ],
+      "responses": 1410,
+      "input_tokens": 7695000,
+      "output_tokens": 296200,
+      "estimated_usd": 23.6805
+    }
+  },
+  "central_partial_coverage": {
+    "3": {
+      "nominal_whole_tasks": 27,
+      "estimated_usd": 2.9762,
+      "note": "Assumes all prerequisites ready. Per-call reserves may stop earlier or inside next task; not guaranteed. Prespecified stratified order, not easiest-first."
+    },
+    "4": {
+      "nominal_whole_tasks": 35,
+      "estimated_usd": 3.9722,
+      "note": "Assumes all prerequisites ready. Per-call reserves may stop earlier or inside next task; not guaranteed. Prespecified stratified order, not easiest-first."
+    },
+    "5": {
+      "nominal_whole_tasks": 39,
+      "estimated_usd": 4.9867,
+      "note": "Assumes all prerequisites ready. Per-call reserves may stop earlier or inside next task; not guaranteed. Prespecified stratified order, not easiest-first."
+    }
+  }
+}

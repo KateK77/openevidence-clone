@@ -1,0 +1,3784 @@
+[
+  {
+    "id": "ME-001",
+    "title": "Research identity",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-001-A1",
+        "statement": "Research demonstration disclaimer is visible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-001-A2",
+        "statement": "Branding is independent and does not claim OpenEvidence affiliation",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-002",
+    "title": "Primary destinations",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-002-A1",
+        "statement": "All six destinations are discoverable and reachable or request authentication",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-002-A2",
+        "statement": "No navigation ends in a broken page",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-003",
+    "title": "Composer multiline",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-003-A1",
+        "statement": "Input contains both lines",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-003-A2",
+        "statement": "No question submission occurs on Shift+Enter",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-004",
+    "title": "Example question entry",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-004-A1",
+        "statement": "Chosen example fills or starts the corresponding question flow",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-004-A2",
+        "statement": "The displayed question matches the chosen topic",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-005",
+    "title": "Sign-in entry",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-005-A1",
+        "statement": "Username and masked password controls have labels",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-005-A2",
+        "statement": "An account-registration route is available",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-006",
+    "title": "Saved answer destination",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-006-A1",
+        "statement": "Destination is clearly identified as saved answers",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-006-A2",
+        "statement": "Empty state is honest and offers usable navigation",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-007",
+    "title": "Publication library entry",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-007-A1",
+        "statement": "Publication destination is distinct from Saved Answers",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-007-A2",
+        "statement": "No fictitious saved publication appears",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-008",
+    "title": "Preference controls",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-008-A1",
+        "statement": "Required language/display/detail preferences are discoverable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-008-A2",
+        "statement": "Any unavailable model selection is clearly bounded",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-009",
+    "title": "Missing-model notice",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-009-A1",
+        "statement": "Both surfaces explain unavailable generation",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-009-A2",
+        "statement": "Literature mode is not represented as a generated answer",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-010",
+    "title": "Research history empty state",
+    "difficulty": 1,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-010-A1",
+        "statement": "No other user's history is displayed",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-010-A2",
+        "statement": "Empty state is understandable and navigable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-011",
+    "title": "Register a researcher",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-011-A1",
+        "statement": "Exactly one usable account is created",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-011-A2",
+        "statement": "Successful login establishes the new identity",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-012",
+    "title": "Valid login and reload",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-012-A1",
+        "statement": "Identity remains authenticated after reload",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-012-A2",
+        "statement": "No unrelated account data appears",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-013",
+    "title": "Invalid login",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-013-A1",
+        "statement": "Authentication is rejected visibly",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-013-A2",
+        "statement": "No authenticated session or private content is granted",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-014",
+    "title": "Logout persistence",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-014-A1",
+        "statement": "UI immediately reflects sign-out",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-014-A2",
+        "statement": "Reload does not restore the prior session",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-015",
+    "title": "Profile save persistence",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-015-A1",
+        "statement": "Success is visible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-015-A2",
+        "statement": "The persisted value matches the submitted change",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-016",
+    "title": "Language preference persistence",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-016-A1",
+        "statement": "Chinese preference persists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-016-A2",
+        "statement": "UI explains that preference alone does not enable synthesis",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-017",
+    "title": "Detail preference persistence",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-017-A1",
+        "statement": "Selected level persists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-017-A2",
+        "statement": "Preference applies to future generation rather than silently rewriting prior answers",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-018",
+    "title": "Whitespace rejection",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-018-A1",
+        "statement": "A visible validation response is shown",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-018-A2",
+        "statement": "No research conversation or provider request is created",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-019",
+    "title": "Single-character query",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-019-A1",
+        "statement": "Query is accepted rather than rejected solely for length one",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-019-A2",
+        "statement": "Sources or an honest empty result are shown",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-020",
+    "title": "Chinese glossary query",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-020-A1",
+        "statement": "Original Chinese question is retained",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-020-A2",
+        "statement": "Executed English mapping is disclosed and relates to the term",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-021",
+    "title": "Unsupported Chinese mapping",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-021-A1",
+        "statement": "An actionable unsupported-mapping message appears",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-021-A2",
+        "statement": "It is not falsely reported as a definitive zero-evidence search",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-022",
+    "title": "Live obesity literature",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-022-A1",
+        "statement": "At least one retrieved PMID resolves in official response evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-022-A2",
+        "statement": "No canned generated answer is substituted",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-023",
+    "title": "PMID source resolution",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-023-A1",
+        "statement": "Displayed identifier matches the requested PMID",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-023-A2",
+        "statement": "Title and DOI agree with the independently captured official record",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-024",
+    "title": "DOI source resolution",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-024-A1",
+        "statement": "The resolved article matches the DOI",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-024-A2",
+        "statement": "No duplicate identity is created for the same PMID",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-025",
+    "title": "Open official source",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-025-A1",
+        "statement": "Navigation reaches the matching official PMID record",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-025-A2",
+        "statement": "The original article detail remains recoverable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-026",
+    "title": "Missing abstract disclosure",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-026-A1",
+        "statement": "Missing abstract is stated explicitly",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-026-A2",
+        "statement": "No abstract text or extracted findings are invented",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-027",
+    "title": "Card and table views",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-027-A1",
+        "statement": "Both views represent the same source identities",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-027-A2",
+        "statement": "Unextracted findings and limitations are marked unavailable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-028",
+    "title": "Save a publication",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-028-A1",
+        "statement": "Save progress or completion is visible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-028-A2",
+        "statement": "Exactly one owned saved entry exists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-029",
+    "title": "Remove saved publication",
+    "difficulty": 2,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-029-A1",
+        "statement": "Saved relationship is removed persistently",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-029-A2",
+        "statement": "Unrelated saved entries remain",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-030",
+    "title": "History reopen",
+    "difficulty": 2,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-030-A1",
+        "statement": "The correct question and chronology are shown",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-030-A2",
+        "statement": "Persisted source associations are retained",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-031",
+    "title": "New English synthesis",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-031-A1",
+        "statement": "Answer is generated by the configured real provider",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-031-A2",
+        "statement": "Each displayed reference belongs to the retrieved evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-031-A3",
+        "statement": "Abstract-only basis is disclosed",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-032",
+    "title": "Chinese synthesis",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-032-A1",
+        "statement": "Generated explanatory prose is Chinese",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-032-A2",
+        "statement": "Source quotations and titles remain explicitly original-language",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-032-A3",
+        "statement": "Sources map to retrieved records",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-033",
+    "title": "Copy an answer",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-033-A1",
+        "statement": "Clipboard contains that answer's text and traceable references",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-033-A2",
+        "statement": "No unrelated user's content is copied",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-034",
+    "title": "Markdown export",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-034-A1",
+        "statement": "Chinese characters round-trip in UTF-8",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-034-A2",
+        "statement": "Answer and source identifiers are present",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-034-A3",
+        "statement": "Provenance stages remain distinguishable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-035",
+    "title": "PDF export",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-035-A1",
+        "statement": "Chinese and Latin text render without replacement glyphs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-035-A2",
+        "statement": "Headings/page numbering are readable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-035-A3",
+        "statement": "References remain traceable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-036",
+    "title": "BibTeX export",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-036-A1",
+        "statement": "Artifact parses as BibTeX",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-036-A2",
+        "statement": "Entries match referenced PMIDs/DOIs and Unicode authors",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-036-A3",
+        "statement": "Unavailable fields are not fabricated",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-037",
+    "title": "CSV export",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-037-A1",
+        "statement": "UTF-8 content survives parsing",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-037-A2",
+        "statement": "Rows and identifiers match the set",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-037-A3",
+        "statement": "Chinese content is legible in the documented spreadsheet encoding",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-038",
+    "title": "Save answer and reload",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-038-A1",
+        "statement": "One owned bookmark persists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-038-A2",
+        "statement": "The saved item opens the exact answer revision",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-039",
+    "title": "Duplicate-save prevention",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-039-A1",
+        "statement": "Pending or unchanged state prevents duplicate submission",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-039-A2",
+        "statement": "Only one bookmark exists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-039-A3",
+        "statement": "UI shows an accurate saved state",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-040",
+    "title": "History rename and search",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-040-A1",
+        "statement": "New title persists",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-040-A2",
+        "statement": "History search returns the intended conversation without unrelated rows",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-041",
+    "title": "Delete a conversation",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-041-A1",
+        "statement": "Deleted conversation is absent and cannot reopen for the owner",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-041-A2",
+        "statement": "The other conversation remains unchanged",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-042",
+    "title": "History date ordering",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-042-A1",
+        "statement": "The visible order follows the selected date direction",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-042-A2",
+        "statement": "Reload does not corrupt titles or records",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-043",
+    "title": "Year filter",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-043-A1",
+        "statement": "All dated returned records meet the selected range",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-043-A2",
+        "statement": "The executed query or filter record reflects the range",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-044",
+    "title": "Journal filter",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-044-A1",
+        "statement": "Returned journal metadata matches the selected journal",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-044-A2",
+        "statement": "Filter changes are reflected in retrieval provenance",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-045",
+    "title": "Clinical-trial filter",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-045-A1",
+        "statement": "Returned records have qualifying official publication types",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-045-A2",
+        "statement": "The filter is not only a cosmetic UI change",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-046",
+    "title": "Review-type filters",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-046-A1",
+        "statement": "Each applied filter is represented in provenance",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-046-A2",
+        "statement": "Official metadata supports each returned type",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-046-A3",
+        "statement": "Results are not reused under a false label",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-047",
+    "title": "Free-full-text filter",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-047-A1",
+        "statement": "Selected records have official free-full-text availability evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-047-A2",
+        "statement": "The app does not claim all articles are freely accessible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-048",
+    "title": "Relevance and date sort",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-048-A1",
+        "statement": "Selected sort is applied and disclosed",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-048-A2",
+        "statement": "Date ordering agrees with the chosen publication-date semantics",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-049",
+    "title": "Search saved publications",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-049-A1",
+        "statement": "Search finds the matching owned publication",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-049-A2",
+        "statement": "Clearing restores the owner's saved set",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-050",
+    "title": "Organize research sources",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-050-A1",
+        "statement": "Both chosen sources persist in the collection",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-050-A2",
+        "statement": "Unrelated publications are excluded",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-051",
+    "title": "Saved search rerun",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-051-A1",
+        "statement": "Saved parameters persist",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-051-A2",
+        "statement": "Rerun uses those parameters and current official retrieval",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-051-A3",
+        "statement": "Provenance distinguishes the rerun",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-052",
+    "title": "Multi-turn follow-up",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-052-A1",
+        "statement": "Follow-up follows the original chronologically",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-052-A2",
+        "statement": "Relevant earlier question context is preserved",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-052-A3",
+        "statement": "Additional retrieval is recorded",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-053",
+    "title": "History after logout",
+    "difficulty": 3,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-053-A1",
+        "statement": "History and renamed title persist for the same account",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-053-A2",
+        "statement": "Anonymous UI does not expose the thread",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-054",
+    "title": "Electronic versus issue date",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-054-A1",
+        "statement": "Dates are distinguished by type",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-054-A2",
+        "statement": "Neither date is silently mislabelled as the other",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-055",
+    "title": "Incomplete metadata",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-055-A1",
+        "statement": "Available identifiers and fields are preserved",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-055-A2",
+        "statement": "Missing fields are labelled or omitted honestly",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-055-A3",
+        "statement": "Export remains structurally valid",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-056",
+    "title": "Mobile navigation and source detail",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-056-A1",
+        "statement": "Navigation and source controls remain reachable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-056-A2",
+        "statement": "Essential content is not clipped behind inaccessible controls",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-057",
+    "title": "Keyboard question flow",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-057-A1",
+        "statement": "Focus is visible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-057-A2",
+        "statement": "Enter submits appropriately",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-057-A3",
+        "statement": "No essential control requires a mouse-only action",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-058",
+    "title": "Loading and settled state",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-058-A1",
+        "statement": "Visible loading state persists while pending",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-058-A2",
+        "statement": "Completion replaces loading",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-058-A3",
+        "statement": "No duplicate research request is created",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-059",
+    "title": "Empty live search",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-059-A1",
+        "statement": "Official retrieval confirms no matches",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-059-A2",
+        "statement": "UI gives an honest empty state without fake sources",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-060",
+    "title": "Published API reference",
+    "difficulty": 3,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-060-A1",
+        "statement": "A retrievable schema/document describes authentication, research and export APIs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-060-A2",
+        "statement": "It does not expose credentials",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-061",
+    "title": "Account isolation in history",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-061-A1",
+        "statement": "A's text and sources are not disclosed",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-061-A2",
+        "statement": "B history contains only B-owned data",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-062",
+    "title": "Isolation of saved answers",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-062-A1",
+        "statement": "A's private answer is inaccessible to B",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-062-A2",
+        "statement": "Account switching does not retain A's saved state",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-063",
+    "title": "Isolation of collections",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-063-A1",
+        "statement": "Requests cannot read or mutate A's collection",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-063-A2",
+        "statement": "A's collection remains unchanged",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-064",
+    "title": "CSRF rejection",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-064-A1",
+        "statement": "Forged change is rejected without persistence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-064-A2",
+        "statement": "The normal user-initiated change works",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-064-A3",
+        "statement": "Authentication remains intact",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-065",
+    "title": "Stale account response",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-065-A1",
+        "statement": "Late A response is discarded from B's UI",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-065-A2",
+        "statement": "B sees no private A payload",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-066",
+    "title": "Cross-tab logout",
+    "difficulty": 4,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-066-A1",
+        "statement": "Second tab reflects session loss on the supported synchronization path",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-066-A2",
+        "statement": "Protected operations cannot persist after logout",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-067",
+    "title": "Save-state recovery",
+    "difficulty": 4,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-067-A1",
+        "statement": "Failure is visible and does not claim success",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-067-A2",
+        "statement": "Normal explicit retry creates exactly one owned bookmark",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-068",
+    "title": "PubMed timeout",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-068-A1",
+        "statement": "Timeout is actionable and not a fabricated empty result",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-068-A2",
+        "statement": "Recovery is user-driven",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-068-A3",
+        "statement": "No false answer is generated",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-069",
+    "title": "PubMed rate limit",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-069-A1",
+        "statement": "Rate-limit failure is explicit",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-069-A2",
+        "statement": "Transport pacing does not hammer the provider",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-069-A3",
+        "statement": "No fabricated sources appear",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-070",
+    "title": "PubMed service failure",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-070-A1",
+        "statement": "External failure is distinguishable from no evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-070-A2",
+        "statement": "No fake generated answer or references are saved",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-071",
+    "title": "Overlapping-query deduplication",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-071-A1",
+        "statement": "Each canonical PMID appears once in the merged evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-071-A2",
+        "statement": "Executed queries are recorded",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-071-A3",
+        "statement": "Cross-query duplicates do not inflate counts",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-072",
+    "title": "Stable retrieval ranking",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-072-A1",
+        "statement": "Ranking is reproducible for identical candidate evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-072-A2",
+        "statement": "Provenance records separate runs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-072-A3",
+        "statement": "Recorded-response mode is disclosed in benchmark evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-073",
+    "title": "Invalid identifiers",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-073-A1",
+        "statement": "Invalid identifiers produce a controlled response",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-073-A2",
+        "statement": "No unrelated source is substituted",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-073-A3",
+        "statement": "Valid recovery still works",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-074",
+    "title": "Provider outage",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-074-A1",
+        "statement": "Retrieved evidence stays inspectable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-074-A2",
+        "statement": "Provider failure is explicit",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-074-A3",
+        "statement": "No synthesis is falsely presented as successful",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-075",
+    "title": "Wrong-language recovery",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-075-A1",
+        "statement": "Exactly one app-level language retry occurs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-075-A2",
+        "statement": "Accepted prose is Chinese",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-075-A3",
+        "statement": "Both attempts are recorded without changing the original question",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-076",
+    "title": "Wrong-language repeated failure",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-076-A1",
+        "statement": "Only the allowed single retry occurs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-076-A2",
+        "statement": "A visible language failure withholds the unsupported answer",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-076-A3",
+        "statement": "Original-language sources remain distinguished",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-077",
+    "title": "Citation membership rejection",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-077-A1",
+        "statement": "The invalid draft is withheld",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-077-A2",
+        "statement": "Error identifies an evidence/citation problem",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-077-A3",
+        "statement": "No unrelated reference is persisted as accepted",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-078",
+    "title": "Exact quotation rejection",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-078-A1",
+        "statement": "Draft is rejected or withheld with explicit validation failure",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-078-A2",
+        "statement": "Original abstract remains inspectable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-079",
+    "title": "Numeric contradiction rejection",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-079-A1",
+        "statement": "Conservative numeric check flags the mismatch",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-079-A2",
+        "statement": "Contradictory draft is not accepted as supported output",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-080",
+    "title": "Claim-support audit rejection",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-080-A1",
+        "statement": "Draft is withheld",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-080-A2",
+        "statement": "Audit status and limitation are visible",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-080-A3",
+        "statement": "A second model pass is not claimed as clinical validation",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-081",
+    "title": "Prompt-injection source",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-081-A1",
+        "statement": "No sentinel leaks to UI/export/model action logs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-081-A2",
+        "statement": "No unauthorized navigation/tool action occurs",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-081-A3",
+        "statement": "Poisoned instructions are treated as source text",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-082",
+    "title": "Four-stage provenance",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-082-A1",
+        "statement": "Original, normalized-before-context, prior questions and executed queries remain distinct",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-082-A2",
+        "statement": "Export preserves those stages",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-083",
+    "title": "Regenerate without losing original",
+    "difficulty": 4,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-083-A1",
+        "statement": "New revision uses the same snapshot",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-083-A2",
+        "statement": "Original answer/bookmark/provenance are unchanged",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-083-A3",
+        "statement": "Revision identity and current preferences are clear",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-084",
+    "title": "Regeneration ownership",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-084-A1",
+        "statement": "B cannot create or view a revision of A's answer",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-084-A2",
+        "statement": "Authorized A action is independently verified",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-085",
+    "title": "Legacy snapshot fidelity",
+    "difficulty": 4,
+    "reporting_group": "read_search",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-085-A1",
+        "statement": "Legacy account/data survive supported migration",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-085-A2",
+        "statement": "Unknown date type is labelled unspecified",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-085-A3",
+        "statement": "Original references and saved state persist",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-086",
+    "title": "Complete English evidence review",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-086-A1",
+        "statement": "All requested actions persist for the new user",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-086-A2",
+        "statement": "Every accepted claim is tied to retrieved excerpts and audit state",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-086-A3",
+        "statement": "Export reproduces identifiers and provenance",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-086-A4",
+        "statement": "No scripted task completion is used",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-087",
+    "title": "Chinese comparison with follow-up",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-087-A1",
+        "statement": "Both generated responses use Chinese prose",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-087-A2",
+        "statement": "Follow-up retrieves context-appropriate evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-087-A3",
+        "statement": "Original-language labels and limitations/gaps are explicit",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-087-A4",
+        "statement": "PDF is readable and traceable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-088",
+    "title": "Evidence insufficiency research",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-088-A1",
+        "statement": "Insufficient/tentative evidence is stated honestly",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-088-A2",
+        "statement": "Follow-up does not treat earlier claims as automatically true",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-088-A3",
+        "statement": "No fabricated publication or diagnostic certainty is introduced",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-089",
+    "title": "Filters-to-library-to-report",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-089-A1",
+        "statement": "Each filter/sort is reflected in evidence/provenance",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-089-A2",
+        "statement": "Saved source identities match the report",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-089-A3",
+        "statement": "Both artifact formats preserve metadata without duplicates",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-090",
+    "title": "Missing-model to live regeneration",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-090-A1",
+        "statement": "No pre-configuration synthetic answer is claimed",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-090-A2",
+        "statement": "Configured and checked state are distinguishable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-090-A3",
+        "statement": "New Chinese revision preserves the original snapshot and bookmark",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-091",
+    "title": "Multiple users and late writes",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-091-A1",
+        "statement": "Neither late response nor UI cache leaks A data to B",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-091-A2",
+        "statement": "Writes stay bound to the authenticated owner",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-091-A3",
+        "statement": "Both accounts retain their own correct records",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-092",
+    "title": "Provider failure during revision",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-092-A1",
+        "statement": "Failed revision cannot overwrite the original or bookmark",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-092-A2",
+        "statement": "Failure is explicit",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-092-A3",
+        "statement": "User-triggered recovery creates exactly one valid new revision",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-093",
+    "title": "Unsupported claim recovery",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-093-A1",
+        "statement": "Rejected draft is not represented as accepted research",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-093-A2",
+        "statement": "Original remains intact",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-093-A3",
+        "statement": "Accepted revision has independently checked source membership/quotes/audit and correct export",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-094",
+    "title": "Long bilingual export dossier",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-094-A1",
+        "statement": "All four artifacts preserve matching source identities",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-094-A2",
+        "statement": "PDF has legible glyphs/page layout",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-094-A3",
+        "statement": "No missing finding is invented",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-094-A4",
+        "statement": "Provenance matches the displayed revision",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-095",
+    "title": "Conflicting evidence synthesis",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-095-A1",
+        "statement": "Supported and conflicting findings are separated",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-095-A2",
+        "statement": "Limitations are grounded or explicitly unavailable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-095-A3",
+        "statement": "Follow-up does not invent explanations unsupported by evidence",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-096",
+    "title": "Repeated source and revision audit",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-096-A1",
+        "statement": "Publication canonical identities remain deduplicated",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-096-A2",
+        "statement": "Each revision retains its own source associations and timestamps",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-096-A3",
+        "statement": "Save state is not lost or transferred between revisions",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-097",
+    "title": "Mobile keyboard research journey",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-097-A1",
+        "statement": "Every essential operation remains reachable with visible focus",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-097-A2",
+        "statement": "Chinese answer and sources remain readable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-097-A3",
+        "statement": "Saved data and exported references match",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-098",
+    "title": "Literature continuity through outage",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-098-A1",
+        "statement": "Existing persisted research remains usable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-098-A2",
+        "statement": "New retrieval failure is honest",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-098-A3",
+        "statement": "Restored query fetches real evidence without corrupting prior data",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-099",
+    "title": "Legacy account regeneration journey",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-099-A1",
+        "statement": "Legacy credentials/data remain usable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-099-A2",
+        "statement": "Old provenance/date semantics stay unchanged",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-099-A3",
+        "statement": "New revision is labelled and traceable",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-099-A4",
+        "statement": "Both exports preserve the corresponding snapshot",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  },
+  {
+    "id": "ME-100",
+    "title": "Configured-model evidence audit",
+    "difficulty": 5,
+    "reporting_group": "write_workflow",
+    "status": "NOT_RUN",
+    "reason": "Preparation only; paid execution not authorized",
+    "requested_model": "gpt-5.4",
+    "returned_models": [],
+    "api_response_count": 0,
+    "response_ids": [],
+    "request_ids": [],
+    "native_computer_call_ids": [],
+    "screenshots": [],
+    "action_trace": null,
+    "assertions": [
+      {
+        "id": "ME-100-A1",
+        "statement": "Configuration/check/per-answer states are distinct",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-100-A2",
+        "statement": "Actual generation and review invocations are recorded",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-100-A3",
+        "statement": "Claim excerpts match cited sources",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      },
+      {
+        "id": "ME-100-A4",
+        "statement": "Reopened answer/provenance persist without asserting clinical validation",
+        "verdict": "UNVERIFIED",
+        "evidence": []
+      }
+    ],
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0,
+    "failure_reason": null
+  }
+]

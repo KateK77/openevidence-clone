@@ -1,0 +1,30 @@
+{
+  "application_commit": "7d64a988fc1b1e27433aa96c90b743c6336baea5",
+  "commands": [
+    {
+      "command": "node frontend/node_modules/typescript/bin/tsc --noEmit -p frontend/tsconfig.json",
+      "exit_code": 0
+    },
+    {
+      "command": "node node_modules/vite/bin/vite.js build (cwd frontend)",
+      "exit_code": 0
+    }
+  ],
+  "node_version": "v24.22.1",
+  "vite_version": "7.3.8",
+  "dependency_note": "Existing installed frontend dependencies linked into isolated worktree; missing WhiteNoise 6.11.0 installed in workspace Python environment. No paid API calls.",
+  "files": [
+    {
+      "path": "frontend/dist/assets/index-BuryB6dk.css",
+      "sha256": "33f065e9662f79ee34d9841c419a26c74afb16abe2e642a159e8ff2071dfa5ef"
+    },
+    {
+      "path": "frontend/dist/assets/index-CSuFb-rT.js",
+      "sha256": "6b9dc4e56452531c2a57b4a961519909db62ad27782cb4f5263c7348824f5c33"
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "sha256": "1e32c6e772737aa345a07305f5326c3dcfd0b2901413d5a9c7b5aed58ebf3f83"
+    }
+  ]
+}

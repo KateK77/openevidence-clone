@@ -1,0 +1,101 @@
+﻿id,title,difficulty,reporting_group,status,requested_model,api_response_count,input_tokens,cached_input_tokens,output_tokens,estimated_cost_usd,reason
+ME-001,Research identity,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-002,Primary destinations,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-003,Composer multiline,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-004,Example question entry,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-005,Sign-in entry,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-006,Saved answer destination,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-007,Publication library entry,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-008,Preference controls,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-009,Missing-model notice,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-010,Research history empty state,1,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-011,Register a researcher,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-012,Valid login and reload,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-013,Invalid login,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-014,Logout persistence,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-015,Profile save persistence,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-016,Language preference persistence,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-017,Detail preference persistence,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-018,Whitespace rejection,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-019,Single-character query,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-020,Chinese glossary query,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-021,Unsupported Chinese mapping,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-022,Live obesity literature,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-023,PMID source resolution,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-024,DOI source resolution,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-025,Open official source,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-026,Missing abstract disclosure,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-027,Card and table views,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-028,Save a publication,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-029,Remove saved publication,2,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-030,History reopen,2,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-031,New English synthesis,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-032,Chinese synthesis,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-033,Copy an answer,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-034,Markdown export,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-035,PDF export,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-036,BibTeX export,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-037,CSV export,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-038,Save answer and reload,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-039,Duplicate-save prevention,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-040,History rename and search,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-041,Delete a conversation,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-042,History date ordering,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-043,Year filter,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-044,Journal filter,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-045,Clinical-trial filter,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-046,Review-type filters,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-047,Free-full-text filter,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-048,Relevance and date sort,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-049,Search saved publications,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-050,Organize research sources,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-051,Saved search rerun,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-052,Multi-turn follow-up,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-053,History after logout,3,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-054,Electronic versus issue date,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-055,Incomplete metadata,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-056,Mobile navigation and source detail,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-057,Keyboard question flow,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-058,Loading and settled state,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-059,Empty live search,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-060,Published API reference,3,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-061,Account isolation in history,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-062,Isolation of saved answers,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-063,Isolation of collections,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-064,CSRF rejection,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-065,Stale account response,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-066,Cross-tab logout,4,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-067,Save-state recovery,4,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-068,PubMed timeout,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-069,PubMed rate limit,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-070,PubMed service failure,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-071,Overlapping-query deduplication,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-072,Stable retrieval ranking,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-073,Invalid identifiers,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-074,Provider outage,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-075,Wrong-language recovery,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-076,Wrong-language repeated failure,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-077,Citation membership rejection,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-078,Exact quotation rejection,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-079,Numeric contradiction rejection,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-080,Claim-support audit rejection,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-081,Prompt-injection source,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-082,Four-stage provenance,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-083,Regenerate without losing original,4,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-084,Regeneration ownership,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-085,Legacy snapshot fidelity,4,read_search,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-086,Complete English evidence review,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-087,Chinese comparison with follow-up,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-088,Evidence insufficiency research,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-089,Filters-to-library-to-report,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-090,Missing-model to live regeneration,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-091,Multiple users and late writes,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-092,Provider failure during revision,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-093,Unsupported claim recovery,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-094,Long bilingual export dossier,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-095,Conflicting evidence synthesis,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-096,Repeated source and revision audit,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-097,Mobile keyboard research journey,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-098,Literature continuity through outage,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-099,Legacy account regeneration journey,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized
+ME-100,Configured-model evidence audit,5,write_workflow,NOT_RUN,gpt-5.4,0,0,0,0,0,Preparation only; paid execution not authorized

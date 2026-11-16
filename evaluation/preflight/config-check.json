@@ -1,0 +1,10 @@
+{
+  "mode": "check-only",
+  "tests": 100,
+  "suite_sha256": "f31a4bfa90d3d2fbf89b7f543f072552c6719366fd0e819003eb5811f052bde1",
+  "config_sha256": "519ef8953ffdba1c16ce528edddd9b340bc59183a5ba5a2a65557a065d04051a",
+  "model": "gpt-5.4",
+  "network_requests": 0,
+  "paid_calls": 0,
+  "note": "Syntax/config check only; does not establish account model access or CUA task results."
+}

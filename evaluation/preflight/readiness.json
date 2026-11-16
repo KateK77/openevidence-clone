@@ -1,0 +1,995 @@
+{
+  "checked_at": "2026-11-16T06:44:53.701Z",
+  "kind": "OFFLINE_ONLY",
+  "paid_calls": 0,
+  "native_tasks_attempted": 0,
+  "checks": [
+    {
+      "name": "Frozen catalog integrity",
+      "status": "PASS",
+      "detail": {
+        "tasks": 100,
+        "distribution": {
+          "1": 10,
+          "2": 20,
+          "3": 30,
+          "4": 25,
+          "5": 15
+        },
+        "sha256": "f31a4bfa90d3d2fbf89b7f543f072552c6719366fd0e819003eb5811f052bde1"
+      }
+    },
+    {
+      "name": "Application source freeze",
+      "status": "PASS",
+      "detail": "7d64a988fc1b1e27433aa96c90b743c6336baea5"
+    },
+    {
+      "name": "Paid execution disabled",
+      "status": "PASS",
+      "detail": "No approval or API key is loaded by this preflight"
+    },
+    {
+      "name": "Fresh database migration and pinned WSGI health",
+      "status": "PASS",
+      "detail": {
+        "service": "medevidence",
+        "version": "3.0.0",
+        "status": "ok",
+        "port": "18493",
+        "generation_configured": false
+      }
+    },
+    {
+      "name": "Disclosed fixture authentication",
+      "status": "PASS",
+      "detail": "Server-side session setup works; login UI not benchmarked"
+    },
+    {
+      "name": "Independent owner-scoped oracle probe",
+      "status": "PASS",
+      "detail": {
+        "http_status": 404,
+        "kind": "offline API probe, not native task result"
+      }
+    },
+    {
+      "name": "CSRF enforced for fixture session",
+      "status": "PASS",
+      "detail": "Unsigned mutation rejected; no task credited"
+    },
+    {
+      "name": "Synthetic fixture and read-only oracle",
+      "status": "PASS",
+      "detail": "4 synthetic threads, 2 labelled synthetic sources; oracle excludes users/sessions/password hashes"
+    },
+    {
+      "name": "Desktop browser readiness",
+      "status": "PASS",
+      "detail": {
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "page_errors": [],
+        "screenshot": "desktop-home.png"
+      }
+    },
+    {
+      "name": "Mobile screenshot capture",
+      "status": "PASS",
+      "detail": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "screenshot": "mobile-home.png",
+        "note": "Capture/readability check, not full mobile workflow verdict"
+      }
+    },
+    {
+      "name": "Browser egress guard",
+      "status": "PASS",
+      "detail": "Non-loopback request aborted"
+    },
+    {
+      "name": "Task isolation and empty fixture",
+      "status": "PASS",
+      "detail": "Second DB has no conversations; first DB is not reset or reused"
+    }
+  ],
+  "fixture_readiness": [
+    {
+      "id": "ME-001",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-002",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-003",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-004",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-005",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-006",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-007",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-008",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-009",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-010",
+      "difficulty": 1,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-011",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-012",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-013",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-014",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-015",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-016",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-017",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-018",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-019",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-020",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-021",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-022",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-023",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-024",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-025",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-026",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-027",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-028",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-029",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-030",
+      "difficulty": 2,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-031",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-032",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-033",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-034",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-035",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-036",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-037",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-038",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-039",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-040",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-041",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-042",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-043",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-044",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-045",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-046",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-047",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-048",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-049",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-050",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-051",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-052",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-053",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-054",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-055",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-056",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "M",
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: M,P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-057",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-058",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-059",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-060",
+      "difficulty": 3,
+      "fixture_requirements": [
+        "N"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-061",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "U"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-062",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "U"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-063",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "U"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: U needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-064",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C",
+        "U"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,U needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-065",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C",
+        "U"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,U needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-066",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "U"
+      ],
+      "ready": true
+    },
+    {
+      "id": "ME-067",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-068",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-069",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-070",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-071",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-072",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-073",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-074",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C",
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-075",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-076",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-077",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-078",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-079",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-080",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-081",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "C"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-082",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-083",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-084",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "U",
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: U,P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-085",
+      "difficulty": 4,
+      "fixture_requirements": [
+        "L"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: L needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-086",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-087",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-088",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-089",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-090",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-091",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "C",
+        "U"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,U needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-092",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "C",
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-093",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "C",
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-094",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-095",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-096",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-097",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "M",
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: M,P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-098",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "C",
+        "P"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: C,P needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-099",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "L",
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: L,P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    },
+    {
+      "id": "ME-100",
+      "difficulty": 5,
+      "fixture_requirements": [
+        "P",
+        "G"
+      ],
+      "ready": false,
+      "reason": "Prepaid prerequisite gate: P,G needs a reviewed live PubMed, no-paid application model, controlled fault or legacy adapter. No substitute success fixture is allowed."
+    }
+  ]
+}

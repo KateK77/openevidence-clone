@@ -1,0 +1,25 @@
+{
+  "prior_freeze": {
+    "catalog_version": "1.0.0",
+    "application_commit": "7d64a988fc1b1e27433aa96c90b743c6336baea5",
+    "base_branch": "v3-round-03",
+    "specification": "experiments/round-03/consolidated-prompt.md",
+    "specification_sha256": "c6a3e7231df7550c1ef52f95b12650de0ef00f52634c62ca3c456c2570d14a6d",
+    "tasks_sha256": "36c1df6cb25f68119422a370cda7db773676a2d1634fe97005769f2b0b1e35ad",
+    "task_markdown_sha256": "8822efd2bc0753071b3c7837aaea7dc455a4c3cda2edbec80178db6bb52ef6b2",
+    "difficulty_distribution": {
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 25,
+      "5": 15
+    },
+    "designed_before_implementation_inspection": true,
+    "paid_execution_started": false
+  },
+  "new_catalog_version": "1.0.1",
+  "change": "Initial-state clarification only; login anonymous, logout authenticated, new-account journey starts anonymous; fixtures explicitly labelled.",
+  "paid_calls_before_change": 0,
+  "native_results_seen": false,
+  "goals_difficulty_and_assertions_changed": false
+}

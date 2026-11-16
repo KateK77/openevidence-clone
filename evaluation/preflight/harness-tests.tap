@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: Exactly 100 frozen tasks and required distribution
+ok 1 - Exactly 100 frozen tasks and required distribution
+  ---
+  duration_ms: 19.6084
+  type: 'test'
+  ...
+# Subtest: Five levels have monotonically increasing request/action caps
+ok 2 - Five levels have monotonically increasing request/action caps
+  ---
+  duration_ms: 1.1511
+  type: 'test'
+  ...
+# Subtest: Missing approval and wrong hashes block
+ok 3 - Missing approval and wrong hashes block
+  ---
+  duration_ms: 0.4155
+  type: 'test'
+  ...
+# Subtest: Non-loopback and privileged URLs blocked
+ok 4 - Non-loopback and privileged URLs blocked
+  ---
+  duration_ms: 0.3055
+  type: 'test'
+  ...
+# Subtest: Coordinates and scripting payloads rejected before browser execution
+ok 5 - Coordinates and scripting payloads rejected before browser execution
+  ---
+  duration_ms: 2.1983
+  type: 'test'
+  ...
+# Subtest: Action adapter executes only supplied native actions
+ok 6 - Action adapter executes only supplied native actions
+  ---
+  duration_ms: 1.2383
+  type: 'test'
+  ...
+# Subtest: Typed secrets redacted in public trace
+ok 7 - Typed secrets redacted in public trace
+  ---
+  duration_ms: 0.3494
+  type: 'test'
+  ...
+# Subtest: Native call IDs must match screenshot outputs
+ok 8 - Native call IDs must match screenshot outputs
+  ---
+  duration_ms: 0.4905
+  type: 'test'
+  ...
+# Subtest: Token accounting handles cache without promising it
+ok 9 - Token accounting handles cache without promising it
+  ---
+  duration_ms: 0.6319
+  type: 'test'
+  ...
+# Subtest: Project ledger persists spend across runs and rejects >$5
+ok 10 - Project ledger persists spend across runs and rejects >$5
+  ---
+  duration_ms: 29.1703
+  type: 'test'
+  ...
+# Subtest: Uncertain charge halts future paid work
+ok 11 - Uncertain charge halts future paid work
+  ---
+  duration_ms: 9.667
+  type: 'test'
+  ...
+# Subtest: Concurrent project execution cannot acquire the same lock
+ok 12 - Concurrent project execution cannot acquire the same lock
+  ---
+  duration_ms: 7.026
+  type: 'test'
+  ...
+# Subtest: Explicit address-bar actions navigate only to model-chosen allowed URLs
+ok 13 - Explicit address-bar actions navigate only to model-chosen allowed URLs
+  ---
+  duration_ms: 2.0965
+  type: 'test'
+  ...
+# Subtest: Independent reviewer cannot turn unverified assertions into PASS
+ok 14 - Independent reviewer cannot turn unverified assertions into PASS
+  ---
+  duration_ms: 0.6045
+  type: 'test'
+  ...
+# Subtest: Independent reviewer detects modified evidence
+ok 15 - Independent reviewer detects modified evidence
+  ---
+  duration_ms: 5.5836
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 294.8065

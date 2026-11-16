@@ -6,6 +6,22 @@ An independent biomedical literature workspace with live PubMed retrieval, optio
 
 Version 3 addresses Round 2 manual feedback with Gemini configuration, explicit language availability, audited answer revisions and clearer retrieval provenance. Reports and repository documentation are in English. The original requirements and first version remain available in the experiment history and the **v0.1.0-r1** tag.
 
+## Native CUA benchmark preparation
+
+[MedEvidence Native CUA Benchmark](evaluation/README.md): 100 frozen tasks with
+Levels 1–5 distributed 10/20/30/25/15. Planned actor: GPT-5.4 through the OpenAI
+Responses native computer tool. **No paid execution has occurred; all 100 are
+NOT_RUN and no native success rate is claimed.** The $5 project cap remains in
+force; the unchanged full suite is estimated at $13.30 centrally and awaits a
+separate scope/approval decision. The preparation report explicitly lists the
+remaining fixture gates.
+
+[Test cases](evaluation/catalog-v1/TASKS.md) ·
+[Per-task results](evaluation/RESULTS.md) · [CSV](evaluation/results.csv) ·
+[Screenshots](evaluation/screenshots/README.md) · [Action traces](evaluation/logs/README.md) ·
+[Methodology](evaluation/METHODOLOGY.md) · [Evidence manifest](evaluation/EVIDENCE_MANIFEST.json) ·
+[Budget](evaluation/BUDGET.md) · [Separate offline checks](evaluation/OFFLINE_READINESS.md).
+
 ## Public test website
 
 [Open MedEvidence AI 3.0](https://medevidence-ai-v3.onrender.com).

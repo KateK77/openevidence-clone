@@ -1,0 +1,19 @@
+{
+  "catalog_version": "1.0.1",
+  "application_commit": "7d64a988fc1b1e27433aa96c90b743c6336baea5",
+  "base_branch": "v3-round-03",
+  "specification": "experiments/round-03/consolidated-prompt.md",
+  "specification_sha256": "c6a3e7231df7550c1ef52f95b12650de0ef00f52634c62ca3c456c2570d14a6d",
+  "tasks_sha256": "f31a4bfa90d3d2fbf89b7f543f072552c6719366fd0e819003eb5811f052bde1",
+  "task_markdown_sha256": "3e9de80955b69659b146767274aa138166d97d56b84230159f3c5b91076184e6",
+  "difficulty_distribution": {
+    "1": 10,
+    "2": 20,
+    "3": 30,
+    "4": 25,
+    "5": 15
+  },
+  "designed_before_implementation_inspection": true,
+  "paid_execution_started": false,
+  "authoring_correction": "Clarified login/logout initial state and prospective researcher role before any benchmark execution; no goals, levels or assertions changed."
+}
