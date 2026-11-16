@@ -1,0 +1,20 @@
+FROM node:24-alpine AS frontend
+WORKDIR /build
+COPY frontend/package*.json ./
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build
+
+FROM python:3.12-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 FRONTEND_DIST=/app/frontend
+WORKDIR /app
+COPY backend/requirements.txt ./backend-requirements.txt
+COPY deploy/requirements.txt ./deploy-requirements.txt
+RUN pip install --no-cache-dir -r backend-requirements.txt -r deploy-requirements.txt 'whitenoise>=6.12,<7'
+COPY backend /app/backend
+COPY deploy/hosted_start.py /app/hosted_start.py
+COPY --from=frontend /build/dist /app/frontend
+RUN useradd --create-home researcher
+USER researcher
+WORKDIR /app/backend
+CMD ["python", "/app/hosted_start.py"]

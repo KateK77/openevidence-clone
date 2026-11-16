@@ -33,3 +33,5 @@ jobs:
       - run: docker build -f deploy/Dockerfile.api -t medevidence-v3-api:test .
       - run: docker build -f deploy/Dockerfile.web -t medevidence-v3-web:test .
       - run: python scripts/deployment_smoke.py
+      - run: docker build -f deploy/Dockerfile.hosted -t medevidence-v3-hosted:test .
+      - run: python scripts/hosted_smoke.py

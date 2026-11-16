@@ -186,6 +186,7 @@ Set a locally chosen **DEMO_PASSWORD** of at least 12 characters, then run **pyt
 - [Round 3 feedback](experiments/round-03/feedback.md)
 - [Round 3 verification report](experiments/round-03/results.md)
 - [Long-running deployment](docs/deployment.md)
+- [Free public test hosting](docs/free-hosting.md)
 - [Round 2 release and verification report](experiments/round-02/results.md)
 - [Round 2 illustrated report](experiments/round-02/report.html)
 - [Round 1 original requirements](experiments/round-01/description.md)
