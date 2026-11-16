@@ -6,6 +6,7 @@ export type User = {
 export type Session = {
     user: User | null;
     csrf: string;
+    public_demo?: boolean;
     model?: string;
     generation_configured?: boolean;
     synthesis?: SynthesisCapability;

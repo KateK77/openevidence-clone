@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "scope": "Local single-service hosting image; no public deployment",
+  "checks": [
+    "Automatic PostgreSQL migration and Gunicorn startup",
+    "Built SPA home and deep links served on the API origin",
+    "Compiled JavaScript served with static security headers",
+    "Missing API routes and assets remain 404 responses",
+    "Opt-in synthetic seeding is idempotent and nonprivileged",
+    "Six concurrent PostgreSQL quota reservations admit exactly two calls"
+  ]
+}

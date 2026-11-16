@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="9" failures="0" errors="0" time="0.5664057">
+    <testsuite name="src/api.test.tsx" timestamp="2026-11-16T08:25:44.220Z" hostname="Happy" tests="1" failures="0" errors="0" skipped="0" time="0.0077294">
+        <testcase classname="src/api.test.tsx" name="discards a private response that completes after an account boundary" time="0.0059524">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/composer.test.tsx" timestamp="2026-11-16T08:25:44.226Z" hostname="Happy" tests="6" failures="0" errors="0" skipped="0" time="0.2561596">
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; submits with Enter and leaves Shift+Enter and composition available" time="0.1776533">
+        </testcase>
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; blocks submission when pending or invalid" time="0.0246367">
+        </testcase>
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; accepts short medical query pain" time="0.0120789">
+        </testcase>
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; accepts short medical query 糖尿病" time="0.0115392">
+        </testcase>
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; accepts short medical query 高血压" time="0.0136688">
+        </testcase>
+        <testcase classname="src/composer.test.tsx" name="Composer &gt; accepts short medical query 肥胖" time="0.0145655">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/save-form.test.tsx" timestamp="2026-11-16T08:25:44.231Z" hostname="Happy" tests="2" failures="0" errors="0" skipped="0" time="0.3025167">
+        <testcase classname="src/save-form.test.tsx" name="disables duplicates, confirms success, and re-enables on edits" time="0.240739">
+        </testcase>
+        <testcase classname="src/save-form.test.tsx" name="keeps edits and permits retry after a failed save" time="0.05919">
+        </testcase>
+    </testsuite>
+</testsuites>

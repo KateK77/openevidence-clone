@@ -1496,3 +1496,5 @@ blockquote {
 .provenance h3 { margin-top:22px; font-size:16px; }
 .provenance li { overflow-wrap:anywhere; margin:10px 0; }
 .error-text { color:#92392d; }
+
+.demo-notice{padding:12px 24px;background:#fff8e9;color:#574c37;font-size:13px;line-height:1.6;border-bottom:1px solid #ede1ca}.demo-notice a{font-weight:600;text-decoration:underline}

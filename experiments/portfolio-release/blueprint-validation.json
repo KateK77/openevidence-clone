@@ -1,0 +1,6 @@
+{
+  "result": "pass",
+  "method": "Official Render JSON Schema; not Render CLI/platform validation",
+  "schema_url": "https://render.com/schema/render.yaml.json",
+  "cli_available": false
+}

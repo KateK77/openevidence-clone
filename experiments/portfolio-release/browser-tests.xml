@@ -1,0 +1,46 @@
+<testsuites id="" name="" tests="20" failures="0" skipped="0" errors="0" time="20.137832">
+<testsuite name="workspace.spec.ts" timestamp="2026-11-16T08:26:49.126Z" hostname="desktop" tests="10" failures="0" skipped="0" time="13.375" errors="0">
+<testcase name="research, evidence, saved feedback and responsive navigation" classname="workspace.spec.ts" time="2.546">
+</testcase>
+<testcase name="short Chinese and English questions are submitted" classname="workspace.spec.ts" time="1.395">
+</testcase>
+<testcase name="settings save is visible, durable, blocks repeats and allows retry" classname="workspace.spec.ts" time="1.291">
+</testcase>
+<testcase name="publication and collection save feedback persists" classname="workspace.spec.ts" time="1.535">
+</testcase>
+<testcase name="saved search can be reopened" classname="workspace.spec.ts" time="1.309">
+</testcase>
+<testcase name="logout immediately removes identity and protects saved data after reload" classname="workspace.spec.ts" time="1.2">
+</testcase>
+<testcase name="small viewport drawer can reach Profile and close with Escape" classname="workspace.spec.ts" time="0.917">
+</testcase>
+<testcase name="Chinese preference clearly explains missing AI rather than promising a Chinese answer" classname="workspace.spec.ts" time="1.29">
+</testcase>
+<testcase name="configured connection check exposes quota errors and allows an explicit retry" classname="workspace.spec.ts" time="0.836">
+</testcase>
+<testcase name="new Chinese generation retains original and exposes claim excerpts and actual queries" classname="workspace.spec.ts" time="1.056">
+</testcase>
+</testsuite>
+<testsuite name="workspace.spec.ts" timestamp="2026-11-16T08:26:49.126Z" hostname="mobile" tests="10" failures="0" skipped="0" time="13.219" errors="0">
+<testcase name="research, evidence, saved feedback and responsive navigation" classname="workspace.spec.ts" time="2.415">
+</testcase>
+<testcase name="short Chinese and English questions are submitted" classname="workspace.spec.ts" time="1.295">
+</testcase>
+<testcase name="settings save is visible, durable, blocks repeats and allows retry" classname="workspace.spec.ts" time="1.304">
+</testcase>
+<testcase name="publication and collection save feedback persists" classname="workspace.spec.ts" time="1.559">
+</testcase>
+<testcase name="saved search can be reopened" classname="workspace.spec.ts" time="1.437">
+</testcase>
+<testcase name="logout immediately removes identity and protects saved data after reload" classname="workspace.spec.ts" time="1.194">
+</testcase>
+<testcase name="small viewport drawer can reach Profile and close with Escape" classname="workspace.spec.ts" time="0.908">
+</testcase>
+<testcase name="Chinese preference clearly explains missing AI rather than promising a Chinese answer" classname="workspace.spec.ts" time="1.329">
+</testcase>
+<testcase name="configured connection check exposes quota errors and allows an explicit retry" classname="workspace.spec.ts" time="0.739">
+</testcase>
+<testcase name="new Chinese generation retains original and exposes claim excerpts and actual queries" classname="workspace.spec.ts" time="1.039">
+</testcase>
+</testsuite>
+</testsuites>

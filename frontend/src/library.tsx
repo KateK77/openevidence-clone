@@ -77,8 +77,9 @@ function PublicationCard({ article, savedOnly, stored, ready }: {
     {savedOnly && <div className="collection"><SaveForm initial={{ collection: article.collection || '' }} label="Update collection" submit={body => change.mutateAsync({ collection: String(body.collection) })}><label>Collection<input name="collection" placeholder="e.g. Metabolic health" maxLength={80} defaultValue={article.collection}/></label></SaveForm></div>}
   </article>;
 }
-export function Profile({ user }: {
+export function Profile({ user, protectedDemo = false }: {
     user: User;
+    protectedDemo?: boolean;
 }) {
     const client = useQueryClient();
     const navigate = useNavigate();
@@ -96,7 +97,7 @@ export function Profile({ user }: {
             navigate('/profile');
         } });
     return <Page title="Your profile" eyebrow="ACCOUNT"><p className="page-intro">Manage your research identity.</p><div className="panel account-panel"><div className="identity"><span className="avatar">{user.username.slice(0, 1).toUpperCase()}</span><div><strong>{user.username}</strong><small>Research account</small></div></div>
-    <SaveForm initial={{ first_name: user.first_name, last_name: user.last_name }} label="Save profile" submit={async (body) => { const result = await api<User>('profile/', 'PATCH', body); client.setQueryData<Session>(['session'], old => old && ({ ...old, user: result })); }}><label>First name<input name="first_name" defaultValue={user.first_name} maxLength={150}/></label><label>Last name<input name="last_name" defaultValue={user.last_name} maxLength={150}/></label></SaveForm>
+    {protectedDemo ? <p className="notice">Shared demo profiles and credentials are protected. Create your own synthetic account to edit your profile.</p> : <SaveForm initial={{ first_name: user.first_name, last_name: user.last_name }} label="Save profile" submit={async (body) => { const result = await api<User>('profile/', 'PATCH', body); client.setQueryData<Session>(['session'], old => old && ({ ...old, user: result })); }}><label>First name<input name="first_name" defaultValue={user.first_name} maxLength={150}/></label><label>Last name<input name="last_name" defaultValue={user.last_name} maxLength={150}/></label></SaveForm>}
   </div><div className="panel account-panel"><h2>Session</h2><p className="muted">Sign out of this browser. Your saved research stays in your account.</p><button disabled={logout.isPending} onClick={() => logout.mutate()}>{logout.isPending ? 'Signing out…' : 'Sign out'}</button><Problem error={logout.error}/></div></Page>;
 }
 export function Settings({ model, configured }: {

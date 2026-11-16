@@ -8,6 +8,7 @@ import time
 import requests
 from django.conf import settings
 from django.core.cache import cache
+from django.db import DatabaseError, transaction
 from django.utils import timezone
 
 
@@ -23,6 +24,8 @@ def configuration():
     valid_url = (url.scheme == 'https' or (url.scheme == 'http' and local)) and bool(url.hostname)
     valid_url = valid_url and not (url.username or url.password or url.query or url.fragment)
     missing = []
+    if settings.PUBLIC_DEMO and not settings.PUBLIC_DEMO_LIVE_AI:
+        missing.append('public_demo_ai_disabled')
     if not settings.LLM_MODEL.strip():
         missing.append('model')
     if not settings.LLM_API_KEY.strip() and not (local and settings.LLM_PROVIDER == 'ollama'):
@@ -70,15 +73,20 @@ def complete_json(system, payload):
             count = 1
     if count > settings.LLM_CALLS_PER_MINUTE:
         raise ModelError('quota', 'The shared application model-call limit was reached. Wait one minute and retry. Sources remain available.')
+    body = {'model': settings.LLM_MODEL, 'response_format': {'type': 'json_object'},
+            'max_tokens': min(settings.LLM_MAX_OUTPUT_TOKENS, 6000) if settings.PUBLIC_DEMO else settings.LLM_MAX_OUTPUT_TOKENS,
+            'messages': [{'role': 'system', 'content': system},
+                         {'role': 'user', 'content': json.dumps(payload, ensure_ascii=False)}]}
+    if settings.PUBLIC_DEMO:
+        if len(json.dumps(body, ensure_ascii=False).encode('utf-8')) > 100000:
+            raise ModelError('input_limit', 'This research request exceeds the public demo input allowance. Use a shorter question.')
+        reserve_demo_call()
     headers = {'Accept': 'application/json'}
     if settings.LLM_API_KEY:
         headers['Authorization'] = f'Bearer {settings.LLM_API_KEY}'
     try:
         response = requests.post(settings.LLM_BASE_URL + '/chat/completions', headers=headers,
-            json={'model': settings.LLM_MODEL, 'response_format': {'type': 'json_object'},
-                  'max_tokens': settings.LLM_MAX_OUTPUT_TOKENS,
-                  'messages': [{'role': 'system', 'content': system},
-                               {'role': 'user', 'content': json.dumps(payload, ensure_ascii=False)}]},
+            json=body,
             timeout=(5, settings.LLM_TIMEOUT_SECONDS), allow_redirects=False)
         if response.status_code in (401, 403):
             raise ModelError('authentication', 'The model service rejected the credential or model access. Check the server configuration.')
@@ -99,6 +107,26 @@ def complete_json(system, payload):
         raise ModelError('timeout', 'The model request timed out. Your retrieved sources remain available.') from None
     except (requests.RequestException, KeyError, IndexError, TypeError, ValueError):
         raise ModelError('invalid_response', 'The model service returned an unreadable response or could not be reached.') from None
+
+
+def reserve_demo_call():
+    """Commit a reservation before HTTP. PostgreSQL row locking spans all workers."""
+    from .models import ModelCallBudget
+    try:
+        with transaction.atomic():
+            today = timezone.now().date()
+            ModelCallBudget.objects.get_or_create(key='public-demo', defaults={'day': today})
+            budget = ModelCallBudget.objects.select_for_update().get(key='public-demo')
+            if budget.day != today:
+                budget.day, budget.daily_calls = today, 0
+            if (budget.daily_calls >= settings.PUBLIC_DEMO_DAILY_CALLS or
+                    budget.total_calls >= settings.PUBLIC_DEMO_TOTAL_CALLS):
+                raise ModelError('quota', 'The shared public demo AI allowance is exhausted. Literature search and saved research remain available. Contact the operator for availability.')
+            budget.daily_calls += 1
+            budget.total_calls += 1
+            budget.save()
+    except DatabaseError:
+        raise ModelError('quota', 'The public demo allowance could not be reserved. No model request was sent.') from None
 
 
 def check_connection():

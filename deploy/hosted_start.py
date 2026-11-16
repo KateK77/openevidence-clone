@@ -19,5 +19,7 @@ port = int(os.environ.get('PORT', '10000'))
 if not 1 <= port <= 65535:
     raise RuntimeError('Invalid server port.')
 subprocess.run(['python', 'manage.py', 'migrate', '--noinput'], check=True, timeout=180)
+if os.environ.get('PUBLIC_DEMO') == '1':
+    subprocess.run(['python', 'manage.py', 'seed_public_demo'], check=True, timeout=60)
 os.execvp('gunicorn', ['gunicorn', 'evidence.hosted_wsgi:application', '--bind', f'0.0.0.0:{port}',
                      '--workers', '1', '--threads', '4', '--timeout', '300', '--access-logfile', '-'])

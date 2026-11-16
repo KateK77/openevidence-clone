@@ -67,6 +67,12 @@ LLM_PROVIDER = os.getenv('LLM_PROVIDER', 'compatible')
 LLM_TIMEOUT_SECONDS = max(10, min(120, int(os.getenv('LLM_TIMEOUT_SECONDS', '60'))))
 LLM_MAX_OUTPUT_TOKENS = max(512, min(16000, int(os.getenv('LLM_MAX_OUTPUT_TOKENS', '6000'))))
 LLM_CALLS_PER_MINUTE = max(1, min(1000, int(os.getenv('LLM_CALLS_PER_MINUTE', '12'))))
+# Explicit public showcase mode. Credentials remain server-side and AI is opt-in.
+PUBLIC_DEMO = os.getenv('PUBLIC_DEMO', '0') == '1'
+PUBLIC_DEMO_LIVE_AI = os.getenv('PUBLIC_DEMO_LIVE_AI', '0') == '1'
+PUBLIC_DEMO_DAILY_CALLS = max(0, min(100, int(os.getenv('PUBLIC_DEMO_DAILY_CALLS', '30'))))
+PUBLIC_DEMO_TOTAL_CALLS = max(0, min(1000, int(os.getenv('PUBLIC_DEMO_TOTAL_CALLS', '200'))))
+PUBLIC_DEMO_USERS = ('portfolio_researcher', 'portfolio_reader')
 if cache_url := os.getenv('REDIS_URL'):
     CACHES = {'default': {'BACKEND': 'django.core.cache.backends.redis.RedisCache', 'LOCATION': cache_url}}
 if os.getenv('TRUST_PROXY_HTTPS') == '1':

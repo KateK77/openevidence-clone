@@ -9,6 +9,14 @@ class Preferences(models.Model):
     display = models.CharField(max_length=20, default='Comfortable')
 
 
+class ModelCallBudget(models.Model):
+    """Durable global demo allowance; attempted calls count even on provider errors."""
+    key = models.CharField(max_length=40, primary_key=True)
+    day = models.DateField()
+    daily_calls = models.PositiveIntegerField(default=0)
+    total_calls = models.PositiveIntegerField(default=0)
+
+
 class Conversation(models.Model):
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=180)

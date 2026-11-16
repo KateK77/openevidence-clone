@@ -1,0 +1,30 @@
+# Reproducible NEW demo deployment. Existing service is managed through Render settings.
+# Supply an existing persistent PostgreSQL URL (Neon Free is used by the live demo).
+services:
+  - type: web
+    name: medevidence-portfolio-demo
+    runtime: docker
+    plan: free
+    region: ohio
+    branch: main
+    dockerfilePath: ./deploy/Dockerfile.hosted
+    dockerContext: .
+    healthCheckPath: /api/health/
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: PUBLIC_DEMO
+        value: '1'
+      - key: PUBLIC_DEMO_LIVE_AI
+        value: '0'
+      - key: PUBLIC_DEMO_DAILY_CALLS
+        value: '30'
+      - key: PUBLIC_DEMO_TOTAL_CALLS
+        value: '200'
+      - key: LLM_CALLS_PER_MINUTE
+        value: '6'
+      - key: LLM_MAX_OUTPUT_TOKENS
+        value: '3000'

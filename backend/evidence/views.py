@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError as DjangoValidationError
-from django.db import IntegrityError, transaction
+from django.db import IntegrityError, transaction, connection, DatabaseError
 from django.http import Http404
 from django.middleware.csrf import get_token
 from django.shortcuts import get_object_or_404
@@ -51,7 +51,13 @@ def validated(serializer, data, **kwargs):
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def health(request):
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute('SELECT 1')
+    except DatabaseError:
+        return Response({'service': 'medevidence', 'status': 'unavailable'}, status=503)
     return Response({'service': 'medevidence', 'version': '3.0.0', 'status': 'ok', 'port': request.META.get('SERVER_PORT'),
+                     'database': connection.vendor,
                      'generation_configured': llm.configuration()['configured']})
 
 
@@ -61,6 +67,7 @@ def health(request):
 @permission_classes([AllowAny])
 def session(request):
     return Response({'user': s.Profile(request.user).data if request.user.is_authenticated else None,
+                     'public_demo': settings.PUBLIC_DEMO,
                      'csrf': get_token(request), 'model': settings.LLM_MODEL,
                      'generation_configured': llm.configuration()['configured'], 'synthesis': llm.capability()})
 
@@ -120,6 +127,9 @@ def sign_out(request):
 @extend_schema(request=s.Profile, responses=s.Profile)
 @api_view(['GET', 'PATCH'])
 def profile(request):
+    if (settings.PUBLIC_DEMO and request.user.username in settings.PUBLIC_DEMO_USERS
+            and request.method == 'PATCH'):
+        return Response({'detail': 'Shared demo profiles and credentials are protected. Create your own synthetic account to edit a profile.'}, status=403)
     serializer = s.Profile(request.user, data=request.data, partial=True)
     if request.method == 'PATCH':
         serializer.is_valid(raise_exception=True)

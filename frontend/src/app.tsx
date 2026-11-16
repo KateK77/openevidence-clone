@@ -79,9 +79,10 @@ export function App() {
     <main inert={open}>
       <header className="topbar"><button ref={menu} className="menu" aria-label="Open menu" aria-expanded={open} onClick={() => setOpen(true)}><Menu size={22}/></button><span className="breadcrumb">Workspace <span>/</span> {navigation.find(n => n[0] === location.pathname)?.[1] || 'Research'}</span><Link className="account" to="/profile"><UserRound size={17}/><span>{user?.username || 'Sign in'}</span></Link></header>
       <div className="disclaimer"><ShieldCheck size={15}/><span>Research demonstration — not for clinical use.</span></div>
+      {session.data?.public_demo && <div className="demo-notice">Public portfolio demo: use synthetic information only. Shared accounts are visible to other visitors. <a href="https://github.com/KateK77/openevidence-clone#demo-accounts" target="_blank" rel="noreferrer">Demo accounts &amp; usage limits</a></div>}
       <div id="content" tabIndex={-1}><Problem error={session.error}/><Routes>
         <Route path="/" element={<Home user={user} configured={session.data?.generation_configured}/>}/>
-        <Route path="/profile" element={user ? <Profile key={user.username} user={user}/> : <Auth ready={!!session.data}/>}/>
+        <Route path="/profile" element={user ? <Profile key={user.username} user={user} protectedDemo={!!session.data?.public_demo && ['portfolio_researcher', 'portfolio_reader'].includes(user.username)}/> : <Auth ready={!!session.data}/>}/>
         <Route path="/history" element={protectedPage(<HistoryPage />)}/><Route path="/saved" element={protectedPage(<Saved />)}/>
         <Route path="/library" element={protectedPage(<Library key="search"/>)}/><Route path="/publications" element={protectedPage(<Library key="saved" savedOnly/>)}/>
         <Route path="/settings" element={protectedPage(<Settings model={session.data?.model} configured={session.data?.generation_configured}/>)}/>
