@@ -1,0 +1,21 @@
+✔ approval absent fails closed (1.3628ms)
+✔ wrong frozen suite/config rejected (0.1161ms)
+✔ ceiling cannot exceed five dollars (0.0833ms)
+✔ unknown tool fees block paid execution (0.0884ms)
+✔ unknown prior charge stops every further call (0.0964ms)
+✔ reserve prevents crossing remaining budget (0.0788ms)
+✔ full output and fee reserve included (0.1074ms)
+✔ cache and reasoning accounted without double counting (0.1528ms)
+✔ missing usage rejected rather than treated as free (0.1103ms)
+✔ text transcript retained, only latest image sent (1.114ms)
+✔ native executor never turns unsupported action into JS (0.7188ms)
+✔ off-screen coordinates refused (0.2204ms)
+✔ budget order includes every difficulty in every ten tasks (0.4751ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 93.2703

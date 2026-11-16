@@ -1,0 +1,17 @@
+{
+  "application_commit": "7d64a988fc1b1e27433aa96c90b743c6336baea5",
+  "files": {
+    "FINAL_DESCRIPTION.md": "c6a3e7231df7550c1ef52f95b12650de0ef00f52634c62ca3c456c2570d14a6d",
+    "requirements.json": "fb7b81fa6e46ae4e844b09d7809ac2bb264aed84371122a583e0565aac239546",
+    "final_test_cases_100.json": "94e86316d7251963c6f7e7a4b691a642bafe72e419483800f67d3667df84b043",
+    "FINAL_TEST_CASES.md": "210ca91a6cba1032860a87b9e8482af0b8a6127b30af0a5636efc86962f310bc",
+    "FIXTURES.md": "273a4ed3f71af8b5fda5b93013ff35e977783cbbf9ffa9a2bf04db6705541e8d"
+  },
+  "distribution": {
+    "Easy": 30,
+    "Medium": 40,
+    "Hard": 20,
+    "Expert": 10
+  },
+  "no_paid_execution": true
+}

@@ -1,0 +1,11 @@
+{
+  "approved": false,
+  "approved_at": null,
+  "user_statement": "REQUIRES A NEW EXPLICIT USER APPROVAL; THIS EXAMPLE DOES NOT AUTHORIZE SPENDING",
+  "budget_usd": 3,
+  "model": "gpt-5.4-2026-03-05",
+  "suite_sha256": "COPY_FROM_FREEZE_AFTER_APPROVAL",
+  "config_sha256": "HASH_REVIEWED_CONFIG_AFTER_APPROVAL",
+  "tool_pricing_confirmed": false,
+  "computer_call_usd": null
+}

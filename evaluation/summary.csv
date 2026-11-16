@@ -1,0 +1,101 @@
+id,difficulty,category,status,reason,requests,actions,input_tokens,output_tokens,estimated_cost_usd
+T001,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T002,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T003,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T004,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T005,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T006,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T007,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T008,Easy,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T009,Easy,Question validation and short/Chinese input,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T010,Easy,Question validation and short/Chinese input,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T011,Easy,Question validation and short/Chinese input,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T012,Easy,Question validation and short/Chinese input,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T013,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T014,Easy,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T015,Easy,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T016,Easy,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T017,Easy,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T018,Easy,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T019,Easy,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T020,Easy,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T021,Easy,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T022,Easy,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T023,Easy,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T024,Easy,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T025,Easy,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T026,Easy,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T027,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T028,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T029,Easy,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T030,Easy,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T031,Medium,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T032,Medium,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T033,Medium,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T034,Medium,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T035,Medium,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T036,Medium,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T037,Medium,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T038,Medium,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T039,Medium,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T040,Medium,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T041,Medium,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T042,Medium,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T043,Medium,Evidence library and save feedback,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T044,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T045,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T046,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T047,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T048,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T049,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T050,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T051,Medium,Literature filtering and sorting,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T052,Medium,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T053,Medium,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T054,Medium,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T055,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T056,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T057,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T058,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T059,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T060,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T061,Medium,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T062,Medium,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T063,Medium,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T064,Medium,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T065,Medium,Auditable provenance,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T066,Medium,Evidence-grounded AI and detail page,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T067,Medium,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T068,Medium,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T069,Medium,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T070,Medium,Evidence-grounded AI and detail page,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T071,Hard,Evidence-grounded AI and detail page,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T072,Hard,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T073,Hard,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T074,Hard,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T075,Hard,"Security, untrusted inputs, rate limits",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T076,Hard,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T077,Hard,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T078,Hard,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T079,Hard,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T080,Hard,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T081,Hard,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T082,Hard,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T083,Hard,"Configuration, readiness and failures",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T084,Hard,"Real literature, metadata and retrieval",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T085,Hard,"Security, untrusted inputs, rate limits",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T086,Hard,"Security, untrusted inputs, rate limits",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T087,Hard,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T088,Hard,Auditable provenance,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T089,Hard,"Security, untrusted inputs, rate limits",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T090,Hard,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T091,Expert,Evidence-grounded AI and detail page,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T092,Expert,"Accounts, sessions and ownership",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T093,Expert,Preferences and regenerated answers,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T094,Expert,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T095,Expert,Citation and claim verification,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T096,Expert,Public persistence and research-only identity,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T097,Expert,Navigation and accessibility,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T098,Expert,"Security, untrusted inputs, rate limits",NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T099,Expert,Answer saves and exports,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0
+T100,Expert,Context and conversation history,NOT_RUN,Paid native CUA execution has not been approved.,0,0,0,0,0

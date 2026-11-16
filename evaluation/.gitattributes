@@ -1,0 +1,7 @@
+* text eol=lf
+FINAL_DESCRIPTION.md -text
+final_test_cases_100.json -text
+FINAL_TEST_CASES.md -text
+requirements.json -text
+FIXTURES.md -text
+screenshots/*.png binary

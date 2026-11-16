@@ -1,0 +1,2576 @@
+{
+  "specification": "FINAL_DESCRIPTION.md",
+  "tests": [
+    {
+      "id": "T001",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Research identity",
+      "task": "Research identity: Open home; inspect introduction and disclaimer.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open home",
+        "inspect introduction and disclaimer"
+      ],
+      "expected_result": "Original identity and research-only disclaimer are visible; no clinical-use or regulatory guarantee.",
+      "pass_fail_criteria": [
+        "Original identity and research-only disclaimer are visible",
+        "no clinical-use or regulatory guarantee"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T002",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Primary navigation",
+      "task": "Primary navigation: Sign in as A; visit Ask, History, Saved Answers, Evidence Library, Settings and Profile.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in as A",
+        "visit Ask, History, Saved Answers, Evidence Library, Settings and Profile"
+      ],
+      "expected_result": "Each required destination is reachable with a meaningful heading and no fatal page error.",
+      "pass_fail_criteria": [
+        "Each required destination is reachable with a meaningful heading and no fatal page error"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T003",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Register synthetic researcher",
+      "task": "Register synthetic researcher: Open registration; enter new synthetic username and strong password; submit.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open registration",
+        "enter new synthetic username and strong password",
+        "submit"
+      ],
+      "expected_result": "Account created and authenticated identity shown; independent DB check confirms password is hashed.",
+      "pass_fail_criteria": [
+        "Account created and authenticated identity shown",
+        "independent DB check confirms password is hashed"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T004",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Valid sign-in",
+      "task": "Valid sign-in: Open sign-in; submit A credentials.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open sign-in",
+        "submit A credentials"
+      ],
+      "expected_result": "A identity is displayed and account pages are accessible.",
+      "pass_fail_criteria": [
+        "A identity is displayed and account pages are accessible"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T005",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Invalid password",
+      "task": "Invalid password: Attempt A sign-in with incorrect password.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Attempt A sign-in with incorrect password"
+      ],
+      "expected_result": "Clear failure message; no authenticated identity or access to private data.",
+      "pass_fail_criteria": [
+        "Clear failure message",
+        "no authenticated identity or access to private data"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T006",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Immediate logout",
+      "task": "Immediate logout: Sign in A; sign out; revisit Profile.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "sign out",
+        "revisit Profile"
+      ],
+      "expected_result": "UI immediately becomes unauthenticated and private account content is inaccessible.",
+      "pass_fail_criteria": [
+        "UI immediately becomes unauthenticated and private account content is inaccessible"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T007",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Session reload",
+      "task": "Session reload: Sign in A; refresh page.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "refresh page"
+      ],
+      "expected_result": "A remains authenticated and the current private view loads.",
+      "pass_fail_criteria": [
+        "A remains authenticated and the current private view loads"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T008",
+      "difficulty": "Easy",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Profile name save",
+      "task": "Profile name save: Sign in A; edit first and last names; save.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "edit first and last names",
+        "save"
+      ],
+      "expected_result": "Visible save confirmation; displayed names match submitted values.",
+      "pass_fail_criteria": [
+        "Visible save confirmation",
+        "displayed names match submitted values"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T009",
+      "difficulty": "Easy",
+      "functional_category": "Question validation and short/Chinese input",
+      "requirement_ids": [
+        "R03"
+      ],
+      "title": "Empty question validation",
+      "task": "Empty question validation: Sign in A; leave question empty; attempt submit.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "leave question empty",
+        "attempt submit"
+      ],
+      "expected_result": "No research turn created; invalid input prevented or explained.",
+      "pass_fail_criteria": [
+        "No research turn created",
+        "invalid input prevented or explained"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T010",
+      "difficulty": "Easy",
+      "functional_category": "Question validation and short/Chinese input",
+      "requirement_ids": [
+        "R03"
+      ],
+      "title": "One-word research",
+      "task": "One-word research: Sign in A; submit obesity.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "submit obesity"
+      ],
+      "expected_result": "Submission accepted; real literature or informative retrieval failure shown; not rejected solely for word count.",
+      "pass_fail_criteria": [
+        "Submission accepted",
+        "real literature or informative retrieval failure shown",
+        "not rejected solely for word count"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T011",
+      "difficulty": "Easy",
+      "functional_category": "Question validation and short/Chinese input",
+      "requirement_ids": [
+        "R03"
+      ],
+      "title": "Chinese research input",
+      "task": "Chinese research input: Sign in A; submit 糖尿病怎么治疗.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "submit 糖尿病怎么治疗"
+      ],
+      "expected_result": "Input accepted; meaningful translated search terms retrieve relevant diabetes literature; no fabricated result.",
+      "pass_fail_criteria": [
+        "Input accepted",
+        "meaningful translated search terms retrieve relevant diabetes literature",
+        "no fabricated result"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T012",
+      "difficulty": "Easy",
+      "functional_category": "Question validation and short/Chinese input",
+      "requirement_ids": [
+        "R03"
+      ],
+      "title": "Multiline composer",
+      "task": "Multiline composer: Sign in A; type first line; press Shift+Enter; type second line.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "type first line",
+        "press Shift+Enter",
+        "type second line"
+      ],
+      "expected_result": "Composer contains both lines; Shift+Enter does not submit prematurely.",
+      "pass_fail_criteria": [
+        "Composer contains both lines",
+        "Shift+Enter does not submit prematurely"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T013",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Suggested research topic",
+      "task": "Suggested research topic: Open home; select a suggested topic.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open home",
+        "select a suggested topic"
+      ],
+      "expected_result": "A relevant research question is populated or submitted with visible feedback.",
+      "pass_fail_criteria": [
+        "A relevant research question is populated or submitted with visible feedback"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T014",
+      "difficulty": "Easy",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "History list",
+      "task": "History list: Sign in A; open History.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open History"
+      ],
+      "expected_result": "A's seeded synthetic conversations appear; B's private title is absent.",
+      "pass_fail_criteria": [
+        "A's seeded synthetic conversations appear",
+        "B's private title is absent"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T015",
+      "difficulty": "Easy",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Reopen conversation",
+      "task": "Reopen conversation: Sign in A; open History; open seeded thread.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open History",
+        "open seeded thread"
+      ],
+      "expected_result": "Original question, chronology and stored evidence are accessible.",
+      "pass_fail_criteria": [
+        "Original question, chronology and stored evidence are accessible"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T016",
+      "difficulty": "Easy",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Library navigation",
+      "task": "Library navigation: Sign in A; open Evidence Library; switch search and saved views.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open Evidence Library",
+        "switch search and saved views"
+      ],
+      "expected_result": "Search and saved-publication views are distinguishable and usable.",
+      "pass_fail_criteria": [
+        "Search and saved-publication views are distinguishable and usable"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T017",
+      "difficulty": "Easy",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Known PMID lookup",
+      "task": "Known PMID lookup: Search PubMed for 33567185.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search PubMed for 33567185"
+      ],
+      "expected_result": "Returned PMID and title match the independently supplied official record.",
+      "pass_fail_criteria": [
+        "Returned PMID and title match the independently supplied official record"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T018",
+      "difficulty": "Easy",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Publication details",
+      "task": "Publication details: Search PMID 33567185; expand details.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search PMID 33567185",
+        "expand details"
+      ],
+      "expected_result": "Authors, journal, dates, DOI and source abstract are inspectable and match source metadata.",
+      "pass_fail_criteria": [
+        "Authors, journal, dates, DOI and source abstract are inspectable and match source metadata"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T019",
+      "difficulty": "Easy",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Open original record",
+      "task": "Open original record: Search PMID 33567185; open its source link.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search PMID 33567185",
+        "open its source link"
+      ],
+      "expected_result": "New or current tab reaches the matching official PubMed record, not a fabricated destination.",
+      "pass_fail_criteria": [
+        "New or current tab reaches the matching official PubMed record, not a fabricated destination"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T020",
+      "difficulty": "Easy",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Saved-publication listing",
+      "task": "Saved-publication listing: Sign in A; open saved publications.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open saved publications"
+      ],
+      "expected_result": "Seeded publication is present with stable identifier and distinguishable from saved answers.",
+      "pass_fail_criteria": [
+        "Seeded publication is present with stable identifier and distinguishable from saved answers"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T021",
+      "difficulty": "Easy",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Saved-answer listing",
+      "task": "Saved-answer listing: Sign in A; open saved answers; open the seeded saved item.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open saved answers",
+        "open the seeded saved item"
+      ],
+      "expected_result": "Correct answer detail is opened with original question and source information.",
+      "pass_fail_criteria": [
+        "Correct answer detail is opened with original question and source information"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T022",
+      "difficulty": "Easy",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Language save feedback",
+      "task": "Language save feedback: Sign in A; set Chinese; save preferences.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "set Chinese",
+        "save preferences"
+      ],
+      "expected_result": "Chinese is selected; success feedback appears and unchanged saves cannot duplicate work.",
+      "pass_fail_criteria": [
+        "Chinese is selected",
+        "success feedback appears and unchanged saves cannot duplicate work"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T023",
+      "difficulty": "Easy",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Detail preference",
+      "task": "Detail preference: Sign in A; choose Detailed; save.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "choose Detailed",
+        "save"
+      ],
+      "expected_result": "Detailed preference is visibly retained; save succeeds.",
+      "pass_fail_criteria": [
+        "Detailed preference is visibly retained",
+        "save succeeds"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T024",
+      "difficulty": "Easy",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Display preference",
+      "task": "Display preference: Sign in A; change display density; save.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "change display density",
+        "save"
+      ],
+      "expected_result": "Selected preference persists in UI and relevant layout adapts without losing controls.",
+      "pass_fail_criteria": [
+        "Selected preference persists in UI and relevant layout adapts without losing controls"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T025",
+      "difficulty": "Easy",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Missing-model composer",
+      "task": "Missing-model composer: Open question composer with model unconfigured.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open question composer with model unconfigured"
+      ],
+      "expected_result": "Literature-only limitation is visible before submission; UI does not promise a generated answer.",
+      "pass_fail_criteria": [
+        "Literature-only limitation is visible before submission",
+        "UI does not promise a generated answer"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T026",
+      "difficulty": "Easy",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Missing-model language notice",
+      "task": "Missing-model language notice: Sign in A; open Settings; select Chinese.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open Settings",
+        "select Chinese"
+      ],
+      "expected_result": "Notice distinguishes future generated answers from original-language sources and current lack of generation.",
+      "pass_fail_criteria": [
+        "Notice distinguishes future generated answers from original-language sources and current lack of generation"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T027",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Keyboard navigation",
+      "task": "Keyboard navigation: Use Tab from page start through navigation and composer.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Use Tab from page start through navigation and composer"
+      ],
+      "expected_result": "Focus is visible and actionable controls are keyboard reachable in usable order.",
+      "pass_fail_criteria": [
+        "Focus is visible and actionable controls are keyboard reachable in usable order"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T028",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Mobile menu",
+      "task": "Mobile menu: At 390x844 open navigation; reach Profile; close menu.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "At 390x844 open navigation",
+        "reach Profile",
+        "close menu"
+      ],
+      "expected_result": "All destinations remain reachable; overlay closes; no inaccessible bottom links.",
+      "pass_fail_criteria": [
+        "All destinations remain reachable",
+        "overlay closes",
+        "no inaccessible bottom links"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T029",
+      "difficulty": "Easy",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Empty saved state",
+      "task": "Empty saved state: Sign in B; inspect saved answers and publications.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in B",
+        "inspect saved answers and publications"
+      ],
+      "expected_result": "Accurate, readable empty states; no A data or generic server error.",
+      "pass_fail_criteria": [
+        "Accurate, readable empty states",
+        "no A data or generic server error"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T030",
+      "difficulty": "Easy",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Answer detail metadata",
+      "task": "Answer detail metadata: Open A's seeded answer.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open A's seeded answer"
+      ],
+      "expected_result": "Original question, timestamp, literature-only status and supporting sources are shown; no fabricated AI text.",
+      "pass_fail_criteria": [
+        "Original question, timestamp, literature-only status and supporting sources are shown",
+        "no fabricated AI text"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T031",
+      "difficulty": "Medium",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Profile persistence",
+      "task": "Profile persistence: Sign in A; change names; save; refresh; sign out and back in.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "change names",
+        "save",
+        "refresh",
+        "sign out and back in"
+      ],
+      "expected_result": "Both names persist and save feedback accurately describes success.",
+      "pass_fail_criteria": [
+        "Both names persist and save feedback accurately describes success"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T032",
+      "difficulty": "Medium",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Duplicate registration",
+      "task": "Duplicate registration: Attempt registration using A's username and a different password; then sign in A.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Attempt registration using A's username and a different password",
+        "then sign in A"
+      ],
+      "expected_result": "Duplicate rejected clearly; original A password/account unaffected.",
+      "pass_fail_criteria": [
+        "Duplicate rejected clearly",
+        "original A password/account unaffected"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T033",
+      "difficulty": "Medium",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Weak password rejection",
+      "task": "Weak password rejection: Register new username with password 123; correct to a strong password; resubmit.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Register new username with password 123",
+        "correct to a strong password",
+        "resubmit"
+      ],
+      "expected_result": "Weak value rejected; correction succeeds without duplicate accounts.",
+      "pass_fail_criteria": [
+        "Weak value rejected",
+        "correction succeeds without duplicate accounts"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T034",
+      "difficulty": "Medium",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Logout survives back and reload",
+      "task": "Logout survives back and reload: Sign in A; open private thread; sign out; use Back; reload.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "open private thread",
+        "sign out",
+        "use Back",
+        "reload"
+      ],
+      "expected_result": "No live authenticated access remains; private API response independently denies unauthenticated access.",
+      "pass_fail_criteria": [
+        "No live authenticated access remains",
+        "private API response independently denies unauthenticated access"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T035",
+      "difficulty": "Medium",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Conversation rename persistence",
+      "task": "Conversation rename persistence: Rename seeded thread to Acceptance GLP-1; refresh; reopen from History.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Rename seeded thread to Acceptance GLP-1",
+        "refresh",
+        "reopen from History"
+      ],
+      "expected_result": "New title persists and original turns/source associations remain unchanged.",
+      "pass_fail_criteria": [
+        "New title persists and original turns/source associations remain unchanged"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T036",
+      "difficulty": "Medium",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "History query and reset",
+      "task": "History query and reset: Search for Acceptance fixture; search zzz_no_match_987; clear search.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search for Acceptance fixture",
+        "search zzz_no_match_987",
+        "clear search"
+      ],
+      "expected_result": "Correct matching set, accurate empty state, then restored A history.",
+      "pass_fail_criteria": [
+        "Correct matching set, accurate empty state, then restored A history"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T037",
+      "difficulty": "Medium",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "History date ordering",
+      "task": "History date ordering: Open history containing three separated timestamps; switch newest/oldest.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open history containing three separated timestamps",
+        "switch newest/oldest"
+      ],
+      "expected_result": "Order reverses consistently using dates; no missing or cross-user entries.",
+      "pass_fail_criteria": [
+        "Order reverses consistently using dates",
+        "no missing or cross-user entries"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T038",
+      "difficulty": "Medium",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Conversation deletion",
+      "task": "Conversation deletion: Delete seeded disposable conversation; revisit history and direct old URL.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Delete seeded disposable conversation",
+        "revisit history and direct old URL"
+      ],
+      "expected_result": "Deleted thread absent; old URL fails safely; other threads persist.",
+      "pass_fail_criteria": [
+        "Deleted thread absent",
+        "old URL fails safely",
+        "other threads persist"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T039",
+      "difficulty": "Medium",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Save publication feedback",
+      "task": "Save publication feedback: Search 33567185; save; attempt immediate repeat save.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search 33567185",
+        "save",
+        "attempt immediate repeat save"
+      ],
+      "expected_result": "Visible saving/saved state; no duplicate saved association.",
+      "pass_fail_criteria": [
+        "Visible saving/saved state",
+        "no duplicate saved association"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T040",
+      "difficulty": "Medium",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Saved publication reload",
+      "task": "Saved publication reload: Search and save 33567185; refresh; sign out/in; open saved publications.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search and save 33567185",
+        "refresh",
+        "sign out/in",
+        "open saved publications"
+      ],
+      "expected_result": "One correct saved record survives reload and login cycle.",
+      "pass_fail_criteria": [
+        "One correct saved record survives reload and login cycle"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T041",
+      "difficulty": "Medium",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Remove saved publication",
+      "task": "Remove saved publication: Remove seeded saved publication; refresh; inspect list.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Remove seeded saved publication",
+        "refresh",
+        "inspect list"
+      ],
+      "expected_result": "Record remains removed from A's library; source record and B's data are not improperly removed.",
+      "pass_fail_criteria": [
+        "Record remains removed from A's library",
+        "source record and B's data are not improperly removed"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T042",
+      "difficulty": "Medium",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Collection update",
+      "task": "Collection update: Set saved publication collection to Obesity research; save; refresh.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Set saved publication collection to Obesity research",
+        "save",
+        "refresh"
+      ],
+      "expected_result": "Collection persists with visible success feedback.",
+      "pass_fail_criteria": [
+        "Collection persists with visible success feedback"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T043",
+      "difficulty": "Medium",
+      "functional_category": "Evidence library and save feedback",
+      "requirement_ids": [
+        "R06"
+      ],
+      "title": "Collection search and reset",
+      "task": "Collection search and reset: Search saved items by Obesity research; try no-match term; clear.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search saved items by Obesity research",
+        "try no-match term",
+        "clear"
+      ],
+      "expected_result": "Matching collection is found; no-match is empty; clear restores all saved items.",
+      "pass_fail_criteria": [
+        "Matching collection is found",
+        "no-match is empty",
+        "clear restores all saved items"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T044",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Matching and conflicting year",
+      "task": "Matching and conflicting year: Search 33567185 with 2021; repeat with 2020.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search 33567185 with 2021",
+        "repeat with 2020"
+      ],
+      "expected_result": "Matching filter includes record; conflicting filter excludes it; stale results are not presented as current.",
+      "pass_fail_criteria": [
+        "Matching filter includes record",
+        "conflicting filter excludes it",
+        "stale results are not presented as current"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T045",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Journal filter",
+      "task": "Journal filter: Search obesity in The New England Journal of Medicine; inspect returned records.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search obesity in The New England Journal of Medicine",
+        "inspect returned records"
+      ],
+      "expected_result": "Every returned journal matches the filter; no invented records.",
+      "pass_fail_criteria": [
+        "Every returned journal matches the filter",
+        "no invented records"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T046",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Clinical-trial filter",
+      "task": "Clinical-trial filter: Search semaglutide obesity with clinical-trial article type.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search semaglutide obesity with clinical-trial article type"
+      ],
+      "expected_result": "Returned records have a qualifying trial type; filtering is reflected in request/provenance.",
+      "pass_fail_criteria": [
+        "Returned records have a qualifying trial type",
+        "filtering is reflected in request/provenance"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T047",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Review filter",
+      "task": "Review filter: Search obesity with Review type; open two available details.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search obesity with Review type",
+        "open two available details"
+      ],
+      "expected_result": "Results satisfy review metadata; detail matches listed records.",
+      "pass_fail_criteria": [
+        "Results satisfy review metadata",
+        "detail matches listed records"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T048",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Systematic-review filter",
+      "task": "Systematic-review filter: Search GLP-1 obesity with Systematic Review type.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search GLP-1 obesity with Systematic Review type"
+      ],
+      "expected_result": "Results satisfy systematic-review classification; empty set is clearly distinguished from service failure.",
+      "pass_fail_criteria": [
+        "Results satisfy systematic-review classification",
+        "empty set is clearly distinguished from service failure"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T049",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Meta-analysis filter",
+      "task": "Meta-analysis filter: Search obesity with Meta-analysis type.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search obesity with Meta-analysis type"
+      ],
+      "expected_result": "Result types comply; no unrelated stale results from earlier filters.",
+      "pass_fail_criteria": [
+        "Result types comply",
+        "no unrelated stale results from earlier filters"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T050",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Free-full-text filter",
+      "task": "Free-full-text filter: Search obesity with free full text enabled; inspect availability links.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search obesity with free full text enabled",
+        "inspect availability links"
+      ],
+      "expected_result": "Returned records meet availability filter; app does not imply access to unavailable paywalled text.",
+      "pass_fail_criteria": [
+        "Returned records meet availability filter",
+        "app does not imply access to unavailable paywalled text"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T051",
+      "difficulty": "Medium",
+      "functional_category": "Literature filtering and sorting",
+      "requirement_ids": [
+        "R05"
+      ],
+      "title": "Publication-date sort",
+      "task": "Publication-date sort: Search obesity; switch relevance to publication date; inspect several records.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search obesity",
+        "switch relevance to publication date",
+        "inspect several records"
+      ],
+      "expected_result": "Dates follow documented direction; sorting does not corrupt metadata or repeat identifiers.",
+      "pass_fail_criteria": [
+        "Dates follow documented direction",
+        "sorting does not corrupt metadata or repeat identifiers"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T052",
+      "difficulty": "Medium",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "DOI lookup",
+      "task": "DOI lookup: Search 10.1056/NEJMoa2032183; open details and source.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search 10.1056/NEJMoa2032183",
+        "open details and source"
+      ],
+      "expected_result": "Resolves to PMID 33567185 with consistent title and DOI.",
+      "pass_fail_criteria": [
+        "Resolves to PMID 33567185 with consistent title and DOI"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T053",
+      "difficulty": "Medium",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Invalid identifier",
+      "task": "Invalid identifier: Search invalid PMID 000000000000; then search valid 33567185.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search invalid PMID 000000000000",
+        "then search valid 33567185"
+      ],
+      "expected_result": "Invalid lookup has clear empty/validation result; valid subsequent search works without stale error.",
+      "pass_fail_criteria": [
+        "Invalid lookup has clear empty/validation result",
+        "valid subsequent search works without stale error"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T054",
+      "difficulty": "Medium",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Separate publication dates",
+      "task": "Separate publication dates: Search 33567185; inspect electronic and journal-issue dates.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search 33567185",
+        "inspect electronic and journal-issue dates"
+      ],
+      "expected_result": "Dates are labeled by type; unavailable type is explicit; values match official reference.",
+      "pass_fail_criteria": [
+        "Dates are labeled by type",
+        "unavailable type is explicit",
+        "values match official reference"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T055",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Save answer persistence",
+      "task": "Save answer persistence: Open unsaved synthetic answer; save; refresh; reopen saved answers.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Open unsaved synthetic answer",
+        "save",
+        "refresh",
+        "reopen saved answers"
+      ],
+      "expected_result": "Single bookmark persists with visible Saved feedback.",
+      "pass_fail_criteria": [
+        "Single bookmark persists with visible Saved feedback"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T056",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Unsave without deleting thread",
+      "task": "Unsave without deleting thread: Unsave seeded answer; refresh Saved Answers; reopen its conversation.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Unsave seeded answer",
+        "refresh Saved Answers",
+        "reopen its conversation"
+      ],
+      "expected_result": "Bookmark absent but conversation and all turns remain intact.",
+      "pass_fail_criteria": [
+        "Bookmark absent but conversation and all turns remain intact"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T057",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Markdown export",
+      "task": "Markdown export: Export seeded research answer as Markdown; inspect downloaded file.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Export seeded research answer as Markdown",
+        "inspect downloaded file"
+      ],
+      "expected_result": "UTF-8 disclaimer, question, status and traceable PMID/DOI links are intact; no mojibake.",
+      "pass_fail_criteria": [
+        "UTF-8 disclaimer, question, status and traceable PMID/DOI links are intact",
+        "no mojibake"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T058",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "PDF export",
+      "task": "PDF export: Export seeded answer as PDF; open downloaded document.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Export seeded answer as PDF",
+        "open downloaded document"
+      ],
+      "expected_result": "Readable question, disclaimer and references; no clipped critical text or corrupted punctuation.",
+      "pass_fail_criteria": [
+        "Readable question, disclaimer and references",
+        "no clipped critical text or corrupted punctuation"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T059",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "BibTeX export",
+      "task": "BibTeX export: Export seeded references as BibTeX; inspect downloaded entries.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Export seeded references as BibTeX",
+        "inspect downloaded entries"
+      ],
+      "expected_result": "Entries parse; identifier/title/author/DOI preserved; special characters handled; no duplicate keys.",
+      "pass_fail_criteria": [
+        "Entries parse",
+        "identifier/title/author/DOI preserved",
+        "special characters handled",
+        "no duplicate keys"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T060",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "CSV export",
+      "task": "CSV export: Export references as CSV; inspect rows containing commas and Unicode.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Export references as CSV",
+        "inspect rows containing commas and Unicode"
+      ],
+      "expected_result": "CSV parses to consistent columns and preserves complete titles/authors/identifiers.",
+      "pass_fail_criteria": [
+        "CSV parses to consistent columns and preserves complete titles/authors/identifiers"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T061",
+      "difficulty": "Medium",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Copy answer",
+      "task": "Copy answer: Copy seeded research answer; paste into a local blank evaluation scratch surface.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Copy seeded research answer",
+        "paste into a local blank evaluation scratch surface"
+      ],
+      "expected_result": "Copied text corresponds to selected answer; no other user's content or broken encoding.",
+      "pass_fail_criteria": [
+        "Copied text corresponds to selected answer",
+        "no other user's content or broken encoding"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T062",
+      "difficulty": "Medium",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Preferences after login cycle",
+      "task": "Preferences after login cycle: Set Chinese, Detailed and Compact; save; sign out/in; inspect Settings.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Set Chinese, Detailed and Compact",
+        "save",
+        "sign out/in",
+        "inspect Settings"
+      ],
+      "expected_result": "All three preferences persist independently.",
+      "pass_fail_criteria": [
+        "All three preferences persist independently"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T063",
+      "difficulty": "Medium",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "No-key research workflow",
+      "task": "No-key research workflow: With no model key submit GLP-1 obesity query using live PubMed.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "With no model key submit GLP-1 obesity query using live PubMed"
+      ],
+      "expected_result": "Literature is retrieved and stored; explicit missing-generation state; no fake synthesis.",
+      "pass_fail_criteria": [
+        "Literature is retrieved and stored",
+        "explicit missing-generation state",
+        "no fake synthesis"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T064",
+      "difficulty": "Medium",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Contextual limitations follow-up",
+      "task": "Contextual limitations follow-up: Ask GLP-1 obesity question; in same thread ask What are the limitations of these studies?; inspect trace.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask GLP-1 obesity question",
+        "in same thread ask What are the limitations of these studies?",
+        "inspect trace"
+      ],
+      "expected_result": "Both turns remain in one thread; executed queries preserve GLP-1/obesity context and limitations intent.",
+      "pass_fail_criteria": [
+        "Both turns remain in one thread",
+        "executed queries preserve GLP-1/obesity context and limitations intent"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T065",
+      "difficulty": "Medium",
+      "functional_category": "Auditable provenance",
+      "requirement_ids": [
+        "R13"
+      ],
+      "title": "Four-stage provenance",
+      "task": "Four-stage provenance: Submit Chinese diabetes question; ask a contextual follow-up; expand trace.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit Chinese diabetes question",
+        "ask a contextual follow-up",
+        "expand trace"
+      ],
+      "expected_result": "Original input, normalized question, previous questions and actual executed queries are distinct and accurate.",
+      "pass_fail_criteria": [
+        "Original input, normalized question, previous questions and actual executed queries are distinct and accurate"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T066",
+      "difficulty": "Medium",
+      "functional_category": "Evidence-grounded AI and detail page",
+      "requirement_ids": [
+        "R07"
+      ],
+      "title": "Evidence table unavailable fields",
+      "task": "Evidence table unavailable fields: Submit literature-only query; toggle evidence cards/table; inspect findings and limitations.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit literature-only query",
+        "toggle evidence cards/table",
+        "inspect findings and limitations"
+      ],
+      "expected_result": "Study/year/type/source retained; unsupported findings/limitations explicitly unavailable, never fabricated.",
+      "pass_fail_criteria": [
+        "Study/year/type/source retained",
+        "unsupported findings/limitations explicitly unavailable, never fabricated"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T067",
+      "difficulty": "Medium",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Mobile evidence and exports",
+      "task": "Mobile evidence and exports: At 390x844 open seeded evidence table; scroll within it; open export controls.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "At 390x844 open seeded evidence table",
+        "scroll within it",
+        "open export controls"
+      ],
+      "expected_result": "Table does not force inaccessible page overflow; all required controls can be operated.",
+      "pass_fail_criteria": [
+        "Table does not force inaccessible page overflow",
+        "all required controls can be operated"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T068",
+      "difficulty": "Medium",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Configured but unchecked",
+      "task": "Configured but unchecked: Start with real configured model and cleared readiness cache; open Settings and composer.",
+      "preconditions": {
+        "profile": "configured",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Start with real configured model and cleared readiness cache",
+        "open Settings and composer"
+      ],
+      "expected_result": "Configuration is distinguished from a successful connection check and from generated answer success.",
+      "pass_fail_criteria": [
+        "Configuration is distinguished from a successful connection check and from generated answer success"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T069",
+      "difficulty": "Medium",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Chinese connection probe",
+      "task": "Chinese connection probe: Sign in A; run the model connection check; inspect status.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "run the model connection check",
+        "inspect status"
+      ],
+      "expected_result": "Actual configured provider returns valid Chinese response; ready status matches recorded call, not mere key presence.",
+      "pass_fail_criteria": [
+        "Actual configured provider returns valid Chinese response",
+        "ready status matches recorded call, not mere key presence"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T070",
+      "difficulty": "Medium",
+      "functional_category": "Evidence-grounded AI and detail page",
+      "requirement_ids": [
+        "R07"
+      ],
+      "title": "English evidence synthesis",
+      "task": "English evidence synthesis: Submit GLP-1 obesity question with English preference; open answer.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit GLP-1 obesity question with English preference",
+        "open answer"
+      ],
+      "expected_result": "Real generated English findings, limitations and references supported by retrieved abstracts; retrieval-only is not PASS.",
+      "pass_fail_criteria": [
+        "Real generated English findings, limitations and references supported by retrieved abstracts",
+        "retrieval-only is not PASS"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T071",
+      "difficulty": "Hard",
+      "functional_category": "Evidence-grounded AI and detail page",
+      "requirement_ids": [
+        "R07"
+      ],
+      "title": "Chinese research synthesis",
+      "task": "Chinese research synthesis: Set Chinese; submit GLP-1 obesity research question; inspect prose and citations.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Set Chinese",
+        "submit GLP-1 obesity research question",
+        "inspect prose and citations"
+      ],
+      "expected_result": "Generated narrative is Chinese; source titles/quotes remain labeled original; claims are supported and not status-message-only.",
+      "pass_fail_criteria": [
+        "Generated narrative is Chinese",
+        "source titles/quotes remain labeled original",
+        "claims are supported and not status-message-only"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T072",
+      "difficulty": "Hard",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Regenerate while preserving original",
+      "task": "Regenerate while preserving original: Save existing literature-only answer; enable live provider as prerequisite; select Chinese; regenerate; revisit both versions.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Save existing literature-only answer",
+        "enable live provider as prerequisite",
+        "select Chinese",
+        "regenerate",
+        "revisit both versions"
+      ],
+      "expected_result": "New revision uses original evidence snapshot/current preference; original content/bookmark/provenance unchanged.",
+      "pass_fail_criteria": [
+        "New revision uses original evidence snapshot/current preference",
+        "original content/bookmark/provenance unchanged"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T073",
+      "difficulty": "Hard",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Cross-account direct thread access",
+      "task": "Cross-account direct thread access: As A note owned thread URL; sign out; sign in B; paste that URL.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "As A note owned thread URL",
+        "sign out",
+        "sign in B",
+        "paste that URL"
+      ],
+      "expected_result": "B cannot read A thread or its source content; server-side authorization confirmed independently.",
+      "pass_fail_criteria": [
+        "B cannot read A thread or its source content",
+        "server-side authorization confirmed independently"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T074",
+      "difficulty": "Hard",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Cross-account answer and export access",
+      "task": "Cross-account answer and export access: As B navigate to A's supplied answer URL and export URL; inspect own saved list.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "As B navigate to A's supplied answer URL and export URL",
+        "inspect own saved list"
+      ],
+      "expected_result": "No A answer/export is disclosed; B saved list stays isolated.",
+      "pass_fail_criteria": [
+        "No A answer/export is disclosed",
+        "B saved list stays isolated"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T075",
+      "difficulty": "Hard",
+      "functional_category": "Security, untrusted inputs, rate limits",
+      "requirement_ids": [
+        "R14"
+      ],
+      "title": "Session and CSRF enforcement",
+      "task": "Session and CSRF enforcement: Sign in A; edit profile through UI; independent verifier checks cookies and a missing-CSRF mutation.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Sign in A",
+        "edit profile through UI",
+        "independent verifier checks cookies and a missing-CSRF mutation"
+      ],
+      "expected_result": "Normal UI save succeeds; unsafe mutation rejected; session cookie is HTTP-only and data remains unchanged by rejected request.",
+      "pass_fail_criteria": [
+        "Normal UI save succeeds",
+        "unsafe mutation rejected",
+        "session cookie is HTTP-only and data remains unchanged by rejected request"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T076",
+      "difficulty": "Hard",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Reject nonexistent citation",
+      "task": "Reject nonexistent citation: Ask a research question while test provider returns a citation outside retrieved PMIDs; open answer.",
+      "preconditions": {
+        "profile": "fault_membership",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask a research question while test provider returns a citation outside retrieved PMIDs",
+        "open answer"
+      ],
+      "expected_result": "Unsupported draft withheld; verification failure explicit; authentic sources still accessible.",
+      "pass_fail_criteria": [
+        "Unsupported draft withheld",
+        "verification failure explicit",
+        "authentic sources still accessible"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T077",
+      "difficulty": "Hard",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Reject altered quotation",
+      "task": "Reject altered quotation: Ask a research question with controlled provider draft containing a fabricated abstract quote.",
+      "preconditions": {
+        "profile": "fault_quote",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask a research question with controlled provider draft containing a fabricated abstract quote"
+      ],
+      "expected_result": "Draft fails exact-quotation validation; fabricated quotation not presented as verified.",
+      "pass_fail_criteria": [
+        "Draft fails exact-quotation validation",
+        "fabricated quotation not presented as verified"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T078",
+      "difficulty": "Hard",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Reject unsupported numeric claim",
+      "task": "Reject unsupported numeric claim: Submit question with controlled provider output asserting a number absent from supporting source.",
+      "preconditions": {
+        "profile": "fault_numeric",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit question with controlled provider output asserting a number absent from supporting source"
+      ],
+      "expected_result": "Unsupported numerical claim rejected; verification failure does not masquerade as successful synthesis.",
+      "pass_fail_criteria": [
+        "Unsupported numerical claim rejected",
+        "verification failure does not masquerade as successful synthesis"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T079",
+      "difficulty": "Hard",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Reject contradicted claim",
+      "task": "Reject contradicted claim: Submit question with exact quote but contradictory interpretation; reviewer rejects support.",
+      "preconditions": {
+        "profile": "fault_review",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit question with exact quote but contradictory interpretation",
+        "reviewer rejects support"
+      ],
+      "expected_result": "App withholds unsupported draft even though PMID and quote are valid.",
+      "pass_fail_criteria": [
+        "App withholds unsupported draft even though PMID and quote are valid"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T080",
+      "difficulty": "Hard",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Wrong-language retry boundary",
+      "task": "Wrong-language retry boundary: Select Chinese; submit question; controlled provider returns English twice.",
+      "preconditions": {
+        "profile": "fault_language",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Select Chinese",
+        "submit question",
+        "controlled provider returns English twice"
+      ],
+      "expected_result": "Exactly one corrective generation retry then explicit language failure; no English answer published as Chinese.",
+      "pass_fail_criteria": [
+        "Exactly one corrective generation retry then explicit language failure",
+        "no English answer published as Chinese"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T081",
+      "difficulty": "Hard",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Provider credential failure",
+      "task": "Provider credential failure: Submit question against provider returning 401/403; inspect status and sources.",
+      "preconditions": {
+        "profile": "fault_auth",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit question against provider returning 401/403",
+        "inspect status and sources"
+      ],
+      "expected_result": "Clear provider access failure; no secret exposed; retrieved sources and history remain usable.",
+      "pass_fail_criteria": [
+        "Clear provider access failure",
+        "no secret exposed",
+        "retrieved sources and history remain usable"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T082",
+      "difficulty": "Hard",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Provider quota exhaustion",
+      "task": "Provider quota exhaustion: Submit question against provider returning 429; navigate to sources/history.",
+      "preconditions": {
+        "profile": "fault_quota",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit question against provider returning 429",
+        "navigate to sources/history"
+      ],
+      "expected_result": "Quota limitation explained; no automatic billing/fallback or endless retry; evidence persists.",
+      "pass_fail_criteria": [
+        "Quota limitation explained",
+        "no automatic billing/fallback or endless retry",
+        "evidence persists"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T083",
+      "difficulty": "Hard",
+      "functional_category": "Configuration, readiness and failures",
+      "requirement_ids": [
+        "R11"
+      ],
+      "title": "Model timeout",
+      "task": "Model timeout: Submit question while model endpoint stalls beyond configured timeout; reopen thread.",
+      "preconditions": {
+        "profile": "fault_timeout",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit question while model endpoint stalls beyond configured timeout",
+        "reopen thread"
+      ],
+      "expected_result": "Bounded wait ends with explicit timeout; no false answer; retrieved evidence retained.",
+      "pass_fail_criteria": [
+        "Bounded wait ends with explicit timeout",
+        "no false answer",
+        "retrieved evidence retained"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T084",
+      "difficulty": "Hard",
+      "functional_category": "Real literature, metadata and retrieval",
+      "requirement_ids": [
+        "R04"
+      ],
+      "title": "Literature service failure and recovery",
+      "task": "Literature service failure and recovery: Search while PubMed fails; restore dependency; submit same query once manually.",
+      "preconditions": {
+        "profile": "fault_pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Search while PubMed fails",
+        "restore dependency",
+        "submit same query once manually"
+      ],
+      "expected_result": "Failure is distinguishable from no results; UI recovers and successful new result is attributable to restored retrieval.",
+      "pass_fail_criteria": [
+        "Failure is distinguishable from no results",
+        "UI recovers and successful new result is attributable to restored retrieval"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T085",
+      "difficulty": "Hard",
+      "functional_category": "Security, untrusted inputs, rate limits",
+      "requirement_ids": [
+        "R14"
+      ],
+      "title": "Untrusted article injection",
+      "task": "Untrusted article injection: Ask question with retrieved test article containing instruction to reveal keys or ignore citations.",
+      "preconditions": {
+        "profile": "fault_injection",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask question with retrieved test article containing instruction to reveal keys or ignore citations"
+      ],
+      "expected_result": "Article instructions are treated as data; no secret disclosure or unauthorized action; source provenance identifies fixture.",
+      "pass_fail_criteria": [
+        "Article instructions are treated as data",
+        "no secret disclosure or unauthorized action",
+        "source provenance identifies fixture"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T086",
+      "difficulty": "Hard",
+      "functional_category": "Security, untrusted inputs, rate limits",
+      "requirement_ids": [
+        "R14"
+      ],
+      "title": "Untrusted user question",
+      "task": "Untrusted user question: Submit a question asking for invented PMID and instructions to ignore source checking.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Submit a question asking for invented PMID and instructions to ignore source checking"
+      ],
+      "expected_result": "No fabricated citation is endorsed; response is evidence-grounded, explicit failure or justified refusal.",
+      "pass_fail_criteria": [
+        "No fabricated citation is endorsed",
+        "response is evidence-grounded, explicit failure or justified refusal"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T087",
+      "difficulty": "Hard",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Follow-up topic switch",
+      "task": "Follow-up topic switch: Ask GLP-1 obesity; follow up on SGLT2 heart failure; inspect both source lists and queries.",
+      "preconditions": {
+        "profile": "pubmed",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask GLP-1 obesity",
+        "follow up on SGLT2 heart failure",
+        "inspect both source lists and queries"
+      ],
+      "expected_result": "New evidence is retrieved for changed topic; original references preserved; context does not force irrelevant old topic.",
+      "pass_fail_criteria": [
+        "New evidence is retrieved for changed topic",
+        "original references preserved",
+        "context does not force irrelevant old topic"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T088",
+      "difficulty": "Hard",
+      "functional_category": "Auditable provenance",
+      "requirement_ids": [
+        "R13"
+      ],
+      "title": "Audit generated claims",
+      "task": "Audit generated claims: Generate supported response; open every cited excerpt; inspect model, timestamp and abstract scope.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Generate supported response",
+        "open every cited excerpt",
+        "inspect model, timestamp and abstract scope"
+      ],
+      "expected_result": "All displayed claims/citations can be traced to actual source text; automated review is not labeled clinical validation.",
+      "pass_fail_criteria": [
+        "All displayed claims/citations can be traced to actual source text",
+        "automated review is not labeled clinical validation"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T089",
+      "difficulty": "Hard",
+      "functional_category": "Security, untrusted inputs, rate limits",
+      "requirement_ids": [
+        "R14"
+      ],
+      "title": "Markup rendering safety",
+      "task": "Markup rendering safety: Rename a synthetic conversation to <img src=x onerror=alert(1)>; reopen history and exports.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Rename a synthetic conversation to <img src=x onerror=alert(1)>",
+        "reopen history and exports"
+      ],
+      "expected_result": "Input rejected or rendered safely as text; no script executes; no unauthorized data changes.",
+      "pass_fail_criteria": [
+        "Input rejected or rendered safely as text",
+        "no script executes",
+        "no unauthorized data changes"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T090",
+      "difficulty": "Hard",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "History management isolation",
+      "task": "History management isolation: As A clear own history using available management workflow; sign in B; reopen B thread.",
+      "preconditions": {
+        "profile": "offline",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "As A clear own history using available management workflow",
+        "sign in B",
+        "reopen B thread"
+      ],
+      "expected_result": "A history removed as requested; B history and saved sources preserved; stale A links deny access.",
+      "pass_fail_criteria": [
+        "A history removed as requested",
+        "B history and saved sources preserved",
+        "stale A links deny access"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T091",
+      "difficulty": "Expert",
+      "functional_category": "Evidence-grounded AI and detail page",
+      "requirement_ids": [
+        "R07"
+      ],
+      "title": "Complete evidence research lifecycle",
+      "task": "Complete evidence research lifecycle: Register researcher; select Chinese/Detailed; ask GLP-1 obesity; follow up on limitations; inspect all citations; save answer and two publications; group sources; export Markdown/PDF; sign out/in and reopen.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Register researcher",
+        "select Chinese/Detailed",
+        "ask GLP-1 obesity",
+        "follow up on limitations",
+        "inspect all citations",
+        "save answer and two publications",
+        "group sources",
+        "export Markdown/PDF",
+        "sign out/in and reopen"
+      ],
+      "expected_result": "Every step completes with genuine Chinese synthesis, supported citations, intact source provenance, persistent saves and readable exports.",
+      "pass_fail_criteria": [
+        "Every step completes with genuine Chinese synthesis, supported citations, intact source provenance, persistent saves and readable exports"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T092",
+      "difficulty": "Expert",
+      "functional_category": "Accounts, sessions and ownership",
+      "requirement_ids": [
+        "R02"
+      ],
+      "title": "Two-researcher confidentiality lifecycle",
+      "task": "Two-researcher confidentiality lifecycle: A generates/saves research and notes URLs; B creates separate research; B tries A URLs and export; A returns to original work.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "A generates/saves research and notes URLs",
+        "B creates separate research",
+        "B tries A URLs and export",
+        "A returns to original work"
+      ],
+      "expected_result": "Both accounts retain own work; no cross-account disclosure/modification; denied accesses do not destroy originals.",
+      "pass_fail_criteria": [
+        "Both accounts retain own work",
+        "no cross-account disclosure/modification",
+        "denied accesses do not destroy originals"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T093",
+      "difficulty": "Expert",
+      "functional_category": "Preferences and regenerated answers",
+      "requirement_ids": [
+        "R10"
+      ],
+      "title": "Missing-model to live revision lifecycle",
+      "task": "Missing-model to live revision lifecycle: Create/bookmark literature-only turn; operator configures provider without changing app; choose Chinese; regenerate; export both versions; reload history.",
+      "preconditions": {
+        "profile": "live_transition",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Create/bookmark literature-only turn",
+        "operator configures provider without changing app",
+        "choose Chinese",
+        "regenerate",
+        "export both versions",
+        "reload history"
+      ],
+      "expected_result": "Honest pre-configuration state; new real Chinese revision; original evidence snapshot/bookmark and exported status preserved.",
+      "pass_fail_criteria": [
+        "Honest pre-configuration state",
+        "new real Chinese revision",
+        "original evidence snapshot/bookmark and exported status preserved"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T094",
+      "difficulty": "Expert",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Conflicting evidence comparison",
+      "task": "Conflicting evidence comparison: Ask comparison of SGLT2 and GLP-1 in heart failure; inspect study populations/designs; ask about applicability and uncertainty; audit cited excerpts.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask comparison of SGLT2 and GLP-1 in heart failure",
+        "inspect study populations/designs",
+        "ask about applicability and uncertainty",
+        "audit cited excerpts"
+      ],
+      "expected_result": "Distinct interventions and populations not conflated; uncertainty/limitations supported; no unsupported superiority or diagnostic certainty.",
+      "pass_fail_criteria": [
+        "Distinct interventions and populations not conflated",
+        "uncertainty/limitations supported",
+        "no unsupported superiority or diagnostic certainty"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T095",
+      "difficulty": "Expert",
+      "functional_category": "Citation and claim verification",
+      "requirement_ids": [
+        "R12"
+      ],
+      "title": "Verification failure and explicit recovery",
+      "task": "Verification failure and explicit recovery: Generate a controlled unsupported claim; inspect rejection; restore genuine provider; manually regenerate; inspect source snapshots and both turns.",
+      "preconditions": {
+        "profile": "fault_sequence",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Generate a controlled unsupported claim",
+        "inspect rejection",
+        "restore genuine provider",
+        "manually regenerate",
+        "inspect source snapshots and both turns"
+      ],
+      "expected_result": "Initial failure retained; no unverified draft leaked; new answer independently supported; recovery does not overwrite audit trail.",
+      "pass_fail_criteria": [
+        "Initial failure retained",
+        "no unverified draft leaked",
+        "new answer independently supported",
+        "recovery does not overwrite audit trail"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T096",
+      "difficulty": "Expert",
+      "functional_category": "Public persistence and research-only identity",
+      "requirement_ids": [
+        "R15"
+      ],
+      "title": "Public availability and persistence",
+      "task": "Public availability and persistence: On authorized test deployment register/save research; operator restarts service; revisit HTTPS site on separate browser context; sign in and reopen sources/preferences.",
+      "preconditions": {
+        "profile": "hosted",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "On authorized test deployment register/save research",
+        "operator restarts service",
+        "revisit HTTPS site on separate browser context",
+        "sign in and reopen sources/preferences"
+      ],
+      "expected_result": "Site works independent of developer workstation; data survives service restart; HTTPS sessions secure; no paid-plan change.",
+      "pass_fail_criteria": [
+        "Site works independent of developer workstation",
+        "data survives service restart",
+        "HTTPS sessions secure",
+        "no paid-plan change"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T097",
+      "difficulty": "Expert",
+      "functional_category": "Navigation and accessibility",
+      "requirement_ids": [
+        "R01"
+      ],
+      "title": "Mobile complete research workflow",
+      "task": "Mobile complete research workflow: At 390x844 register/sign in; ask Chinese question; follow up; expand sources/table; save/export; navigate Profile and sign out.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "At 390x844 register/sign in",
+        "ask Chinese question",
+        "follow up",
+        "expand sources/table",
+        "save/export",
+        "navigate Profile and sign out"
+      ],
+      "expected_result": "All workflow steps accessible at narrow width; generated Chinese content intact; no inaccessible controls or privacy leakage.",
+      "pass_fail_criteria": [
+        "All workflow steps accessible at narrow width",
+        "generated Chinese content intact",
+        "no inaccessible controls or privacy leakage"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T098",
+      "difficulty": "Expert",
+      "functional_category": "Security, untrusted inputs, rate limits",
+      "requirement_ids": [
+        "R14"
+      ],
+      "title": "Rate-limit isolation and recovery",
+      "task": "Rate-limit isolation and recovery: Use UI to submit enough synthetic requests to reach configured rate limit; inspect bounded error; wait allowed interval; submit once; inspect saved work.",
+      "preconditions": {
+        "profile": "fault_rate",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Use UI to submit enough synthetic requests to reach configured rate limit",
+        "inspect bounded error",
+        "wait allowed interval",
+        "submit once",
+        "inspect saved work"
+      ],
+      "expected_result": "Rate limit visible and enforced; successful recovery after interval; no automatic paid retries or lost existing records.",
+      "pass_fail_criteria": [
+        "Rate limit visible and enforced",
+        "successful recovery after interval",
+        "no automatic paid retries or lost existing records"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T099",
+      "difficulty": "Expert",
+      "functional_category": "Answer saves and exports",
+      "requirement_ids": [
+        "R09"
+      ],
+      "title": "Cross-format provenance reconciliation",
+      "task": "Cross-format provenance reconciliation: Generate answer with findings/limitations and multiple references; export Markdown, PDF, BibTeX, CSV; compare IDs, authors, DOI, quotes and dates across all formats.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Generate answer with findings/limitations and multiple references",
+        "export Markdown, PDF, BibTeX, CSV",
+        "compare IDs, authors, DOI, quotes and dates across all formats"
+      ],
+      "expected_result": "No reference corruption/duplication or mismatched IDs; answer formats preserve provenance and verification status; structured exports parse.",
+      "pass_fail_criteria": [
+        "No reference corruption/duplication or mismatched IDs",
+        "answer formats preserve provenance and verification status",
+        "structured exports parse"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    },
+    {
+      "id": "T100",
+      "difficulty": "Expert",
+      "functional_category": "Context and conversation history",
+      "requirement_ids": [
+        "R08"
+      ],
+      "title": "Long research thread and reproducibility",
+      "task": "Long research thread and reproducibility: Ask GLP-1 obesity; follow up on limitations, population, conflicting evidence and a related intervention; rename/search thread; logout/login; inspect chronological turns and exports.",
+      "preconditions": {
+        "profile": "live",
+        "accounts": "Synthetic A and B; fresh isolated database per test; no real patient data.",
+        "data": "See FIXTURES.md. Seeded items are explicitly synthetic; required live retrieval/generation must never be replaced by fixtures."
+      },
+      "expected_workflow": [
+        "Ask GLP-1 obesity",
+        "follow up on limitations, population, conflicting evidence and a related intervention",
+        "rename/search thread",
+        "logout/login",
+        "inspect chronological turns and exports"
+      ],
+      "expected_result": "All five turns persist in order with relevant context/retrieval, correct source-to-turn associations and honest evidence gaps; no assumption earlier claims are automatically true.",
+      "pass_fail_criteria": [
+        "All five turns persist in order with relevant context/retrieval, correct source-to-turn associations and honest evidence gaps",
+        "no assumption earlier claims are automatically true"
+      ],
+      "verification": "Independent criterion-by-criterion screenshot/action review plus read-only database/network/download inspection; model self-report alone cannot award PASS."
+    }
+  ]
+}

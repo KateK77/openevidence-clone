@@ -1,0 +1,62 @@
+{
+  "R01": {
+    "requirement": "Navigation and accessibility",
+    "source_section": "Original sections 1, 5; V2 item 9"
+  },
+  "R02": {
+    "requirement": "Accounts, sessions and ownership",
+    "source_section": "Original sections 13, 19; V3 item 8"
+  },
+  "R03": {
+    "requirement": "Question validation and short/Chinese input",
+    "source_section": "Original sections 5, 6; V2 items 3, 4"
+  },
+  "R04": {
+    "requirement": "Real literature, metadata and retrieval",
+    "source_section": "Original sections 7, 8; V2 item 8"
+  },
+  "R05": {
+    "requirement": "Literature filtering and sorting",
+    "source_section": "Original section 12"
+  },
+  "R06": {
+    "requirement": "Evidence library and save feedback",
+    "source_section": "Original section 11; V2 items 5, 6"
+  },
+  "R07": {
+    "requirement": "Evidence-grounded AI and detail page",
+    "source_section": "Original sections 6, 9; V3 items 5, 6"
+  },
+  "R08": {
+    "requirement": "Context and conversation history",
+    "source_section": "Original sections 10, 14; V3 items 7, 8"
+  },
+  "R09": {
+    "requirement": "Answer saves and exports",
+    "source_section": "Original sections 9, 15; V2 items 5, 7"
+  },
+  "R10": {
+    "requirement": "Preferences and regenerated answers",
+    "source_section": "Original section 16; V3 items 3, 4"
+  },
+  "R11": {
+    "requirement": "Configuration, readiness and failures",
+    "source_section": "Original section 20; V3 items 1, 2"
+  },
+  "R12": {
+    "requirement": "Citation and claim verification",
+    "source_section": "Original sections 6, 8, 19; V3 items 5, 6"
+  },
+  "R13": {
+    "requirement": "Auditable provenance",
+    "source_section": "Original section 17; V3 item 7"
+  },
+  "R14": {
+    "requirement": "Security, untrusted inputs, rate limits",
+    "source_section": "Original sections 13, 19, 21"
+  },
+  "R15": {
+    "requirement": "Public persistence and research-only identity",
+    "source_section": "Authorized public hosting follow-up; Original sections 1, 19"
+  }
+}

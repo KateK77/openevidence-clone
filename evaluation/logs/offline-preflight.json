@@ -1,0 +1,66 @@
+{
+  "kind": "OFFLINE INFRASTRUCTURE ONLY",
+  "checked_at": "2026-11-16T06:13:54.540Z",
+  "paid_api_calls": 0,
+  "external_api_calls": 0,
+  "scored_tests": 0,
+  "checks": [
+    {
+      "name": "Frozen Description, suite hashes, unique IDs and 30/40/20/10 distribution",
+      "status": "PASS"
+    },
+    {
+      "name": "Application and final Description source unchanged; frontend source matches build origin",
+      "status": "PASS"
+    },
+    {
+      "name": "Budget, approval, protocol and coordinate guard unit checks",
+      "status": "PASS"
+    },
+    {
+      "name": "Paid runner defaults to no execution",
+      "status": "PASS"
+    },
+    {
+      "name": "Isolated Django + compiled React browser loads",
+      "status": "PASS"
+    },
+    {
+      "name": "Application AI disabled and offline backend network guard active",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic credentials, session and database round-trip",
+      "status": "PASS"
+    },
+    {
+      "name": "Screenshot capture at 1280x768 with device scale 1",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile screenshot at 390x844",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh isolated SQLite integrity and synthetic fixture counts",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncaught browser exceptions or external browser resources",
+      "status": "PASS"
+    }
+  ],
+  "frontend_build": {
+    "source": "Existing locally built frontend matching unchanged source baseline",
+    "index_sha256": "1e32c6e772737aa345a07305f5326c3dcfd0b2901413d5a9c7b5aed58ebf3f83"
+  },
+  "screenshot": "screenshots/8cfd801f1438d180dfb5470bebda20509f302f18a078231092127301972365d4.png",
+  "mobile_screenshot": "screenshots/36ed31673733390b31bc423bce9fa1e27b737d00c052560729c795a2443a888b.png",
+  "database": {
+    "integrity": "ok",
+    "users": 2,
+    "conversations": 4
+  },
+  "result": "PASS",
+  "prerequisites": "Live PubMed/model/fault injection and hosted restart profiles remain separately unverified. No native paid task was executed."
+}
