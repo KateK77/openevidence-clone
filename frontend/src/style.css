@@ -1479,3 +1479,20 @@ blockquote {
 .hero-subtitle {
   color: #667869
 }
+.mode-banner { display:flex; gap:12px; text-align:left; padding:18px; border:1px solid #c8d7c7; border-radius:14px; background:#eff5ee; margin:18px 0; font-size:14px; line-height:1.65; }
+.mode-banner > svg { flex-shrink:0; margin-top:4px; }
+.mode-banner > div { min-width:0; }
+.mode-banner p { margin:7px 0; }
+.mode-banner a { display:inline-flex; align-items:center; gap:6px; }
+.mode-banner.limited { border-color:#dfd1a6; background:#fffaf0; color:#544c30; }
+.language-warning { padding:12px; background:#fffaf0; border-left:3px solid #a58330; font-size:14px; }
+.connection-panel .setup-guide { margin-top:22px; }
+.setup-guide li { margin:12px 0; }
+.setup-guide code,.provenance code { overflow-wrap:anywhere; white-space:normal; }
+.connection-panel small { display:block; }
+.regenerate-panel { margin-top:24px; padding-top:12px; border-top:1px solid #d9e3d9; }
+.regenerate-panel > p,.answer-language,.verification-label { font-size:13px; line-height:1.65; }
+.verification-label { display:block; color:#3c614c; margin:8px 0; }
+.provenance h3 { margin-top:22px; font-size:16px; }
+.provenance li { overflow-wrap:anywhere; margin:10px 0; }
+.error-text { color:#92392d; }

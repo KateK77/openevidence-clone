@@ -6,6 +6,7 @@ import { api, announceSession, invalidateAuthRequests, date, type Session, type 
 import { Library, Settings, Profile } from './library';
 import { Conversation, AnswerPage } from './answers';
 import { Page, Problem, fields } from './ui';
+import { ModeNotice } from './synthesis-mode';
 export { Page, Problem, fields } from './ui';
 const navigation = [['/', 'Ask AI', Sparkles], ['/history', 'Research history', History], ['/saved', 'Saved answers', Bookmark], ['/library', 'Search PubMed', Search], ['/publications', 'Saved publications', BookOpen], ['/settings', 'Settings', Settings2], ['/profile', 'Profile', UserRound]] as const;
 const topics = [['Metabolic health', 'GLP-1 & weight management', 'What is the evidence for GLP-1 receptor agonists in obesity treatment?', Activity], ['Cardiovascular research', 'SGLT2 & heart failure', 'What evidence supports SGLT2 inhibitors in heart failure?', FlaskConical], ['Digital medicine', 'AI in clinical documentation', 'What studies investigate large language models in clinical documentation?', Microscope]] as const;
@@ -70,7 +71,7 @@ export function App() {
     {open && <button className="scrim" aria-label="Close navigation" onClick={() => { setOpen(false); menu.current?.focus(); }}/>}
     <aside ref={drawer} className={'sidebar' + (open ? ' open' : '')} aria-label="Main navigation">
       <button className="close-menu" aria-label="Close menu" onClick={() => { setOpen(false); menu.current?.focus(); }}><X size={20}/></button>
-      <Link className="brand" to="/"><span className="mark"><Activity size={24}/></span><span>MedEvidence<small>RESEARCH WORKSPACE <b>2.0</b></small></span></Link>
+      <Link className="brand" to="/"><span className="mark"><Activity size={24}/></span><span>MedEvidence<small>RESEARCH WORKSPACE <b>3.0</b></small></span></Link>
       <Link className="new" to="/"><Plus size={18}/>New research</Link>
       <nav>{navigation.map(([path, label, Icon], i) => <div key={path}>{(i === 0 || i === 3 || i === 5) && <p className="nav-label">{i === 0 ? 'WORKSPACE' : i === 3 ? 'LITERATURE' : 'ACCOUNT'}</p>}<NavLink end to={path}><Icon size={18}/>{label}</NavLink></div>)}</nav>
       <div className="sidebar-foot"><span className="source-dot"/> PubMed literature source<small>Abstracts & publication metadata</small></div>
@@ -90,12 +91,13 @@ export function App() {
     </main>
   </div>;
 }
-export function Composer({ question, change, submit, busy, follow = false }: {
+export function Composer({ question, change, submit, busy, follow = false, configured }: {
     question: string;
     change: (q: string) => void;
     submit: () => void;
     busy: boolean;
     follow?: boolean;
+    configured?: boolean;
 }) {
     const ready = question.trim().length > 0 && !busy;
     return <form className="composer" onSubmit={e => { e.preventDefault(); if (ready)
@@ -106,7 +108,7 @@ export function Composer({ question, change, submit, busy, follow = false }: {
         if (ready)
             submit();
     } }}/>
-    <div className="composer-bottom"><span><BookOpen size={16}/>PubMed sources</span><button className="primary" disabled={!ready}>{busy ? <LoaderCircle size={17} className="spin"/> : <ArrowUp size={17}/>} {busy ? 'Searching…' : 'Ask AI'}</button></div>
+    <div className="composer-bottom"><span><BookOpen size={16}/>PubMed sources</span><button className="primary" disabled={!ready}>{busy ? <LoaderCircle size={17} className="spin"/> : <ArrowUp size={17}/>} {busy ? 'Working…' : configured === false ? 'Search literature' : 'Ask AI'}</button></div>
     <div className="composer-help">English or supported Chinese medical terms · Short keywords welcome · {question.length}/2,000</div>
   </form>;
 }
@@ -131,13 +133,12 @@ function Home({ user, configured }: {
     const ask = useAsk();
     const history = useQuery({ queryKey: ['history', '', 'newest'], queryFn: ({ signal }) => api<Thread[]>('conversations/', 'GET', undefined, signal), enabled: !!user });
     return <div className="home"><section className="hero"><div className="eyebrow"><span className="source-dot"/> LITERATURE INTO PERSPECTIVE</div><h1>Better questions.<br /><em>Grounded in evidence.</em></h1><p className="hero-subtitle">Explore biomedical literature, follow the sources,<br className="desktop"/> and build a research trail you can return to.</p>
-    <Composer question={question} change={change} busy={ask.isPending} submit={() => { if (!user) {
+    <ModeNotice/><Composer question={question} change={change} busy={ask.isPending} configured={configured} submit={() => { if (!user) {
         setGate(true);
         return;
     } ask.mutate({ question }, { onSuccess: a => navigate('/thread/' + a.conversation) }); }}/>
-    {configured === false && <div className="mode-note"><BookOpen size={16}/><span><strong>Literature mode</strong> · PubMed search is available. AI synthesis is awaiting server configuration.</span></div>}
     {gate && !user && <div className="notice"><Link to="/profile">Sign in or create an account</Link> to start a research conversation.</div>}
-    {ask.isPending && <p role="status">Searching PubMed. Your results will appear here when retrieval completes.</p>}<Problem error={ask.error}/>
+    {ask.isPending && <p role="status">{configured ? 'Retrieving abstracts, generating your answer and checking claims. This can take a few minutes.' : 'Searching PubMed. Source publications will appear when retrieval completes.'}</p>}<Problem error={ask.error}/>
   </section><div className="section-top"><h2>A starting point for your research</h2><span className="muted">Explore a topic</span></div><div className="topics">{topics.map(([subtitle, title, prompt, Icon]) => <button className="topic" key={title} onClick={() => { change(prompt); document.querySelector('textarea')?.focus(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}><Icon size={21}/><small>{subtitle}</small><strong>{title}</strong><ArrowRight className="topic-arrow" size={17}/></button>)}</div>
     <div className="section-top"><h2>Recent conversations</h2><Link to="/history">View all <ArrowRight size={15}/></Link></div><Problem error={history.error}/>
     {history.data?.length ? <ThreadList rows={history.data.slice(0, 4)}/> : <div className="empty"><Clock3 size={25}/><div><strong>Your next question starts here</strong><p>Research conversations will appear in this workspace.</p></div></div>}

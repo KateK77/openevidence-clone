@@ -1,0 +1,68 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: medevidence
+      POSTGRES_USER: medevidence
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a strong database password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medevidence -d medevidence"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--maxmemory", "128mb", "--maxmemory-policy", "volatile-lru"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  api:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.api
+    restart: unless-stopped
+    environment:
+      DJANGO_DEBUG: "0"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?Set a private random Django secret}
+      DJANGO_ALLOWED_HOSTS: ${SITE_DOMAIN:?Set the public DNS hostname}
+      DJANGO_CSRF_TRUSTED_ORIGINS: https://${SITE_DOMAIN}
+      TRUST_PROXY_HTTPS: "1"
+      DATABASE_URL: postgresql://medevidence:${POSTGRES_PASSWORD}@db:5432/medevidence
+      REDIS_URL: redis://redis:6379/0
+      LLM_PROVIDER: gemini
+      LLM_BASE_URL: https://generativelanguage.googleapis.com/v1beta/openai
+      LLM_MODEL: ${LLM_MODEL:-gemini-3.5-flash-lite}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_CALLS_PER_MINUTE: ${LLM_CALLS_PER_MINUTE:-12}
+      NCBI_EMAIL: ${NCBI_EMAIL:-}
+      NCBI_API_KEY: ${NCBI_API_KEY:-}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+  web:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.web
+    restart: unless-stopped
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:?Set the public DNS hostname}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - api
+volumes:
+  postgres_data:
+  caddy_data:
+  caddy_config:

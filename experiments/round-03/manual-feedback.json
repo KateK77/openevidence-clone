@@ -1,0 +1,227 @@
+{
+  "project": "MedEvidence AI",
+  "version": "2.0.0",
+  "release_tag": "v2.0.0-r2",
+  "round": 2,
+  "report_language": "English",
+  "mode": "User-led manual acceptance; record findings without changing application code",
+  "status": "snapshot_for_round_03",
+  "checks": [
+    {
+      "id": "V2-MAN-001",
+      "title": "Profile save feedback and persistence",
+      "status": "passed",
+      "criteria": [
+        "Saving an edited first name displays a successful Saved state.",
+        "The unchanged saved form cannot be submitted again.",
+        "The edited first name remains after an F5 reload."
+      ],
+      "evidence": "The user explicitly confirmed that all three criteria passed.",
+      "evidence_type": "user_report",
+      "confirmed_date": "2026-11-14",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "V2-MAN-002",
+      "title": "Immediate sign-out and persistence after reload",
+      "status": "passed",
+      "criteria": [
+        "Sign out from Profile immediately displays a sign-in entry without a reload.",
+        "The header username changes to Sign in.",
+        "The user remains signed out after an F5 reload."
+      ],
+      "evidence": "The user explicitly confirmed that all three criteria passed.",
+      "evidence_type": "user_report",
+      "confirmed_date": "2026-11-14",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "V2-MAN-018",
+      "title": "Follow-up conversation placement and retrieval context preservation",
+      "status": "passed",
+      "criteria": [
+        "The limitations follow-up appears as turn 02 in the original GLP-1 obesity conversation.",
+        "Retrieval provenance identifies the research intent as limitations.",
+        "The executed retrieval queries retain the GLP-1 obesity context and include a limitations-focused query."
+      ],
+      "evidence": "Earlier pasted conversation shows both turns together. The new expanded provenance screenshot shows intent limitations and the queries glp-1 receptor agonists obesity treatment limitations and \"glp-1\" AND \"receptor\" AND \"agonists\" AND \"obesity\", each reporting 12 PMIDs.",
+      "evidence_type": "user_pasted_conversation_and_screenshot",
+      "screenshot": "codex-clipboard-ca792a60-397e-4a67-bc16-4ab7e131d2df.png",
+      "confirmed_date": "2026-11-15",
+      "timezone": "America/Chicago",
+      "scope_limit": "Pass applies to this manual retrieval-context case only. AI-generated contextual answers and limitations analysis remain untested because synthesis is unconfigured; retrieval completeness and clinical validity are not assessed."
+    },
+    {
+      "id": "V2-MAN-021",
+      "title": "Conversation persistence after reload and reopening from research history",
+      "status": "passed",
+      "criteria": [
+        "The original question and its follow-up remain after an F5 reload and reopening the conversation from Research history."
+      ],
+      "evidence": "In response to the explicit reload and history-reopen test instructions, the user confirmed that both turns remained.",
+      "evidence_type": "user_report",
+      "confirmed_date": "2026-11-15",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "V2-MAN-022",
+      "title": "Conversation rename, history search and persistence",
+      "status": "passed",
+      "criteria": [
+        "The conversation can be renamed to Acceptance v2 review.",
+        "Searching Research history for the new title finds the conversation.",
+        "The new title persists after an F5 reload and reopening retains both questions."
+      ],
+      "evidence": "The user explicitly reported passed after receiving all three test steps.",
+      "evidence_type": "user_report",
+      "confirmed_date": "2026-11-15",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "V2-MAN-020",
+      "title": "Answer bookmarking, feedback and persistence",
+      "status": "passed",
+      "criteria": [
+        "Bookmarking an answer displays a clear saved state and prevents duplicate bookmarking.",
+        "Saved answers displays the bookmarked answer exactly once.",
+        "The bookmark remains after an F5 reload and opens the correct answer."
+      ],
+      "evidence": "The user explicitly confirmed that the complete answer-bookmarking test passed.",
+      "evidence_type": "user_report",
+      "confirmed_date": "2026-11-15",
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "V2-MAN-034",
+      "title": "Chinese AI answer availability with Chinese selected",
+      "status": "blocked",
+      "acceptance_outcome": "Not accepted in the current environment: no Chinese answer was delivered.",
+      "criteria": [
+        "With Chinese selected, a newly generated AI answer is delivered in Chinese."
+      ],
+      "evidence": "The user explicitly reiterated that no Chinese answer is available. Earlier evidence shows Chinese selected in preferences and Literature only output with synthesis unconfigured.",
+      "evidence_type": "user_report_and_prior_screenshot",
+      "confirmed_date": "2026-11-15",
+      "timezone": "America/Chicago",
+      "blocker": "AI synthesis is unconfigured in the tested environment.",
+      "scope_limit": "Confirms missing Chinese answer delivery in this environment; does not establish that a configured model ignored the language preference. Detailed versus concise AI output also remains untested."
+    }
+  ],
+  "issues": [
+    {
+      "id": "V2-UX-001",
+      "title": "Answer-language preference creates unmet expectations in literature-only mode",
+      "category": "usability_feedback",
+      "status": "recorded",
+      "recorded_date": "2026-11-15",
+      "related_checks": [
+        "23",
+        "32",
+        "34"
+      ],
+      "description": "The user expects Chinese answer content after selecting Chinese, but the available literature-only output remains English. Although scope is explained in settings, the current presentation does not make the inactive AI-language preference clear enough to this user.",
+      "suggested_improvement": "Show a prominent notice beside Answer language when synthesis is unavailable, explaining that the preference is saved for future AI responses and does not translate source abstracts or existing results.",
+      "implementation_status": "Not implemented; acceptance recording only."
+    }
+  ],
+  "observations": [
+    {
+      "id": "V2-OBS-001",
+      "related_checks": [
+        "03",
+        "04"
+      ],
+      "recorded_date": "2026-11-14",
+      "evidence_type": "user_screenshot_and_pasted_text",
+      "screenshot": "codex-clipboard-80e15007-dcf2-4552-a67b-491a260b4ed8.png",
+      "findings": [
+        "The PMID 33567185 publication card visibly displays a checkmarked Saved state and a separate Remove from library action.",
+        "The pasted publication details include authors, journal, DOI and a structured source abstract.",
+        "The publication date is explicitly labeled Publication date (type unavailable), with value 2021 02 10.",
+        "An additional pasted search result list reports 16 publications and includes titles, years, publication types, PMID links and Save publication actions."
+      ],
+      "assessment": "Partial evidence only; no new defect confirmed from this submission.",
+      "not_verified": [
+        "Saved publication persistence after reload and prevention of duplicate submissions.",
+        "External source metadata and abstract agreement or link navigation.",
+        "Search input, active filters, sorting and saved-search behavior for the 16-result list."
+      ]
+    },
+    {
+      "id": "V2-OBS-002",
+      "related_checks": [
+        "12",
+        "14",
+        "18",
+        "32",
+        "35"
+      ],
+      "recorded_date": "2026-11-15",
+      "evidence_type": "user_screenshots_and_pasted_conversation",
+      "findings": [
+        "User screenshots show an English GLP-1 obesity question and a Chinese diabetes treatment question, each reporting 12 PubMed records.",
+        "The pasted conversation displays the original GLP-1 question as turn 01 with answer URL /answer/6 and the limitations follow-up as turn 02 with answer URL /answer/8.",
+        "Both turns report 12 PubMed records and explicitly state that AI synthesis is not configured; generated findings and limitations are unavailable."
+      ],
+      "assessment": "Appending a follow-up within the same conversation is evidenced. Retrieval context preservation remains unverified. Live AI synthesis and generated follow-up quality are blocked by missing model configuration.",
+      "not_verified": [
+        "The follow-up retrieval provenance retains the GLP-1 obesity topic and reflects limitations intent.",
+        "Chinese query normalization and relevance of returned publications.",
+        "Conversation persistence after reload."
+      ]
+    },
+    {
+      "id": "V2-OBS-003",
+      "related_checks": [
+        "18",
+        "27"
+      ],
+      "recorded_date": "2026-11-15",
+      "evidence_type": "user_screenshot",
+      "screenshot": "codex-clipboard-74493f1c-1946-4af6-9d17-17d68573f1e7.png",
+      "findings": [
+        "Opening /answer/8 displays a Sign in or register prompt instead of the answer and retrieval provenance."
+      ],
+      "assessment": "Follow-up provenance inspection is currently blocked by a sign-in prompt. Session loss is not confirmed: browser, window and prior authentication state are unknown.",
+      "not_verified": [
+        "Whether the original application tab remains signed in.",
+        "Whether opening the follow-up from Research history in the original authenticated tab succeeds."
+      ]
+    },
+    {
+      "id": "V2-OBS-004",
+      "related_checks": [
+        "17",
+        "18",
+        "32"
+      ],
+      "recorded_date": "2026-11-15",
+      "evidence_type": "user_pasted_text_attachment",
+      "source": "Pasted text.txt",
+      "findings": [
+        "Submitted answer detail text lists 12 publications with GLP-1-related titles.",
+        "Literature-only mode explicitly states that AI synthesis is unconfigured and findings and limitations are not synthesized or independently extracted.",
+        "The attachment ends with the Retrieval provenance heading; no provenance fields or search terms are included."
+      ],
+      "assessment": "Answer detail content is available in the submission. Exact follow-up query context and intent remain unverified because expanded retrieval provenance was not provided. The earlier sign-in prompt remains an observation with unconfirmed cause."
+    },
+    {
+      "id": "V2-OBS-005",
+      "related_checks": [
+        "23",
+        "34"
+      ],
+      "recorded_date": "2026-11-15",
+      "evidence_type": "user_report_and_screenshot",
+      "screenshot": "codex-clipboard-f4d807ea-b5e4-4fd9-b457-909649a90dfb.png",
+      "findings": [
+        "Settings displays Chinese, Detailed and Compact with No unsaved changes and a disabled Save preferences button.",
+        "The user reports that answer content remains in English despite selecting Chinese.",
+        "The settings explanatory text limits language and detail preferences to future AI-generated responses when synthesis is available; source publication metadata retains its original language.",
+        "Previously submitted answer evidence explicitly shows Literature only mode with AI synthesis unconfigured."
+      ],
+      "assessment": "Chinese AI response behavior is blocked and unverified. The observation does not establish that a generated AI response ignored the language preference. Settings reload persistence and density behavior are not confirmed by this screenshot."
+    }
+  ],
+  "snapshot_date": "2026-11-15"
+}

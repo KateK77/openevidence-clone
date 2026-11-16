@@ -22,10 +22,14 @@ def markdown(turn):
              'Evidence scope: PubMed abstracts and metadata.', '']
     if message := turn.result.get('message'):
         lines.extend([message, ''])
+    if turn.result.get('language'):
+        lines.extend([f'Requested answer language: {turn.result["language"]}', ''])
+    if turn.provenance.get('revision_of'):
+        lines.extend([f'New generation of answer #{turn.provenance["revision_of"]}; the original evidence snapshot was reused. No new literature search was performed.', ''])
     for section in turn.result.get('sections', []):
         links = ' '.join(f'[PMID {r["pmid"]}](https://pubmed.ncbi.nlm.nih.gov/{r["pmid"]}/)'
                          for r in section['citations'])
-        lines.extend([f'**{section["status"].title()}** {section["text"]} {links}'.rstrip(), ''])
+        lines.extend([f'**{section.get("kind", "finding").title()} / {section["status"].title()}** {section["text"]} {links}'.rstrip(), ''])
         lines.extend(f'> PMID {citation["pmid"]}: {citation["quote"]}' for citation in section['citations'])
         lines.append('')
     lines.extend(['## Retrieved publications', ''])
@@ -34,11 +38,22 @@ def markdown(turn):
                      + (f' DOI: {ref["doi"]}' if ref['doi'] else ''))
     lines.extend(['', '## Retrieval provenance', '',
                   f'Pipeline: {turn.provenance.get("pipeline_version", "Legacy snapshot")}',
-                  'Citation checks: source membership and exact abstract excerpts; clinical claim support requires review.'])
+                  'Citation scope: matched source excerpts are not independent clinical validation.'])
+    verification = turn.result.get('verification')
+    if verification:
+        lines.extend([f'Automated claim review: {verification.get("claim_review", "unavailable")}',
+                      f'Review model: {verification.get("review_model") or "Not applicable"}',
+                      'Checks include source membership, exact quotation and numerical consistency. Automated review can miss errors.'])
+    else:
+        lines.append('No Round 3 automated claim-review record exists for this answer.')
     normalization = turn.provenance.get('normalization', {})
     if normalization:
-        lines.extend([f'Query mapping: {normalization.get("method", "")}',
-                      f'Search terms: {normalization.get("normalized", "")}'])
+        lines.extend([f'Original question: {normalization.get("original", "")}',
+                      f'Query mapping: {normalization.get("method", "")}',
+                      f'Normalized question before context: {normalization.get("normalized", "")}'])
+    lines.append('Previous questions available for context:')
+    lines.extend(f'- {question}' for question in turn.provenance.get('previous_questions', []))
+    lines.append('Executed PubMed queries (per-query counts may overlap):')
     for search in turn.provenance.get('searches', []):
         lines.append(f'- {search["query"]} ({len(search["pmids"])} PMIDs)')
     return '\n'.join(lines)
@@ -96,7 +111,7 @@ def export(turn, kind):
                 story.append(Spacer(1, 6))
         def footer(canvas, doc):
             canvas.setFont('Helvetica', 8)
-            canvas.drawString(44, 28, 'MedEvidence AI 2.0 | Research demonstration')
+            canvas.drawString(44, 28, 'MedEvidence AI 3.0 | Research demonstration')
             canvas.drawRightString(doc.pagesize[0] - 44, 28, f'Page {doc.page}')
         SimpleDocTemplate(buffer, title='MedEvidence AI Research Report',
                           leftMargin=44, rightMargin=44, topMargin=42, bottomMargin=48).build(story, onFirstPage=footer, onLaterPages=footer)

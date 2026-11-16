@@ -173,8 +173,11 @@ def test_ranking_deduplication_and_followup(mock_search):
 
 def mock_model(monkeypatch, data):
     response = Mock()
+    response.status_code = 200
     response.json.return_value = {'choices': [{'message': {'content': json.dumps(data)}}]}
-    post = Mock(return_value=response)
+    review = Mock(status_code=200)
+    review.json.return_value = {'choices': [{'message': {'content': json.dumps({'reviews': [{'index': 0, 'verdict': 'supported'}]})}}]}
+    post = Mock(side_effect=[response, review])
     monkeypatch.setattr(rag.requests, 'post', post)
     return post
 
@@ -196,7 +199,7 @@ def test_generation_and_citation_integrity(settings, monkeypatch, pmid, quote, e
     status, model, result = rag.synthesize(question, [], [malicious], prefs)
     assert status == expected
     assert model == 'test-model'
-    messages = post.call_args.kwargs['json']['messages']
+    messages = post.call_args_list[0].kwargs['json']['messages']
     assert 'untrusted' in messages[0]['content']
     assert question not in messages[0]['content']
     assert json.loads(messages[1]['content'])['publications'][0]['abstract'] == malicious['abstract']

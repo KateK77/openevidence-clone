@@ -5,6 +5,7 @@ import { BookOpen, Check, Search, Trash2 } from 'lucide-react';
 import { api, announceSession, invalidateAuthRequests, type User, type Session, type Preferences, type Article, type SavedSearch } from './api';
 import { Page, Problem, fields, SaveForm } from './ui';
 import { Metadata } from './answers';
+import { ModeNotice, ModelConnection } from './synthesis-mode';
 const articleTypes = ['Clinical Trial', 'Randomized Controlled Trial', 'Review', 'Systematic Review', 'Meta-Analysis'];
 export function Library({ savedOnly = false }: {
     savedOnly?: boolean;
@@ -111,10 +112,10 @@ export function Settings({ model, configured }: {
             setConfirm(false);
         } });
     return <Page title="Workspace settings" eyebrow="ACCOUNT"><p className="page-intro">Make this workspace work for you.</p><Problem error={settings.error || clear.error}/>{settings.isPending && <p role="status">Loading preferences…</p>}
-    {settings.data && <div className="panel account-panel"><h2>Research preferences</h2><p className="muted">Language and detail apply to future AI-generated responses when synthesis is available. Publication metadata retains its source language.</p><SaveForm initial={{ ...settings.data }} label="Save preferences" submit={async (body) => { const result = await api<Preferences>('settings/', 'PATCH', body); client.setQueryData(['preferences'], result); }}>
+    {settings.data && <div className="panel account-panel"><h2>Research preferences</h2><ModeNotice settings/><p className="muted">Language and detail apply to new AI-generated responses. Existing answers are unchanged; use Generate new answer to apply new preferences. Source abstracts and quotations retain their original language.</p>{!configured && <p className="language-warning">Chinese is a saved preference, not an active translation service. 中文偏好已保存不代表已有中文回答；请先完成下方模型配置。</p>}<SaveForm initial={{ ...settings.data }} label="Save preferences" submit={async (body) => { const result = await api<Preferences>('settings/', 'PATCH', body); client.setQueryData(['preferences'], result); }}>
       <label>Answer language<select name="language" defaultValue={settings.data.language}>{['English', 'Chinese', 'Spanish', 'French'].map(v => <option key={v}>{v}</option>)}</select></label><label>Response detail<select name="detail" defaultValue={settings.data.detail}>{['Concise', 'Standard', 'Detailed'].map(v => <option key={v}>{v}</option>)}</select></label><label>Display density<select name="display" defaultValue={settings.data.display}>{['Comfortable', 'Compact'].map(v => <option key={v}>{v}</option>)}</select></label>
     </SaveForm></div>}
-    <div className="panel account-panel"><h2>Synthesis availability</h2><span className="pill">{configured ? 'Model configured' : 'Literature mode'}</span><p>{configured ? 'Server model: ' + model : 'AI synthesis has not been configured. PubMed search, collections, history, and exports remain available.'}</p><p className="muted">Model configuration is managed on the server. Credentials are never entered or displayed here.</p></div>
+    <ModelConnection/>
     <div className="panel account-panel danger-panel"><h2>Research history</h2><p className="muted">Deleting history removes your conversations and saved answers. Saved publications and searches remain.</p><button onClick={() => setConfirm(!confirm)}>{confirm ? 'Cancel' : 'Delete all conversations'}</button>{confirm && <div className="notice error">This cannot be undone. <button className="danger" disabled={clear.isPending} onClick={() => clear.mutate()}>Confirm delete all</button></div>}{clear.isSuccess && <p role="status">Research history deleted.</p>}</div>
   </Page>;
 }

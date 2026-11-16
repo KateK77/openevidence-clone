@@ -18,7 +18,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.throttling import SimpleRateThrottle, UserRateThrottle
 
-from . import exports, pubmed, rag, serializers as s
+from . import exports, pubmed, rag, llm, serializers as s
 from .models import Conversation, Evidence, Preferences, Publication, SavedPublication, SavedSearch, Turn
 
 
@@ -37,6 +37,10 @@ class LiteratureThrottle(UserRateThrottle):
     scope = 'literature'
 
 
+class ModelCheckThrottle(UserRateThrottle):
+    scope = 'model_check'
+
+
 def validated(serializer, data, **kwargs):
     form = serializer(data=data, **kwargs)
     form.is_valid(raise_exception=True)
@@ -47,8 +51,8 @@ def validated(serializer, data, **kwargs):
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def health(request):
-    return Response({'service': 'medevidence', 'version': '2.0.0', 'status': 'ok', 'port': request.META.get('SERVER_PORT'),
-                     'generation_configured': bool(settings.LLM_API_KEY and settings.LLM_MODEL)})
+    return Response({'service': 'medevidence', 'version': '3.0.0', 'status': 'ok', 'port': request.META.get('SERVER_PORT'),
+                     'generation_configured': llm.configuration()['configured']})
 
 
 @extend_schema(responses=dict)
@@ -58,7 +62,15 @@ def health(request):
 def session(request):
     return Response({'user': s.Profile(request.user).data if request.user.is_authenticated else None,
                      'csrf': get_token(request), 'model': settings.LLM_MODEL,
-                     'generation_configured': bool(settings.LLM_API_KEY and settings.LLM_MODEL)})
+                     'generation_configured': llm.configuration()['configured'], 'synthesis': llm.capability()})
+
+
+@extend_schema(request=None, responses=dict)
+@api_view(['GET', 'POST'])
+@throttle_classes([ModelCheckThrottle])
+def synthesis_status(request):
+    # The body is deliberately ignored: clients cannot choose a URL or send arbitrary prompts.
+    return Response(llm.check_connection() if request.method == 'POST' else llm.capability())
 
 
 @extend_schema(request=s.Credentials, responses={201: dict})
@@ -187,8 +199,8 @@ def ask(request):
     options, _ = Preferences.objects.get_or_create(user=request.user)
     sources = []
     provenance = {'retrieved_at': timezone.now().isoformat(), 'previous_questions': previous,
-                  'generation_preferences': s.Settings(options).data, 'pipeline_version': 'round-02',
-                  'citation_validation': 'Retrieved PMID membership and verbatim abstract excerpts; not independent claim verification.'}
+                  'generation_preferences': s.Settings(options).data, 'pipeline_version': 'round-03',
+                  'citation_validation': 'Retrieved PMID membership, verbatim excerpts, numeric consistency and automated claim review. Not independent clinical validation.'}
     try:
         sources, trace = rag.retrieve(question, previous)
         provenance.update(trace)
@@ -209,6 +221,35 @@ def ask(request):
         for rank, record in enumerate(sources, 1):
             source, _ = Publication.objects.update_or_create(pmid=record['pmid'], defaults={'record': record})
             Evidence.objects.create(turn=turn, publication=source, rank=rank, snapshot=record)
+    return Response(turn_data(turn), status=201)
+
+
+@extend_schema(request=None, responses={201: dict, 409: dict})
+@api_view(['POST'])
+@throttle_classes([ResearchThrottle])
+def regenerate(request, pk):
+    original = own_turn(request, pk)
+    if not llm.configuration()['configured']:
+        return Response({'detail': 'Configure a model before generating an answer. The original research is unchanged.'}, status=409)
+    options, _ = Preferences.objects.get_or_create(user=request.user)
+    sources = exports.references(original)
+    previous = original.provenance.get('previous_questions', [])
+    status, model, result = rag.synthesize(original.question, previous, sources, options)
+    provenance = {**original.provenance, 'pipeline_version': 'round-03',
+                  'revision_of': original.pk, 'evidence_reused': True,
+                  'generation_preferences': s.Settings(options).data,
+                  'generated_at': timezone.now().isoformat(),
+                  'citation_validation': 'Retrieved PMID membership, verbatim excerpts, numeric consistency and automated claim review. Not independent clinical validation.'}
+    with transaction.atomic():
+        # Recheck ownership/existence after the external request, e.g. concurrent deletion.
+        conversation = get_object_or_404(Conversation.objects.select_for_update(),
+                                        pk=original.conversation_id, owner=request.user)
+        conversation.save(update_fields=['updated'])
+        turn = Turn.objects.create(conversation=conversation, question=original.question,
+                                   status=status, model=model, result=result, provenance=provenance)
+        for entry in original.evidence.all():
+            Evidence.objects.create(turn=turn, publication_id=entry.publication_id,
+                                    rank=entry.rank, snapshot=entry.snapshot)
     return Response(turn_data(turn), status=201)
 
 

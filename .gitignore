@@ -1,4 +1,6 @@
 .env
+.env.setup-*
+.env.production
 .runtime/
 .venv/
 __pycache__/

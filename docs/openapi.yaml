@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: MedEvidence AI API
-  version: 2.0.0
+  version: 3.0.0
 paths:
   /api/answers/{id}/:
     get:
@@ -49,6 +49,34 @@ paths:
               schema:
                 type: string
                 format: binary
+          description: ''
+  /api/answers/{id}/regenerate/:
+    post:
+      operationId: answers_regenerate_create
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - answers
+      security:
+      - cookieAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+        '409':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
           description: ''
   /api/answers/{id}/save/:
     put:
@@ -711,6 +739,35 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Settings'
+          description: ''
+  /api/synthesis/:
+    get:
+      operationId: synthesis_retrieve
+      tags:
+      - synthesis
+      security:
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+    post:
+      operationId: synthesis_create
+      tags:
+      - synthesis
+      security:
+      - cookieAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
           description: ''
 components:
   schemas:

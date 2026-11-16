@@ -24,6 +24,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 ]
@@ -54,11 +55,19 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],
     'DEFAULT_PARSER_CLASSES': ['rest_framework.parsers.JSONParser'],
-    'DEFAULT_THROTTLE_RATES': {'auth': '12/min', 'research': '8/min', 'literature': '24/min'},
+    'DEFAULT_THROTTLE_RATES': {'auth': '12/min', 'research': '8/min', 'literature': '24/min', 'model_check': '4/min'},
 }
-SPECTACULAR_SETTINGS = {'TITLE': 'MedEvidence AI API', 'VERSION': '2.0.0'}
+SPECTACULAR_SETTINGS = {'TITLE': 'MedEvidence AI API', 'VERSION': '3.0.0'}
 NCBI_EMAIL = os.getenv('NCBI_EMAIL', '')
 NCBI_API_KEY = os.getenv('NCBI_API_KEY', '')
 LLM_BASE_URL = os.getenv('LLM_BASE_URL', 'https://api.openai.com/v1').rstrip('/')
 LLM_API_KEY = os.getenv('LLM_API_KEY', '')
 LLM_MODEL = os.getenv('LLM_MODEL', '')
+LLM_PROVIDER = os.getenv('LLM_PROVIDER', 'compatible')
+LLM_TIMEOUT_SECONDS = max(10, min(120, int(os.getenv('LLM_TIMEOUT_SECONDS', '60'))))
+LLM_MAX_OUTPUT_TOKENS = max(512, min(16000, int(os.getenv('LLM_MAX_OUTPUT_TOKENS', '6000'))))
+LLM_CALLS_PER_MINUTE = max(1, min(1000, int(os.getenv('LLM_CALLS_PER_MINUTE', '12'))))
+if cache_url := os.getenv('REDIS_URL'):
+    CACHES = {'default': {'BACKEND': 'django.core.cache.backends.redis.RedisCache', 'LOCATION': cache_url}}
+if os.getenv('TRUST_PROXY_HTTPS') == '1':
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

@@ -22,6 +22,8 @@ env["DATABASE_URL"] = "sqlite:///" + (runtime / "live-test.sqlite3").as_posix()
 env["DJANGO_CSRF_TRUSTED_ORIGINS"] = "http://127.0.0.1:5174"
 env["DJANGO_ALLOWED_HOSTS"] = "127.0.0.1,localhost"
 env["LLM_API_KEY"] = ""  # Explicit retrieval-only integration test, without model charges.
+env["LLM_MODEL"] = ""
+env["LLM_PROVIDER"] = "gemini"
 env["DJANGO_DEBUG"] = "1"
 subprocess.run([sys.executable, "backend/manage.py", "migrate", "--noinput"], cwd=repo, env=env, check=True)
 with (runtime / "live-backend.log").open("w") as log:

@@ -30,3 +30,6 @@ jobs:
         working-directory: frontend
       - run: npm run e2e
         working-directory: frontend
+      - run: docker build -f deploy/Dockerfile.api -t medevidence-v3-api:test .
+      - run: docker build -f deploy/Dockerfile.web -t medevidence-v3-web:test .
+      - run: python scripts/deployment_smoke.py

@@ -24,7 +24,7 @@ $newProcesses = @()
 try {
     if (Test-LocalPort $BackendPort) {
         $health = Invoke-RestMethod "$backendUrl/api/health/" -TimeoutSec 5
-        if ($health.service -ne 'medevidence' -or $health.version -ne '2.0.0') {
+        if ($health.service -ne 'medevidence' -or $health.version -ne '3.0.0') {
             throw "Port $BackendPort belongs to another service or version. Choose -BackendPort with a free port."
         }
         Write-Host "MedEvidence backend is already running at $backendUrl"
@@ -37,7 +37,7 @@ try {
     for ($attempt = 0; $attempt -lt 40; $attempt++) {
         try {
             $health = Invoke-RestMethod "$backendUrl/api/health/" -TimeoutSec 2
-            if ($health.service -eq 'medevidence' -and $health.version -eq '2.0.0') { $backendReady = $true; break }
+            if ($health.service -eq 'medevidence' -and $health.version -eq '3.0.0') { $backendReady = $true; break }
         } catch {}
         Start-Sleep -Milliseconds 250
     }
@@ -48,7 +48,7 @@ try {
             throw "Port $FrontendPort belongs to another service. Choose -FrontendPort with a free port."
         }
         $proxyHealth = Invoke-RestMethod "$frontendUrl/api/health/" -TimeoutSec 5
-        if ($proxyHealth.service -ne 'medevidence' -or $proxyHealth.version -ne '2.0.0' -or $proxyHealth.port -ne "$BackendPort") {
+        if ($proxyHealth.service -ne 'medevidence' -or $proxyHealth.version -ne '3.0.0' -or $proxyHealth.port -ne "$BackendPort") {
             throw 'The existing frontend has a different API target. Restart that frontend before continuing.'
         }
         Write-Host "MedEvidence frontend is already running at $frontendUrl"
@@ -61,7 +61,7 @@ try {
     for ($attempt = 0; $attempt -lt 40; $attempt++) {
         try {
             $health = Invoke-RestMethod "$frontendUrl/api/health/" -TimeoutSec 2
-            if ($health.service -eq 'medevidence' -and $health.version -eq '2.0.0') { $ready = $true; break }
+            if ($health.service -eq 'medevidence' -and $health.version -eq '3.0.0') { $ready = $true; break }
         } catch {}
         Start-Sleep -Milliseconds 250
     }
@@ -73,7 +73,7 @@ try {
         $records = @($previous) + @($newProcesses | ForEach-Object { @{pid=$_.Id; started=$_.StartTime.ToUniversalTime().ToString('o'); project=$projectRoot} })
         ConvertTo-Json -InputObject @($records) | Set-Content -LiteralPath $statePath -Encoding UTF8
     }
-    Write-Host "MedEvidence AI 2.0 is ready: $frontendUrl"
+    Write-Host "MedEvidence AI 3.0 is ready: $frontendUrl"
     Write-Host 'Run stop.ps1 to stop only processes started by this launcher.'
 } catch {
     foreach ($process in $newProcesses) {

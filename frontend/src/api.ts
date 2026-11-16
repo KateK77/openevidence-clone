@@ -8,6 +8,15 @@ export type Session = {
     csrf: string;
     model?: string;
     generation_configured?: boolean;
+    synthesis?: SynthesisCapability;
+};
+export type SynthesisCapability = {
+    configured: boolean;
+    state: 'unconfigured' | 'unchecked' | 'ready' | 'error';
+    provider: string;
+    model: string;
+    missing: string[];
+    check?: { state: string; code: string; message: string; checked_at: string } | null;
 };
 export type Article = {
     pmid: string;
@@ -28,6 +37,8 @@ export type Article = {
 export type Section = {
     text: string;
     status: string;
+    kind?: 'finding' | 'limitation';
+    verification?: string;
     citations: {
         pmid: string;
         quote: string;
@@ -44,9 +55,18 @@ export type Answer = {
     sources: Article[];
     result: {
         message?: string;
+        code?: string;
+        language?: string;
+        detail?: string;
+        language_check?: string;
+        verification?: { claim_review: string; review_model: string; clinical_validation: boolean };
         sections?: Section[];
     };
     provenance: {
+        previous_questions?: string[];
+        revision_of?: number;
+        evidence_reused?: boolean;
+        generation_preferences?: Preferences;
         intent?: string;
         pipeline_version?: string;
         retrieved_at?: string;
