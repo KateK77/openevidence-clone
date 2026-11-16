@@ -1,0 +1,204 @@
+{
+  "site": "https://medevidence-ai-v3.onrender.com",
+  "started_at": "2026-11-16T08:41:45.567Z",
+  "method": "Playwright UI + labelled API assertions; real PubMed and configured Gemini; NOT native CUA",
+  "automatic_retries": 0,
+  "checks": [
+    {
+      "id": "P01",
+      "difficulty": "Easy",
+      "expected": "HTTPS health confirms PostgreSQL and public demo mode",
+      "result": "PASS",
+      "observed": {
+        "service": "medevidence",
+        "version": "3.0.0",
+        "status": "ok",
+        "port": "10000",
+        "database": "postgresql",
+        "generation_configured": true
+      }
+    },
+    {
+      "id": "P02",
+      "difficulty": "Easy",
+      "expected": "Published researcher credentials log in and survive reload",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P03",
+      "difficulty": "Medium",
+      "expected": "Shared profile changes are forbidden in UI and API",
+      "result": "PASS",
+      "observed": {
+        "status": 403
+      }
+    },
+    {
+      "id": "P04",
+      "difficulty": "Medium",
+      "expected": "Real PubMed PMID search resolves metadata, abstract and DOI",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P05",
+      "difficulty": "Medium",
+      "expected": "Save publication confirms success and persists after reload",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P06",
+      "difficulty": "Medium",
+      "expected": "Collection edit and filter persist without duplicating records",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P07",
+      "difficulty": "Medium",
+      "expected": "Saved PMID search can be saved and restored",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P08",
+      "difficulty": "Hard",
+      "expected": "GLP-1 question creates a real literature-backed conversation",
+      "result": "PASS",
+      "observed": {
+        "answer_id": 5,
+        "conversation": 5,
+        "status": "generation_error",
+        "source_count": 12
+      }
+    },
+    {
+      "id": "P09",
+      "difficulty": "Hard",
+      "expected": "AI synthesis completes with exact source quotations and automated claim checks",
+      "result": "FAIL",
+      "observed": "Actual status: generation_error. A source ID or quoted excerpt failed validation."
+    },
+    {
+      "id": "P10",
+      "difficulty": "Medium",
+      "expected": "Answer bookmark persists and appears in Saved answers",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P11",
+      "difficulty": "Medium",
+      "expected": "Markdown, PDF, BibTeX and CSV downloads are nonempty and correctly encoded",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P12",
+      "difficulty": "Hard",
+      "expected": "Follow-up stays in the conversation and PubMed queries retain GLP-1 context",
+      "result": "PASS",
+      "observed": {
+        "conversation": 5,
+        "status": "generation_error",
+        "queries": [
+          "glp-1 receptor agonists obesity treatment limitations",
+          "\"glp-1\" AND \"receptor\" AND \"agonists\" AND \"obesity\""
+        ]
+      }
+    },
+    {
+      "id": "P13",
+      "difficulty": "Medium",
+      "expected": "Conversation rename and history search persist",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P14",
+      "difficulty": "Medium",
+      "expected": "Preferences save and survive page reload",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P15",
+      "difficulty": "Hard",
+      "expected": "Published reader credentials work; another account cannot access the researcher answer",
+      "result": "PASS",
+      "observed": {
+        "status": 404
+      }
+    },
+    {
+      "id": "P16",
+      "difficulty": "Medium",
+      "expected": "Mobile dashboard and evidence table have no page overflow; drawer can close",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P17",
+      "difficulty": "Easy",
+      "expected": "Sign out removes access to the protected answer",
+      "result": "PASS",
+      "observed": "Expected behavior observed"
+    },
+    {
+      "id": "P18",
+      "difficulty": "Easy",
+      "expected": "No uncaught browser exceptions during the run",
+      "result": "PASS",
+      "observed": {
+        "exceptions": 0
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/01-dashboard.png",
+      "url": "https://medevidence-ai-v3.onrender.com/",
+      "captured_at": "2026-11-16T08:41:48.667Z"
+    },
+    {
+      "path": "docs/screenshots/02-literature-search.png",
+      "url": "https://medevidence-ai-v3.onrender.com/library",
+      "captured_at": "2026-11-16T08:41:49.744Z"
+    },
+    {
+      "path": "docs/screenshots/04-source-citation.png",
+      "url": "https://medevidence-ai-v3.onrender.com/library",
+      "captured_at": "2026-11-16T08:41:49.956Z"
+    },
+    {
+      "path": "docs/screenshots/05-saved-publications.png",
+      "url": "https://medevidence-ai-v3.onrender.com/publications",
+      "captured_at": "2026-11-16T08:41:51.177Z"
+    },
+    {
+      "path": "docs/screenshots/03-evidence-synthesis.png",
+      "url": "https://medevidence-ai-v3.onrender.com/answer/5",
+      "captured_at": "2026-11-16T08:41:57.852Z"
+    },
+    {
+      "path": "docs/screenshots/06-conversation-history.png",
+      "url": "https://medevidence-ai-v3.onrender.com/history",
+      "captured_at": "2026-11-16T08:42:07.199Z"
+    },
+    {
+      "path": "docs/screenshots/08-mobile-dashboard.png",
+      "url": "https://medevidence-ai-v3.onrender.com/",
+      "captured_at": "2026-11-16T08:42:10.969Z"
+    }
+  ],
+  "model_configured": true,
+  "model": "gemini-3.5-flash-lite",
+  "finished_at": "2026-11-16T08:42:12.208Z",
+  "counts": {
+    "PASS": 17,
+    "FAIL": 1,
+    "NOT_RUN": 0
+  }
+}

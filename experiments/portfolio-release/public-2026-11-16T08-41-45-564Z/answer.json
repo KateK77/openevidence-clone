@@ -1,0 +1,358 @@
+{
+  "id": 5,
+  "conversation": 5,
+  "question": "What is the evidence for GLP-1 receptor agonists in obesity treatment?",
+  "created": "2026-11-16T08:41:57.192169Z",
+  "status": "generation_error",
+  "model": "gemini-3.5-flash-lite",
+  "result": {
+    "code": "verification_failed",
+    "message": "A source ID or quoted excerpt failed validation.",
+    "language": "English"
+  },
+  "provenance": {
+    "intent": "evidence review",
+    "searches": [
+      {
+        "pmids": [
+          "32442310",
+          "40031990",
+          "40960852",
+          "36843578",
+          "39892489",
+          "39096914",
+          "40353578",
+          "40960239",
+          "41015723",
+          "34775881",
+          "37351564",
+          "40716192"
+        ],
+        "query": "glp-1 receptor agonists obesity treatment"
+      },
+      {
+        "pmids": [
+          "39114288",
+          "32442310",
+          "40466247",
+          "41022269",
+          "39892489",
+          "37562748",
+          "40022548",
+          "39281096",
+          "37445623",
+          "36566341",
+          "40378625",
+          "40858197"
+        ],
+        "query": "\"glp-1\" AND \"receptor\" AND \"agonists\" AND \"obesity\""
+      }
+    ],
+    "completed_at": "2026-11-16T08:41:57.187918+00:00",
+    "retrieved_at": "2026-11-16T08:41:52.708936+00:00",
+    "normalization": {
+      "method": "original",
+      "notice": "",
+      "original": "What is the evidence for GLP-1 receptor agonists in obesity treatment?",
+      "normalized": "What is the evidence for GLP-1 receptor agonists in obesity treatment?"
+    },
+    "pipeline_version": "round-03",
+    "previous_questions": [],
+    "citation_validation": "Retrieved PMID membership, verbatim excerpts, numeric consistency and automated claim review. Not independent clinical validation.",
+    "generation_preferences": {
+      "detail": "Concise",
+      "display": "Comfortable",
+      "language": "English"
+    }
+  },
+  "saved": false,
+  "sources": [
+    {
+      "doi": "10.1001/jamasurg.2025.3590",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40960852/",
+      "date": "2025 Nov 01",
+      "pmid": "40960852",
+      "year": 2025,
+      "title": "Obesity Treatment With Bariatric Surgery vs GLP-1 Receptor Agonists.",
+      "types": [
+        "Journal Article",
+        "Comparative Study"
+      ],
+      "authors": [
+        "Tyson S Barrett",
+        "Juliane O Hafermann",
+        "Shannon Richards",
+        "Keith LeJeune",
+        "George M Eid"
+      ],
+      "journal": "JAMA surgery",
+      "abstract": "IMPORTANCE: Obesity is a chronic condition with negative consequences for patients, the health care system, and society. The most effective treatment of class II and III obesity is metabolic bariatric surgery (MBS), which is usually considered a last resort. Glucagon-like peptide-1 receptor agonists (GLP-1 RAs) have recently shown promising results.\n\nOBJECTIVE: To compare weight loss and ongoing costs associated with MBS and GLP-1 RAs in the US.\n\nDESIGN, SETTING, AND PARTICIPANTS: This cohort study used data from the Highmark Health insurance claims database and the Allegheny Health Network electronic medical record in the US. Participants were patients with class II or III obesity treated with either MBS or GLP-1 RAs who were enrolled in Highmark insurance for at least 6 months prior to index treatment and had follow-up data available for at least 12 months. Using propensity score weighting, the populations were adjusted for differences in baseline spending, health care utilization, age, sex, comorbidities, and smoking status. Data were analyzed from July 2024 to July 2025.\n\nEXPOSURES: MBS (sleeve gastrectomy or gastric bypass) vs GLP-1 RAs (dulaglutide, exenatide, liraglutide, lixisenatide, semaglutide, or tirzepatide).\n\nMAIN OUTCOMES AND MEASURES: The main outcomes were total weight loss and monthly ongoing costs (pharmacy, medical, and surgery costs) at baseline and over 2 years after index treatment. Mean adjusted costs were calculated using a linear mixed-effects model.\n\nRESULTS: Analyses included 30 458 patients (mean [SD] age, 50 [11] years; 20 118 [66.1%] female), with 14 101 undergoing MBS (mean [SD] follow-up, 34 [16] months) and 16 357 receiving GLP-1 RAs (mean [SD] follow-up, 32 [17] months). After propensity score weighting, baseline characteristics were comparable. The mean (SE) total costs over 2 years were $63 483 ($1563) for GLP-1 RAs and $51 794 ($1724) for MBS (P < .001). The main driver of this difference was higher sustained pharmacy costs in the GLP-1 RA group throughout year 2 of follow-up. Comparing weight loss data of 257 patients using GLP-1 RAs and 1291 patients who underwent MBS, total weight loss was greater for the MBS group (mean [SE], 28.3% [0.3%]) than the GLP-1 RA group (mean [SE], 10.3% [0.5%]) (P < .001).\n\nCONCLUSIONS AND RELEVANCE: These findings suggest that MBS was associated with more weight loss at lower ongoing costs compared with GLP-1 RAs in class II and III obesity. Further study is needed to determine if MBS should still be considered the last resort in treating obesity.",
+      "date_type": "Journal issue",
+      "issue_date": "2025 Nov 01",
+      "electronic_date": ""
+    },
+    {
+      "doi": "10.1016/j.beem.2025.102038",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41015723/",
+      "date": "2025 09 24",
+      "pmid": "41015723",
+      "year": 2025,
+      "title": "Preconception use of GLP-1 and GLP-1/GIP receptor agonists for obesity treatment.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Andrijana Koceva",
+        "Andrej Janež",
+        "Mojca Jensterle"
+      ],
+      "journal": "Best practice & research. Clinical endocrinology & metabolism",
+      "abstract": "Obesity is rising among women of reproductive age and significantly contributes to subfertility. If conception occurs, maternal obesity is associated with increased risks for both maternal and neonatal complications, with potential long-term effects on the offspring's health. Current clinical guidelines emphasize the importance of preconception weight optimization in women with obesity to reduce maternal and fetal risks. Amid the rising use of incretin-based anti-obesity medications, particularly among young women, their potential role in preconception care is receiving growing clinical and research interest. With unplanned pregnancies remaining common, incidental exposure during early pregnancy is becoming more likely. In parallel, there is increasing interest in the potential of these agents to support preconception weight loss and enhance fertility outcomes in women with obesity. This narrative review examines the current human evidence on GLP-1 and dual GLP-1/GIP receptor agonists approved for obesity treatment, focusing on their potential role in preconception care and addressing key safety considerations and challenges related to their use during the preconception period, as well as inadvertent exposure in early pregnancy.",
+      "date_type": "Electronic publication",
+      "issue_date": "2025 Dec",
+      "electronic_date": "2025 09 24"
+    },
+    {
+      "doi": "10.1210/clinem/dgaa285",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32442310/",
+      "date": "2020 Aug 01",
+      "pmid": "32442310",
+      "year": 2020,
+      "title": "Obesity, Polycystic Ovary Syndrome, and Infertility: A New Avenue for GLP-1 Receptor Agonists.",
+      "types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "authors": [
+        "Hellas Cena",
+        "Luca Chiovato",
+        "Rossella E Nappi"
+      ],
+      "journal": "The Journal of clinical endocrinology and metabolism",
+      "abstract": "CONTEXT: Obesity is responsible for an increased risk of sub-fecundity and infertility. Obese women show poorer reproductive outcomes regardless of the mode of conception, and higher body mass index (BMI) is associated with poorer fertility prognosis. Polycystic ovary syndrome (PCOS) is one of the leading causes of infertility, and many women with PCOS are also overweight or obese.\n\nEVIDENCE ACQUISITION: The aim of the present narrative review is to describe the mechanisms responsible for the development of infertility and PCOS in women with obesity/overweight, with a focus on the emerging role of glucagon-like peptide-1 (GLP-1) receptor agonists (GLP-1 RAs) as a therapeutic option for obese women with PCOS.\n\nEVIDENCE SYNTHESIS: Weight reduction represents the most significant factor affecting fertility and pregnancy outcomes. Current experimental and clinical evidence suggests the presence of an underlying pathophysiological link between obesity, GLP-1 kinetic alterations, and PCOS pathogenesis. Based on the positive results in patients affected by obesity, with or without diabetes, the administration of GLP-1 RA (mainly liraglutide) alone or in combination with metformin has been investigated in women with obesity and PCOS. Several studies demonstrated significant weight loss and testosterone reduction, with mixed results relative to improvements in insulin resistance parameters and menstrual patterns.\n\nCONCLUSIONS: The weight loss effects of GLP-1 RA offer a unique opportunity to expand the treatment options available to PCOS patients.",
+      "date_type": "Journal issue",
+      "issue_date": "2020 Aug 01",
+      "electronic_date": ""
+    },
+    {
+      "doi": "10.3389/fendo.2023.1085799",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36843578/",
+      "date": "2023 02 01",
+      "pmid": "36843578",
+      "year": 2023,
+      "title": "GLP-1 receptor agonists for the treatment of obesity: Role as a promising approach.",
+      "types": [
+        "Journal Article",
+        "Review",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "authors": [
+        "Jing-Yue Wang",
+        "Quan-Wei Wang",
+        "Xin-Yu Yang",
+        "Wei Yang",
+        "Dong-Rui Li",
+        "Jing-Yu Jin",
+        "Hui-Cong Zhang",
+        "Xian-Feng Zhang"
+      ],
+      "journal": "Frontiers in endocrinology",
+      "abstract": "Obesity is a complex disease characterized by excessive fat accumulation which is caused by genetic, environmental and other factors. In recent years, there has been an increase in the morbidity, disability rate,and mortality due to obesity, making it great threat to people's health and lives, and increasing public health care expenses. Evidence from previous studies show that weight loss can significantly reduce the risk of obesity-related complications and chronic diseases. Diet control, moderate exercise, behavior modification programs, bariatric surgery and prescription drug treatment are the major interventions used to help people lose weight. Among them, anti-obesity drugs have high compliance rates and cause noticeable short-term effects in reducing obese levels. However, given the safety or effectiveness concerns of anti-obesity drugs, many of the currently used drugs have limited clinical use. Glucagon-like peptide-1 receptor (GLP-1R) agonists are a group of drugs that targets incretin hormone action, and its receptors are widely distributed in nerves, islets, heart, lung, skin, and other organs. Several animal experiments and clinical trials have demonstrated that GLP-1R agonists are more effective in treating or preventing obesity. Therefore, GLP-1R agonists are promising agents for the treatment of obese individuals. This review describes evidence from previous research on the effects of GLP-1R agonists on obesity. We anticipate that this review will generate data that will help biomedical researchers or clinical workers develop obesity treatments based on GLP-1R agonists.",
+      "date_type": "Electronic publication",
+      "issue_date": "2023",
+      "electronic_date": "2023 02 01"
+    },
+    {
+      "doi": "10.1016/j.medcli.2025.107122",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40716192/",
+      "date": "2025 07 26",
+      "pmid": "40716192",
+      "year": 2025,
+      "title": "GLP-1 receptor agonists and GIP/GLP-1 co-agonists in the treatment of obesity in adolescents and the elderly.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Gilberto Pérez López"
+      ],
+      "journal": "Medicina clinica",
+      "abstract": "Obesity represents a global public health challenge, with specific characteristics and needs in adolescent and elderly populations. GLP-1 (glucagon-like peptide-1) receptor agonists such as liraglutide and semaglutide, as well as the GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 receptor co-agonist tirzepatide, have emerged as promising therapeutic options for obesity management. This review analyzes the clinical development, efficacy, safety, and tolerability of these drugs specifically in adolescents and the elderly, populations typically underrepresented in initial clinical trials. Findings from pivotal clinical studies and real-world data are detailed, showing that these medications offer significant benefits in weight reduction, albeit with particular safety considerations for each age group. Additionally, emerging GLP-1 molecules in clinical development with potential application in these special populations are explored. The conclusions emphasize the need for a personalized approach considering the specific pathophysiological, pharmacokinetic, and pharmacodynamic differences of each population group.",
+      "date_type": "Electronic publication",
+      "issue_date": "2025 Oct",
+      "electronic_date": "2025 07 26"
+    },
+    {
+      "doi": "10.1080/13543784.2025.2472408",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40022548/",
+      "date": "2025 03 01",
+      "pmid": "40022548",
+      "year": 2025,
+      "title": "The promise of glucagon-like peptide 1 receptor agonists (GLP-1RA) for the treatment of obesity: a look at phase 2 and 3 pipelines.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Sten Madsbad",
+        "Jens J Holst"
+      ],
+      "journal": "Expert opinion on investigational drugs",
+      "abstract": "INTRODUCTION: GLP-1-based therapies have changed the treatment of overweight/obesity. Liraglutide 3.0 mg daily, the first GLP-1 RA approved for treatment of overweight, induced a weight loss of 6-8%, Semaglutide 2.4 mg once weekly improved weight loss to about 12-15%, while the dual GIP/GLP-1 receptor agonist tirzepatide once weekly has induced a weight loss of about 20% in obese people without diabetes.\n\nAREAS COVERED: This review describes results obtained with GLP-1 mono-agonists, GLP-1/GIP dual agonists, GLP-1/glucagon co-agonists, and the triple agonist retatrutide (GIP/GLP-1/glucagon), which have shown beneficial effect both on body weight and steatotic liver disease. A combination of semaglutide (a GLP-1 agonist) and cagrilintide (a long-acting amylin analogue) for weekly administration is currently in phase III development, and so is oral semaglutide and several non-peptide small molecule GLP-1 agonists for oral administration. The adverse events with the GLP-1-based therapies are primarily gastrointestinal and include nausea, vomiting, obstipation, or diarrhea, which often can be mitigated by slow up titration.\n\nEXPERT OPINION: The GLP-1-based therapies will change the treatment of obesity and its comorbidities including steatotic liver disease in the future. Outstanding question is maintenance of the weight loss, possibly pharmacological treatment needs to be life-long.",
+      "date_type": "Electronic publication",
+      "issue_date": "2025 Mar",
+      "electronic_date": "2025 03 01"
+    },
+    {
+      "doi": "10.1016/j.eclinm.2024.102782",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39281096/",
+      "date": "2024 08 30",
+      "pmid": "39281096",
+      "year": 2024,
+      "title": "GLP-1 single, dual, and triple receptor agonists for treating type 2 diabetes and obesity: a narrative review.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Nasreen Alfaris",
+        "Stephanie Waldrop",
+        "Veronica Johnson",
+        "Brunna Boaventura",
+        "Karla Kendrick",
+        "Fatima Cody Stanford"
+      ],
+      "journal": "EClinicalMedicine",
+      "abstract": "UNLABELLED: Obesity and type 2 diabetes mellitus (T2DM) present major global health challenges, with an increasing prevalence worldwide. Glucagon-like peptide-1 receptor agonists (GLP-1RAs) have emerged as a pivotal treatment option for both conditions, demonstrating efficacy in blood glucose management, weight reduction, cardiovascular disease prevention, and kidney health improvement. GLP-1, an incretin hormone, plays a crucial role in glucose metabolism and appetite regulation, influencing insulin secretion, insulin sensitivity, and gastric emptying. The therapeutic use of GLP-1RAs has evolved significantly, offering various formulations that provide different efficacy, routes of administration, and flexibility in dosing. These agents reduce HbA1c levels, facilitate weight loss, and exhibit cardiovascular protective effects, making them an integral component of T2DM and obesity management. This review will discuss the currently approved medication for T2DM and obesity, and will also highlight the advent of novel agents which are dual and triple hormonal agonists which represent the future direction of incretin-based therapy.\n\nFUNDING: National Institutes of HealthNIDDKU24 DK132733 (FCS), UE5 DK137285 (FCS), and P30 DK040561 (FCS).",
+      "date_type": "Electronic publication",
+      "issue_date": "2024 Sep",
+      "electronic_date": "2024 08 30"
+    },
+    {
+      "doi": "10.1056/NEJMoa2511774",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40960239/",
+      "date": "2025 09 16",
+      "pmid": "40960239",
+      "year": 2025,
+      "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment.",
+      "types": [
+        "Journal Article",
+        "Randomized Controlled Trial",
+        "Multicenter Study",
+        "Clinical Trial, Phase III"
+      ],
+      "authors": [
+        "Sean Wharton",
+        "Louis J Aronne",
+        "Adam Stefanski",
+        "Nasreen F Alfaris",
+        "Andreea Ciudin",
+        "Koutaro Yokote",
+        "Bruno Halpern",
+        "Alpana P Shukla",
+        "Chunmei Zhou",
+        "Lisa Macpherson",
+        "Sheryl E Allen",
+        "Nadia N Ahmad",
+        "Suzanne R Klise",
+        "ATTAIN-1 Trial Investigators"
+      ],
+      "journal": "The New England journal of medicine",
+      "abstract": "BACKGROUND: Orforglipron, a small-molecule, nonpeptide oral glucagon-like peptide-1 (GLP-1) receptor agonist, is being investigated as a treatment for obesity.\n\nMETHODS: In this phase 3, multinational, randomized, double-blind trial, we examined the safety and efficacy of once-daily orforglipron at doses of 6 mg, 12 mg, or 36 mg, as compared with placebo (assigned in a 3:3:3:4 ratio) as an adjunct to healthy diet and physical activity for 72 weeks. All the patients had obesity without diabetes mellitus. The primary end point was the percent change in body weight from baseline to week 72, as assessed according to the treatment-regimen estimand in the intention-to-treat population.\n\nRESULTS: A total of 3127 patients underwent randomization. The mean change in body weight from baseline to week 72 was -7.5% (95% confidence interval [CI], -8.2 to -6.8) with 6 mg of orforglipron, -8.4% (95% CI, -9.1 to -7.7) with 12 mg of orforglipron, and -11.2% (95% CI, -12.0 to -10.4) with 36 mg of orforglipron, as compared with -2.1% (95% CI, -2.8 to -1.4) with placebo (P<0.001 for all comparisons with placebo). Among the patients in the orforglipron 36-mg group, 54.6% had a reduction of 10% or more, 36.0% had a reduction of 15% or more, and 18.4% had a reduction of 20% or more, as compared with 12.9%, 5.9%, and 2.8% of the patients, respectively, in the placebo group. Waist circumference, systolic blood pressure, triglyceride levels, and non-HDL cholesterol levels significantly improved with orforglipron treatment as compared with placebo. Adverse events resulted in treatment discontinuation in 5.3 to 10.3% of the patients in the orforglipron groups and in 2.7% of those in the placebo group. The most common adverse events with orforglipron were gastrointestinal effects, which were mostly mild to moderate.\n\nCONCLUSIONS: In adults with obesity, 72-week treatment with orforglipron led to significantly greater reductions in body weight than placebo; the adverse-event profile was consistent with that of other GLP-1 receptor agonists. (Funded by Eli Lilly; ATTAIN-1 ClinicalTrials.gov number, NCT05869903.).",
+      "date_type": "Electronic publication",
+      "issue_date": "2025 Nov 06",
+      "electronic_date": "2025 09 16"
+    },
+    {
+      "doi": "10.1016/j.medcli.2025.106951",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40378625/",
+      "date": "2025 05 15",
+      "pmid": "40378625",
+      "year": 2025,
+      "title": "GLP-1 receptor agonists in obesity treatment: Effects on cardiometabolic variables and cardiovascular disease.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Helena Sardà",
+        "Idoia Genua",
+        "Inka Miñambres"
+      ],
+      "journal": "Medicina clinica",
+      "abstract": "Obesity is associated with an increased cardiovascular risk. Drugs with glucagon-like peptide-1 receptor agonist (arGLP-1) action for overweight/obesity, such as liraglutide, semaglutide, and tirzepatide, have shown improvements in weight and body composition, as well as in parameters related to glucose metabolism, hypertension, dyslipidemia (reduction of triglycerides and increase in HDL cholesterol), and metabolic dysfunction-associated steatotic liver disease. Additionally, semaglutide 2.4mg sc has shown a reduction in cardiovascular mortality, non-fatal myocardial infarction or stroke, and symptoms of heart failure, while tirzepatide has demonstrated a reduction in cardiovascular mortality and heart failure symptoms in patients with obesity and heart failure. The availability of these new drugs with arGLP-1 action represents a paradigm shift in the treatment of obesity, as they achieve greater weight loss and improvements in cardiometabolic comorbidities.",
+      "date_type": "Electronic publication",
+      "issue_date": "2025 Jul",
+      "electronic_date": "2025 05 15"
+    },
+    {
+      "doi": "10.1542/peds.2024-068119",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40031990/",
+      "date": "2025 Apr 01",
+      "pmid": "40031990",
+      "year": 2025,
+      "title": "GLP-1 Receptor Agonists in Pediatric and Adolescent Obesity.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Margaret A Stefater-Richards",
+        "Grace Jhe",
+        "Yanjia Jason Zhang"
+      ],
+      "journal": "Pediatrics",
+      "abstract": "Obesity remains highly prevalent among children in the United States and is associated with an ever-increasing burden of obesity-related diseases. Effective pediatric obesity prevention and treatment will require both societal interventions and health care system innovation. One recent advancement is the approval of glucagon-like peptide-1 receptor agonists (GLP-1RAs) for use in adolescents. GLP-1RAs are notable for their effectiveness in weight management and in their ability to ameliorate obesity-related diseases. GLP-1RAs can be an important part of a comprehensive treatment plan for pediatric patients seeking obesity care, and we will review the pediatric clinician's considerations for their effective use. We discuss the history of obesity pharmacology and development of GLP-1RAs. We review the indications for use and common adverse reactions. We highlight the importance of mental health care for obesity treatment, with a focus on disordered eating behaviors and their intersection with obesity and pharmacologic treatment of obesity. Nutrition remains an important issue for obesity prevention and management, and we highlight nutritional concerns during GLP-1RA therapy. Finally, we discuss health inequities in obesity, the dangers of perpetuating these inequities if GLP-1RA access remains biased, and the opportunities for improvement.",
+      "date_type": "Journal issue",
+      "issue_date": "2025 Apr 01",
+      "electronic_date": ""
+    },
+    {
+      "doi": "10.1080/00325481.2021.2002616",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34775881/",
+      "date": "2021 11 29",
+      "pmid": "34775881",
+      "year": 2021,
+      "title": "Managing the gastrointestinal side effects of GLP-1 receptor agonists in obesity: recommendations for clinical practice.",
+      "types": [
+        "Journal Article"
+      ],
+      "authors": [
+        "Sean Wharton",
+        "Melanie Davies",
+        "Dror Dicker",
+        "Ildiko Lingvay",
+        "Ofri Mosenzon",
+        "Domenica M Rubino",
+        "Sue D Pedersen"
+      ],
+      "journal": "Postgraduate medicine",
+      "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1RAs) are well established in clinical practice for the treatment of type 2 diabetes, and are approved and recommended for weight management in overweight or obesity. Gastrointestinal side effects are well known as the most common adverse effects of these agents and represent a potential barrier for use, particularly at higher doses. Drawing on both published evidence and our collective clinical experience, we aim to guide practitioners through managing these side effects with a view to optimizing therapeutic outcomes with GLP-1RAs.",
+      "date_type": "Electronic publication",
+      "issue_date": "2022 Jan",
+      "electronic_date": "2021 11 29"
+    },
+    {
+      "doi": "10.3389/fendo.2024.1431292",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39114288/",
+      "date": "2024 07 24",
+      "pmid": "39114288",
+      "year": 2024,
+      "title": "Mechanisms of action and therapeutic applications of GLP-1 and dual GIP/GLP-1 receptor agonists.",
+      "types": [
+        "Journal Article",
+        "Review"
+      ],
+      "authors": [
+        "Qiyuan Keith Liu"
+      ],
+      "journal": "Frontiers in endocrinology",
+      "abstract": "Glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) are two incretins that bind to their respective receptors and activate the downstream signaling in various tissues and organs. Both GIP and GLP-1 play roles in regulating food intake by stimulating neurons in the brain's satiety center. They also stimulate insulin secretion in pancreatic β-cells, but their effects on glucagon production in pancreatic α-cells differ, with GIP having a glucagonotropic effect during hypoglycemia and GLP-1 exhibiting glucagonostatic effect during hyperglycemia. Additionally, GIP directly stimulates lipogenesis, while GLP-1 indirectly promotes lipolysis, collectively maintaining healthy adipocytes, reducing ectopic fat distribution, and increasing the production and secretion of adiponectin from adipocytes. Together, these two incretins contribute to metabolic homeostasis, preventing both hyperglycemia and hypoglycemia, mitigating dyslipidemia, and reducing the risk of cardiovascular diseases in individuals with type 2 diabetes and obesity. Several GLP-1 and dual GIP/GLP-1 receptor agonists have been developed to harness these pharmacological effects in the treatment of type 2 diabetes, with some demonstrating robust effectiveness in weight management and prevention of cardiovascular diseases. Elucidating the underlying cellular and molecular mechanisms could potentially usher in the development of new generations of incretin mimetics with enhanced efficacy and fewer adverse effects. The treatment guidelines are evolving based on clinical trial outcomes, shaping the management of metabolic and cardiovascular diseases.",
+      "date_type": "Electronic publication",
+      "issue_date": "2024",
+      "electronic_date": "2024 07 24"
+    }
+  ]
+}

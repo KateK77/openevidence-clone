@@ -1,5 +1,7 @@
 # Free public test hosting
 
+Current deployment, published demo accounts and November 16 verification: [Public demo operations](public-demo.md). Historical Round 3 reports remain unchanged.
+
 The user authorized a public test site on Render **My Workspace** and a separate
 database in the Neon **Jiawen** Free organization. Existing apps and databases
 belong to other projects and must not be changed. This profile supplements the
@@ -17,10 +19,11 @@ multi-service production recipe; it is intended for limited research testing.
   host and trusted HTTPS origin from Render's assigned hostname.
 - The database URL, Django secret and optional Gemini key are server environment
   variables, never frontend assets or repository files.
-- This single-worker profile uses an in-process cache. The shared model-call cap
-  applies across its users but resets on restart. Use the Redis profile before
-  adding workers or instances. User records and sessions remain in PostgreSQL.
-- Local SQLite data is not transferred. Testers create new research accounts.
+- This single-worker profile uses an in-process cache. The short-window cache cap resets on restart. In public-demo mode, additional
+  PostgreSQL daily/lifetime call reservations survive restarts and apply globally.
+  Use shared caching and centralized NCBI pacing before scaling. User records and sessions remain in PostgreSQL.
+- Local SQLite data is not transferred. Testers can use protected synthetic demo
+  accounts or create their own research accounts.
 
 ## Free-tier limits
 
@@ -35,10 +38,10 @@ quotas. Quotas and availability are not an uptime guarantee. Database inactivity
 does not mean user records are deleted. Do not use an expiring Render Free
 Postgres database for this deployment.
 
-Gemini remains unconfigured until the operator supplies a Free Tier key. In the
-Render service's Environment page, add `LLM_API_KEY` privately; never send the key
-through a public form, report or repository. After redeployment, sign in and run
-**Settings → Check AI connection**. This does not enable billing.
+The current service has server-side Gemini configuration. Live verification rejected
+two generated drafts on source/number checks; configuration alone does not establish
+working synthesis. See the [release report](../experiments/portfolio-release/REPORT.md).
+Never send provider keys through a public form, report or repository.
 
 ## Verification
 

@@ -35,3 +35,5 @@ jobs:
       - run: python scripts/deployment_smoke.py
       - run: docker build -f deploy/Dockerfile.hosted -t medevidence-v3-hosted:test .
       - run: python scripts/hosted_smoke.py
+      - run: docker tag medevidence-v3-hosted:test medevidence-portfolio:test
+      - run: python scripts/portfolio_hosted_smoke.py

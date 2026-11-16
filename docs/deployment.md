@@ -1,10 +1,12 @@
 # Long-running research test deployment
 
+For the verified public Render + Neon portfolio site, use [Public demo deployment](public-demo.md). This page describes the separate self-managed multi-service option.
+
 The local `127.0.0.1:5173` address is available only on the computer running it.
 A GitHub repository stores source code; it does not run this Django application.
 To let testers visit independently of the owner's PC, use an always-on Linux
 server with Docker Compose and a domain pointing to it. This repository includes
-a deployment recipe; it has not automatically rented a server or published a URL.
+a self-managed deployment recipe; no always-on paid server was provisioned. The separate free public Render site is linked above.
 
 ## Services and persistence
 
