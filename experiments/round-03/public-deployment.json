@@ -1,0 +1,13 @@
+{
+  "url": "https://medevidence-ai-v3.onrender.com",
+  "service_id": "srv-dbt8dae1egvs73fnjuf0",
+  "plan": "free",
+  "region": "ohio",
+  "deploy_id": "dep-dbt8dam1egvs73fnjv5g",
+  "status": "live",
+  "deployed_commit": "e171d797069c23873c84063d6888232cf50ab7dd",
+  "public_smoke_checks": 14,
+  "public_smoke_result": "pass",
+  "generation_configured": false,
+  "verification_finished_at": "2026-11-16T04:31:13.470Z"
+}

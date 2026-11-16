@@ -847,3 +847,12 @@ Stop after completing, verifying, documenting, and pushing Round 1.
 Wait for my feedback before making further product changes.
 
 **BEGIN ROUND 1: BUILD THE COMPLETE MEDEVIDENCE AI APPLICATION.**
+
+## Authorized public hosting follow-up
+
+The user selected a free public test site with idle suspension and explicitly
+confirmed Render My Workspace plus Neon Jiawen Free. Deploy the tested single-
+service image from v3-round-03, keep the repository private, preserve other apps,
+store records in the separate Neon database, and verify the real public site.
+Do not enable paid plans or billing. Keep Gemini credentials server-side and
+report missing live AI acceptance separately from successful site deployment.

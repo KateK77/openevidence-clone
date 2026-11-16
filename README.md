@@ -6,6 +6,13 @@ An independent biomedical literature workspace with live PubMed retrieval, optio
 
 Version 3 addresses Round 2 manual feedback with Gemini configuration, explicit language availability, audited answer revisions and clearer retrieval provenance. Reports and repository documentation are in English. The original requirements and first version remain available in the experiment history and the **v0.1.0-r1** tag.
 
+## Public test website
+
+[Open MedEvidence AI 3.0](https://medevidence-ai-v3.onrender.com).
+Register a new research account; local accounts were not uploaded. Free hosting
+can sleep when idle. The site currently runs in literature-only mode until the
+operator privately adds the Gemini key. [Deployment evidence](experiments/round-03/hosting-status.md).
+
 ## Start on Windows
 
 Open PowerShell in this project folder. Run each command separately.

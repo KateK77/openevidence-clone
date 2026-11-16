@@ -1,41 +1,68 @@
-# Free hosting deployment status
+# Free public hosting — deployment and acceptance
 
-Updated November 15, 2026, America/Chicago.
+Verified November 15, 2026, America/Chicago (November 16 UTC in provider logs).
 
-The user authorized a free public test deployment, accepting idle suspension,
-and explicitly confirmed Render **My Workspace** and Neon **Jiawen** as the
-target accounts. No paid upgrade or payment-method change is authorized.
+**Live website:** https://medevidence-ai-v3.onrender.com
 
-## Completed
+Render reports deployment `dep-dbt8dam1egvs73fnjv5g` live. Public HTTPS health
+returns version 3.0.0. The browser-based public acceptance run passed all 14 checks
+in `public-smoke.json`, using synthetic accounts, real PostgreSQL storage and
+live PubMed retrieval. No model calls or private patient data were used.
 
-- The local v3 release is preserved at tag `v3.0.0-r3` (`2c9b5ac`).
-- The free-hosting implementation is on `v3-round-03`, commit `27d313f`.
-- GitHub verification of that commit passed, including backend/frontend tests,
-  browser tests, Docker builds and both container integration checks:
+## Resources and source
+
+- User-confirmed Render workspace: **My Workspace**.
+- Service: `medevidence-ai-v3`, ID `srv-dbt8dae1egvs73fnjuf0`, **Free**, Ohio.
+- Dashboard: https://dashboard.render.com/web/srv-dbt8dae1egvs73fnjuf0
+- Source branch: `v3-round-03`; deployed commit:
+  `e171d797069c23873c84063d6888232cf50ab7dd`.
+- Hosting implementation `27d313f` passed all GitHub checks, including the
+  single-service image and integration checks:
   https://github.com/KateK77/openevidence-clone/actions/runs/43803623146
-- Neon Free project `medevidence-ai-v3` was created in `aws-us-east-2`, with
-  database `medevidence`. No local user data was uploaded. Connection credentials
-  were retained in session memory only for server-side configuration.
-- The single-service image serves the React app and Django API on one origin,
-  refuses ephemeral SQLite, and runs PostgreSQL migrations during startup.
+- Neon organization: **Jiawen**, confirmed Free plan. Project
+  `medevidence-ai-v3` (`still-glade-20792292`), `aws-us-east-2`, PostgreSQL 17,
+  database `medevidence`. No local SQLite data was uploaded.
+- Prior release tags and other Render services were preserved. No paid plan,
+  payment method or automatic paid-model fallback was enabled.
 
-## Current blocker
+## Public verification
 
-Render's create-service operation returned HTTP 400: the private repository
-`https://github.com/KateK77/openevidence-clone` was invalid or unfetchable. GitHub
-metadata and `git ls-remote` independently confirm the repository and branch
-exist. The user reported granting Render access to all repositories, but a retry
-still failed. The exact cause is not yet confirmed.
+Passed: registration and login after reload; Chinese terminology mapping and
+live literature retrieval; answer save feedback and persistence; contained mobile
+evidence table; authenticated PDF export; Unicode Markdown; known PMID lookup
+and publication dates; publication collection persistence; saved preferences;
+profile save and logout; answer retention after signing in again; mobile menu;
+cross-account data isolation; no uncaught browser exceptions.
 
-No MedEvidence Render service or public URL has been created. Existing services
-for other repositories were left unchanged. The user is checking whether the
-repository appears in Render's Git Provider list; no repository visibility change
-or credential-in-URL workaround has been attempted.
+Recent Render application logs returned no entries at error level during the
+deployment and smoke-test window. Two synthetic test accounts and their public
+research fixtures remain in the isolated hosted database. No real user records
+were changed. Desktop and mobile screenshots were inspected; the mobile home
+capture waits for the capability notice to load.
 
-## Remaining verification
+## Remaining limit: Gemini
 
-Create the Free service after resolving Git provider access, monitor the specific
-deployment until live, and verify HTTPS, real registration/login, saved data,
-PubMed retrieval and account isolation. Gemini Chinese generation still requires
-the operator's server-side Free Tier key; literature-only checks do not satisfy
-that acceptance requirement.
+`generation_configured` remains false. The site currently supports literature
+search, sources, history, saving and exports, but **does not yet generate AI
+research answers in Chinese or another language**. The operator must privately
+set `LLM_API_KEY` in the Render service's Environment page, save and deploy, then
+run **Settings → Check AI connection**. The provider, compatible endpoint and
+model name are already configured. Keep the key out of chat and Git.
+
+A passed connection probe is not claim-quality acceptance. A real Chinese answer,
+its source support, regeneration and live quota failures still require testing.
+
+## Availability and persistence
+
+The service runs independently of the owner's PC. Free Render instances can
+sleep after inactivity; first access may wait for wake-up. Free-instance hours
+are shared with the workspace's other free services, and provider quotas apply.
+Records live in Neon rather than the disposable service filesystem. This is not
+an uptime guarantee or a validated backup/restore process. New testers should
+register new accounts; local accounts are not copied automatically.
+
+The earlier repository-access error cleared after the user authorized GitHub
+access and confirmed the repository was visible in Render. Creation was retried
+successfully; the repository stayed private and no credential-in-URL workaround
+was used. Report-only commits may skip Render deployment to avoid unnecessary
+builds; the live source commit is recorded above.

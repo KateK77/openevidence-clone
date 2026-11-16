@@ -11,9 +11,12 @@ claim-review and provenance changes while retaining the existing research data
 and workflows. Local v3 is running at `http://127.0.0.1:5173`, backed by API port
 8021. A persistent deployment package is included and locally tested.
 
-**Live Gemini Chinese-answer acceptance is blocked by the missing operator key.
-No public website has been deployed.** These are separate from the passing local
-implementation checks. A private GitHub repository is source storage, not hosting.
+**Public test site is live:** https://medevidence-ai-v3.onrender.com
+
+The real public browser acceptance run passed 14 checks. See
+[hosting-status.md](hosting-status.md) for the verified deployment and scope.
+**Live Gemini Chinese-answer acceptance remains blocked by the missing operator
+key.** The current website runs in literature-only mode.
 
 ## Changes traced to feedback
 
@@ -24,7 +27,7 @@ implementation checks. A private GitHub repository is source storage, not hostin
 | Generate an answer after connecting the model | Owner-only new revision reuses stored evidence and current preferences; original answer/bookmark preserved | API and browser fixture checks pass; no live model call was made. |
 | More trustworthy evidence synthesis | PMID membership, exact excerpt, numeric guard and automated claim-support review; uncited evidence-gap sections are reviewed too | Unsupported or malformed output is withheld. Same-model review is not independent clinical validation. |
 | Confusing provenance labels | Original question, normalized question before context, prior questions and executed queries have distinct labels in UI and exports | Context handling retained; export and browser assertions pass. |
-| Keep the site available for other people | Built frontend, Caddy HTTPS recipe, Gunicorn, persistent PostgreSQL and shared Redis | Container integration passes. Public DNS, certificates, host provisioning and external access remain untested. |
+| Keep the site available for other people | Built frontend, Caddy HTTPS recipe, Gunicorn, persistent PostgreSQL and shared Redis | Container integration passes. Public Render HTTPS and Neon deployment verified in the separate 14-check acceptance run. |
 | Preserve successful v2 behavior | Save feedback, account isolation, history, exports and short/Chinese queries retained | Live PubMed workflow and regression suites pass within the scopes below. |
 
 ## Verification evidence
@@ -40,6 +43,7 @@ implementation checks. A private GitHub repository is source storage, not hostin
 | API and frontend Docker builds | Passed | Production images built locally. |
 | Production service integration | 4 checks passed | Disposable PostgreSQL migrations, Redis cache, secure login/session, actual Gunicorn health and Caddy configuration validation. |
 | Export visual inspection | Passed for supplied sample | Both pages of the generated PDF rendered and inspected; Chinese heading and source text readable. Not an exhaustive font or document-size test. |
+| Public HTTPS deployment | 14 checks passed | Real Render service, Neon database, live PubMed and desktop/mobile browser; no AI calls. |
 | Local normal-site startup | Passed | Health reports version 3.0.0 through frontend proxy; existing SQLite backed up before startup. |
 
 Initial browser failures were caused by an ambiguous test selector and were
@@ -72,8 +76,7 @@ still required after the operator configures Gemini:
    unchanged original answer and bookmark.
 4. Exercise real provider quota/errors. Confirm sources remain visible and that
    no unsupported or wrong-language draft is published.
-5. On the chosen host, verify HTTPS, reload persistence, account isolation,
-   backups/restoration and external access while the owner's PC is off.
+5. Public HTTPS, reload persistence and account isolation now pass. A timed idle/wake cycle and backup/restoration drill remain untested.
 
 ## Boundaries and operational status
 
@@ -85,7 +88,7 @@ still required after the operator configures Gemini:
   mapping remains a bounded glossary. Language detection and numerical checks are
   conservative heuristics, not complete semantic or clinical verification.
 - Production instructions use a new PostgreSQL database; local research is not
-  silently uploaded or migrated. No hosting account was charged or provisioned.
+  silently uploaded or migrated. A Free Render service and a Neon project in the Free organization were provisioned with explicit user authorization; no paid upgrade was made.
 - No public-load benchmark, independent security audit or clinical validation
   was performed. The app has no password-reset or invitation-management UI.
 - Prior version tags are preserved. This round's reports and GitHub text are English.
