@@ -1,6 +1,6 @@
 /** No OpenAI/Gemini requests; local infrastructure checks only, never 100-test scores. */
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
-import {execFileSync} from 'node:child_process';
+import {execFileSync,spawnSync} from 'node:child_process';
 import {resolve,relative} from 'node:path';
 import {root,evaldir,prepare,python,dist,appOriginal} from './environment.mjs';
 import {read,hash,write,capture} from './core.mjs';
@@ -22,6 +22,13 @@ try{
  await writeFile(evaldir+'/logs/harness-unit-tests.tap',unit);ok('Budget, approval, protocol and coordinate guard unit checks');
  const denied=execFileSync('node',['evaluation/harness/native-cua.mjs'],{cwd:root,encoding:'utf8'});
  if(!denied.includes('CHECK ONLY'))throw Error('Paid entry point unexpectedly active');ok('Paid runner defaults to no execution');
+ const blocked=spawnSync('node',['evaluation/harness/native-cua.mjs','--execute'],{cwd:root,encoding:'utf8',env:{...process.env,OPENAI_API_KEY:''}});
+ if(blocked.status!==1||!blocked.stderr.includes('ACTUAL_BILL_CAP_UNVERIFIED'))throw Error('Actual billing gate failed');
+ report.actual_bill_cap_verified=false;report.paid_execution_blocked=true;ok('Paid dispatch blocked before credentials and HTTP regardless of approval');
+ const ready=await read(evaldir+'/prerequisite-readiness.json');
+ const pending=suite.tests.filter(t=>!['offline','pubmed'].includes(t.preconditions.profile));
+ if(ready.cases.length!==26||ready.cases.some((r,i)=>r.id!==pending[i].id||r.difficulty!==pending[i].difficulty||r.result_status!=='NOT_RUN'))throw Error('Prerequisite mapping mismatch');
+ ok('All 26 additional prerequisite cases explicitly mapped; original difficulties unchanged');
  const folder=evaldir+'/.private/preflight-'+Date.now();driver=await prepare(folder);
  const errors=[];driver.page.on('pageerror',e=>errors.push(e.message));
  await driver.page.getByRole('heading',{name:/Better questions/}).waitFor();ok('Isolated Django + compiled React browser loads');

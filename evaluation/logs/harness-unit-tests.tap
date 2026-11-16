@@ -1,21 +1,26 @@
-✔ approval absent fails closed (1.3628ms)
-✔ wrong frozen suite/config rejected (0.1161ms)
-✔ ceiling cannot exceed five dollars (0.0833ms)
-✔ unknown tool fees block paid execution (0.0884ms)
-✔ unknown prior charge stops every further call (0.0964ms)
-✔ reserve prevents crossing remaining budget (0.0788ms)
-✔ full output and fee reserve included (0.1074ms)
-✔ cache and reasoning accounted without double counting (0.1528ms)
-✔ missing usage rejected rather than treated as free (0.1103ms)
-✔ text transcript retained, only latest image sent (1.114ms)
-✔ native executor never turns unsupported action into JS (0.7188ms)
-✔ off-screen coordinates refused (0.2204ms)
-✔ budget order includes every difficulty in every ten tasks (0.4751ms)
-ℹ tests 13
+✔ approval absent fails closed (2.4175ms)
+✔ wrong frozen suite/config rejected (0.4098ms)
+✔ ceiling cannot exceed ten dollars (0.2737ms)
+✔ unknown tool fees block paid execution (0.7944ms)
+✔ unknown prior charge stops every further call (2.9881ms)
+✔ reserve prevents crossing remaining budget (0.5795ms)
+✔ full output and fee reserve included (0.9064ms)
+✔ cache and reasoning accounted without double counting (0.6057ms)
+✔ missing usage rejected rather than treated as free (0.3667ms)
+✔ text transcript retained, only latest image sent (1.5729ms)
+✔ native executor never turns unsupported action into JS (0.7537ms)
+✔ off-screen coordinates refused (0.7276ms)
+✔ budget order includes every difficulty in every ten tasks (1.1143ms)
+✔ new approval and config flags cannot bypass actual invoice block (1.049ms)
+✔ actual ten dollar local reservation boundary (0.266ms)
+✔ invalid financial state and unknown fees fail closed (0.9283ms)
+✔ prior metering discrepancy cannot be resumed (0.4964ms)
+✔ archive metadata excluded but action and observation preserved in context (0.3127ms)
+ℹ tests 18
 ℹ suites 0
-ℹ pass 13
+ℹ pass 18
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 93.2703
+ℹ duration_ms 421.8255

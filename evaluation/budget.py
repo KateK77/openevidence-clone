@@ -12,17 +12,17 @@ def main():
  report={'model':'gpt-5.4-2026-03-05','unit_rates_per_million':{'input':2.5,'output':15,'cached_input':.25},
   'cache_discount_assumed':False,'native_tool_fee_assumption_usd':0,'native_tool_fee_status':'Not separately itemized in reviewed official price table; confirm applicable rate before paid approval. Unknown fee blocks execution.',
   'viewport_image_tokens':{'1280x768':math.ceil(40*24*1.2),'390x844':math.ceil(13*27*1.2)},
-  'application_provider_fees':'Excluded from the CUA arithmetic only when independently confirmed zero. No Gemini calls in this preparation; paid provider usage must share the $5 ceiling or be blocked.',
-  'scenarios':{}}
+  'application_provider_fees':'Excluded from the CUA arithmetic only when independently confirmed zero. No Gemini calls in this preparation; paid provider usage must share the $10 ceiling or be blocked.',
+  'target_usd':5,'absolute_maximum_usd':10,'paid_execution_blocked':True,'actual_bill_cap_verified':False,'scenarios':{}}
  lines=['# Budget scenarios — GPT-5.4 native CUA','',
- 'These are assumption-based forecasts, not measured usage, completed-test counts or pass rates. Every scenario retains all 100 frozen tasks. No caching discount, Batch discount, prepaid credits or automatic top-up is assumed.','']
+ 'Target budget: $5 USD. Absolute maximum actual charges: $10 USD. Paid dispatch is blocked because an actual-bill guarantee has not been established.', '', 'These are assumption-based forecasts, not measured usage, completed-test counts or pass rates. Every scenario retains all 100 frozen tasks. No caching discount, Batch discount, prepaid credits or automatic top-up is assumed.','']
  for name,s in SCENARIOS.items():
   rows=[]
   for d,n,q,i,o in zip(DIFF,N,s['requests'],s['input'],s['output']):
    cost=q*(i*2.5+o*15)/1e6
    rows.append({'difficulty':d,'tests':n,'expected_requests_per_test':q,'requests':n*q,'input_tokens_per_request':i,'output_tokens_per_request_including_reasoning':o,'input_tokens':n*q*i,'output_tokens':n*q*o,'cost_usd':n*cost,'cost_per_test_usd':cost})
   order=[0,0,0,1,1,1,1,2,2,3]*10;completion={}
-  for b in [3,4,5,15]:
+  for b in [5,10]:
    spent=0;completed=0
    for j in order:
     # $0.10 cushion retained; actual pre-call maximum-output reservation may stop sooner.
@@ -30,7 +30,7 @@ def main():
     spent+=rows[j]['cost_per_test_usd'];completed+=1
    completion[str(b)]={'forecast_full_task_attempts':completed,'not_completed':100-completed,'spent_forecast':spent,'note':'Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors.'}
   total=sum(r['cost_usd'] for r in rows)
-  report['scenarios'][name]={'rows':rows,'total_usd':total,'requests':sum(r['requests'] for r in rows),'budget_completion_forecast':completion}
+  report['scenarios'][name]={'rows':rows,'total_usd':total,'requests':sum(r['requests'] for r in rows),'token_count_requests':sum(r['requests'] for r in rows),'budget_completion_forecast':completion}
   lines += ['## '+name.title(),'','| Difficulty | Tests | Requests/test | Total requests | Input tokens | Output tokens | Token cost |','|---|---:|---:|---:|---:|---:|---:|']
   for r in rows:lines.append(f'| {r["difficulty"]} | {r["tests"]} | {r["expected_requests_per_test"]} | {r["requests"]} | {r["input_tokens"]:,} | {r["output_tokens"]:,} | ${r["cost_usd"]:.2f} |')
   lines+=['',f'**100-test forecast: ${total:.2f}.**','',*['- $'+b+': '+str(v['forecast_full_task_attempts'])+' full-task attempts forecast; not a predicted pass count.' for b,v in completion.items()],'']
@@ -45,13 +45,15 @@ def main():
  '- Execute model-issued action batches; capture local evidence after each action, reuse the last capture as the batch response, deduplicate identical PNGs by hash. No scripted task solver, paid summarizer or paid judge.',
  '- Request caps 8/14/24/36; action caps 35/70/120/200; these are resource stops, never relaxed acceptance criteria. Exhaustion is an execution error, not an application FAIL.',
  '- Each group of ten scheduled tests contains 3 Easy, 4 Medium, 2 Hard and 1 Expert. Difficult tasks are not pushed to the end merely to maximize inexpensive completions.',
- '', '## Hard ceiling and fee uncertainty','',
- 'The $3 target is a planning target; only a newly approved amount up to $5 can authorize execution. Reserve counted input with 10% margin, maximum possible output and applicable native-tool fees before every dispatch, retain $0.10 headroom, persist spending and ambiguous-charge reservations, and run one request at a time. No SDK retries, paid reattempts, model fallback or recharge. Unknown billing stops all future calls. Provider-side billing controls remain necessary: a local estimate cannot guarantee the provider invoice if rates or metering change.',
+ '', '## Actual-bill ceiling: execution blocked','',
+ 'The $5 target is a planning target, not authorization. The absolute maximum is $10 of actual charges. The --execute entry point now unconditionally stops before approval/key loading, token counting or HTTP. A config flag or approval JSON cannot bypass it. A reviewed enforceable billing boundary and new explicit user approval are both required to unblock. See BILLING_SAFETY.md.',
+ '', 'Local accounting remains defense in depth: reserve uncached counted input with 10% margin, full maximum output and applicable native tool charges before dispatch; retain $0.10 planning headroom; round liabilities upward to microdollars. Persist reservations before sending, allow one request in flight, retain unknown charges on timeout and stop on missing usage or metering discrepancy. Cached usage is settled at its actual cached rate; reasoning is included in output, not charged twice. None of these estimates independently guarantees the actual invoice.',
  '', 'The reviewed pricing table does not separately itemize a local computer-tool fee. Forecast additional tool fee is $0 conditional on confirmation; no hosted container, web search, file search or other billable tool is enabled. An unknown applicable tool rate blocks paid execution. Existing Render/Neon usage is not new CUA tool usage. Any paid application-side LLM cost must be reserved in the same ceiling; the current evaluator disables application LLM calls and blocks live profiles until zero-cost access or a metered allowance is established.',
  '', '## Feasibility','',
- 'The central forecast is below $15 but above $5; the conservative forecast is above $15. Without a paid pilot there is no empirical basis to promise all 100 under either $3 or $5. The optimistic forecast is a scenario, not a commitment. Prerequisite failures can further reduce valid completion; skipping blocked tests does not prove that 100 tests were affordable. Leave never-executed cases NOT_RUN on a budget stop. No paid pilot is approved now.',
- '', '## Official references checked November 16, 2026','',
+ 'The central forecast is $10.2105 before any extra fees, already above the $10 absolute maximum; optimistic $5.3975 is above the $5 target, and conservative $23.3475 exceeds both. No valid completion count is guaranteed. The $5/$10 scenario counts assume all prerequisites resolved and represent full task attempts, not passes. Actual dispatch remains zero under the unresolved billing block. Never-executed cases remain NOT_RUN; no paid pilot is approved.',
+ '', '## Request-count scope', '', 'Tables count generation requests. The current framework also makes one input-token-count request per generation request (470 / 690 / 1,050 additional requests by scenario); these are not generation retries. Their applicable pricing must be confirmed before execution; no fee is silently assumed away. Only the latest screenshot is submitted, with unchanged task/criteria and all semantic actions/observations. Redundant archive paths, duplicate IDs and timestamps are now omitted from model context. No unmeasured savings are subtracted from the scenario totals.', '', '## Official references checked November 16, 2026','',
  '- https://developers.openai.com/api/docs/models/gpt-5.4',
+ '- https://developers.openai.com/api/docs/guides/spend-limits',
  '- https://developers.openai.com/api/docs/pricing',
  '- https://developers.openai.com/api/docs/guides/images-vision',
  '- https://developers.openai.com/api/docs/guides/conversation-state',

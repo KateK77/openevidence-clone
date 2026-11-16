@@ -1,6 +1,6 @@
 {
   "kind": "OFFLINE INFRASTRUCTURE ONLY",
-  "checked_at": "2026-11-16T06:13:54.540Z",
+  "checked_at": "2026-11-16T06:34:13.525Z",
   "paid_api_calls": 0,
   "external_api_calls": 0,
   "scored_tests": 0,
@@ -19,6 +19,14 @@
     },
     {
       "name": "Paid runner defaults to no execution",
+      "status": "PASS"
+    },
+    {
+      "name": "Paid dispatch blocked before credentials and HTTP regardless of approval",
+      "status": "PASS"
+    },
+    {
+      "name": "All 26 additional prerequisite cases explicitly mapped; original difficulties unchanged",
       "status": "PASS"
     },
     {
@@ -54,6 +62,8 @@
     "source": "Existing locally built frontend matching unchanged source baseline",
     "index_sha256": "1e32c6e772737aa345a07305f5326c3dcfd0b2901413d5a9c7b5aed58ebf3f83"
   },
+  "actual_bill_cap_verified": false,
+  "paid_execution_blocked": true,
   "screenshot": "screenshots/8cfd801f1438d180dfb5470bebda20509f302f18a078231092127301972365d4.png",
   "mobile_screenshot": "screenshots/36ed31673733390b31bc423bce9fa1e27b737d00c052560729c795a2443a888b.png",
   "database": {

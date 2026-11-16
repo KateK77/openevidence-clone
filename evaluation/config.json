@@ -3,22 +3,57 @@
   "tool": "computer",
   "service_tier": "default",
   "reasoning_effort": "low",
-  "target_usd": 3,
-  "hard_ceiling_usd": 5,
+  "target_usd": 5,
+  "hard_ceiling_usd": 10,
   "billing_cushion_usd": 0.1,
-  "pricing": {"input": 2.5, "cached_input": 0.25, "output": 15, "computer_call_usd": 0},
+  "pricing": {
+    "input": 2.5,
+    "cached_input": 0.25,
+    "output": 15,
+    "computer_call_usd": 0
+  },
   "pricing_note": "No separate local computer tool fee is itemized in the official pricing table checked 2026-11-16. Zero is a planning assumption, not a contractual guarantee. Paid approval must confirm the applicable tool rate. Any applicable fee must be reserved before dispatch; otherwise stop.",
   "retries": 0,
-  "viewport": {"width": 1280, "height": 768},
-  "mobile_viewport": {"width": 390, "height": 844},
+  "viewport": {
+    "width": 1280,
+    "height": 768
+  },
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844
+  },
   "max_request_input_tokens": 16000,
   "max_output_tokens": 1200,
   "max_native_calls_per_response": 8,
   "api_timeout_ms": 90000,
   "limits": {
-    "Easy": {"requests": 8, "actions": 35, "seconds": 300},
-    "Medium": {"requests": 14, "actions": 70, "seconds": 480},
-    "Hard": {"requests": 24, "actions": 120, "seconds": 720},
-    "Expert": {"requests": 36, "actions": 200, "seconds": 1200}
+    "Easy": {
+      "requests": 8,
+      "actions": 35,
+      "seconds": 300
+    },
+    "Medium": {
+      "requests": 14,
+      "actions": 70,
+      "seconds": 480
+    },
+    "Hard": {
+      "requests": 24,
+      "actions": 120,
+      "seconds": 720
+    },
+    "Expert": {
+      "requests": 36,
+      "actions": 200,
+      "seconds": 1200
+    }
+  },
+  "billing_enforcement": {
+    "actual_bill_cap_verified": false,
+    "paid_execution_enabled": false,
+    "status": "ACTUAL_BILL_CAP_UNVERIFIED",
+    "reason": "Provider spend-limit propagation has no verified monetary overshoot bound. Local reservations are not an invoice guarantee. Entry point is unconditionally blocked before network access.",
+    "auto_recharge": false,
+    "approval_required_after_resolution": true
   }
 }

@@ -1,5 +1,7 @@
 # Budget scenarios — GPT-5.4 native CUA
 
+Target budget: $5 USD. Absolute maximum actual charges: $10 USD. Paid dispatch is blocked because an actual-bill guarantee has not been established.
+
 These are assumption-based forecasts, not measured usage, completed-test counts or pass rates. Every scenario retains all 100 frozen tasks. No caching discount, Batch discount, prepaid credits or automatic top-up is assumed.
 
 ## Optimistic
@@ -13,10 +15,8 @@ These are assumption-based forecasts, not measured usage, completed-test counts 
 
 **100-test forecast: $5.40.**
 
-- $3: 57 full-task attempts forecast; not a predicted pass count.
-- $4: 75 full-task attempts forecast; not a predicted pass count.
 - $5: 92 full-task attempts forecast; not a predicted pass count.
-- $15: 100 full-task attempts forecast; not a predicted pass count.
+- $10: 100 full-task attempts forecast; not a predicted pass count.
 
 ## Central
 
@@ -29,10 +29,8 @@ These are assumption-based forecasts, not measured usage, completed-test counts 
 
 **100-test forecast: $10.21.**
 
-- $3: 29 full-task attempts forecast; not a predicted pass count.
-- $4: 39 full-task attempts forecast; not a predicted pass count.
 - $5: 49 full-task attempts forecast; not a predicted pass count.
-- $15: 100 full-task attempts forecast; not a predicted pass count.
+- $10: 99 full-task attempts forecast; not a predicted pass count.
 
 ## Conservative
 
@@ -45,10 +43,8 @@ These are assumption-based forecasts, not measured usage, completed-test counts 
 
 **100-test forecast: $23.35.**
 
-- $3: 15 full-task attempts forecast; not a predicted pass count.
-- $4: 18 full-task attempts forecast; not a predicted pass count.
 - $5: 23 full-task attempts forecast; not a predicted pass count.
-- $15: 67 full-task attempts forecast; not a predicted pass count.
+- $10: 45 full-task attempts forecast; not a predicted pass count.
 
 ## What explains the earlier estimates?
 
@@ -67,19 +63,26 @@ MedEvidence adds live literature, cross-source audits, Chinese synthesis, regene
 - Request caps 8/14/24/36; action caps 35/70/120/200; these are resource stops, never relaxed acceptance criteria. Exhaustion is an execution error, not an application FAIL.
 - Each group of ten scheduled tests contains 3 Easy, 4 Medium, 2 Hard and 1 Expert. Difficult tasks are not pushed to the end merely to maximize inexpensive completions.
 
-## Hard ceiling and fee uncertainty
+## Actual-bill ceiling: execution blocked
 
-The $3 target is a planning target; only a newly approved amount up to $5 can authorize execution. Reserve counted input with 10% margin, maximum possible output and applicable native-tool fees before every dispatch, retain $0.10 headroom, persist spending and ambiguous-charge reservations, and run one request at a time. No SDK retries, paid reattempts, model fallback or recharge. Unknown billing stops all future calls. Provider-side billing controls remain necessary: a local estimate cannot guarantee the provider invoice if rates or metering change.
+The $5 target is a planning target, not authorization. The absolute maximum is $10 of actual charges. The --execute entry point now unconditionally stops before approval/key loading, token counting or HTTP. A config flag or approval JSON cannot bypass it. A reviewed enforceable billing boundary and new explicit user approval are both required to unblock. See BILLING_SAFETY.md.
+
+Local accounting remains defense in depth: reserve uncached counted input with 10% margin, full maximum output and applicable native tool charges before dispatch; retain $0.10 planning headroom; round liabilities upward to microdollars. Persist reservations before sending, allow one request in flight, retain unknown charges on timeout and stop on missing usage or metering discrepancy. Cached usage is settled at its actual cached rate; reasoning is included in output, not charged twice. None of these estimates independently guarantees the actual invoice.
 
 The reviewed pricing table does not separately itemize a local computer-tool fee. Forecast additional tool fee is $0 conditional on confirmation; no hosted container, web search, file search or other billable tool is enabled. An unknown applicable tool rate blocks paid execution. Existing Render/Neon usage is not new CUA tool usage. Any paid application-side LLM cost must be reserved in the same ceiling; the current evaluator disables application LLM calls and blocks live profiles until zero-cost access or a metered allowance is established.
 
 ## Feasibility
 
-The central forecast is below $15 but above $5; the conservative forecast is above $15. Without a paid pilot there is no empirical basis to promise all 100 under either $3 or $5. The optimistic forecast is a scenario, not a commitment. Prerequisite failures can further reduce valid completion; skipping blocked tests does not prove that 100 tests were affordable. Leave never-executed cases NOT_RUN on a budget stop. No paid pilot is approved now.
+The central forecast is $10.2105 before any extra fees, already above the $10 absolute maximum; optimistic $5.3975 is above the $5 target, and conservative $23.3475 exceeds both. No valid completion count is guaranteed. The $5/$10 scenario counts assume all prerequisites resolved and represent full task attempts, not passes. Actual dispatch remains zero under the unresolved billing block. Never-executed cases remain NOT_RUN; no paid pilot is approved.
+
+## Request-count scope
+
+Tables count generation requests. The current framework also makes one input-token-count request per generation request (470 / 690 / 1,050 additional requests by scenario); these are not generation retries. Their applicable pricing must be confirmed before execution; no fee is silently assumed away. Only the latest screenshot is submitted, with unchanged task/criteria and all semantic actions/observations. Redundant archive paths, duplicate IDs and timestamps are now omitted from model context. No unmeasured savings are subtracted from the scenario totals.
 
 ## Official references checked November 16, 2026
 
 - https://developers.openai.com/api/docs/models/gpt-5.4
+- https://developers.openai.com/api/docs/guides/spend-limits
 - https://developers.openai.com/api/docs/pricing
 - https://developers.openai.com/api/docs/guides/images-vision
 - https://developers.openai.com/api/docs/guides/conversation-state

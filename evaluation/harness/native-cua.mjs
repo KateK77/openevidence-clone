@@ -2,7 +2,7 @@
 import {readFile,mkdir,writeFile,open,unlink} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {resolve} from 'node:path';
-import {hash,read,write,Stop,validateApproval,reserveCost,canSpend,usageCost,orderTests,payload,executeAction,capture} from './core.mjs';
+import {hash,read,write,Stop,assertPaidExecutionReady,validateApproval,reserveCost,canSpend,usageCost,orderTests,payload,executeAction,capture} from './core.mjs';
 import {root,evaldir,prepare} from './environment.mjs';
 export async function verifyFreeze(){
  const f=await read(evaldir+'/freeze.json');
@@ -12,6 +12,7 @@ export async function verifyFreeze(){
 }
 async function main(){
  if(!process.argv.includes('--execute')){console.log('CHECK ONLY: no paid execution. Use preflight.mjs. Explicit approval is required.');return;}
+ assertPaidExecutionReady(); // Before credentials, approval files, token counting or any HTTP.
  const f=await verifyFreeze(),configRaw=await readFile(evaldir+'/config.json'),c=JSON.parse(configRaw),a=await read(evaldir+'/approval.local.json');
  validateApproval(a,c,f.files['final_test_cases_100.json'],hash(configRaw));
  if(!process.env.OPENAI_API_KEY)throw new Stop('OPENAI_API_KEY must be supplied privately','BLOCKED');
@@ -32,7 +33,7 @@ async function main(){
    if(ledger.attempts.includes(test.id))continue; // Never silently rerun an attempted task.
    canSpend(ledger,reserveCost(1,c),a,c);
    const r=results.tests.find(x=>x.id===test.id),limits=c.limits[test.difficulty],folder=priv+'/'+test.id;
-   if(!['offline','pubmed'].includes(test.preconditions.profile)){r.status='BLOCKED';r.reason='Required live/fault/hosted prerequisite adapter not provisioned; no CUA call made.';await save();continue;}
+   if(!['offline','pubmed'].includes(test.preconditions.profile)){r.status='NOT_RUN';r.reason='PREREQUISITE_BLOCKED: required live/fault/hosted adapter not provisioned; no CUA call made.';await save();continue;}
    let driver;const start=Date.now();
    try{
     driver=await prepare(folder,test.preconditions.profile,/Mobile/.test(test.title)?c.mobile_viewport:c.viewport,test.id);

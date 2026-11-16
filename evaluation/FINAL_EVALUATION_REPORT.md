@@ -47,14 +47,16 @@ Validly evaluated pass rate: **N/A (no validly evaluated tests)**.
 
 ## Free preflight and limitations
 
-Offline infrastructure: PASS; 11 checks recorded. Harness unit tests: see logs/harness-unit-tests.tap. Browser/SQLite checks used fresh synthetic data with application LLM credentials removed and external networking blocked.
+Offline infrastructure: PASS; 13 checks recorded. Harness unit tests: see logs/harness-unit-tests.tap. Browser/SQLite checks used fresh synthetic data with application LLM credentials removed and external networking blocked.
 The first restricted-environment server start did not become ready; rerunning the same offline preflight with local process permission passed. This was an infrastructure rerun with zero API requests, not a paid test retry.
-No live PubMed, Gemini, OpenAI model entitlement, native paid compatibility, provider-fault fixture or hosted restart was validated in this offline run. See FIXTURES.md before authorizing a full suite.
+No live PubMed, Gemini, OpenAI model entitlement, native paid compatibility, provider-fault fixture or hosted restart was validated in this offline run. See PREREQUISITE_READINESS.md for all 26 explicitly blocked prerequisites and BILLING_SAFETY.md for the global paid-execution block.
 
 ## Budget
 
-Central estimate: $10.21 for 100 tasks; optimistic $5.40; conservative $23.35. These are forecasts, not actual charges. $3 and $5 central scenarios forecast 29 and 49 full task attempts before conservative call reservations/prerequisite failures. Neither is a promised valid completion count. Full assumptions and per-difficulty token totals are in BUDGET_ESTIMATE.md.
-Local computer-tool surcharge is not separately itemized in reviewed pricing; $0 is conditional, and unconfirmed applicable fees block paid execution. No other billable tools are enabled. Paid application-side provider costs must also fit the shared $5 ceiling.
+Central estimate: $10.21 for 100 tasks; optimistic $5.40; conservative $23.35. These are forecasts, not actual charges. $5 and $10 central scenarios forecast 49 and 99 full task attempts before conservative call reservations/prerequisite failures. Neither is a promised valid completion count. Full assumptions and per-difficulty token totals are in BUDGET_ESTIMATE.md.
+Local computer-tool surcharge is not separately itemized in reviewed pricing; $0 is conditional, and unconfirmed applicable fees block paid execution. No other billable tools are enabled. Paid application-side provider costs must also fit the shared $10 ceiling.
+
+Actual invoice cap is unverified. The runner blocks --execute before any HTTP even with an approval file. All 26 additional prerequisite cases are individually documented; none has been silently downgraded or removed. See BILLING_SAFETY.md and PREREQUISITE_READINESS.md.
 
 ## Findings
 

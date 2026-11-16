@@ -10,7 +10,9 @@ unit checks are infrastructure evidence, not native CUA results.
 - [Execution status and per-case report](FINAL_EVALUATION_REPORT.md)
 - [Downloadable HTML showcase](index.html)
 - [Offline preflight](logs/offline-preflight.json)
-- [Prerequisites and limitations](FIXTURES.md)
+- [26-case prerequisite readiness](PREREQUISITE_READINESS.md) / [JSON](prerequisite-readiness.json)
+- [Actual-bill boundary and execution block](BILLING_SAFETY.md)
+- [Frozen fixtures specification](FIXTURES.md)
 
 ## Specification provenance
 
@@ -49,11 +51,19 @@ fault fixtures and production restart behavior are not established offline.
 
 ## Paid execution gate — do not run now
 
-`node evaluation/harness/native-cua.mjs` defaults to check-only. `--execute` also
-requires an ignored `approval.local.json` containing a **new explicit approval**,
-exact suite/config hashes, model, confirmed applicable tool fee and budget no
-higher than $5. No approval file is created by this preparation. The API key must
-be provided privately through `OPENAI_API_KEY`; never use a ChatGPT login token.
+Target is **$5**; the absolute maximum actual charges are **$10**. The original
+100 tests and 30/40/20/10 difficulty distribution are unchanged.
+
+`node evaluation/harness/native-cua.mjs` defaults to check-only. `--execute` is
+unconditionally blocked before any HTTP or credential loading: a reliable actual
+invoice ceiling has not been established. Local reservations and provider spend
+limits with propagation delays are not an exact invoice guarantee. Config flags
+and an approval file cannot override this stop. See BILLING_SAFETY.md.
+
+A future reviewed enforcement solution also requires a new explicit user approval,
+exact suite/config hashes, model, confirmed applicable tool/endpoint fees and an
+approved amount no higher than $10. The sample uses the $5 target and remains
+`approved: false`. No approval file or paid pilot is created by this preparation.
 
 The solver is the native Responses `computer` tool; it receives screenshots,
 original task/criteria and a text action history. It emits `computer_call.actions`;
@@ -75,7 +85,7 @@ all earlier charges against the same ceiling.
 Agent self-reported success is not PASS. Independent reviewers must evaluate every
 frozen criterion against screenshots, native action traces and read-only state or
 download evidence. Record which evidence supports each criterion. Missing app
-features are FAIL; missing external prerequisites are BLOCKED; CUA navigation,
+features are FAIL; unattempted cases with missing external prerequisites remain NOT_RUN with a prerequisite-blocked reason; CUA navigation,
 execution limits and infrastructure failures are ERROR. Budget-stopped unattempted
 cases stay NOT_RUN. An interrupted attempted case records its incomplete execution,
 not a false application FAIL.

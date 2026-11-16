@@ -12,7 +12,11 @@
     "1280x768": 1152,
     "390x844": 422
   },
-  "application_provider_fees": "Excluded from the CUA arithmetic only when independently confirmed zero. No Gemini calls in this preparation; paid provider usage must share the $5 ceiling or be blocked.",
+  "application_provider_fees": "Excluded from the CUA arithmetic only when independently confirmed zero. No Gemini calls in this preparation; paid provider usage must share the $10 ceiling or be blocked.",
+  "target_usd": 5,
+  "absolute_maximum_usd": 10,
+  "paid_execution_blocked": true,
+  "actual_bill_cap_verified": false,
   "scenarios": {
     "optimistic": {
       "rows": [
@@ -67,26 +71,15 @@
       ],
       "total_usd": 5.3975,
       "requests": 470,
+      "token_count_requests": 470,
       "budget_completion_forecast": {
-        "3": {
-          "forecast_full_task_attempts": 57,
-          "not_completed": 43,
-          "spent_forecast": 2.8937499999999994,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
-        "4": {
-          "forecast_full_task_attempts": 75,
-          "not_completed": 25,
-          "spent_forecast": 3.897649999999999,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
         "5": {
           "forecast_full_task_attempts": 92,
           "not_completed": 8,
           "spent_forecast": 4.886949999999998,
           "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
         },
-        "15": {
+        "10": {
           "forecast_full_task_attempts": 100,
           "not_completed": 0,
           "spent_forecast": 5.397499999999997,
@@ -147,29 +140,18 @@
       ],
       "total_usd": 10.2105,
       "requests": 690,
+      "token_count_requests": 690,
       "budget_completion_forecast": {
-        "3": {
-          "forecast_full_task_attempts": 29,
-          "not_completed": 71,
-          "spent_forecast": 2.7351500000000013,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
-        "4": {
-          "forecast_full_task_attempts": 39,
-          "not_completed": 61,
-          "spent_forecast": 3.756200000000002,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
         "5": {
           "forecast_full_task_attempts": 49,
           "not_completed": 51,
           "spent_forecast": 4.777250000000001,
           "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
         },
-        "15": {
-          "forecast_full_task_attempts": 100,
-          "not_completed": 0,
-          "spent_forecast": 10.21049999999999,
+        "10": {
+          "forecast_full_task_attempts": 99,
+          "not_completed": 1,
+          "spent_forecast": 9.882499999999991,
           "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
         }
       }
@@ -227,29 +209,18 @@
       ],
       "total_usd": 23.3475,
       "requests": 1050,
+      "token_count_requests": 1050,
       "budget_completion_forecast": {
-        "3": {
-          "forecast_full_task_attempts": 15,
-          "not_completed": 85,
-          "spent_forecast": 2.8575,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
-        "4": {
-          "forecast_full_task_attempts": 18,
-          "not_completed": 82,
-          "spent_forecast": 3.5414999999999996,
-          "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
-        },
         "5": {
           "forecast_full_task_attempts": 23,
           "not_completed": 77,
           "spent_forecast": 4.86825,
           "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
         },
-        "15": {
-          "forecast_full_task_attempts": 67,
-          "not_completed": 33,
-          "spent_forecast": 14.85525000000001,
+        "10": {
+          "forecast_full_task_attempts": 45,
+          "not_completed": 55,
+          "spent_forecast": 9.861750000000002,
           "note": "Not a guarantee of valid assessments; before per-call conservative reservations, prerequisites or CUA errors."
         }
       }
