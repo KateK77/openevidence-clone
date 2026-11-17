@@ -2,11 +2,30 @@
 
 **A source-linked biomedical research workspace — from a clinical question to inspectable literature.**
 
+## Demo accounts
+
+**[SIGN IN TO MEDEVIDENCE AI](https://medevidence-ai-v3.onrender.com/profile)** · [Open live website](https://medevidence-ai-v3.onrender.com)
+
+No installation required. Use either account below; passwords are case-sensitive.
+
+| Account | Username | Password |
+|---|---|---|
+| Research workspace | `portfolio_researcher` | `MedEvidence-Demo-2026!` |
+| Separate reviewer workspace | `portfolio_reader` | `MedEvidence-Demo-2026!` |
+
+
+> [!IMPORTANT]
+> These credentials are for **MedEvidence AI** at **medevidence-ai-v3.onrender.com**. They do not sign in to the separate **MedResearch** website. Shared demo accounts are public; use synthetic information only.
+
 MedEvidence AI combines real PubMed retrieval, optional abstract-grounded AI synthesis, citation checks, and a persistent research workspace. Built with React, TypeScript, Django REST Framework, and PostgreSQL, it demonstrates retrieval pipeline design, model integration, evidence provenance, and full-stack deployment.
 
 **Research demonstration — not for clinical use.** This independent portfolio project is inspired by OpenEvidence's literature-first workflow and is not affiliated with OpenEvidence. It does not provide validated medical advice or use patient records.
 
 [Open live demo](https://medevidence-ai-v3.onrender.com) · [Sign in](https://medevidence-ai-v3.onrender.com/profile) · [Evaluation evidence](docs/evaluation.md) · [Deployment guide](docs/public-demo.md)
+
+**Complete version descriptions:** [MedEvidence AI 2.0](experiments/round-02/description.md) · [MedEvidence AI 3.0](experiments/round-03/description.md)
+
+Each document specifies the complete product, workflows and acceptance conditions for that version. Evaluation results and historical inputs are separate.
 
 ![MedEvidence research dashboard](docs/screenshots/01-dashboard.png)
 
@@ -16,12 +35,6 @@ The complete application runs on **Render Free**, with persistent **Neon Postgre
 
 The free web service sleeps after inactivity; the first request may take around a minute to wake it. The current Neon database has **no fixed 30-day expiration**. Availability depends on provider quotas; this is not an always-on production service. See [hosting details and limits](docs/public-demo.md).
 
-### Demo accounts
-
-| Account | Username | Password |
-|---|---|---|
-| Research workspace | `portfolio_researcher` | `MedEvidence-Demo-2026!` |
-| Separate reviewer workspace | `portfolio_reader` | `MedEvidence-Demo-2026!` |
 
 Both are ordinary, non-admin accounts with the same permissions. Their data is isolated from each other, but **each shared account is visible to anyone using its published credentials**. Use synthetic information only. Shared profile changes are blocked, and the application exposes no password-change endpoint. Visitors can also create their own synthetic research accounts.
 
@@ -155,8 +168,8 @@ render.yaml    Opt-in new-service deployment Blueprint
 | Milestone | Preserved record |
 |---|---|
 | Round 1 | [Requirements/results](experiments/round-01), tag `v0.1.0-r1` |
-| Round 2 | [Feedback iteration](experiments/round-02), tag `v2.0.0-r2` |
-| Round 3 | [Synthesis and hosting](experiments/round-03), tags `v3.0.0-r3`, `v3.0.0-r3-hosted` |
+| Round 2 | [Complete V2 requirements](experiments/round-02/description.md) · [Results](experiments/round-02/results.md), tag `v2.0.0-r2` |
+| Round 3 | [Complete V3 requirements](experiments/round-03/description.md) · [Results](experiments/round-03/results.md), tags `v3.0.0-r3`, `v3.0.0-r3-hosted` |
 | Portfolio release | [Comparison plan](experiments/portfolio-release/PLAN.md), [verification](experiments/portfolio-release/REPORT.md) |
 
 Presentation references [MyChart / CareConnect](https://github.com/KateK77/mychart-clone); medical functionality and evidence remain specific to MedEvidence.

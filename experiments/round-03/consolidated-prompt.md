@@ -1,3 +1,5 @@
+> **Historical input archive — not the current product description.** For the complete, independently readable Version 3 requirements, use [MedEvidence AI 3.0 — Complete Product Requirements](description.md). The original inputs below are retained only for experiment traceability.
+
 # MedEvidence AI 3.0 — complete consolidated project prompt
 
 ## Precedence
