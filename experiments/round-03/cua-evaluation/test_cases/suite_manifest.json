@@ -1,0 +1,223 @@
+{
+  "title": "MedEvidence AI 3.0 Independent CUA Acceptance Benchmark",
+  "suite_version": "1.0.0",
+  "schema_version": "1.0",
+  "repository": "KateK77/openevidence-clone",
+  "application_description": "experiments/round-03/description.md",
+  "source_filename": "粘贴的文本 (1).txt",
+  "source_description_sha256": "91df4cd29312aad57d12e052c5f07cc1727d9f7d83b5a33ce8e5213a38cbc8e9",
+  "frozen_suite_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
+  "fixed_cases": true,
+  "application_evaluated": false,
+  "pass_count": null,
+  "overall_pass_rate_pct": null,
+  "core_scenarios": 365,
+  "cua_executions": 473,
+  "by_module": {
+    "Product identity and navigation": 23,
+    "Authentication and profiles": 36,
+    "Question composer and terminology": 38,
+    "PubMed lookup and publication details": 50,
+    "Research pipeline and evidence persistence": 20,
+    "Model configuration and operating modes": 29,
+    "Language and response preferences": 29,
+    "Citation and claim-support checks": 24,
+    "Answer details and source presentation": 24,
+    "Regeneration and revision integrity": 18,
+    "Provenance and follow-up context": 23,
+    "Conversations and research history": 28,
+    "Bookmarks, collections and saved searches": 38,
+    "Research copy and exports": 29,
+    "Ownership, input safety and throttling": 20,
+    "Responsive and keyboard accessibility": 28,
+    "Hosted operation and resilience": 16
+  },
+  "by_difficulty": {
+    "Easy": 125,
+    "Medium": 244,
+    "Hard": 91,
+    "Expert": 13
+  },
+  "by_environment": {
+    "desktop_pointer": 351,
+    "mobile_pointer": 108,
+    "desktop_keyboard_only": 12,
+    "mobile_keyboard_only": 2
+  },
+  "by_fixture_gate": {
+    "baseline": 116,
+    "latency_fixture": 9,
+    "hosted_optional": 1,
+    "live_pubmed": 76,
+    "glossary_fixture": 3,
+    "unconfigured_mode": 25,
+    "ime_environment": 2,
+    "upstream_fault": 7,
+    "date_fixture": 1,
+    "missing_metadata_fixture": 3,
+    "missing_abstract_fixture": 3,
+    "multi_query_fixture": 3,
+    "overlap_fixture": 4,
+    "untrusted_source_fixture": 5,
+    "controlled_provider_failure": 14,
+    "evidence_fixture": 43,
+    "zero_result_fixture": 1,
+    "snapshot_update_fixture": 2,
+    "long_abstract_fixture": 5,
+    "configured_unchecked": 3,
+    "working_provider": 23,
+    "quota_fixture": 3,
+    "global_quota_fixture": 2,
+    "accepted_answer_fixture": 11,
+    "wrong_language_fixture": 4,
+    "no_limitations_fixture": 1,
+    "evidence_gap_fixture": 2,
+    "numeric_answer_fixture": 1,
+    "unsupported_citation_fixture": 2,
+    "altered_quote_fixture": 2,
+    "unsupported_number_fixture": 2,
+    "malformed_provider_fixture": 1,
+    "claim_reject_fixture": 4,
+    "unsupported_gap_fixture": 1,
+    "no_source_fixture": 1,
+    "history_fixture": 35,
+    "saved_fixture": 28,
+    "persistence_fault": 2,
+    "long_answer_fixture": 1,
+    "accepted_chinese_fixture": 1,
+    "punctuation_fixture": 1,
+    "csv_fixture": 1,
+    "csv_formula_fixture": 1,
+    "no_external_effects": 1,
+    "hosted_public": 10,
+    "hosted_unconfigured": 2,
+    "hosted_docs": 2,
+    "hosted_restart": 1,
+    "hosted_second_browser": 1
+  },
+  "acceptance_coverage": {
+    "V3-A01": {
+      "core_scenarios": 32,
+      "cua_execution_variants": 44,
+      "status": "UI candidate"
+    },
+    "V3-A02": {
+      "core_scenarios": 48,
+      "cua_execution_variants": 60,
+      "status": "UI-only/partial"
+    },
+    "V3-A03": {
+      "core_scenarios": 25,
+      "cua_execution_variants": 38,
+      "status": "UI candidate"
+    },
+    "V3-A04": {
+      "core_scenarios": 39,
+      "cua_execution_variants": 53,
+      "status": "UI-only/partial"
+    },
+    "V3-A05": {
+      "core_scenarios": 46,
+      "cua_execution_variants": 61,
+      "status": "UI candidate"
+    },
+    "V3-A06": {
+      "core_scenarios": 23,
+      "cua_execution_variants": 29,
+      "status": "UI candidate"
+    },
+    "V3-A07": {
+      "core_scenarios": 16,
+      "cua_execution_variants": 17,
+      "status": "UI-only/partial"
+    },
+    "V3-A08": {
+      "core_scenarios": 14,
+      "cua_execution_variants": 21,
+      "status": "UI candidate"
+    },
+    "V3-A09": {
+      "core_scenarios": 19,
+      "cua_execution_variants": 27,
+      "status": "UI candidate"
+    },
+    "V3-A10": {
+      "core_scenarios": 7,
+      "cua_execution_variants": 8,
+      "status": "UI candidate"
+    },
+    "V3-A11": {
+      "core_scenarios": 46,
+      "cua_execution_variants": 56,
+      "status": "UI-only/partial"
+    },
+    "V3-A12": {
+      "core_scenarios": 35,
+      "cua_execution_variants": 43,
+      "status": "UI candidate"
+    },
+    "V3-A13": {
+      "core_scenarios": 28,
+      "cua_execution_variants": 33,
+      "status": "UI candidate"
+    },
+    "V3-A14": {
+      "core_scenarios": 17,
+      "cua_execution_variants": 18,
+      "status": "UI candidate"
+    },
+    "V3-A15": {
+      "core_scenarios": 23,
+      "cua_execution_variants": 30,
+      "status": "UI candidate"
+    },
+    "V3-A16": {
+      "core_scenarios": 19,
+      "cua_execution_variants": 23,
+      "status": "UI candidate"
+    },
+    "V3-A17": {
+      "core_scenarios": 29,
+      "cua_execution_variants": 38,
+      "status": "UI candidate"
+    },
+    "V3-A18": {
+      "core_scenarios": 49,
+      "cua_execution_variants": 66,
+      "status": "UI candidate"
+    },
+    "V3-A19": {
+      "core_scenarios": 26,
+      "cua_execution_variants": 29,
+      "status": "UI candidate"
+    },
+    "V3-A20": {
+      "core_scenarios": 35,
+      "cua_execution_variants": 51,
+      "status": "UI candidate"
+    },
+    "V3-A21": {
+      "core_scenarios": 41,
+      "cua_execution_variants": 45,
+      "status": "UI-only/partial"
+    },
+    "V3-A22": {
+      "core_scenarios": 0,
+      "cua_execution_variants": 0,
+      "status": "non-CUA only"
+    },
+    "V3-A23": {
+      "core_scenarios": 14,
+      "cua_execution_variants": 16,
+      "status": "UI-only/partial"
+    },
+    "V3-A24": {
+      "core_scenarios": 14,
+      "cua_execution_variants": 16,
+      "status": "UI-only/partial"
+    }
+  },
+  "built_utc": "2026-11-20T04:50:07.722663+00:00",
+  "initial_result_status": "NOT_RUN",
+  "notes": "Independent of pre-existing 100-task evaluations; source requirements only; UI-only CUA benchmark, not API/security/medical validation"
+}

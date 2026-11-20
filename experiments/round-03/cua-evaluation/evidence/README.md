@@ -1,0 +1,1 @@
+No screenshot evidence exists because no CUA tests have been executed. After real Chrome CUA execution, place screenshots and action traces under evidence/<Test ID>/ as required by frozen cases. Never fabricate screenshots or PASS statuses.
