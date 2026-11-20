@@ -1,0 +1,783 @@
+[
+  {
+    "order": 1,
+    "name": "0001_before",
+    "at": "2026-11-20T05:06:38.389Z",
+    "screenshot_path": "evidence/ME3-CUA-0001/0001_before.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "ff75c5730a3cb0ad0c48c9961b83e7c3adcd7846f5575f3026051ed5adfb5ba3"
+  },
+  {
+    "order": 2,
+    "name": "0001_after",
+    "at": "2026-11-20T05:06:41.557Z",
+    "screenshot_path": "evidence/ME3-CUA-0001/0001_after.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "ff75c5730a3cb0ad0c48c9961b83e7c3adcd7846f5575f3026051ed5adfb5ba3"
+  },
+  {
+    "order": 3,
+    "name": "0002_before",
+    "at": "2026-11-20T05:06:41.557Z",
+    "screenshot_path": "evidence/ME3-CUA-0002/0002_before.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "54a342587b5cd27e70ef3ba02c7218abdfeebdb057853a2164cf4e164d0d8942"
+  },
+  {
+    "order": 4,
+    "name": "0002_menu",
+    "at": "2026-11-20T05:06:49.628Z",
+    "screenshot_path": "evidence/ME3-CUA-0002/0002_menu.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "41f95fab5fd795a9df5ee2784127c6f78be6649182961b6e44a012a8b8f18eb3"
+  },
+  {
+    "order": 5,
+    "name": "0002_after",
+    "at": "2026-11-20T05:06:59.044Z",
+    "screenshot_path": "evidence/ME3-CUA-0002/0002_after.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "54a342587b5cd27e70ef3ba02c7218abdfeebdb057853a2164cf4e164d0d8942"
+  },
+  {
+    "order": 6,
+    "name": "0003_before",
+    "at": "2026-11-20T05:06:59.045Z",
+    "screenshot_path": "evidence/ME3-CUA-0003/0003_before.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "ff75c5730a3cb0ad0c48c9961b83e7c3adcd7846f5575f3026051ed5adfb5ba3"
+  },
+  {
+    "order": 7,
+    "name": "0003_signin",
+    "at": "2026-11-20T05:07:06.587Z",
+    "screenshot_path": "evidence/ME3-CUA-0003/0003_signin.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "e7015a06dbc32d9845b8c6466da82df2fbfa86c5d9f3f71fb3ec48fdb218e3d9"
+  },
+  {
+    "order": 8,
+    "name": "0003_register",
+    "at": "2026-11-20T05:07:15.942Z",
+    "screenshot_path": "evidence/ME3-CUA-0003/0003_register.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "a6277c8076f79f1060523b27c561cfe81932bd38e9b1d4041f6aecbae0ba010d"
+  },
+  {
+    "order": 9,
+    "name": "0003_return_signin",
+    "at": "2026-11-20T05:07:24.645Z",
+    "screenshot_path": "evidence/ME3-CUA-0003/0003_return_signin.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "65342571531bd8bdd62303281795187c51842fa5d443e88f16a8b99b148ebd0a"
+  },
+  {
+    "order": 10,
+    "name": "0003_after",
+    "at": "2026-11-20T05:07:24.645Z",
+    "screenshot_path": "evidence/ME3-CUA-0003/0003_after.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "ff75c5730a3cb0ad0c48c9961b83e7c3adcd7846f5575f3026051ed5adfb5ba3"
+  },
+  {
+    "order": 11,
+    "name": "0004_before",
+    "at": "2026-11-20T05:07:34.167Z",
+    "screenshot_path": "evidence/ME3-CUA-0004/0004_before.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "54a342587b5cd27e70ef3ba02c7218abdfeebdb057853a2164cf4e164d0d8942"
+  },
+  {
+    "order": 12,
+    "name": "0004_signin",
+    "at": "2026-11-20T05:07:34.167Z",
+    "screenshot_path": "evidence/ME3-CUA-0004/0004_signin.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "d74bf4e45033cb20613fed1d351ed8e0eb53c73c00c2934b8579cd20a894af59"
+  },
+  {
+    "order": 13,
+    "name": "0004_register",
+    "at": "2026-11-20T05:07:43.928Z",
+    "screenshot_path": "evidence/ME3-CUA-0004/0004_register.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "20c820136bf904cb453f2f144829d0f62699dda369633fe56a29ddda21b005b0"
+  },
+  {
+    "order": 14,
+    "name": "0004_return_signin",
+    "at": "2026-11-20T05:07:56.842Z",
+    "screenshot_path": "evidence/ME3-CUA-0004/0004_return_signin.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "be46c74e97458894c4ae3d1d559009687583de96304ee6a95e55989c87388430"
+  },
+  {
+    "order": 15,
+    "name": "0004_after",
+    "at": "2026-11-20T05:07:56.843Z",
+    "screenshot_path": "evidence/ME3-CUA-0004/0004_after.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "54a342587b5cd27e70ef3ba02c7218abdfeebdb057853a2164cf4e164d0d8942"
+  },
+  {
+    "order": 16,
+    "name": "setup_account_0",
+    "at": "2026-11-20T05:08:13.815Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_0.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "ff75c5730a3cb0ad0c48c9961b83e7c3adcd7846f5575f3026051ed5adfb5ba3"
+  },
+  {
+    "order": 17,
+    "name": "setup_account_1",
+    "at": "2026-11-20T05:08:13.815Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_1.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "e7015a06dbc32d9845b8c6466da82df2fbfa86c5d9f3f71fb3ec48fdb218e3d9"
+  },
+  {
+    "order": 18,
+    "name": "setup_account_register",
+    "at": "2026-11-20T05:08:24.867Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_register.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "123d995e816d1f22224344a460c6f801fa13713bdcd7dc34ed3dd8d00442e339"
+  },
+  {
+    "order": 19,
+    "name": "setup_account_filled",
+    "at": "2026-11-20T05:08:34.339Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_filled.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "30531a25d05002e95ac9a910ba6efb1e4d895f25bfedb53b6c0324671a392cea"
+  },
+  {
+    "order": 20,
+    "name": "setup_account_filled_checked",
+    "at": "2026-11-20T05:08:43.331Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_filled_checked.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "3b0a1ca60800770b4d76ef4a23274852d74ed6abfd96f5e46670394135a74204"
+  },
+  {
+    "order": 21,
+    "name": "setup_account_submitted",
+    "at": "2026-11-20T05:09:00.710Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_submitted.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "d76a98ca75e99b7cb5c5c2de3d33f9308e70771b6d34088873a6b22cc3dfde92"
+  },
+  {
+    "order": 22,
+    "name": "setup_account_created",
+    "at": "2026-11-20T05:09:07.755Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_created.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "63bbe5bd16cd058b9a1702c8d2c67f9ea8c047d28fe40a18fdd9be5b39d0a149"
+  },
+  {
+    "order": 23,
+    "name": "setup_account_profile",
+    "at": "2026-11-20T05:09:16.216Z",
+    "screenshot_path": "evidence/pilot-001-setup/setup_account_profile.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "27a0e4bf6fb6f3119a6ae5e006e8aeaca5012a36f98e4726e1ac4d2252172196"
+  },
+  {
+    "order": 24,
+    "name": "0005_before",
+    "at": "2026-11-20T05:09:23.278Z",
+    "screenshot_path": "evidence/ME3-CUA-0005/0005_before.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "bef96a5e0a1c4f60b6be3ce42e06cadf3e00b01175a65f059a8f95734f412a79"
+  },
+  {
+    "order": 25,
+    "name": "0005_signin_form",
+    "at": "2026-11-20T05:09:30.264Z",
+    "screenshot_path": "evidence/ME3-CUA-0005/0005_signin_form.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "3c47c87cb992b0806ed95fff51879bd1612a906ab629ec30fb03610df933a652"
+  },
+  {
+    "order": 26,
+    "name": "0005_login",
+    "at": "2026-11-20T05:09:40.062Z",
+    "screenshot_path": "evidence/ME3-CUA-0005/0005_login.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "55db56033347202bd5eed53829c6b19a6eb5ec34ed9a2f212a38100123d0f330"
+  },
+  {
+    "order": 27,
+    "name": "0005_home",
+    "at": "2026-11-20T05:09:48.918Z",
+    "screenshot_path": "evidence/ME3-CUA-0005/0005_home.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "63bbe5bd16cd058b9a1702c8d2c67f9ea8c047d28fe40a18fdd9be5b39d0a149"
+  },
+  {
+    "order": 28,
+    "name": "0005_after",
+    "at": "2026-11-20T05:10:00.048Z",
+    "screenshot_path": "evidence/ME3-CUA-0005/0005_after.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "a35cc524e11dc32110143823f9eed0b54c8047f323bccd9eaffcd863daa1f7de"
+  },
+  {
+    "order": 29,
+    "name": "0006_setup_profile",
+    "at": "2026-11-20T05:10:11.274Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_setup_profile.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "f961d8ec1a88af4f162d67f3f49caa7d51cd4f5ac9d133e9e4264f17b71665cc"
+  },
+  {
+    "order": 30,
+    "name": "0006_before",
+    "at": "2026-11-20T05:10:19.030Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_before.jpg",
+    "raster_size": [
+      390,
+      244
+    ],
+    "sha256": "8e248ff70ba8474b0d6d1cab706e39e16ae41957404b28ca16de8a2f51be90bb"
+  },
+  {
+    "order": 31,
+    "name": "0006_signin_form",
+    "at": "2026-11-20T05:10:28.805Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_signin_form.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "45e00e9a9f76070ba70dc0713793470e9e19421531113bee1dfe9b44b084aaa2"
+  },
+  {
+    "order": 32,
+    "name": "0006_login",
+    "at": "2026-11-20T05:10:41.786Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_login.jpg",
+    "raster_size": [
+      390,
+      161
+    ],
+    "sha256": "0eafa190849a22745c9cd8e759bf5d15691ffa3a2303edec21dd8d4536e742bc"
+  },
+  {
+    "order": 33,
+    "name": "0006_home",
+    "at": "2026-11-20T05:10:50.026Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_home.jpg",
+    "raster_size": [
+      375,
+      155
+    ],
+    "sha256": "9fcd6e826ad298fbeb683cb5701bb84d745d393a78e1abb93fc41b6d9e9afc38"
+  },
+  {
+    "order": 34,
+    "name": "0006_home_restored",
+    "at": "2026-11-20T05:11:10.036Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_home_restored.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "9dc828ef828a1d58e6f8143d4f3e598f9426b368a6ec094584f9593d83d1b3ec"
+  },
+  {
+    "order": 36,
+    "name": "0006_scroll_recovery",
+    "at": "2026-11-20T05:11:51.823Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_scroll_recovery.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "43410c0391e0bf3ea8db0841460aa61e216c3a4b820281187aebdf2ccf31f891"
+  },
+  {
+    "order": 37,
+    "name": "0006_after",
+    "at": "2026-11-20T05:12:06.256Z",
+    "screenshot_path": "evidence/ME3-CUA-0006/0006_after.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "43410c0391e0bf3ea8db0841460aa61e216c3a4b820281187aebdf2ccf31f891"
+  },
+  {
+    "order": 38,
+    "name": "0007_setup",
+    "at": "2026-11-20T05:12:13.924Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_setup.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "f961d8ec1a88af4f162d67f3f49caa7d51cd4f5ac9d133e9e4264f17b71665cc"
+  },
+  {
+    "order": 39,
+    "name": "0007_before",
+    "at": "2026-11-20T05:12:49.085Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_before.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "65342571531bd8bdd62303281795187c51842fa5d443e88f16a8b99b148ebd0a"
+  },
+  {
+    "order": 41,
+    "name": "0007_home",
+    "at": "2026-11-20T05:13:06.689Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_home.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "63bbe5bd16cd058b9a1702c8d2c67f9ea8c047d28fe40a18fdd9be5b39d0a149"
+  },
+  {
+    "order": 42,
+    "name": "0007_history",
+    "at": "2026-11-20T05:13:13.695Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_history.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "a1373a86ac6f99fca7108fd155031f90443f7c410d9cd76efbf169a4ac533c05"
+  },
+  {
+    "order": 43,
+    "name": "0007_answers",
+    "at": "2026-11-20T05:13:20.683Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_answers.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "b34c2f0c4133def6347b1d6039473c29bd1737997b186fefe73a39864ed3307c"
+  },
+  {
+    "order": 44,
+    "name": "0007_pubmed",
+    "at": "2026-11-20T05:13:28.093Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_pubmed.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "7c82d1a1264362330e3e0922c5ba8dae61a0f2c25a4d49d271aa8956b582cef7"
+  },
+  {
+    "order": 45,
+    "name": "0007_publications",
+    "at": "2026-11-20T05:13:34.886Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_publications.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "26d7a157bae1b78cf2ff7aca7c17c6fabf67237e3b950708d17083f70b7a52fd"
+  },
+  {
+    "order": 46,
+    "name": "0007_settings",
+    "at": "2026-11-20T05:13:42.671Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_settings.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "e9fad3ab4f0ffc43c0b15291fa6bfa47a21bec9091f02dbf1daea5d4a9ab99ff"
+  },
+  {
+    "order": 47,
+    "name": "0007_after",
+    "at": "2026-11-20T05:13:50.387Z",
+    "screenshot_path": "evidence/ME3-CUA-0007/0007_after.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "27a0e4bf6fb6f3119a6ae5e006e8aeaca5012a36f98e4726e1ac4d2252172196"
+  },
+  {
+    "order": 49,
+    "name": "0008_before",
+    "at": "2026-11-20T05:14:07.498Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_before.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "45e00e9a9f76070ba70dc0713793470e9e19421531113bee1dfe9b44b084aaa2"
+  },
+  {
+    "order": 51,
+    "name": "0008_home",
+    "at": "2026-11-20T05:14:26.336Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_home.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "9dc828ef828a1d58e6f8143d4f3e598f9426b368a6ec094584f9593d83d1b3ec"
+  },
+  {
+    "order": 52,
+    "name": "0008_menu_1",
+    "at": "2026-11-20T05:14:33.425Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_1.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "6f0bc97b34d4973fdaa188f06d620f26201d6d5220f908c75f29abdd3be01946"
+  },
+  {
+    "order": 53,
+    "name": "0008_history",
+    "at": "2026-11-20T05:14:42.181Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_history.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "a6478b64dc1349e7b16db5088dbef66fc4f5309d2373f822b75e0de7992abaca"
+  },
+  {
+    "order": 54,
+    "name": "0008_menu_2",
+    "at": "2026-11-20T05:14:50.486Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_2.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "e947f80a27eafc5b6a4e9ef3962073141e2e5dff2511cbfe4e37038dc2d9ca5b"
+  },
+  {
+    "order": 55,
+    "name": "0008_answers",
+    "at": "2026-11-20T05:14:57.429Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_answers.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "89736967fb5f2cf00a726c46ddb0e1979d7763a9ab4337c7c6cc13d769cf4209"
+  },
+  {
+    "order": 56,
+    "name": "0008_menu_3",
+    "at": "2026-11-20T05:15:06.163Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_3.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "426bf43fd85cfc9cec6b5aa28f653351551be7ddda88c17c40c04292ff50f833"
+  },
+  {
+    "order": 57,
+    "name": "0008_pubmed",
+    "at": "2026-11-20T05:15:13.305Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_pubmed.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "dfa947e21bb326e2c959c95fb4c984f87241b5f3745b4b2cba0b2040470db068"
+  },
+  {
+    "order": 58,
+    "name": "0008_menu_4",
+    "at": "2026-11-20T05:15:21.335Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_4.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "aeb14d24bfeeb299411016440ee523fa95a1c02c845637671f6d1a385891d7b2"
+  },
+  {
+    "order": 59,
+    "name": "0008_publications",
+    "at": "2026-11-20T05:15:33.751Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_publications.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "730f5aa42b8c0142f5974a973df2a8ef55a0f64bd8c0a8bdc7409fce4013e550"
+  },
+  {
+    "order": 60,
+    "name": "0008_menu_5",
+    "at": "2026-11-20T05:15:43.833Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_5.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "0d14e88ee7a5e0b7976a3ccbb0d0c8d59f1ff44edb9a9b73eb2d40b0320ea85a"
+  },
+  {
+    "order": 61,
+    "name": "0008_settings",
+    "at": "2026-11-20T05:15:50.775Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_settings.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "d399f30c6581544f1a263cb8eec9dceee54c71d99bd7988bc0e1433a43ee49e5"
+  },
+  {
+    "order": 62,
+    "name": "0008_menu_6",
+    "at": "2026-11-20T05:15:59.630Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_menu_6.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "807e3a61ac5ca9971e313ebb0b4728f2df13b244d8c8b20de4acc8438ad794a2"
+  },
+  {
+    "order": 63,
+    "name": "0008_after",
+    "at": "2026-11-20T05:16:06.648Z",
+    "screenshot_path": "evidence/ME3-CUA-0008/0008_after.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "383717045eb0fce8fafa6d82253943b11fff5e390fb6803350dadbd3fa70c01f"
+  },
+  {
+    "order": 65,
+    "name": "0009_setup_profile",
+    "at": "2026-11-20T05:16:38.443Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_setup_profile.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "2049aa8772d91f5f07b40a9aa1fcb4ab8928ec5530a9071bd0d43b6b0b801e1a"
+  },
+  {
+    "order": 67,
+    "name": "0009_signin_form",
+    "at": "2026-11-20T05:16:54.310Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_signin_form.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "3c47c87cb992b0806ed95fff51879bd1612a906ab629ec30fb03610df933a652"
+  },
+  {
+    "order": 69,
+    "name": "0009_demo_home",
+    "at": "2026-11-20T05:17:13.404Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_demo_home.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "3918710a070192276444771d28f3fb2b01efb594764637c1cdb67164eaeca84a"
+  },
+  {
+    "order": 70,
+    "name": "0009_before",
+    "at": "2026-11-20T05:17:20.753Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_before.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "d9b201fa31cdba218af99e5c20482901d047d97ef2b9d810171d1c2a4fdedf96"
+  },
+  {
+    "order": 71,
+    "name": "0009_conversation",
+    "at": "2026-11-20T05:17:28.899Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_conversation.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "5e8597ffcbf7b3584437fe8c928df4a56a1b32e46874893a7894076d2df387c1"
+  },
+  {
+    "order": 72,
+    "name": "0009_answer",
+    "at": "2026-11-20T05:17:36.249Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_answer.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "bd304023a4a3b06397bf34eca3f2132339d3322b3a4ac12c7b0d72ff900eaad5"
+  },
+  {
+    "order": 73,
+    "name": "0009_after",
+    "at": "2026-11-20T05:17:44.210Z",
+    "screenshot_path": "evidence/ME3-CUA-0009/0009_after.jpg",
+    "raster_size": [
+      1425,
+      891
+    ],
+    "sha256": "23e4b74673e380874f9932901ae8e29b7c922bde3d21254e9945b00fd68dd112"
+  },
+  {
+    "order": 75,
+    "name": "0010_before",
+    "at": "2026-11-20T05:17:58.793Z",
+    "screenshot_path": "evidence/ME3-CUA-0010/0010_before.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "cc524ff7c739bf19a676fef3e42cb1bba9b147827da7a15103920a1b49f7107a"
+  },
+  {
+    "order": 76,
+    "name": "0010_menu",
+    "at": "2026-11-20T05:18:06.105Z",
+    "screenshot_path": "evidence/ME3-CUA-0010/0010_menu.jpg",
+    "raster_size": [
+      390,
+      844
+    ],
+    "sha256": "f0d7847b0834c58b25071da6dfe8a83f1b211cf5fe5f142d0f3fedfc96bf73fd"
+  },
+  {
+    "order": 77,
+    "name": "0010_after",
+    "at": "2026-11-20T05:18:15.813Z",
+    "screenshot_path": "evidence/ME3-CUA-0010/0010_after.jpg",
+    "raster_size": [
+      375,
+      812
+    ],
+    "sha256": "fcbb5b824ff5ed42b060203710f177fa94b548715e31204865934ee42521753c"
+  },
+  {
+    "order": 78,
+    "name": "cleanup_profile",
+    "at": "2026-11-20T05:18:38.393Z",
+    "screenshot_path": "evidence/pilot-001-setup/cleanup_profile.jpg",
+    "raster_size": [
+      1440,
+      900
+    ],
+    "sha256": "8e7e418d7d33458b522e0dd9c8e752488d761256807a16b78da525fb04193c9c"
+  },
+  {
+    "order": 79,
+    "name": "cleanup_after",
+    "at": "2026-11-20T05:18:50.921Z",
+    "screenshot_path": "evidence/pilot-001-setup/cleanup_after.jpg",
+    "raster_size": [
+      1265,
+      523
+    ],
+    "sha256": "3af3fde1b5303f57718090623ff15f08fde4d39a03c311eada007ba3e2cbbfab"
+  }
+]
