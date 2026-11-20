@@ -3,24 +3,24 @@
   "frozen_suite_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
   "total": {
     "total": 473,
-    "PASS": 11,
+    "PASS": 24,
     "FAIL": 0,
-    "BLOCKED": 19,
-    "NOT_RUN": 443,
-    "overall_pass_rate_pct": 2.33,
+    "BLOCKED": 26,
+    "NOT_RUN": 423,
+    "overall_pass_rate_pct": 5.07,
     "executed_pass_rate_pct": 100.0,
-    "definitive_coverage_pct": 2.33
+    "definitive_coverage_pct": 5.07
   },
   "by_difficulty": {
     "Easy": {
       "total": 125,
-      "PASS": 11,
+      "PASS": 18,
       "FAIL": 0,
       "BLOCKED": 13,
-      "NOT_RUN": 101,
-      "overall_pass_rate_pct": 8.8,
+      "NOT_RUN": 94,
+      "overall_pass_rate_pct": 14.4,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 8.8
+      "definitive_coverage_pct": 14.4
     },
     "Expert": {
       "total": 13,
@@ -34,23 +34,23 @@
     },
     "Hard": {
       "total": 91,
-      "PASS": 0,
+      "PASS": 1,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 91,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "BLOCKED": 1,
+      "NOT_RUN": 89,
+      "overall_pass_rate_pct": 1.1,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 1.1
     },
     "Medium": {
       "total": 244,
-      "PASS": 0,
+      "PASS": 5,
       "FAIL": 0,
-      "BLOCKED": 6,
-      "NOT_RUN": 238,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "BLOCKED": 12,
+      "NOT_RUN": 227,
+      "overall_pass_rate_pct": 2.05,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 2.05
     }
   },
   "by_module": {
@@ -66,13 +66,13 @@
     },
     "Authentication and profiles": {
       "total": 36,
-      "PASS": 1,
+      "PASS": 14,
       "FAIL": 0,
-      "BLOCKED": 6,
-      "NOT_RUN": 29,
-      "overall_pass_rate_pct": 2.78,
+      "BLOCKED": 13,
+      "NOT_RUN": 9,
+      "overall_pass_rate_pct": 38.89,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 2.78
+      "definitive_coverage_pct": 38.89
     },
     "Bookmarks, collections and saved searches": {
       "total": 38,
@@ -228,23 +228,23 @@
   "by_environment": {
     "desktop_keyboard_only": {
       "total": 12,
-      "PASS": 0,
+      "PASS": 1,
       "FAIL": 0,
       "BLOCKED": 0,
-      "NOT_RUN": 12,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "NOT_RUN": 11,
+      "overall_pass_rate_pct": 8.33,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 8.33
     },
     "desktop_pointer": {
       "total": 351,
-      "PASS": 6,
+      "PASS": 14,
       "FAIL": 0,
-      "BLOCKED": 13,
-      "NOT_RUN": 332,
-      "overall_pass_rate_pct": 1.71,
+      "BLOCKED": 19,
+      "NOT_RUN": 318,
+      "overall_pass_rate_pct": 3.99,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 1.71
+      "definitive_coverage_pct": 3.99
     },
     "mobile_keyboard_only": {
       "total": 2,
@@ -258,13 +258,13 @@
     },
     "mobile_pointer": {
       "total": 108,
-      "PASS": 5,
+      "PASS": 9,
       "FAIL": 0,
-      "BLOCKED": 6,
-      "NOT_RUN": 97,
-      "overall_pass_rate_pct": 4.63,
+      "BLOCKED": 7,
+      "NOT_RUN": 92,
+      "overall_pass_rate_pct": 8.33,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 4.63
+      "definitive_coverage_pct": 8.33
     }
   },
   "by_fixture_gate": {
@@ -300,13 +300,13 @@
     },
     "baseline": {
       "total": 116,
-      "PASS": 11,
+      "PASS": 24,
       "FAIL": 0,
-      "BLOCKED": 19,
-      "NOT_RUN": 86,
-      "overall_pass_rate_pct": 9.48,
+      "BLOCKED": 26,
+      "NOT_RUN": 66,
+      "overall_pass_rate_pct": 20.69,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 9.48
+      "definitive_coverage_pct": 20.69
     },
     "claim_reject_fixture": {
       "total": 4,
@@ -760,6 +760,6 @@
     }
   },
   "unique_core_scenarios": 365,
-  "core_with_definitive_execution": 7,
-  "core_all_variants_passed": 6
+  "core_with_definitive_execution": 15,
+  "core_all_variants_passed": 14
 }

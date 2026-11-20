@@ -1,0 +1,27 @@
+{
+  "batch": "003",
+  "ids": "ME3-CUA-0031–ME3-CUA-0050",
+  "started_at": "2026-11-20T07:37:56.574Z",
+  "ended_at": "2026-11-20T08:05:10.786Z",
+  "url": "https://medevidence-ai-v3.onrender.com/",
+  "browser": "Google Chrome; connected extension family verified; exact build not independently exposed",
+  "model": "ChatGPT visual CUA; exact model not exposed",
+  "viewports": {
+    "desktop": "1440x900",
+    "mobile": "390x844"
+  },
+  "viewport_exception": "0048 newly created second tab initially default 1265x523 capture, corrected before private navigation; formally BLOCKED",
+  "tested_application_sha": "c903b65ce3f8f49fe72416ca8948d215a0690a49",
+  "render_live_deploy": "dep-dbtbu4p9aqoc73akvgl0",
+  "parent_evaluation_commit": "4d99dc4e283ff5b76de3258d3d42d2e3dee25bb7",
+  "canonical_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
+  "fixtures": {
+    "A": "portfolio_researcher; documented synthetic public fixture; read only",
+    "B": "me3cua_20261120_batch003; dedicated synthetic account created through UI; profile-only edits"
+  },
+  "paid_operations": 0,
+  "application_changes": 0,
+  "scored_dom_or_api_substitution": false,
+  "capture_policy": "Each returned image immediately persisted before further action. Original JPEG retained; required before/after PNG converted losslessly at original pixel size. Immediate screenshots can precede asynchronous rendering; later captures used for judgment.",
+  "cleanup": "Signed out B, reset viewport, closed second test tab."
+}

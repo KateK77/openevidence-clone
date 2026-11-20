@@ -1,0 +1,384 @@
+{"name":"setup_mobile","at":"2026-11-20T07:37:56.574Z","call":"let tab3 = await browser.tabs.new(); await vp.set({width:390,height:844}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"setup_mobile","at":"2026-11-20T07:37:56.574Z","call":"let tab3 = await browser.tabs.new(); await vp.set({width:390,height:844}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:38:04.648Z","paths":[],"error":false,"text":[]}
+{"name":"0031_before","at":"2026-11-20T07:38:10.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0031_before","at":"2026-11-20T07:38:10.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:38:11.941Z","paths":["evidence/ME3-CUA-0031/0031_before_0.jpg"],"error":false,"text":[]}
+{"name":"0031_ready","at":"2026-11-20T07:40:09.688Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0031_ready","at":"2026-11-20T07:40:09.688Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:40:11.869Z","paths":["evidence/ME3-CUA-0031/0031_ready_0.jpg"],"error":false,"text":[]}
+{"name":"0031_submit","at":"2026-11-20T07:40:17.819Z","call":"await tab3.cua.click({x:164,y:438}); await tab3.cua.type({text:'me3cua_20261120_0509'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.type({text:'Incorrect-CUA-0031!'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.keypress({keys:['Enter']}); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0031_submit","at":"2026-11-20T07:40:17.819Z","call":"await tab3.cua.click({x:164,y:438}); await tab3.cua.type({text:'me3cua_20261120_0509'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.type({text:'Incorrect-CUA-0031!'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.keypress({keys:['Enter']}); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:40:21.686Z","paths":["evidence/ME3-CUA-0031/0031_submit_0.jpg"],"error":false,"text":[]}
+{"name":"0031_after","at":"2026-11-20T07:40:26.902Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0031_after","at":"2026-11-20T07:40:26.902Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:40:28.926Z","paths":["evidence/ME3-CUA-0031/0031_after_0.jpg"],"error":false,"text":[]}
+{"name":"0032_setup","at":"2026-11-20T07:40:54.100Z","call":"await vp.set({width:1440,height:900}); await tab3.reload();","phase":"start"}
+{"name":"0032_setup","at":"2026-11-20T07:40:54.100Z","call":"await vp.set({width:1440,height:900}); await tab3.reload();","phase":"end","end_at":"2026-11-20T07:40:56.573Z","paths":[],"error":false,"text":[]}
+{"name":"0032_before","at":"2026-11-20T07:41:08.045Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0032_before","at":"2026-11-20T07:41:08.045Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:41:10.618Z","paths":["evidence/ME3-CUA-0032/0032_before_0.jpg"],"error":false,"text":[]}
+{"name":"0032_submit","at":"2026-11-20T07:41:17.023Z","call":"await tab3.cua.click({x:465,y:415}); await tab3.cua.type({text:'unregistered-me3-0032-20261120@example.invalid'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.type({text:'Arbitrary-0032!'}); await tab3.cua.click({x:532,y:573});","phase":"start"}
+{"name":"0032_submit","at":"2026-11-20T07:41:17.023Z","call":"await tab3.cua.click({x:465,y:415}); await tab3.cua.type({text:'unregistered-me3-0032-20261120@example.invalid'}); await tab3.cua.keypress({keys:['Tab']}); await tab3.cua.type({text:'Arbitrary-0032!'}); await tab3.cua.click({x:532,y:573});","phase":"end","end_at":"2026-11-20T07:41:21.098Z","paths":[],"error":false,"text":[]}
+{"name":"0032_after","at":"2026-11-20T07:41:26.609Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0032_after","at":"2026-11-20T07:41:26.609Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:41:29.440Z","paths":["evidence/ME3-CUA-0032/0032_after_0.jpg"],"error":false,"text":[]}
+{"name":"0033_before","at":"2026-11-20T07:41:37.426Z","call":"await tab3.reload(); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0033_before","at":"2026-11-20T07:41:37.426Z","call":"await tab3.reload(); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:41:41.285Z","paths":["evidence/ME3-CUA-0033/0033_before_0.jpg"],"error":false,"text":[]}
+{"name":"0033_submit","at":"2026-11-20T07:41:48.014Z","call":"await tab3.cua.click({x:465,y:415}); await tab3.cua.type({text:'me3cua_20261120_0509'}); await tab3.cua.click({x:532,y:573}); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0033_submit","at":"2026-11-20T07:41:48.014Z","call":"await tab3.cua.click({x:465,y:415}); await tab3.cua.type({text:'me3cua_20261120_0509'}); await tab3.cua.click({x:532,y:573}); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:41:52.110Z","paths":["evidence/ME3-CUA-0033/0033_submit_0.jpg"],"error":false,"text":[]}
+{"name":"0034_before","at":"2026-11-20T07:41:58.583Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0034_before","at":"2026-11-20T07:41:58.583Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:01.046Z","paths":["evidence/ME3-CUA-0034/0034_before_0.jpg"],"error":false,"text":[]}
+{"name":"0034_focus","at":"2026-11-20T07:42:01.271Z","call":"await tab3.cua.keypress({keys:['Tab']}); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0034_focus","at":"2026-11-20T07:42:01.271Z","call":"await tab3.cua.keypress({keys:['Tab']}); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:03.929Z","paths":["evidence/ME3-CUA-0034/0034_focus_0.jpg"],"error":false,"text":[]}
+{"name":"0034_focus_confirm","at":"2026-11-20T07:42:08.475Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0034_focus_confirm","at":"2026-11-20T07:42:08.475Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:11.126Z","paths":["evidence/ME3-CUA-0034/0034_focus_confirm_0.jpg"],"error":false,"text":[]}
+{"name":"0034_submit","at":"2026-11-20T07:42:21.389Z","call":"await tab3.cua.keypress({keys:['Enter']});","phase":"start"}
+{"name":"0034_submit","at":"2026-11-20T07:42:21.389Z","call":"await tab3.cua.keypress({keys:['Enter']});","phase":"end","end_at":"2026-11-20T07:42:23.667Z","paths":[],"error":false,"text":[]}
+{"name":"0034_after","at":"2026-11-20T07:42:26.452Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0034_after","at":"2026-11-20T07:42:26.452Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:29.354Z","paths":["evidence/ME3-CUA-0034/0034_after_0.jpg"],"error":false,"text":[]}
+{"name":"0035_before","at":"2026-11-20T07:42:36.915Z","call":"await tab3.reload(); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0035_before","at":"2026-11-20T07:42:36.915Z","call":"await tab3.reload(); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:41.008Z","paths":["evidence/ME3-CUA-0035/0035_before_0.jpg"],"error":false,"text":[]}
+{"name":"0035_login","at":"2026-11-20T07:42:46.821Z","call":"Click username; type documented synthetic portfolio_researcher; Tab; type documented demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0035_login","at":"2026-11-20T07:42:46.821Z","call":"Click username; type documented synthetic portfolio_researcher; Tab; type documented demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:42:51.099Z","paths":[],"error":false,"text":[]}
+{"name":"0035_profile","at":"2026-11-20T07:42:54.558Z","call":"await tab3.cua.click({x:80,y:600}); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0035_profile","at":"2026-11-20T07:42:54.558Z","call":"await tab3.cua.click({x:80,y:600}); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:42:58.289Z","paths":["evidence/ME3-CUA-0035/0035_profile_0.jpg"],"error":false,"text":[]}
+{"name":"0035_profile_ready","at":"2026-11-20T07:43:01.842Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0035_profile_ready","at":"2026-11-20T07:43:01.842Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:43:04.569Z","paths":["evidence/ME3-CUA-0035/0035_profile_ready_0.jpg"],"error":false,"text":[]}
+{"name":"0035_signout","at":"2026-11-20T07:43:12.023Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0035_signout","at":"2026-11-20T07:43:12.023Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T07:43:20.783Z","paths":[],"error":false,"text":[]}
+{"name":"0035_after","at":"2026-11-20T07:43:25.144Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0035_after","at":"2026-11-20T07:43:25.144Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:43:27.696Z","paths":["evidence/ME3-CUA-0035/0035_after_0.jpg"],"error":false,"text":[]}
+{"name":"0036_setup","at":"2026-11-20T07:43:33.376Z","call":"await vp.set({width:390,height:844});","phase":"start"}
+{"name":"0036_setup","at":"2026-11-20T07:43:33.376Z","call":"await vp.set({width:390,height:844});","phase":"end","end_at":"2026-11-20T07:43:34.669Z","paths":[],"error":false,"text":[]}
+{"name":"0036_before","at":"2026-11-20T07:43:39.063Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0036_before","at":"2026-11-20T07:43:39.063Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:43:41.410Z","paths":["evidence/ME3-CUA-0036/0036_before_0.jpg"],"error":false,"text":[]}
+{"name":"0036_login","at":"2026-11-20T07:43:46.178Z","call":"Enter documented synthetic portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0036_login","at":"2026-11-20T07:43:46.178Z","call":"Enter documented synthetic portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:43:49.758Z","paths":[],"error":false,"text":[]}
+{"name":"0036_logged","at":"2026-11-20T07:43:54.864Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0036_logged","at":"2026-11-20T07:43:54.864Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:43:57.138Z","paths":["evidence/ME3-CUA-0036/0036_logged_0.jpg"],"error":false,"text":[]}
+{"name":"0036_open_profile","at":"2026-11-20T07:44:00.967Z","call":"await tab3.cua.click({x:300,y:31});","phase":"start"}
+{"name":"0036_open_profile","at":"2026-11-20T07:44:00.967Z","call":"await tab3.cua.click({x:300,y:31});","phase":"end","end_at":"2026-11-20T07:44:03.186Z","paths":[],"error":false,"text":[]}
+{"name":"0036_profile","at":"2026-11-20T07:44:06.109Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0036_profile","at":"2026-11-20T07:44:06.109Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:44:08.210Z","paths":["evidence/ME3-CUA-0036/0036_profile_0.jpg"],"error":false,"text":[]}
+{"name":"0036_signout","at":"2026-11-20T07:44:11.565Z","call":"await tab3.cua.click({x:79,y:726});","phase":"start"}
+{"name":"0036_signout","at":"2026-11-20T07:44:11.565Z","call":"await tab3.cua.click({x:79,y:726});","phase":"end","end_at":"2026-11-20T07:44:14.157Z","paths":[],"error":false,"text":[]}
+{"name":"0036_after","at":"2026-11-20T07:44:17.005Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0036_after","at":"2026-11-20T07:44:17.005Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:44:19.569Z","paths":["evidence/ME3-CUA-0036/0036_after_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_desktop","at":"2026-11-20T07:44:29.907Z","call":"await vp.set({width:1440,height:900});","phase":"start"}
+{"name":"fixture_desktop","at":"2026-11-20T07:44:29.907Z","call":"await vp.set({width:1440,height:900});","phase":"end","end_at":"2026-11-20T07:44:31.018Z","paths":[],"error":false,"text":[]}
+{"name":"fixture_form","at":"2026-11-20T07:44:34.358Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"fixture_form","at":"2026-11-20T07:44:34.358Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:44:36.934Z","paths":["evidence/batch-003-setup/fixture_form_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_register_open","at":"2026-11-20T07:44:40.835Z","call":"await tab3.cua.click({x:530,y:635});","phase":"start"}
+{"name":"fixture_register_open","at":"2026-11-20T07:44:40.835Z","call":"await tab3.cua.click({x:530,y:635});","phase":"end","end_at":"2026-11-20T07:44:42.987Z","paths":[],"error":false,"text":[]}
+{"name":"fixture_register","at":"2026-11-20T07:44:47.350Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"fixture_register","at":"2026-11-20T07:44:47.350Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:44:49.911Z","paths":["evidence/batch-003-setup/fixture_register_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_fill","at":"2026-11-20T07:44:57.264Z","call":"Click Username; type me3cua_20261120_batch003; Tab; type temporary fixture password [REDACTED]; screenshot.","phase":"start"}
+{"name":"fixture_fill","at":"2026-11-20T07:44:57.264Z","call":"Click Username; type me3cua_20261120_batch003; Tab; type temporary fixture password [REDACTED]; screenshot.","phase":"end","end_at":"2026-11-20T07:45:01.099Z","paths":["evidence/batch-003-setup/fixture_fill_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_filled","at":"2026-11-20T07:45:03.893Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"fixture_filled","at":"2026-11-20T07:45:03.893Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:45:06.436Z","paths":["evidence/batch-003-setup/fixture_filled_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_create","at":"2026-11-20T07:45:10.391Z","call":"await tab3.cua.click({x:530,y:639});","phase":"start"}
+{"name":"fixture_create","at":"2026-11-20T07:45:10.391Z","call":"await tab3.cua.click({x:530,y:639});","phase":"end","end_at":"2026-11-20T07:45:13.305Z","paths":[],"error":false,"text":[]}
+{"name":"fixture_created","at":"2026-11-20T07:45:16.391Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"fixture_created","at":"2026-11-20T07:45:16.391Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:45:18.869Z","paths":["evidence/batch-003-setup/fixture_created_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_profile_open","at":"2026-11-20T07:45:24.465Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"fixture_profile_open","at":"2026-11-20T07:45:24.465Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:45:26.003Z","paths":[],"error":false,"text":[]}
+{"name":"fixture_profile","at":"2026-11-20T07:45:29.810Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"fixture_profile","at":"2026-11-20T07:45:29.810Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:45:32.516Z","paths":["evidence/batch-003-setup/fixture_profile_0.jpg"],"error":false,"text":[]}
+{"name":"fixture_signout","at":"2026-11-20T07:45:37.934Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"fixture_signout","at":"2026-11-20T07:45:37.934Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T07:45:39.856Z","paths":[],"error":false,"text":[]}
+{"name":"0037_before","at":"2026-11-20T07:45:45.150Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0037_before","at":"2026-11-20T07:45:45.150Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:45:47.722Z","paths":["evidence/ME3-CUA-0037/0037_before_0.jpg"],"error":false,"text":[]}
+{"name":"0037_login","at":"2026-11-20T07:45:55.668Z","call":"Enter me3cua_20261120_batch003 and temporary password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0037_login","at":"2026-11-20T07:45:55.668Z","call":"Enter me3cua_20261120_batch003 and temporary password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:45:59.784Z","paths":[],"error":false,"text":[]}
+{"name":"0037_open_profile","at":"2026-11-20T07:46:02.525Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0037_open_profile","at":"2026-11-20T07:46:02.525Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:46:04.821Z","paths":[],"error":false,"text":[]}
+{"name":"0037_after","at":"2026-11-20T07:46:07.947Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0037_after","at":"2026-11-20T07:46:07.947Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:46:10.754Z","paths":["evidence/ME3-CUA-0037/0037_after_0.jpg"],"error":false,"text":[]}
+{"name":"0038_before","at":"2026-11-20T07:46:19.583Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0038_before","at":"2026-11-20T07:46:19.583Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:46:21.906Z","paths":["evidence/ME3-CUA-0038/0038_before_0.jpg"],"error":false,"text":[]}
+{"name":"0038_edit","at":"2026-11-20T07:46:22.120Z","call":"await tab3.cua.click({x:465,y:506}); await tab3.cua.type({text:'CuaFirst0038'}); await tab3.cua.click({x:368,y:663});","phase":"start"}
+{"name":"0038_edit","at":"2026-11-20T07:46:22.120Z","call":"await tab3.cua.click({x:465,y:506}); await tab3.cua.type({text:'CuaFirst0038'}); await tab3.cua.click({x:368,y:663});","phase":"end","end_at":"2026-11-20T07:46:25.088Z","paths":[],"error":false,"text":[]}
+{"name":"0038_saved","at":"2026-11-20T07:46:27.920Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0038_saved","at":"2026-11-20T07:46:27.920Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:46:30.729Z","paths":["evidence/ME3-CUA-0038/0038_saved_0.jpg"],"error":false,"text":[]}
+{"name":"0038_reload","at":"2026-11-20T07:46:33.805Z","call":"await tab3.reload(); await tab3.cua.click({x:80,y:237});","phase":"start"}
+{"name":"0038_reload","at":"2026-11-20T07:46:33.805Z","call":"await tab3.reload(); await tab3.cua.click({x:80,y:237});","phase":"end","end_at":"2026-11-20T07:46:35.970Z","paths":[],"error":false,"text":[]}
+{"name":"0038_reopen","at":"2026-11-20T07:46:40.245Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0038_reopen","at":"2026-11-20T07:46:40.245Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:46:42.306Z","paths":[],"error":false,"text":[]}
+{"name":"0038_after","at":"2026-11-20T07:46:45.950Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0038_after","at":"2026-11-20T07:46:45.950Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:46:48.462Z","paths":["evidence/ME3-CUA-0038/0038_after_0.jpg"],"error":false,"text":[]}
+{"name":"0039_setup","at":"2026-11-20T07:46:55.471Z","call":"await vp.set({width:390,height:844});","phase":"start"}
+{"name":"0039_setup","at":"2026-11-20T07:46:55.471Z","call":"await vp.set({width:390,height:844});","phase":"end","end_at":"2026-11-20T07:46:56.795Z","paths":[],"error":false,"text":[]}
+{"name":"0039_before","at":"2026-11-20T07:46:59.130Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0039_before","at":"2026-11-20T07:46:59.130Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:47:01.425Z","paths":["evidence/ME3-CUA-0039/0039_before_0.jpg"],"error":false,"text":[]}
+{"name":"0039_edit","at":"2026-11-20T07:47:05.190Z","call":"await tab3.cua.click({x:164,y:510}); await tab3.cua.keypress({keys:['Control','a']}); await tab3.cua.type({text:'CuaMobile0039'});","phase":"start"}
+{"name":"0039_edit","at":"2026-11-20T07:47:05.190Z","call":"await tab3.cua.click({x:164,y:510}); await tab3.cua.keypress({keys:['Control','a']}); await tab3.cua.type({text:'CuaMobile0039'});","phase":"end","end_at":"2026-11-20T07:47:07.904Z","paths":[],"error":false,"text":[]}
+{"name":"0039_edited","at":"2026-11-20T07:47:11.362Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0039_edited","at":"2026-11-20T07:47:11.362Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:47:13.523Z","paths":["evidence/ME3-CUA-0039/0039_edited_0.jpg"],"error":false,"text":[]}
+{"name":"0039_save","at":"2026-11-20T07:47:16.881Z","call":"await tab3.cua.click({x:88,y:667});","phase":"start"}
+{"name":"0039_save","at":"2026-11-20T07:47:16.881Z","call":"await tab3.cua.click({x:88,y:667});","phase":"end","end_at":"2026-11-20T07:47:19.296Z","paths":[],"error":false,"text":[]}
+{"name":"0039_saved","at":"2026-11-20T07:47:23.443Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0039_saved","at":"2026-11-20T07:47:23.443Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:47:25.455Z","paths":["evidence/ME3-CUA-0039/0039_saved_0.jpg"],"error":false,"text":[]}
+{"name":"0039_reload","at":"2026-11-20T07:47:28.266Z","call":"await tab3.reload();","phase":"start"}
+{"name":"0039_reload","at":"2026-11-20T07:47:28.266Z","call":"await tab3.reload();","phase":"end","end_at":"2026-11-20T07:47:30.446Z","paths":[],"error":false,"text":[]}
+{"name":"0039_reopen","at":"2026-11-20T07:47:44.387Z","call":"await tab3.cua.click({x:300,y:31});","phase":"start"}
+{"name":"0039_reopen","at":"2026-11-20T07:47:44.387Z","call":"await tab3.cua.click({x:300,y:31});","phase":"end","end_at":"2026-11-20T07:47:46.576Z","paths":[],"error":false,"text":[]}
+{"name":"0039_after","at":"2026-11-20T07:47:49.976Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0039_after","at":"2026-11-20T07:47:49.976Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:47:52.055Z","paths":["evidence/ME3-CUA-0039/0039_after_0.jpg"],"error":false,"text":[]}
+{"name":"0040_setup","at":"2026-11-20T07:47:58.916Z","call":"await vp.set({width:1440,height:900});","phase":"start"}
+{"name":"0040_setup","at":"2026-11-20T07:47:58.916Z","call":"await vp.set({width:1440,height:900});","phase":"end","end_at":"2026-11-20T07:48:00.253Z","paths":[],"error":false,"text":[]}
+{"name":"0040_before","at":"2026-11-20T07:48:03.225Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0040_before","at":"2026-11-20T07:48:03.225Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:48:05.913Z","paths":["evidence/ME3-CUA-0040/0040_before_0.jpg"],"error":false,"text":[]}
+{"name":"0040_edit","at":"2026-11-20T07:48:11.572Z","call":"await tab3.cua.click({x:465,y:599}); await tab3.cua.type({text:'CuaLast0040'}); await tab3.cua.click({x:368,y:663});","phase":"start"}
+{"name":"0040_edit","at":"2026-11-20T07:48:11.572Z","call":"await tab3.cua.click({x:465,y:599}); await tab3.cua.type({text:'CuaLast0040'}); await tab3.cua.click({x:368,y:663});","phase":"end","end_at":"2026-11-20T07:48:15.662Z","paths":[],"error":false,"text":[]}
+{"name":"0040_saved","at":"2026-11-20T07:48:19.947Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0040_saved","at":"2026-11-20T07:48:19.947Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:48:27.056Z","paths":["evidence/ME3-CUA-0040/0040_saved_0.jpg"],"error":false,"text":[]}
+{"name":"0040_away","at":"2026-11-20T07:48:27.263Z","call":"await tab3.cua.click({x:80,y:237});","phase":"start"}
+{"name":"0040_away","at":"2026-11-20T07:48:27.263Z","call":"await tab3.cua.click({x:80,y:237});","phase":"end","end_at":"2026-11-20T07:48:29.144Z","paths":[],"error":false,"text":[]}
+{"name":"0040_return","at":"2026-11-20T07:48:33.015Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0040_return","at":"2026-11-20T07:48:33.015Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:48:35.425Z","paths":[],"error":false,"text":[]}
+{"name":"0040_after","at":"2026-11-20T07:48:38.226Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0040_after","at":"2026-11-20T07:48:38.226Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:48:41.331Z","paths":["evidence/ME3-CUA-0040/0040_after_0.jpg"],"error":false,"text":[]}
+{"name":"0041_setup_signout","at":"2026-11-20T07:48:55.397Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"0041_setup_signout","at":"2026-11-20T07:48:55.397Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T07:48:59.185Z","paths":[],"error":false,"text":[]}
+{"name":"0041_before","at":"2026-11-20T07:49:02.034Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_before","at":"2026-11-20T07:49:02.034Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:49:04.547Z","paths":["evidence/ME3-CUA-0041/0041_before_0.jpg"],"error":false,"text":[]}
+{"name":"0041_login_A","at":"2026-11-20T07:49:11.786Z","call":"Enter synthetic A portfolio_researcher and documented password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0041_login_A","at":"2026-11-20T07:49:11.786Z","call":"Enter synthetic A portfolio_researcher and documented password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:49:15.809Z","paths":[],"error":false,"text":[]}
+{"name":"0041_history_A_open","at":"2026-11-20T07:49:20.182Z","call":"await tab3.cua.click({x:107,y:284});","phase":"start"}
+{"name":"0041_history_A_open","at":"2026-11-20T07:49:20.182Z","call":"await tab3.cua.click({x:107,y:284});","phase":"end","end_at":"2026-11-20T07:49:22.290Z","paths":[],"error":false,"text":[]}
+{"name":"0041_history_A","at":"2026-11-20T07:49:26.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_history_A","at":"2026-11-20T07:49:26.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:49:28.668Z","paths":["evidence/ME3-CUA-0041/0041_history_A_0.jpg"],"error":false,"text":[]}
+{"name":"0041_profile_A_open","at":"2026-11-20T07:49:32.410Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0041_profile_A_open","at":"2026-11-20T07:49:32.410Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:49:35.103Z","paths":[],"error":false,"text":[]}
+{"name":"0041_profile_A","at":"2026-11-20T07:49:41.561Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_profile_A","at":"2026-11-20T07:49:41.561Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:49:46.732Z","paths":["evidence/ME3-CUA-0041/0041_profile_A_0.jpg"],"error":false,"text":[]}
+{"name":"0041_logout_A","at":"2026-11-20T07:49:46.941Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0041_logout_A","at":"2026-11-20T07:49:46.941Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T07:49:49.743Z","paths":[],"error":false,"text":[]}
+{"name":"0041_logged_out","at":"2026-11-20T07:49:59.824Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_logged_out","at":"2026-11-20T07:49:59.824Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:50:02.397Z","paths":["evidence/ME3-CUA-0041/0041_logged_out_0.jpg"],"error":false,"text":[]}
+{"name":"0041_login_B","at":"2026-11-20T07:50:02.607Z","call":"Enter B me3cua_20261120_batch003 and password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0041_login_B","at":"2026-11-20T07:50:02.607Z","call":"Enter B me3cua_20261120_batch003 and password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:50:06.643Z","paths":[],"error":false,"text":[]}
+{"name":"0041_profile_B_open","at":"2026-11-20T07:50:09.845Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0041_profile_B_open","at":"2026-11-20T07:50:09.845Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:50:12.987Z","paths":[],"error":false,"text":[]}
+{"name":"0041_profile_B","at":"2026-11-20T07:50:17.550Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_profile_B","at":"2026-11-20T07:50:17.550Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:50:20.723Z","paths":["evidence/ME3-CUA-0041/0041_profile_B_0.jpg"],"error":false,"text":[]}
+{"name":"0041_history_B_open","at":"2026-11-20T07:50:20.924Z","call":"await tab3.cua.click({x:107,y:284});","phase":"start"}
+{"name":"0041_history_B_open","at":"2026-11-20T07:50:20.924Z","call":"await tab3.cua.click({x:107,y:284});","phase":"end","end_at":"2026-11-20T07:50:22.904Z","paths":[],"error":false,"text":[]}
+{"name":"0041_after","at":"2026-11-20T07:50:26.440Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0041_after","at":"2026-11-20T07:50:26.440Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:50:29.066Z","paths":["evidence/ME3-CUA-0041/0041_after_0.jpg"],"error":false,"text":[]}
+{"name":"0042_setup_profile","at":"2026-11-20T07:50:36.848Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0042_setup_profile","at":"2026-11-20T07:50:36.848Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:50:38.883Z","paths":[],"error":false,"text":[]}
+{"name":"0042_setup_logout","at":"2026-11-20T07:50:43.216Z","call":"await tab3.cua.click({x:360,y:834}); await vp.set({width:390,height:844});","phase":"start"}
+{"name":"0042_setup_logout","at":"2026-11-20T07:50:43.216Z","call":"await tab3.cua.click({x:360,y:834}); await vp.set({width:390,height:844});","phase":"end","end_at":"2026-11-20T07:50:45.366Z","paths":[],"error":false,"text":[]}
+{"name":"0042_before","at":"2026-11-20T07:50:50.676Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_before","at":"2026-11-20T07:50:50.676Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:50:52.738Z","paths":["evidence/ME3-CUA-0042/0042_before_0.jpg"],"error":false,"text":[]}
+{"name":"0042_login_A","at":"2026-11-20T07:50:59.392Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0042_login_A","at":"2026-11-20T07:50:59.392Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:51:04.611Z","paths":[],"error":false,"text":[]}
+{"name":"0042_A_logged","at":"2026-11-20T07:51:08.859Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_A_logged","at":"2026-11-20T07:51:08.859Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:51:11.211Z","paths":["evidence/ME3-CUA-0042/0042_A_logged_0.jpg"],"error":false,"text":[]}
+{"name":"0042_A_profile_open","at":"2026-11-20T07:51:11.417Z","call":"await tab3.cua.click({x:300,y:31});","phase":"start"}
+{"name":"0042_A_profile_open","at":"2026-11-20T07:51:11.417Z","call":"await tab3.cua.click({x:300,y:31});","phase":"end","end_at":"2026-11-20T07:51:12.980Z","paths":[],"error":false,"text":[]}
+{"name":"0042_A_profile","at":"2026-11-20T07:51:18.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_A_profile","at":"2026-11-20T07:51:18.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:51:20.823Z","paths":["evidence/ME3-CUA-0042/0042_A_profile_0.jpg"],"error":false,"text":[]}
+{"name":"0042_logout_A","at":"2026-11-20T07:51:21.046Z","call":"await tab3.cua.click({x:79,y:726});","phase":"start"}
+{"name":"0042_logout_A","at":"2026-11-20T07:51:21.046Z","call":"await tab3.cua.click({x:79,y:726});","phase":"end","end_at":"2026-11-20T07:51:23.470Z","paths":[],"error":false,"text":[]}
+{"name":"0042_logged_out","at":"2026-11-20T07:51:30.160Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_logged_out","at":"2026-11-20T07:51:30.160Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:51:32.444Z","paths":["evidence/ME3-CUA-0042/0042_logged_out_0.jpg"],"error":false,"text":[]}
+{"name":"0042_login_B","at":"2026-11-20T07:51:32.660Z","call":"Enter synthetic B and temporary password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0042_login_B","at":"2026-11-20T07:51:32.660Z","call":"Enter synthetic B and temporary password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:51:37.719Z","paths":[],"error":false,"text":[]}
+{"name":"0042_B_profile_open","at":"2026-11-20T07:51:40.814Z","call":"await tab3.cua.click({x:300,y:31});","phase":"start"}
+{"name":"0042_B_profile_open","at":"2026-11-20T07:51:40.814Z","call":"await tab3.cua.click({x:300,y:31});","phase":"end","end_at":"2026-11-20T07:51:42.620Z","paths":[],"error":false,"text":[]}
+{"name":"0042_B_profile","at":"2026-11-20T07:51:47.457Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_B_profile","at":"2026-11-20T07:51:47.457Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:51:51.411Z","paths":["evidence/ME3-CUA-0042/0042_B_profile_0.jpg"],"error":false,"text":[]}
+{"name":"0042_menu_open","at":"2026-11-20T07:51:51.612Z","call":"await tab3.cua.click({x:28,y:31});","phase":"start"}
+{"name":"0042_menu_open","at":"2026-11-20T07:51:51.612Z","call":"await tab3.cua.click({x:28,y:31});","phase":"end","end_at":"2026-11-20T07:51:54.470Z","paths":[],"error":false,"text":[]}
+{"name":"0042_menu","at":"2026-11-20T07:51:57.342Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_menu","at":"2026-11-20T07:51:57.342Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:51:59.452Z","paths":["evidence/ME3-CUA-0042/0042_menu_0.jpg"],"error":false,"text":[]}
+{"name":"0042_history_open","at":"2026-11-20T07:52:05.658Z","call":"await tab3.cua.click({x:110,y:282});","phase":"start"}
+{"name":"0042_history_open","at":"2026-11-20T07:52:05.658Z","call":"await tab3.cua.click({x:110,y:282});","phase":"end","end_at":"2026-11-20T07:52:07.369Z","paths":[],"error":false,"text":[]}
+{"name":"0042_after","at":"2026-11-20T07:52:10.204Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0042_after","at":"2026-11-20T07:52:10.204Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:52:12.920Z","paths":["evidence/ME3-CUA-0042/0042_after_0.jpg"],"error":false,"text":[]}
+{"name":"0043_setup_desktop","at":"2026-11-20T07:52:19.235Z","call":"await vp.set({width:1440,height:900}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0043_setup_desktop","at":"2026-11-20T07:52:19.235Z","call":"await vp.set({width:1440,height:900}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:52:22.992Z","paths":[],"error":false,"text":[]}
+{"name":"0043_setup_logout","at":"2026-11-20T07:52:27.723Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"0043_setup_logout","at":"2026-11-20T07:52:27.723Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T07:52:30.161Z","paths":[],"error":false,"text":[]}
+{"name":"0043_before","at":"2026-11-20T07:52:37.327Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0043_before","at":"2026-11-20T07:52:37.327Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:52:40.770Z","paths":["evidence/ME3-CUA-0043/0043_before_0.jpg"],"error":false,"text":[]}
+{"name":"0043_login","at":"2026-11-20T07:52:40.969Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0043_login","at":"2026-11-20T07:52:40.969Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:52:46.183Z","paths":[],"error":false,"text":[]}
+{"name":"0043_history_open","at":"2026-11-20T07:52:50.482Z","call":"await tab3.cua.click({x:107,y:284});","phase":"start"}
+{"name":"0043_history_open","at":"2026-11-20T07:52:50.482Z","call":"await tab3.cua.click({x:107,y:284});","phase":"end","end_at":"2026-11-20T07:52:52.764Z","paths":[],"error":false,"text":[]}
+{"name":"0043_history_reload","at":"2026-11-20T07:52:55.885Z","call":"await tab3.reload();","phase":"start"}
+{"name":"0043_history_reload","at":"2026-11-20T07:52:55.885Z","call":"await tab3.reload();","phase":"end","end_at":"2026-11-20T07:52:58.215Z","paths":[],"error":false,"text":[]}
+{"name":"0043_history","at":"2026-11-20T07:53:02.091Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0043_history","at":"2026-11-20T07:53:02.091Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:53:04.803Z","paths":["evidence/ME3-CUA-0043/0043_history_0.jpg"],"error":false,"text":[]}
+{"name":"0043_reopen","at":"2026-11-20T07:53:07.722Z","call":"await tab3.cua.click({x:527,y:437});","phase":"start"}
+{"name":"0043_reopen","at":"2026-11-20T07:53:07.722Z","call":"await tab3.cua.click({x:527,y:437});","phase":"end","end_at":"2026-11-20T07:53:09.718Z","paths":[],"error":false,"text":[]}
+{"name":"0043_after","at":"2026-11-20T07:53:14.296Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0043_after","at":"2026-11-20T07:53:14.296Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:53:25.906Z","paths":["evidence/ME3-CUA-0043/0043_after_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/thread/5"]}
+{"name":"0044_setup_profile","at":"2026-11-20T07:53:33.924Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0044_setup_profile","at":"2026-11-20T07:53:33.924Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:53:39.946Z","paths":[],"error":false,"text":[]}
+{"name":"0044_setup_logout","at":"2026-11-20T07:53:44.745Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0044_setup_logout","at":"2026-11-20T07:53:44.745Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T07:53:47.094Z","paths":[],"error":false,"text":[]}
+{"name":"0044_before","at":"2026-11-20T07:53:52.520Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0044_before","at":"2026-11-20T07:53:52.520Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:53:55.535Z","paths":["evidence/ME3-CUA-0044/0044_before_0.jpg"],"error":false,"text":[]}
+{"name":"0044_login","at":"2026-11-20T07:53:55.748Z","call":"Enter synthetic portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0044_login","at":"2026-11-20T07:53:55.748Z","call":"Enter synthetic portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:53:59.861Z","paths":[],"error":false,"text":[]}
+{"name":"0044_answer_open","at":"2026-11-20T07:54:07.277Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"start"}
+{"name":"0044_answer_open","at":"2026-11-20T07:54:07.277Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"end","end_at":"2026-11-20T07:54:10.325Z","paths":[],"error":false,"text":[]}
+{"name":"0044_answer","at":"2026-11-20T07:54:15.109Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0044_answer","at":"2026-11-20T07:54:15.109Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:54:19.407Z","paths":["evidence/ME3-CUA-0044/0044_answer_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0044_copy_url","at":"2026-11-20T07:54:27.328Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','c']}); await nodeRepl.write(await tab3.clipboard.readText());","phase":"start"}
+{"name":"0044_copy_url","at":"2026-11-20T07:54:27.328Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','c']}); await nodeRepl.write(await tab3.clipboard.readText());","phase":"end","end_at":"2026-11-20T07:54:30.475Z","paths":[],"error":false,"text":[""]}
+{"name":"0044_copy_navigation_fallback","at":"2026-11-20T07:54:42.729Z","call":"await tab3.clipboard.writeText(await tab3.url()); await nodeRepl.write(await tab3.clipboard.readText()); await tab3.cua.keypress({keys:['Escape']}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0044_copy_navigation_fallback","at":"2026-11-20T07:54:42.729Z","call":"await tab3.clipboard.writeText(await tab3.url()); await nodeRepl.write(await tab3.clipboard.readText()); await tab3.cua.keypress({keys:['Escape']}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:54:46.014Z","paths":[],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0044_logout","at":"2026-11-20T07:54:51.570Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0044_logout","at":"2026-11-20T07:54:51.570Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T07:54:53.529Z","paths":[],"error":false,"text":[]}
+{"name":"0044_logout_view","at":"2026-11-20T07:54:59.743Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0044_logout_view","at":"2026-11-20T07:54:59.743Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:55:02.139Z","paths":["evidence/ME3-CUA-0044/0044_logout_view_0.jpg"],"error":false,"text":[]}
+{"name":"0044_paste_attempt","at":"2026-11-20T07:55:02.359Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"start"}
+{"name":"0044_paste_attempt","at":"2026-11-20T07:55:02.359Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"end","end_at":"2026-11-20T07:55:05.477Z","paths":[],"error":false,"text":[]}
+{"name":"0044_address_attempt_result","at":"2026-11-20T07:55:10.191Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0044_address_attempt_result","at":"2026-11-20T07:55:10.191Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:55:12.868Z","paths":["evidence/ME3-CUA-0044/0044_address_attempt_result_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/profile"]}
+{"name":"0044_supplemental_navigation","at":"2026-11-20T07:55:20.296Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"start"}
+{"name":"0044_supplemental_navigation","at":"2026-11-20T07:55:20.296Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"end","end_at":"2026-11-20T07:55:22.744Z","paths":[],"error":false,"text":[]}
+{"name":"0044_after","at":"2026-11-20T07:55:28.882Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0044_after","at":"2026-11-20T07:55:28.882Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:55:33.417Z","paths":["evidence/ME3-CUA-0044/0044_after_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0045_setup","at":"2026-11-20T07:55:42.764Z","call":"await vp.set({width:390,height:844}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0045_setup","at":"2026-11-20T07:55:42.764Z","call":"await vp.set({width:390,height:844}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:55:45.522Z","paths":[],"error":false,"text":[]}
+{"name":"0045_before","at":"2026-11-20T07:55:52.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0045_before","at":"2026-11-20T07:55:52.003Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:55:54.529Z","paths":["evidence/ME3-CUA-0045/0045_before_0.jpg"],"error":false,"text":[]}
+{"name":"0045_login","at":"2026-11-20T07:55:54.748Z","call":"Enter portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0045_login","at":"2026-11-20T07:55:54.748Z","call":"Enter portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:55:58.865Z","paths":[],"error":false,"text":[]}
+{"name":"0045_answer_open","at":"2026-11-20T07:56:04.060Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"start"}
+{"name":"0045_answer_open","at":"2026-11-20T07:56:04.060Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"end","end_at":"2026-11-20T07:56:06.076Z","paths":[],"error":false,"text":[]}
+{"name":"0045_answer","at":"2026-11-20T07:56:11.248Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0045_answer","at":"2026-11-20T07:56:11.248Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:56:13.625Z","paths":["evidence/ME3-CUA-0045/0045_answer_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0045_copy_url","at":"2026-11-20T07:56:13.832Z","call":"await tab3.clipboard.writeText(await tab3.url()); await nodeRepl.write(await tab3.clipboard.readText()); await tab3.cua.click({x:300,y:31});","phase":"start"}
+{"name":"0045_copy_url","at":"2026-11-20T07:56:13.832Z","call":"await tab3.clipboard.writeText(await tab3.url()); await nodeRepl.write(await tab3.clipboard.readText()); await tab3.cua.click({x:300,y:31});","phase":"end","end_at":"2026-11-20T07:56:16.352Z","paths":[],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0045_profile","at":"2026-11-20T07:56:21.774Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0045_profile","at":"2026-11-20T07:56:21.774Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:56:24.411Z","paths":["evidence/ME3-CUA-0045/0045_profile_0.jpg"],"error":false,"text":[]}
+{"name":"0045_logout","at":"2026-11-20T07:56:24.623Z","call":"await tab3.cua.click({x:79,y:726});","phase":"start"}
+{"name":"0045_logout","at":"2026-11-20T07:56:24.623Z","call":"await tab3.cua.click({x:79,y:726});","phase":"end","end_at":"2026-11-20T07:56:28.067Z","paths":[],"error":false,"text":[]}
+{"name":"0045_address_attempt","at":"2026-11-20T07:56:32.817Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"start"}
+{"name":"0045_address_attempt","at":"2026-11-20T07:56:32.817Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"end","end_at":"2026-11-20T07:56:35.227Z","paths":[],"error":false,"text":[]}
+{"name":"0045_attempt_result","at":"2026-11-20T07:56:39.330Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0045_attempt_result","at":"2026-11-20T07:56:39.330Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T07:56:41.690Z","paths":["evidence/ME3-CUA-0045/0045_attempt_result_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/profile"]}
+{"name":"0045_supplemental_navigation","at":"2026-11-20T07:56:46.596Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"start"}
+{"name":"0045_supplemental_navigation","at":"2026-11-20T07:56:46.596Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"end","end_at":"2026-11-20T07:56:49.425Z","paths":[],"error":false,"text":[]}
+{"name":"0045_after","at":"2026-11-20T07:56:55.773Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0045_after","at":"2026-11-20T07:56:55.773Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:56:57.967Z","paths":["evidence/ME3-CUA-0045/0045_after_0.jpg"],"error":false,"text":[]}
+{"name":"0046_setup","at":"2026-11-20T07:57:04.579Z","call":"await vp.set({width:1440,height:900}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0046_setup","at":"2026-11-20T07:57:04.579Z","call":"await vp.set({width:1440,height:900}); await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:57:06.672Z","paths":[],"error":false,"text":[]}
+{"name":"0046_before","at":"2026-11-20T07:57:12.303Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0046_before","at":"2026-11-20T07:57:12.303Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:57:14.925Z","paths":["evidence/ME3-CUA-0046/0046_before_0.jpg"],"error":false,"text":[]}
+{"name":"0046_register_open","at":"2026-11-20T07:57:15.146Z","call":"await tab3.cua.click({x:532,y:635});","phase":"start"}
+{"name":"0046_register_open","at":"2026-11-20T07:57:15.146Z","call":"await tab3.cua.click({x:532,y:635});","phase":"end","end_at":"2026-11-20T07:57:17.308Z","paths":[],"error":false,"text":[]}
+{"name":"0046_after","at":"2026-11-20T07:57:22.378Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0046_after","at":"2026-11-20T07:57:22.378Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:57:24.924Z","paths":["evidence/ME3-CUA-0046/0046_after_0.jpg"],"error":false,"text":[]}
+{"name":"0047_setup_login_open","at":"2026-11-20T07:57:33.622Z","call":"await tab3.cua.click({x:530,y:702});","phase":"start"}
+{"name":"0047_setup_login_open","at":"2026-11-20T07:57:33.622Z","call":"await tab3.cua.click({x:530,y:702});","phase":"end","end_at":"2026-11-20T07:57:37.878Z","paths":[],"error":false,"text":[]}
+{"name":"0047_setup_login_form","at":"2026-11-20T07:57:45.839Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_setup_login_form","at":"2026-11-20T07:57:45.839Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:57:48.441Z","paths":["evidence/ME3-CUA-0047/0047_setup_login_form_0.jpg"],"error":false,"text":[]}
+{"name":"0047_setup_login","at":"2026-11-20T07:57:48.649Z","call":"Enter dedicated synthetic B and temporary password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0047_setup_login","at":"2026-11-20T07:57:48.649Z","call":"Enter dedicated synthetic B and temporary password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T07:57:52.731Z","paths":[],"error":false,"text":[]}
+{"name":"0047_profile_open","at":"2026-11-20T07:57:59.212Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0047_profile_open","at":"2026-11-20T07:57:59.212Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T07:58:01.283Z","paths":[],"error":false,"text":[]}
+{"name":"0047_before","at":"2026-11-20T07:58:07.971Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_before","at":"2026-11-20T07:58:07.971Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:58:10.560Z","paths":["evidence/ME3-CUA-0047/0047_before_0.jpg"],"error":false,"text":[]}
+{"name":"0047_edit","at":"2026-11-20T07:58:10.764Z","call":"await tab3.cua.click({x:465,y:506}); await tab3.cua.keypress({keys:['Control','a']}); await tab3.cua.type({text:'CuaPending0047'});","phase":"start"}
+{"name":"0047_edit","at":"2026-11-20T07:58:10.764Z","call":"await tab3.cua.click({x:465,y:506}); await tab3.cua.keypress({keys:['Control','a']}); await tab3.cua.type({text:'CuaPending0047'});","phase":"end","end_at":"2026-11-20T07:58:13.764Z","paths":[],"error":false,"text":[]}
+{"name":"0047_edited","at":"2026-11-20T07:58:24.635Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_edited","at":"2026-11-20T07:58:24.635Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:58:27.124Z","paths":["evidence/ME3-CUA-0047/0047_edited_0.jpg"],"error":false,"text":[]}
+{"name":"0047_save_once","at":"2026-11-20T07:58:27.343Z","call":"await tab3.cua.click({x:368,y:663}); await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_save_once","at":"2026-11-20T07:58:27.343Z","call":"await tab3.cua.click({x:368,y:663}); await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:58:30.889Z","paths":["evidence/ME3-CUA-0047/0047_save_once_0.jpg"],"error":false,"text":[]}
+{"name":"0047_result","at":"2026-11-20T07:58:35.949Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_result","at":"2026-11-20T07:58:35.949Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:58:39.510Z","paths":["evidence/ME3-CUA-0047/0047_result_0.jpg"],"error":false,"text":[]}
+{"name":"0047_duplicate","at":"2026-11-20T07:58:45.793Z","call":"await tab3.cua.click({x:368,y:663});","phase":"start"}
+{"name":"0047_duplicate","at":"2026-11-20T07:58:45.793Z","call":"await tab3.cua.click({x:368,y:663});","phase":"end","end_at":"2026-11-20T07:58:51.657Z","paths":[],"error":false,"text":[]}
+{"name":"0047_duplicate_result","at":"2026-11-20T07:58:55.919Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_duplicate_result","at":"2026-11-20T07:58:55.919Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:58:58.975Z","paths":["evidence/ME3-CUA-0047/0047_duplicate_result_0.jpg"],"error":false,"text":[]}
+{"name":"0047_reload","at":"2026-11-20T07:58:59.180Z","call":"await tab3.reload();","phase":"start"}
+{"name":"0047_reload","at":"2026-11-20T07:58:59.180Z","call":"await tab3.reload();","phase":"end","end_at":"2026-11-20T07:59:01.593Z","paths":[],"error":false,"text":[]}
+{"name":"0047_after","at":"2026-11-20T07:59:05.280Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0047_after","at":"2026-11-20T07:59:05.280Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:59:08.861Z","paths":["evidence/ME3-CUA-0047/0047_after_0.jpg"],"error":false,"text":[]}
+{"name":"0048_before","at":"2026-11-20T07:59:19.197Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0048_before","at":"2026-11-20T07:59:19.197Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:59:22.482Z","paths":["evidence/ME3-CUA-0048/0048_before_0.jpg"],"error":false,"text":[]}
+{"name":"0048_second_tab","at":"2026-11-20T07:59:22.700Z","call":"let tab48=await browser.tabs.new(); await tab48.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0048_second_tab","at":"2026-11-20T07:59:22.700Z","call":"let tab48=await browser.tabs.new(); await tab48.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T07:59:25.996Z","paths":[],"error":false,"text":[]}
+{"name":"0048_second_authenticated","at":"2026-11-20T07:59:32.904Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"start"}
+{"name":"0048_second_authenticated","at":"2026-11-20T07:59:32.904Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"end","end_at":"2026-11-20T07:59:35.103Z","paths":["evidence/ME3-CUA-0048/0048_second_authenticated_0.jpg"],"error":false,"text":[]}
+{"name":"0048_logout_first","at":"2026-11-20T07:59:35.308Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"0048_logout_first","at":"2026-11-20T07:59:35.308Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T07:59:38.919Z","paths":[],"error":false,"text":[]}
+{"name":"0048_first_logged_out","at":"2026-11-20T07:59:48.215Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0048_first_logged_out","at":"2026-11-20T07:59:48.215Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T07:59:58.154Z","paths":["evidence/ME3-CUA-0048/0048_first_logged_out_0.jpg"],"error":false,"text":[]}
+{"name":"0048_viewport_second","at":"2026-11-20T08:00:02.536Z","call":"await nodeRepl.write(await tab48.screenshot({})); await vp.set({width:1440,height:900});","phase":"start"}
+{"name":"0048_viewport_second","at":"2026-11-20T08:00:02.536Z","call":"await nodeRepl.write(await tab48.screenshot({})); await vp.set({width:1440,height:900});","phase":"end","end_at":"2026-11-20T08:00:05.494Z","paths":["evidence/ME3-CUA-0048/0048_viewport_second_0.jpg"],"error":false,"text":[]}
+{"name":"0048_second_ready","at":"2026-11-20T08:00:12.810Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"start"}
+{"name":"0048_second_ready","at":"2026-11-20T08:00:12.810Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"end","end_at":"2026-11-20T08:00:15.684Z","paths":["evidence/ME3-CUA-0048/0048_second_ready_0.jpg"],"error":false,"text":[]}
+{"name":"0048_private_navigation","at":"2026-11-20T08:00:19.405Z","call":"await tab48.cua.click({x:107,y:284});","phase":"start"}
+{"name":"0048_private_navigation","at":"2026-11-20T08:00:19.405Z","call":"await tab48.cua.click({x:107,y:284});","phase":"end","end_at":"2026-11-20T08:00:21.305Z","paths":[],"error":false,"text":[]}
+{"name":"0048_after","at":"2026-11-20T08:00:27.183Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"start"}
+{"name":"0048_after","at":"2026-11-20T08:00:27.183Z","call":"await nodeRepl.write(await tab48.screenshot({}));","phase":"end","end_at":"2026-11-20T08:00:29.689Z","paths":["evidence/ME3-CUA-0048/0048_after_0.jpg"],"error":false,"text":[]}
+{"name":"0049_before","at":"2026-11-20T08:00:40.022Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0049_before","at":"2026-11-20T08:00:40.022Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:00:42.510Z","paths":["evidence/ME3-CUA-0049/0049_before_0.jpg"],"error":false,"text":[]}
+{"name":"0049_setup_login_A","at":"2026-11-20T08:00:42.721Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0049_setup_login_A","at":"2026-11-20T08:00:42.721Z","call":"Enter synthetic A portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T08:00:46.966Z","paths":[],"error":false,"text":[]}
+{"name":"0049_A_conversation_open","at":"2026-11-20T08:00:52.673Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/thread/5');","phase":"start"}
+{"name":"0049_A_conversation_open","at":"2026-11-20T08:00:52.673Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/thread/5');","phase":"end","end_at":"2026-11-20T08:00:54.890Z","paths":[],"error":false,"text":[]}
+{"name":"0049_A_conversation","at":"2026-11-20T08:01:01.316Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url()); await tab3.clipboard.writeText(await tab3.url());","phase":"start"}
+{"name":"0049_A_conversation","at":"2026-11-20T08:01:01.316Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url()); await tab3.clipboard.writeText(await tab3.url());","phase":"end","end_at":"2026-11-20T08:01:05.313Z","paths":["evidence/ME3-CUA-0049/0049_A_conversation_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/thread/5"]}
+{"name":"0049_A_profile_open","at":"2026-11-20T08:01:05.521Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0049_A_profile_open","at":"2026-11-20T08:01:05.521Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T08:01:10.591Z","paths":[],"error":false,"text":[]}
+{"name":"0049_logout_A","at":"2026-11-20T08:01:14.866Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0049_logout_A","at":"2026-11-20T08:01:14.866Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T08:01:18.083Z","paths":[],"error":false,"text":[]}
+{"name":"0049_logged_out","at":"2026-11-20T08:01:27.762Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0049_logged_out","at":"2026-11-20T08:01:27.762Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:01:31.421Z","paths":["evidence/ME3-CUA-0049/0049_logged_out_0.jpg"],"error":false,"text":[]}
+{"name":"0049_login_B","at":"2026-11-20T08:01:31.621Z","call":"Enter dedicated synthetic B and password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0049_login_B","at":"2026-11-20T08:01:31.621Z","call":"Enter dedicated synthetic B and password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T08:01:35.880Z","paths":[],"error":false,"text":[]}
+{"name":"0049_B_identity","at":"2026-11-20T08:01:42.371Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0049_B_identity","at":"2026-11-20T08:01:42.371Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:01:45.568Z","paths":["evidence/ME3-CUA-0049/0049_B_identity_0.jpg"],"error":false,"text":[]}
+{"name":"0049_paste_attempt","at":"2026-11-20T08:01:45.792Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"start"}
+{"name":"0049_paste_attempt","at":"2026-11-20T08:01:45.792Z","call":"await tab3.cua.keypress({keys:['Control','l']}); await tab3.cua.keypress({keys:['Control','v']}); await tab3.cua.keypress({keys:['Enter']});","phase":"end","end_at":"2026-11-20T08:01:48.936Z","paths":[],"error":false,"text":[]}
+{"name":"0049_attempt_result","at":"2026-11-20T08:01:55.012Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0049_attempt_result","at":"2026-11-20T08:01:55.012Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T08:01:57.650Z","paths":["evidence/ME3-CUA-0049/0049_attempt_result_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/"]}
+{"name":"0049_supplemental_navigation","at":"2026-11-20T08:01:57.852Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"start"}
+{"name":"0049_supplemental_navigation","at":"2026-11-20T08:01:57.852Z","call":"await tab3.goto(await tab3.clipboard.readText());","phase":"end","end_at":"2026-11-20T08:02:00.129Z","paths":[],"error":false,"text":[]}
+{"name":"0049_after","at":"2026-11-20T08:02:07.357Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0049_after","at":"2026-11-20T08:02:07.357Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T08:02:10.232Z","paths":["evidence/ME3-CUA-0049/0049_after_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/thread/5"]}
+{"name":"0050_setup_profile","at":"2026-11-20T08:02:18.395Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"0050_setup_profile","at":"2026-11-20T08:02:18.395Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T08:02:20.616Z","paths":[],"error":false,"text":[]}
+{"name":"0050_setup_logout_B","at":"2026-11-20T08:02:29.889Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"0050_setup_logout_B","at":"2026-11-20T08:02:29.889Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T08:02:32.015Z","paths":[],"error":false,"text":[]}
+{"name":"0050_setup_login_form","at":"2026-11-20T08:02:38.023Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0050_setup_login_form","at":"2026-11-20T08:02:38.023Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:02:40.635Z","paths":["evidence/ME3-CUA-0050/0050_setup_login_form_0.jpg"],"error":false,"text":[]}
+{"name":"0050_setup_login_A","at":"2026-11-20T08:02:40.848Z","call":"Enter portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0050_setup_login_A","at":"2026-11-20T08:02:40.848Z","call":"Enter portfolio_researcher and demo password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T08:02:44.784Z","paths":[],"error":false,"text":[]}
+{"name":"0050_A_answer_open","at":"2026-11-20T08:02:48.743Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"start"}
+{"name":"0050_A_answer_open","at":"2026-11-20T08:02:48.743Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/answer/5');","phase":"end","end_at":"2026-11-20T08:02:53.260Z","paths":[],"error":false,"text":[]}
+{"name":"0050_before","at":"2026-11-20T08:02:57.727Z","call":"await nodeRepl.write(await tab3.screenshot({})); let answerUrl50=await tab3.url(); await nodeRepl.write(answerUrl50);","phase":"start"}
+{"name":"0050_before","at":"2026-11-20T08:02:57.727Z","call":"await nodeRepl.write(await tab3.screenshot({})); let answerUrl50=await tab3.url(); await nodeRepl.write(answerUrl50);","phase":"end","end_at":"2026-11-20T08:03:03.736Z","paths":["evidence/ME3-CUA-0050/0050_before_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"0050_A_sources_scroll","at":"2026-11-20T08:03:03.941Z","call":"await tab3.cua.scroll({x:1100,y:720,scrollY:710,scrollX:0});","phase":"start"}
+{"name":"0050_A_sources_scroll","at":"2026-11-20T08:03:03.941Z","call":"await tab3.cua.scroll({x:1100,y:720,scrollY:710,scrollX:0});","phase":"end","end_at":"2026-11-20T08:03:16.239Z","paths":[],"error":true,"text":["Error: Timed out after 10000ms waiting for CDP command Input.synthesizeScrollGesture."]}
+{"name":"0050_A_sources","at":"2026-11-20T08:03:22.589Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0050_A_sources","at":"2026-11-20T08:03:22.589Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:03:27.732Z","paths":["evidence/ME3-CUA-0050/0050_A_sources_0.jpg"],"error":false,"text":[]}
+{"name":"0050_A_page_down","at":"2026-11-20T08:03:35.434Z","call":"await tab3.cua.keypress({keys:['PageDown']});","phase":"start"}
+{"name":"0050_A_page_down","at":"2026-11-20T08:03:35.434Z","call":"await tab3.cua.keypress({keys:['PageDown']});","phase":"end","end_at":"2026-11-20T08:03:37.427Z","paths":[],"error":false,"text":[]}
+{"name":"0050_A_sources_visible","at":"2026-11-20T08:03:41.615Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0050_A_sources_visible","at":"2026-11-20T08:03:41.615Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:03:44.588Z","paths":["evidence/ME3-CUA-0050/0050_A_sources_visible_0.jpg"],"error":false,"text":[]}
+{"name":"0050_profile_A","at":"2026-11-20T08:03:50.498Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"start"}
+{"name":"0050_profile_A","at":"2026-11-20T08:03:50.498Z","call":"await tab3.goto('https://medevidence-ai-v3.onrender.com/profile');","phase":"end","end_at":"2026-11-20T08:03:58.302Z","paths":[],"error":false,"text":[]}
+{"name":"0050_logout_A","at":"2026-11-20T08:04:06.374Z","call":"await tab3.cua.click({x:360,y:693});","phase":"start"}
+{"name":"0050_logout_A","at":"2026-11-20T08:04:06.374Z","call":"await tab3.cua.click({x:360,y:693});","phase":"end","end_at":"2026-11-20T08:04:09.079Z","paths":[],"error":false,"text":[]}
+{"name":"0050_signed_out","at":"2026-11-20T08:04:18.806Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0050_signed_out","at":"2026-11-20T08:04:18.806Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:04:21.384Z","paths":["evidence/ME3-CUA-0050/0050_signed_out_0.jpg"],"error":false,"text":[]}
+{"name":"0050_login_B","at":"2026-11-20T08:04:21.587Z","call":"Enter dedicated synthetic B and temporary password [REDACTED]; click Sign in.","phase":"start"}
+{"name":"0050_login_B","at":"2026-11-20T08:04:21.587Z","call":"Enter dedicated synthetic B and temporary password [REDACTED]; click Sign in.","phase":"end","end_at":"2026-11-20T08:04:25.753Z","paths":[],"error":false,"text":[]}
+{"name":"0050_B_identity","at":"2026-11-20T08:04:31.555Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"0050_B_identity","at":"2026-11-20T08:04:31.555Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:04:34.204Z","paths":["evidence/ME3-CUA-0050/0050_B_identity_0.jpg"],"error":false,"text":[]}
+{"name":"0050_B_open_A_answer","at":"2026-11-20T08:04:34.405Z","call":"await tab3.goto(answerUrl50);","phase":"start"}
+{"name":"0050_B_open_A_answer","at":"2026-11-20T08:04:34.405Z","call":"await tab3.goto(answerUrl50);","phase":"end","end_at":"2026-11-20T08:04:36.343Z","paths":[],"error":false,"text":[]}
+{"name":"0050_after","at":"2026-11-20T08:04:41.114Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"start"}
+{"name":"0050_after","at":"2026-11-20T08:04:41.114Z","call":"await nodeRepl.write(await tab3.screenshot({})); await nodeRepl.write(await tab3.url());","phase":"end","end_at":"2026-11-20T08:04:43.545Z","paths":["evidence/ME3-CUA-0050/0050_after_0.jpg"],"error":false,"text":["https://medevidence-ai-v3.onrender.com/answer/5"]}
+{"name":"cleanup_profile_open","at":"2026-11-20T08:04:51.437Z","call":"await tab3.cua.click({x:80,y:600});","phase":"start"}
+{"name":"cleanup_profile_open","at":"2026-11-20T08:04:51.437Z","call":"await tab3.cua.click({x:80,y:600});","phase":"end","end_at":"2026-11-20T08:04:53.151Z","paths":[],"error":false,"text":[]}
+{"name":"cleanup_profile","at":"2026-11-20T08:04:57.980Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"start"}
+{"name":"cleanup_profile","at":"2026-11-20T08:04:57.980Z","call":"await nodeRepl.write(await tab3.screenshot({}));","phase":"end","end_at":"2026-11-20T08:05:00.620Z","paths":["evidence/batch-003-setup/cleanup_profile_0.jpg"],"error":false,"text":[]}
+{"name":"cleanup_signout","at":"2026-11-20T08:05:00.831Z","call":"await tab3.cua.click({x:360,y:834});","phase":"start"}
+{"name":"cleanup_signout","at":"2026-11-20T08:05:00.831Z","call":"await tab3.cua.click({x:360,y:834});","phase":"end","end_at":"2026-11-20T08:05:03.279Z","paths":[],"error":false,"text":[]}
+{"name":"cleanup_done","at":"2026-11-20T08:05:07.871Z","call":"await nodeRepl.write(await tab3.screenshot({})); await vp.reset(); await tab48.close();","phase":"start"}
+{"name":"cleanup_done","at":"2026-11-20T08:05:07.871Z","call":"await nodeRepl.write(await tab3.screenshot({})); await vp.reset(); await tab48.close();","phase":"end","end_at":"2026-11-20T08:05:10.786Z","paths":["evidence/batch-003-setup/cleanup_done_0.jpg"],"error":false,"text":[]}
