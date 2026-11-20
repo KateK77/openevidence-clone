@@ -1,0 +1,3 @@
+# Fixture review
+
+Application commit c903b65ce3f8f49fe72416ca8948d215a0690a49. Read-only repository README and tree reviewed before scoring fixture gates. README documents local seed_demo and synthetic Playwright fixtures, but no configured disposable CUA environment with controllable delayed history is available in this session. We did not run API/unit/Playwright tests or alter the deployed service. Public portfolio_researcher records are read-only fixtures; dedicated batch003 and batch004 accounts have no generated research. Provider billing status/budget has not been authorized. These constraints do not establish an application defect.

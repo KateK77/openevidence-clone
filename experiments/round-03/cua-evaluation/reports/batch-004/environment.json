@@ -1,0 +1,28 @@
+{
+  "batch": "004",
+  "ids": "ME3-CUA-0051–ME3-CUA-0070",
+  "started_at": "2026-11-20T09:05:44.652Z",
+  "ended_at": "2026-11-20T09:31:13.672Z",
+  "url": "https://medevidence-ai-v3.onrender.com/",
+  "browser": "Google Chrome; connected extension family verified; exact build not independently exposed",
+  "model": "ChatGPT visual CUA; exact model not exposed",
+  "viewports": {
+    "desktop": "1440x900",
+    "mobile": "390x844"
+  },
+  "viewport_setup_note": "0061 initial preparation capture was desktop: viewport applied to documentation tab. Closed documentation/blank tabs and verified mobile before scored typing; initial capture retained. Screenshot pixel dimensions can differ from CSS viewport.",
+  "tested_application_sha": "c903b65ce3f8f49fe72416ca8948d215a0690a49",
+  "render_live_deploy": "dep-dbtbu4p9aqoc73akvgl0",
+  "deployment_check": "Same live commit verified at batch start and end",
+  "parent_evaluation_commit": "fa6b3d0d4d0379534e5e147ad033be0a5e89c855",
+  "canonical_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
+  "fixtures": {
+    "public": "portfolio_researcher; read-only synthetic demo records",
+    "dedicated": "batch003 and batch004 synthetic accounts; profile-only edits for 0053; no generated history"
+  },
+  "paid_operations": 0,
+  "application_changes": 0,
+  "scored_dom_or_api_substitution": false,
+  "capture_policy": "Each image saved immediately. Original JPEG retained; required PNG converted at original dimensions. Asynchronous rendering checked using settled screenshots.",
+  "cleanup": "Signed out dedicated account, restored viewport, closed docs and blank tabs."
+}
