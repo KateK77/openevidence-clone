@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0029",
+  "observed_disposition": "BLOCKED",
+  "official_status": "BLOCKED",
+  "observation": "Started mobile Profile check before interruption. On resume same account visible; scroll exposed Sign out and click left Signing out... pending. Later desktop reload showed anonymous form. Correct password existed only in lost transient state, so same-account login and post-login Profile/History could not be completed. No reset or replacement account used.",
+  "evidence_status": "resumed original screenshots saved",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": "Started mobile Profile check before interruption. On resume same account visible; scroll exposed Sign out and click left Signing out... pending. Later desktop reload showed anonymous form. Correct password existed only in lost transient state, so same-account login and post-login Profile/History could not be completed. No reset or replacement account used."
+}

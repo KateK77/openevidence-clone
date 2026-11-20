@@ -1,0 +1,182 @@
+[
+  {
+    "test_id": "ME3-CUA-0011",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Search PubMed \u2192 Saved publications \u2192 Research history. Active sidebar, breadcrumbs, headings and content agreed at each transition.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0012",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Visited home, existing answer /answer/5 and saved publications; opened publication details. Research demonstration / not for clinical use disclaimer visible. Existing answer explicitly reported Generation unavailable; no claim of live synthesis success. Public synthetic fixture used read-only.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0013",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Signed in to pilot-created dedicated synthetic account with zero conversations. Home composer, topic examples and recent empty state visible; History empty guidance and New research entry visible.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0014",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Fresh mobile login to same empty account; home composer/topics/recent empty state; View all opened History; drawer exposed New research. First View all click missed due screenshot/CSS scale; corrected from visible unchanged screen. No essential clipping or horizontal overflow observed.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0015",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Anonymous direct /history and /profile; resolved /saved via sidebar then browser reload. Sign-in guard/form shown without private content.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0016",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Authenticated direct /answer/5 visibly showed Loading answer... and then resolved to usable answer detail with existing failed-synthesis status. No artificial delay or model operation.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0017",
+    "observed_disposition": "FAIL",
+    "official_status": "BLOCKED",
+    "observation": "Signed-in visit to deliberately nonexistent /cua-nonexistent-0017 returned bare Not Found server page. No traceback, but no app navigation or recovery link, preventing required return using app navigation. Browser Back used only to recover for next test.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0018",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "From fixture owner thread/5 opened /library, reloaded browser, confirmed route/identity, returned to /history via sidebar and saw same conversation. One immediate pre-reload screenshot was stale; resolved screenshot inspected.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0019",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Desktop Home \u2192 PubMed \u2192 History \u2192 Settings; Back twice restored History then PubMed; Forward twice restored History then Settings. Expected route, heading and synthetic identity observed at each step.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0020",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Mobile same ordered navigation via drawer, Back twice and Forward twice. Expected routes/headings and identity observed, no essential horizontal clipping.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0021",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Fresh login with synthetic Researcher A mapped to public portfolio_researcher. Home header/profile entry then Profile, History and PubMed showed same identity.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0022",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Opened private answer, signed out via Profile, Back then Forward each showed anonymous login due duplicate Profile entries. Supplemental direct /answer/5 showed access guard; no private answer/prior identity. Generic public sidebar remains visible.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0023",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Mobile version of 0022: opened private answer, signed out through Profile, Back then Forward showed anonymous login. Supplemental answer URL denied content; essential controls visible.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0024",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Desktop sign-in Create a research account opened registration with labeled Username/Password, password guidance and visible Create account. No separate email or confirmation field.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0025",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Mobile sign-in entry opened registration. Username/Password, strength guidance, submit and existing-account controls visible with vertical scroll, no page horizontal overflow.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0026",
+    "observed_disposition": "FAIL",
+    "official_status": "BLOCKED",
+    "observation": "Frozen first step specifies distinct email and valid matching password. Complete desktop registration form offered only Username and Password, with no email or confirmation field. Exact prescribed workflow unavailable; no substitute username-based registration submitted. This is benchmark/UI workflow mismatch, not proof username registration is broken. Later steps not executed.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0027",
+    "observed_disposition": "FAIL",
+    "official_status": "BLOCKED",
+    "observation": "Same frozen registration workflow mismatch on mobile, with full form and bottom inspected. Scroll tool timed out, subsequent screenshot confirmed final visible form. No alternative flow submitted; later steps not executed.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0028",
+    "observed_disposition": "PASS",
+    "official_status": "BLOCKED",
+    "observation": "Used dedicated account actually created in pilot, not a claimed successful 0026 registration. Setup login, explicit sign-out, login with correct credentials, Profile identity and own empty History observed.",
+    "evidence_status": "original pre-interruption image export unavailable",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+  },
+  {
+    "test_id": "ME3-CUA-0029",
+    "observed_disposition": "BLOCKED",
+    "official_status": "BLOCKED",
+    "observation": "Started mobile Profile check before interruption. On resume same account visible; scroll exposed Sign out and click left Signing out... pending. Later desktop reload showed anonymous form. Correct password existed only in lost transient state, so same-account login and post-login Profile/History could not be completed. No reset or replacement account used.",
+    "evidence_status": "resumed original screenshots saved",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": "Started mobile Profile check before interruption. On resume same account visible; scroll exposed Sign out and click left Signing out... pending. Later desktop reload showed anonymous form. Correct password existed only in lost transient state, so same-account login and post-login Profile/History could not be completed. No reset or replacement account used."
+  },
+  {
+    "test_id": "ME3-CUA-0030",
+    "observed_disposition": "PASS",
+    "official_status": "PASS",
+    "observation": "Desktop known registered synthetic username submitted with deliberately incorrect password. Visible Invalid username or password error and Sign in header; no authenticated/private view. Supplemental History click screenshot was immediate/stale and is not used to assert a resolved history guard.",
+    "evidence_status": "resumed original screenshots saved",
+    "exact_pre_interruption_timestamp": "unavailable",
+    "formal_block_reason": ""
+  }
+]

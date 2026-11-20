@@ -1,0 +1,1 @@
+after.png derives from 0029_signedout.jpg, whose historical filename is misleading: the actual screenshot still shows Signing out... . It does NOT prove sign-out completion or successful re-login. A later desktop reload showed an anonymous form, recorded in resumed trace. before.png is the resumed pre-sign-out state, not the lost original pre-interruption screenshot.

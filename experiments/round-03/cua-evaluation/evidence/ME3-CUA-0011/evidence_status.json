@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0011",
+  "observed_disposition": "PASS",
+  "official_status": "BLOCKED",
+  "observation": "Search PubMed \u2192 Saved publications \u2192 Research history. Active sidebar, breadcrumbs, headings and content agreed at each transition.",
+  "evidence_status": "original pre-interruption image export unavailable",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+}

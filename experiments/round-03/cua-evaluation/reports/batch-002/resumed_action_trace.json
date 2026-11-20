@@ -1,0 +1,90 @@
+[
+  {
+    "name": "0029_resume",
+    "at": "2026-11-20T06:54:55.307Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0029_scroll",
+    "at": "2026-11-20T06:55:09.806Z",
+    "call": "await batchTab.cua.scroll({x:282,y:668,scrollY:375,scrollX:0}); await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0029_signout",
+    "at": "2026-11-20T06:55:20.352Z",
+    "call": "await batchTab.cua.click({x:78,y:713});",
+    "tool_error": false,
+    "text": [],
+    "image_count": 0
+  },
+  {
+    "name": "0029_after",
+    "at": "2026-11-20T06:55:31.339Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0029_signedout",
+    "at": "2026-11-20T06:55:50.737Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0030_setup_signout_pending",
+    "at": "2026-11-20T06:56:00.008Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0030_setup_reload",
+    "at": "2026-11-20T06:56:09.961Z",
+    "call": "await batchTab.reload(); await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0030_before",
+    "at": "2026-11-20T06:56:22.472Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0030_submit",
+    "at": "2026-11-20T06:56:34.385Z",
+    "call": "Enter known registered dedicated username and deliberately incorrect password, Tab to Sign in and Enter. Password omitted.",
+    "tool_error": false,
+    "text": [],
+    "image_count": 0
+  },
+  {
+    "name": "0030_after",
+    "at": "2026-11-20T06:56:47.464Z",
+    "call": "await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  },
+  {
+    "name": "0030_guard",
+    "at": "2026-11-20T06:57:00.881Z",
+    "call": "await batchTab.cua.click({x:106,y:284}); await nodeRepl.write(await batchTab.screenshot({}));",
+    "tool_error": false,
+    "text": [],
+    "image_count": 1
+  }
+]

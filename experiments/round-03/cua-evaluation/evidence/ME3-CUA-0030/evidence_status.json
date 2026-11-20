@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0030",
+  "observed_disposition": "PASS",
+  "official_status": "PASS",
+  "observation": "Desktop known registered synthetic username submitted with deliberately incorrect password. Visible Invalid username or password error and Sign in header; no authenticated/private view. Supplemental History click screenshot was immediate/stale and is not used to assert a resolved history guard.",
+  "evidence_status": "resumed original screenshots saved",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": ""
+}

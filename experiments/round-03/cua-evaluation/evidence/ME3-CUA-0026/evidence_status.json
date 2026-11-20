@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0026",
+  "observed_disposition": "FAIL",
+  "official_status": "BLOCKED",
+  "observation": "Frozen first step specifies distinct email and valid matching password. Complete desktop registration form offered only Username and Password, with no email or confirmation field. Exact prescribed workflow unavailable; no substitute username-based registration submitted. This is benchmark/UI workflow mismatch, not proof username registration is broken. Later steps not executed.",
+  "evidence_status": "original pre-interruption image export unavailable",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+}

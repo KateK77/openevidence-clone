@@ -1,0 +1,46 @@
+{
+  "application_url": "https://medevidence-ai-v3.onrender.com/",
+  "repository": "KateK77/openevidence-clone",
+  "deployment_branch": "v3-round-03",
+  "live_application_commit": "c903b65ce3f8f49fe72416ca8948d215a0690a49",
+  "live_deployment": "dep-dbtbu4p9aqoc73akvgl0",
+  "frozen_import_commit": "66432c918cc981e3a0e28b21df69ce4ec4ba3347",
+  "benchmark_branch": "evaluation/medevidence-v3-independent-cua-473",
+  "browser": "Google Chrome connected extension",
+  "browser_build": "not independently verified",
+  "controller_model": "not exposed by browser runtime",
+  "reasoning_effort": "not exposed by browser runtime",
+  "interaction_mode": "visual screenshots and cua coordinate/keyboard actions; no DOM/Playwright/API assertions",
+  "requested_viewports": {
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      390,
+      844
+    ]
+  },
+  "viewport_restored": true,
+  "browser_session_signed_out": true,
+  "paid_native_cua_api_calls": 0,
+  "application_model_generation_or_probe_actions": 0,
+  "synthetic_account_created": "me3cua_20261120_0509",
+  "existing_public_synthetic_fixture": "portfolio_researcher thread/5 answer/5 (read-only)",
+  "suite_mutations": false,
+  "application_code_mutations": false,
+  "notes": [
+    "0011\u20130028 observations preserved separately from formal evidence-validated scores.",
+    "0029 blocked; saved after image still shows pending logout. Subsequent desktop reload showed anonymous login.",
+    "0030 actual incorrect-password rejection captured and saved immediately.",
+    "No application code, frozen definitions or prior pilot outcomes changed."
+  ],
+  "batch": "002",
+  "test_ids": "ME3-CUA-0011\u20130030",
+  "original_screenshot_loss": true,
+  "missing_original_image_test_ids": "ME3-CUA-0011\u20130028",
+  "original_timestamp_loss": true,
+  "credential_lost_on_resume": true,
+  "synthetic_accounts_created_this_batch": 0,
+  "resume_recorded_at": "2026-11-20T06:58:25.619532+00:00"
+}

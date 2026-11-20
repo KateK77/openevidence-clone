@@ -3,24 +3,24 @@
   "frozen_suite_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
   "total": {
     "total": 473,
-    "PASS": 10,
+    "PASS": 11,
     "FAIL": 0,
-    "BLOCKED": 0,
-    "NOT_RUN": 463,
-    "overall_pass_rate_pct": 2.11,
+    "BLOCKED": 19,
+    "NOT_RUN": 443,
+    "overall_pass_rate_pct": 2.33,
     "executed_pass_rate_pct": 100.0,
-    "definitive_coverage_pct": 2.11
+    "definitive_coverage_pct": 2.33
   },
   "by_difficulty": {
     "Easy": {
       "total": 125,
-      "PASS": 10,
+      "PASS": 11,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 115,
-      "overall_pass_rate_pct": 8.0,
+      "BLOCKED": 13,
+      "NOT_RUN": 101,
+      "overall_pass_rate_pct": 8.8,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 8.0
+      "definitive_coverage_pct": 8.8
     },
     "Expert": {
       "total": 13,
@@ -46,8 +46,8 @@
       "total": 244,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 244,
+      "BLOCKED": 6,
+      "NOT_RUN": 238,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -66,13 +66,13 @@
     },
     "Authentication and profiles": {
       "total": 36,
-      "PASS": 0,
+      "PASS": 1,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 36,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "BLOCKED": 6,
+      "NOT_RUN": 29,
+      "overall_pass_rate_pct": 2.78,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 2.78
     },
     "Bookmarks, collections and saved searches": {
       "total": 38,
@@ -148,8 +148,8 @@
       "total": 23,
       "PASS": 10,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 13,
+      "BLOCKED": 13,
+      "NOT_RUN": 0,
       "overall_pass_rate_pct": 43.48,
       "executed_pass_rate_pct": 100.0,
       "definitive_coverage_pct": 43.48
@@ -238,13 +238,13 @@
     },
     "desktop_pointer": {
       "total": 351,
-      "PASS": 5,
+      "PASS": 6,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 346,
-      "overall_pass_rate_pct": 1.42,
+      "BLOCKED": 13,
+      "NOT_RUN": 332,
+      "overall_pass_rate_pct": 1.71,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 1.42
+      "definitive_coverage_pct": 1.71
     },
     "mobile_keyboard_only": {
       "total": 2,
@@ -260,8 +260,8 @@
       "total": 108,
       "PASS": 5,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 103,
+      "BLOCKED": 6,
+      "NOT_RUN": 97,
       "overall_pass_rate_pct": 4.63,
       "executed_pass_rate_pct": 100.0,
       "definitive_coverage_pct": 4.63
@@ -300,13 +300,13 @@
     },
     "baseline": {
       "total": 116,
-      "PASS": 10,
+      "PASS": 11,
       "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 106,
-      "overall_pass_rate_pct": 8.62,
+      "BLOCKED": 19,
+      "NOT_RUN": 86,
+      "overall_pass_rate_pct": 9.48,
       "executed_pass_rate_pct": 100.0,
-      "definitive_coverage_pct": 8.62
+      "definitive_coverage_pct": 9.48
     },
     "claim_reject_fixture": {
       "total": 4,
@@ -760,6 +760,6 @@
     }
   },
   "unique_core_scenarios": 365,
-  "core_with_definitive_execution": 6,
+  "core_with_definitive_execution": 7,
   "core_all_variants_passed": 6
 }

@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0019",
+  "observed_disposition": "PASS",
+  "official_status": "BLOCKED",
+  "observation": "Desktop Home \u2192 PubMed \u2192 History \u2192 Settings; Back twice restored History then PubMed; Forward twice restored History then Settings. Expected route, heading and synthetic identity observed at each step.",
+  "evidence_status": "original pre-interruption image export unavailable",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+}

@@ -1,0 +1,9 @@
+{
+  "test_id": "ME3-CUA-0028",
+  "observed_disposition": "PASS",
+  "official_status": "BLOCKED",
+  "observation": "Used dedicated account actually created in pilot, not a claimed successful 0026 registration. Setup login, explicit sign-out, login with correct credentials, Profile identity and own empty History observed.",
+  "evidence_status": "original pre-interruption image export unavailable",
+  "exact_pre_interruption_timestamp": "unavailable",
+  "formal_block_reason": "Evidence archival failure: original screenshots and exact action timestamps were held in transient orchestration state and lost on environment/session resume before file export. Observations remain in this conversation, but mandatory original before.png/after.png cannot be recovered through available tools. No rerun, replacement screenshot, placeholder image or weakened scorer was used."
+}
