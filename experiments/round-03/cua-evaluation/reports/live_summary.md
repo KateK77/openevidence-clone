@@ -7,22 +7,22 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Metric | Value |
 |---|---:|
 | total | 473 |
-| PASS | 81 |
+| PASS | 85 |
 | FAIL | 9 |
-| BLOCKED | 60 |
-| NOT_RUN | 323 |
-| overall_pass_rate_pct | 17.12 |
-| executed_pass_rate_pct | 90.0 |
-| definitive_coverage_pct | 19.03 |
+| BLOCKED | 76 |
+| NOT_RUN | 303 |
+| overall_pass_rate_pct | 17.97 |
+| executed_pass_rate_pct | 90.43 |
+| definitive_coverage_pct | 19.87 |
 
 ## Difficulty
 
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Easy | 125 | 37 | 3 | 20 | 65 | 29.6 | 92.5 |
+| Easy | 125 | 37 | 3 | 23 | 62 | 29.6 | 92.5 |
 | Expert | 13 | 1 | 0 | 2 | 10 | 7.69 | 100.0 |
-| Hard | 91 | 9 | 0 | 9 | 73 | 9.89 | 100.0 |
-| Medium | 244 | 34 | 6 | 29 | 175 | 13.93 | 85.0 |
+| Hard | 91 | 11 | 0 | 13 | 67 | 12.09 | 100.0 |
+| Medium | 244 | 36 | 6 | 38 | 164 | 14.75 | 85.71 |
 
 ## Module
 
@@ -35,7 +35,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Conversations and research history | 28 | 0 | 0 | 0 | 28 | N/A | N/A |
 | Hosted operation and resilience | 16 | 0 | 0 | 0 | 16 | N/A | N/A |
 | Language and response preferences | 29 | 0 | 0 | 0 | 29 | N/A | N/A |
-| Model configuration and operating modes | 29 | 0 | 0 | 0 | 29 | N/A | N/A |
+| Model configuration and operating modes | 29 | 0 | 0 | 3 | 26 | N/A | N/A |
 | Ownership, input safety and throttling | 20 | 0 | 0 | 0 | 20 | N/A | N/A |
 | Product identity and navigation | 23 | 10 | 0 | 13 | 0 | 43.48 | 100.0 |
 | Provenance and follow-up context | 23 | 0 | 0 | 0 | 23 | N/A | N/A |
@@ -43,7 +43,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Question composer and terminology | 38 | 16 | 2 | 20 | 0 | 42.11 | 88.89 |
 | Regeneration and revision integrity | 18 | 0 | 0 | 0 | 18 | N/A | N/A |
 | Research copy and exports | 29 | 0 | 0 | 0 | 29 | N/A | N/A |
-| Research pipeline and evidence persistence | 20 | 0 | 1 | 2 | 17 | 0.0 | 0.0 |
+| Research pipeline and evidence persistence | 20 | 4 | 1 | 15 | 0 | 20.0 | 80.0 |
 | Responsive and keyboard accessibility | 28 | 0 | 0 | 0 | 28 | N/A | N/A |
 
 ## Environment
@@ -51,9 +51,9 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | desktop_keyboard_only | 12 | 3 | 0 | 2 | 7 | 25.0 | 100.0 |
-| desktop_pointer | 351 | 52 | 7 | 45 | 247 | 14.81 | 88.14 |
+| desktop_pointer | 351 | 55 | 7 | 58 | 231 | 15.67 | 88.71 |
 | mobile_keyboard_only | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| mobile_pointer | 108 | 26 | 2 | 13 | 67 | 24.07 | 92.86 |
+| mobile_pointer | 108 | 27 | 2 | 16 | 63 | 25.0 | 93.1 |
 
 ## Fixture Gate
 
@@ -62,14 +62,14 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | accepted_answer_fixture | 11 | 0 | 0 | 0 | 11 | N/A | N/A |
 | accepted_chinese_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | altered_quote_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| baseline | 116 | 43 | 0 | 33 | 40 | 37.07 | 100.0 |
+| baseline | 116 | 44 | 0 | 33 | 39 | 37.93 | 100.0 |
 | claim_reject_fixture | 4 | 0 | 0 | 0 | 4 | N/A | N/A |
 | configured_unchecked | 3 | 0 | 0 | 0 | 3 | N/A | N/A |
-| controlled_provider_failure | 14 | 0 | 0 | 0 | 14 | N/A | N/A |
+| controlled_provider_failure | 14 | 0 | 0 | 2 | 12 | N/A | N/A |
 | csv_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | csv_formula_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | date_fixture | 1 | 1 | 0 | 0 | 0 | 100.0 | 100.0 |
-| evidence_fixture | 43 | 0 | 0 | 0 | 43 | N/A | N/A |
+| evidence_fixture | 43 | 1 | 0 | 0 | 42 | 2.33 | 100.0 |
 | evidence_gap_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | global_quota_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | glossary_fixture | 3 | 0 | 2 | 0 | 1 | 0.0 | 0.0 |
@@ -82,8 +82,8 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | hosted_unconfigured | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | ime_environment | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | latency_fixture | 9 | 0 | 0 | 5 | 4 | N/A | N/A |
-| live_pubmed | 76 | 32 | 6 | 7 | 31 | 42.11 | 84.21 |
-| long_abstract_fixture | 5 | 0 | 0 | 0 | 5 | N/A | N/A |
+| live_pubmed | 76 | 32 | 6 | 11 | 27 | 42.11 | 84.21 |
+| long_abstract_fixture | 5 | 2 | 0 | 0 | 3 | 40.0 | 100.0 |
 | long_answer_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | malformed_provider_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | missing_abstract_fixture | 3 | 2 | 0 | 0 | 1 | 66.67 | 100.0 |
@@ -93,24 +93,24 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | no_limitations_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | no_source_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | numeric_answer_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
-| overlap_fixture | 4 | 0 | 0 | 2 | 2 | N/A | N/A |
+| overlap_fixture | 4 | 0 | 0 | 3 | 1 | N/A | N/A |
 | persistence_fault | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | punctuation_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | quota_fixture | 3 | 0 | 0 | 0 | 3 | N/A | N/A |
 | saved_fixture | 28 | 0 | 0 | 0 | 28 | N/A | N/A |
-| snapshot_update_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| unconfigured_mode | 25 | 0 | 0 | 4 | 21 | N/A | N/A |
+| snapshot_update_fixture | 2 | 0 | 0 | 1 | 1 | N/A | N/A |
+| unconfigured_mode | 25 | 0 | 0 | 8 | 17 | N/A | N/A |
 | unsupported_citation_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | unsupported_gap_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | unsupported_number_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| untrusted_source_fixture | 5 | 0 | 0 | 1 | 4 | N/A | N/A |
-| upstream_fault | 7 | 0 | 0 | 5 | 2 | N/A | N/A |
+| untrusted_source_fixture | 5 | 0 | 0 | 2 | 3 | N/A | N/A |
+| upstream_fault | 7 | 0 | 0 | 7 | 0 | N/A | N/A |
 | working_provider | 23 | 0 | 0 | 0 | 23 | N/A | N/A |
 | wrong_language_fixture | 4 | 0 | 0 | 0 | 4 | N/A | N/A |
-| zero_result_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
+| zero_result_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 
 ## Core scenarios
 
 - Unique core scenarios: 365
-- At least one definitive variant: 60
-- All variants PASS: 53
+- At least one definitive variant: 63
+- All variants PASS: 56
