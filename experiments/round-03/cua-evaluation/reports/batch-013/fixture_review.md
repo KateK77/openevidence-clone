@@ -1,0 +1,1 @@
+See fixture_preparation.md for owned source-exclusion result used232–234. No accepted numeric/multi-claim, unconfigured-provider, controlled unknown-PMID/DOI, altered/cross-source quote, unsupported number/gap, malformed output, reviewer rejection/empty output or untrusted-source fixture supplied. Production configuration unchanged.

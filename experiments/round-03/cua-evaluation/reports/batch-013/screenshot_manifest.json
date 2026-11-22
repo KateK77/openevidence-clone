@@ -1,0 +1,322 @@
+[
+  {
+    "test_id": "ME3-CUA-0231",
+    "canonical": "before.png",
+    "source": "01_no_claim_excerpt_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0231",
+    "canonical": "after.png",
+    "source": "01_no_claim_excerpt_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0232",
+    "canonical": "before.png",
+    "source": "01_no_extracted_limitations_before_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0232",
+    "canonical": "after.png",
+    "source": "02_explicit_unextracted_limitations_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "d23f380a4f2388389c198c83368d796f828a5cf3fe500aa447b56d46db6394f0"
+  },
+  {
+    "test_id": "ME3-CUA-0233",
+    "canonical": "before.png",
+    "source": "03_bounded_evidence_gap_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  },
+  {
+    "test_id": "ME3-CUA-0233",
+    "canonical": "after.png",
+    "source": "04_gap_supporting_record_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "b969203b8a288fcfdfb106ec36dc5777099107d7e035f2e32db26456ad9d081d"
+  },
+  {
+    "test_id": "ME3-CUA-0234",
+    "canonical": "before.png",
+    "source": "02_mobile_bounded_gap_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "b58ddb66056a32ddd01ce7f04f32845cfe8ce80fd3a85b4fb737c63cd429ab60"
+  },
+  {
+    "test_id": "ME3-CUA-0234",
+    "canonical": "after.png",
+    "source": "03_mobile_source_transition_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "4e332a927bab91cd69f7fb86e8a2c66870e8d8355fe9a3feb1611cde9dd4d565"
+  },
+  {
+    "test_id": "ME3-CUA-0235",
+    "canonical": "before.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0235",
+    "canonical": "after.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0236",
+    "canonical": "before.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0236",
+    "canonical": "after.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0237",
+    "canonical": "before.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0237",
+    "canonical": "after.png",
+    "source": "02_missing_required_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0238",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0238",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0239",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0239",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0240",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0240",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0241",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0241",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0242",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0242",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0243",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0243",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_provider_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0244",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0244",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0245",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0245",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0246",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0246",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0247",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0247",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0248",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0248",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0249",
+    "canonical": "before.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0249",
+    "canonical": "after.png",
+    "source": "01_missing_controlled_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0250",
+    "canonical": "before.png",
+    "source": "02_saved_owned_answer_0.jpg",
+    "width": 1440,
+    "height": 900,
+    "sha256": "a764fd4c0a1e74c367ba8f9835e8db6f3f75ff0cd3591d2ed33dbbcf534ebef4"
+  },
+  {
+    "test_id": "ME3-CUA-0250",
+    "canonical": "after.png",
+    "source": "05_date_hover_no_time_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  }
+]
