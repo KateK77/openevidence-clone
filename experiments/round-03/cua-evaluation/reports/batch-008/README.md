@@ -1,0 +1,48 @@
+# Batch008: ME3-CUA-0131–0150
+
+8 PASS /1 FAIL /11 BLOCKED. Cumulative through150:81 PASS /9 FAIL /60 BLOCKED;323 NOT_RUN. All473 frozen cases retained.
+
+[Cumulative results](../../results/all_results.csv) · [Action trace](action_trace.jsonl) · [Screenshot provenance](screenshot_manifest.json) · [Fixture review](fixture_review.md)
+
+## Findings
+
+150: Two distinct questions were submitted to one conversation using the safe unmapped-Chinese path. After reload both remained in correct01/02 submission order. The page displays the same date-only label for both and no distinct timestamps, so the complete frozen requirement fails. [Conversation](https://medevidence-ai-v3.onrender.com/thread/15). Existing translation-limit/Evidence-gap label issue remains separately tracked in86/87.
+
+131 mobile inline detail return preserved query/filter/sort.138/139 returned an explicit honest empty state for a unique query and recovered to16 asthma results after editing.140 available indexed publication types were visible; missing-type branch was not encountered.141/142 explicitly label content Source abstract, with no full-text download/read claim.143 retained Nature/2024 filters when switching relevance to date, and opened detail matched top record PMID39695231; first3 filtered cards sampled, not a full16-date audit.145 repeated PMID33551565 lookup kept identical source identity/metadata/missing-field notices matching the independently verified official record.
+
+132 requires stored multi-query provenance; available history has nine prior no-source test questions.133/134 require controlled PMID/DOI overlaps.135/136/137/146 require isolated upstream503/timeout/429/identifier-mismatch fixtures.144 requires controlled response-order latency.147 requires isolated untrusted publication metadata.148/149 require an independent absent-provider instance; live homepage explicitly says AI synthesis configured. These missing prerequisites are BLOCKED, not simulated or passed.
+
+## Execution and limitations
+
+Unchanged app https://medevidence-ai-v3.onrender.com/ at c903b65ce3f8f49fe72416ca8948d215a0690a49. Scored interactions use actual connected Google Chrome screenshots/pointer/keyboard. Exact Chrome build/CUA model unavailable. No application/frozen-test/configuration changes or paid synthesis. Questions150 use an already verified no-query/no-article branch returning before model calls. Every row outside131–150 preserved.
+
+Original JPEGs retained; canonical PNGs are faithful conversions without resizing/cropping/annotation. Requested1440x900/390x844 differs from some tool screenshots1425x891/375x812; manifest records actual dimensions/hashes. Immediate captures sometimes lag; later settled captures govern. BLOCKED before/after captures document preconditions only, and do not claim scored behavior was executed.132 screenshot call was interrupted by user continue; resumed with fresh screenshot and no duplicate scored mutation.138 initial unlikely multiword query returned16, so a unique token was used to actually reach zero.
+
+## Cases
+
+| Test | Status | Observation |
+|---|---|---|
+| [ME3-CUA-0131](../../evidence/ME3-CUA-0131/actions.md) | PASS | At390x844 submitted PMID39219390 with Year2024 and Publication date sort. Expanded inline details then collapsed to result. Keyword,year,sort and single result persisted; controls and detail readable without page-wide overflow. Inline collapse is the app's return-to-list workflow. |
+| [ME3-CUA-0132](../../evidence/ME3-CUA-0132/actions.md) | BLOCKED | Reviewed available Research history: nine visible stored records are prior unmapped-Chinese/no-source test questions; no documented multi-query provenance fixture is supplied. The configured live generation path may incur provider cost, so no broad generated research was submitted. |
+| [ME3-CUA-0133](../../evidence/ME3-CUA-0133/actions.md) | BLOCKED | Available history contains prior no-source test records. No two controlled query-result sets sharing a PMID with traceable provenance are provided. No overlap injection or production data manipulation performed. |
+| [ME3-CUA-0134](../../evidence/ME3-CUA-0134/actions.md) | BLOCKED | No documented controlled result sets containing duplicate DOI across distinct entries are available in the evaluation environment. Current UI precondition captured; no scored deduplication operation executed. |
+| [ME3-CUA-0135](../../evidence/ME3-CUA-0135/actions.md) | BLOCKED | Live Search PubMed page is reachable; no isolated documented PubMed503/timeout fixture is supplied. No fault injected into production, and normal search is not scored as recovery. |
+| [ME3-CUA-0136](../../evidence/ME3-CUA-0136/actions.md) | BLOCKED | Mobile390x844 live Search PubMed precondition captured. No isolated documented503/timeout fixture is available; recovery assertions were not exercised. |
+| [ME3-CUA-0137](../../evidence/ME3-CUA-0137/actions.md) | BLOCKED | No controlled429 response fixture is supplied for the live PubMed integration. No request flooding performed to manufacture rate limits; scored throttling/retry behavior remains unobserved. |
+| [ME3-CUA-0138](../../evidence/ME3-CUA-0138/actions.md) | PASS | Unique query zephyrquartz20261122 returned0 publications with No publications matched this search and This does not establish an absence of evidence. Edited to asthma and resubmitted;16 real results restored. Initial mitochondrial zephyrquartz syndrome returned16 and was not used as zero-result proof. |
+| [ME3-CUA-0139](../../evidence/ME3-CUA-0139/actions.md) | PASS | At390x844 unique query zephyrquartz20261122 returned0 with explicit non-absence-of-evidence wording. Edited to asthma and resubmitted;16 results restored with first Asthma: definitions and pathophysiology. Notice/actions readable and no page-wide horizontal overflow. |
+| [ME3-CUA-0140](../../evidence/ME3-CUA-0140/actions.md) | PASS | Opened indexed PMID6373426. Visible type badges include Clinical Trial,Controlled Clinical Trial,Journal Article,Research Support Non-U.S.Govt and U.S.Govt P.H.S.; available clinical-trial type agrees with official PubMed fixture. This record has types, so missing-type branch was not encountered. |
+| [ME3-CUA-0141](../../evidence/ME3-CUA-0141/actions.md) | PASS | Inspected full expanded PMID6373426 card (official fixture provides abstract and no full-text link). Content explicitly headed Source abstract; controls are official PMID link and Save publication, with no Download full text or claim to have read restricted full text. Scope remains abstract/publication metadata. |
+| [ME3-CUA-0142](../../evidence/ME3-CUA-0142/actions.md) | PASS | At390x844 inspected expanded PMID6373426 and scrolled through its source abstract to bottom controls. Source abstract heading explicitly limits scope; only official PMID link/Save publication shown, no full-text Download or read-full-text claim. Long abstract wraps within mobile page without horizontal overflow. |
+| [ME3-CUA-0143](../../evidence/ME3-CUA-0143/actions.md) | PASS | After broad diabetes search, applied Nature+Year2024 under Relevance, then changed to Publication date and resubmitted. Filters remained; top record changed from CGRP sensory neurons... to Determining structures of RNA conformers using AFM and deep neural networks (PMID39695231). First3 cards are Nature2024. Opened top details matched title/PMID and showed Nature,Electronic publication2024 12 18,Journal issue2025Jan. Sampled top of filtered set; no full16 date audit. |
+| [ME3-CUA-0144](../../evidence/ME3-CUA-0144/actions.md) | BLOCKED | Live filtered PubMed results reachable, but no documented controllable slow-A/fast-B response fixture is available. No network or frontend rewriting performed. Ordinary query changes tested122 do not prove out-of-order response protection. |
+| [ME3-CUA-0145](../../evidence/ME3-CUA-0145/actions.md) | PASS | Performed exact PMID33551565 lookup twice in same session and inspected full expanded card both times. Identity/title2021,Clinical diabetes journal,2021Jan issue,DOI10.2337/cd21-pe01,Authors unavailable and No abstract available stayed identical and matched earlier official-source verification. No unrelated canned content observed. |
+| [ME3-CUA-0146](../../evidence/ME3-CUA-0146/actions.md) | BLOCKED | No isolated DOI-to-wrong/unavailable-PMID upstream fixture supplied. Normal exact-identifier results are present, but no scored mismatch response was triggered. |
+| [ME3-CUA-0147](../../evidence/ME3-CUA-0147/actions.md) | BLOCKED | No isolated synthetic publication fixture with HTML-like/untrusted abstract text supplied. No live exploit payload or production publication mutation performed. |
+| [ME3-CUA-0148](../../evidence/ME3-CUA-0148/actions.md) | BLOCKED | Current live homepage explicitly says AI synthesis configured. No independent instance deliberately lacking provider configuration is available. Did not submit heart failure SGLT2 under the wrong environment or change service configuration. |
+| [ME3-CUA-0149](../../evidence/ME3-CUA-0149/actions.md) | BLOCKED | At390x844 homepage explicitly says AI synthesis configured. No independent absent-provider instance supplied; source-bearing retrieval-only submission was not executed. |
+| [ME3-CUA-0150](../../evidence/ME3-CUA-0150/actions.md) | FAIL | Submitted two distinct safe unmapped questions A150 first question and B150 second question to same conversation/thread/15. Both outcomes persist after reload in correct01/02 order. Each card displays only Nov21,2026, with no distinct time-of-day timestamp. |
+
+## Continuation
+
+Next frozen case151; next batch151–170. Automatic upload every20 remains authorized.

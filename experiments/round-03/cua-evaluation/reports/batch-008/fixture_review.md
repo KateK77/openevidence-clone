@@ -1,0 +1,7 @@
+# Fixture review before scored execution
+
+The unchanged live Render service remains configured for AI synthesis; its tested commit is c903b65ce3f8f49fe72416ca8948d215a0690a49. The existing account history contains nine prior unmapped-Chinese no-source questions, not a documented multi-query provenance result. No controlled overlap, upstream fault, delayed response or untrusted-publication fixture has been supplied. No independent instance with absent model configuration is available. Production configuration and application code are not modified to manufacture these prerequisites. Missing prerequisites are BLOCKED; a normal live search is not substitute evidence for fault handling.
+
+Real known publication6373426 was independently inspected on official PubMed before this batch:1984Jan clinical-trial article, source abstract present, no DOI/electronic publication date and no full-text link in its official record. It can exercise source-abstract wording without model calls.33551565 was independently confirmed on PubMed with no authors and no abstract; it has Journal Article metadata in app.39219390 has a French official title but app displays Not Available, already failed129.
+
+150 may safely use two distinct questions containing unmapped Chinese term 脊髓空洞症. Earlier fixed-source inspection and live tests established this no-query/no-article path returns before provider synthesis. This permits recording/order checks without paid generation; successful AI synthesis is not asserted.
