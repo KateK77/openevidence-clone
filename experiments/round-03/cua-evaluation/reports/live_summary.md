@@ -9,8 +9,8 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | total | 473 |
 | PASS | 210 |
 | FAIL | 18 |
-| BLOCKED | 242 |
-| NOT_RUN | 3 |
+| BLOCKED | 245 |
+| NOT_RUN | 0 |
 | overall_pass_rate_pct | 44.4 |
 | executed_pass_rate_pct | 92.11 |
 | definitive_coverage_pct | 48.2 |
@@ -21,7 +21,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Easy | 125 | 76 | 7 | 42 | 0 | 60.8 | 91.57 |
 | Expert | 13 | 1 | 0 | 12 | 0 | 7.69 | 100.0 |
-| Hard | 91 | 19 | 2 | 67 | 3 | 20.88 | 90.48 |
+| Hard | 91 | 19 | 2 | 70 | 0 | 20.88 | 90.48 |
 | Medium | 244 | 114 | 9 | 121 | 0 | 46.72 | 92.68 |
 
 ## Module
@@ -33,7 +33,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Bookmarks, collections and saved searches | 38 | 29 | 1 | 8 | 0 | 76.32 | 96.67 |
 | Citation and claim-support checks | 24 | 3 | 0 | 21 | 0 | 12.5 | 100.0 |
 | Conversations and research history | 28 | 25 | 1 | 2 | 0 | 89.29 | 96.15 |
-| Hosted operation and resilience | 16 | 6 | 0 | 7 | 3 | 37.5 | 100.0 |
+| Hosted operation and resilience | 16 | 6 | 0 | 10 | 0 | 37.5 | 100.0 |
 | Language and response preferences | 29 | 14 | 0 | 15 | 0 | 48.28 | 100.0 |
 | Model configuration and operating modes | 29 | 2 | 0 | 27 | 0 | 6.9 | 100.0 |
 | Ownership, input safety and throttling | 20 | 5 | 0 | 15 | 0 | 25.0 | 100.0 |
@@ -51,7 +51,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | desktop_keyboard_only | 12 | 7 | 2 | 3 | 0 | 58.33 | 77.78 |
-| desktop_pointer | 351 | 134 | 12 | 202 | 3 | 38.18 | 91.78 |
+| desktop_pointer | 351 | 134 | 12 | 205 | 0 | 38.18 | 91.78 |
 | mobile_keyboard_only | 2 | 2 | 0 | 0 | 0 | 100.0 | 100.0 |
 | mobile_pointer | 108 | 67 | 4 | 37 | 0 | 62.04 | 94.37 |
 
@@ -76,9 +76,9 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | history_fixture | 35 | 25 | 5 | 5 | 0 | 71.43 | 83.33 |
 | hosted_docs | 2 | 2 | 0 | 0 | 0 | 100.0 | 100.0 |
 | hosted_optional | 1 | 1 | 0 | 0 | 0 | 100.0 | 100.0 |
-| hosted_public | 10 | 4 | 0 | 5 | 1 | 40.0 | 100.0 |
-| hosted_restart | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
-| hosted_second_browser | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
+| hosted_public | 10 | 4 | 0 | 6 | 0 | 40.0 | 100.0 |
+| hosted_restart | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
+| hosted_second_browser | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | hosted_unconfigured | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | ime_environment | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | latency_fixture | 9 | 0 | 0 | 9 | 0 | N/A | N/A |

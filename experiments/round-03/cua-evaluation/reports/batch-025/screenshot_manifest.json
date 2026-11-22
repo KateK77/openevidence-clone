@@ -1,0 +1,50 @@
+[
+  {
+    "test_id": "ME3-CUA-0471",
+    "canonical": "before.png",
+    "source": "02_history_settled_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "9d260677e1726cf879dd77f3f1549425a6ca1a67d17371e2c11ffdf8364cbac8"
+  },
+  {
+    "test_id": "ME3-CUA-0471",
+    "canonical": "after.png",
+    "source": "02_history_settled_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "9d260677e1726cf879dd77f3f1549425a6ca1a67d17371e2c11ffdf8364cbac8"
+  },
+  {
+    "test_id": "ME3-CUA-0472",
+    "canonical": "before.png",
+    "source": "01_browser_context_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "9d260677e1726cf879dd77f3f1549425a6ca1a67d17371e2c11ffdf8364cbac8"
+  },
+  {
+    "test_id": "ME3-CUA-0472",
+    "canonical": "after.png",
+    "source": "01_browser_context_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "9d260677e1726cf879dd77f3f1549425a6ca1a67d17371e2c11ffdf8364cbac8"
+  },
+  {
+    "test_id": "ME3-CUA-0473",
+    "canonical": "before.png",
+    "source": "02_account_settled_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "082a685ba704d1615db1a8de69686d8158b817af3f58ce74f59f007bebf7637b"
+  },
+  {
+    "test_id": "ME3-CUA-0473",
+    "canonical": "after.png",
+    "source": "02_account_settled_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "082a685ba704d1615db1a8de69686d8158b817af3f58ce74f59f007bebf7637b"
+  }
+]
