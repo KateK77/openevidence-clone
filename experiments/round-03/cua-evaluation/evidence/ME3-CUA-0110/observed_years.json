@@ -1,0 +1,87 @@
+{
+  "source": "Manual visual transcription from preserved Chrome screenshots page2-page7 and intervening scroll captures; no DOM/API extraction",
+  "query": "diabetes",
+  "year_filter": 2024,
+  "results": [
+    {
+      "position": 1,
+      "pmid": 39084811,
+      "displayed_year": 2024
+    },
+    {
+      "position": 2,
+      "pmid": 39493778,
+      "displayed_year": 2024
+    },
+    {
+      "position": 3,
+      "pmid": 39845881,
+      "displayed_year": 2025
+    },
+    {
+      "position": 4,
+      "pmid": 38316255,
+      "displayed_year": 2024
+    },
+    {
+      "position": 5,
+      "pmid": 39219390,
+      "displayed_year": 2024
+    },
+    {
+      "position": 6,
+      "pmid": 39322890,
+      "displayed_year": 2024
+    },
+    {
+      "position": 7,
+      "pmid": 39607829,
+      "displayed_year": 2024
+    },
+    {
+      "position": 8,
+      "pmid": 38597269,
+      "displayed_year": 2024
+    },
+    {
+      "position": 9,
+      "pmid": 39181497,
+      "displayed_year": 2024
+    },
+    {
+      "position": 10,
+      "pmid": 38413865,
+      "displayed_year": 2024
+    },
+    {
+      "position": 11,
+      "pmid": 39016319,
+      "displayed_year": 2024
+    },
+    {
+      "position": 12,
+      "pmid": 38241775,
+      "displayed_year": 2024
+    },
+    {
+      "position": 13,
+      "pmid": 39026477,
+      "displayed_year": 2024
+    },
+    {
+      "position": 14,
+      "pmid": 38693275,
+      "displayed_year": 2024
+    },
+    {
+      "position": 15,
+      "pmid": 38996052,
+      "displayed_year": 2024
+    },
+    {
+      "position": 16,
+      "pmid": 38761257,
+      "displayed_year": 2024
+    }
+  ]
+}

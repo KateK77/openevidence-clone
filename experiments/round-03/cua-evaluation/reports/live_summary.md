@@ -7,22 +7,22 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Metric | Value |
 |---|---:|
 | total | 473 |
-| PASS | 44 |
-| FAIL | 2 |
-| BLOCKED | 44 |
-| NOT_RUN | 383 |
-| overall_pass_rate_pct | 9.3 |
-| executed_pass_rate_pct | 95.65 |
-| definitive_coverage_pct | 9.73 |
+| PASS | 57 |
+| FAIL | 4 |
+| BLOCKED | 49 |
+| NOT_RUN | 363 |
+| overall_pass_rate_pct | 12.05 |
+| executed_pass_rate_pct | 93.44 |
+| definitive_coverage_pct | 12.9 |
 
 ## Difficulty
 
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Easy | 125 | 27 | 0 | 18 | 80 | 21.6 | 100.0 |
+| Easy | 125 | 37 | 2 | 18 | 68 | 29.6 | 94.87 |
 | Expert | 13 | 1 | 0 | 2 | 10 | 7.69 | 100.0 |
-| Hard | 91 | 6 | 0 | 2 | 83 | 6.59 | 100.0 |
-| Medium | 244 | 10 | 2 | 22 | 210 | 4.1 | 83.33 |
+| Hard | 91 | 7 | 0 | 6 | 78 | 7.69 | 100.0 |
+| Medium | 244 | 12 | 2 | 23 | 207 | 4.92 | 85.71 |
 
 ## Module
 
@@ -39,8 +39,8 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Ownership, input safety and throttling | 20 | 0 | 0 | 0 | 20 | N/A | N/A |
 | Product identity and navigation | 23 | 10 | 0 | 13 | 0 | 43.48 | 100.0 |
 | Provenance and follow-up context | 23 | 0 | 0 | 0 | 23 | N/A | N/A |
-| PubMed lookup and publication details | 50 | 0 | 0 | 0 | 50 | N/A | N/A |
-| Question composer and terminology | 38 | 14 | 2 | 15 | 7 | 36.84 | 87.5 |
+| PubMed lookup and publication details | 50 | 11 | 2 | 0 | 37 | 22.0 | 84.62 |
+| Question composer and terminology | 38 | 16 | 2 | 20 | 0 | 42.11 | 88.89 |
 | Regeneration and revision integrity | 18 | 0 | 0 | 0 | 18 | N/A | N/A |
 | Research copy and exports | 29 | 0 | 0 | 0 | 29 | N/A | N/A |
 | Research pipeline and evidence persistence | 20 | 0 | 0 | 0 | 20 | N/A | N/A |
@@ -50,10 +50,10 @@ Results below are computed exclusively from recorded rows in `results/all_result
 
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| desktop_keyboard_only | 12 | 3 | 0 | 1 | 8 | 25.0 | 100.0 |
-| desktop_pointer | 351 | 26 | 1 | 32 | 292 | 7.41 | 96.3 |
+| desktop_keyboard_only | 12 | 3 | 0 | 2 | 7 | 25.0 | 100.0 |
+| desktop_pointer | 351 | 36 | 2 | 36 | 277 | 10.26 | 94.74 |
 | mobile_keyboard_only | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| mobile_pointer | 108 | 15 | 1 | 11 | 81 | 13.89 | 93.75 |
+| mobile_pointer | 108 | 18 | 2 | 11 | 77 | 16.67 | 90.0 |
 
 ## Fixture Gate
 
@@ -80,9 +80,9 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | hosted_restart | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | hosted_second_browser | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | hosted_unconfigured | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| ime_environment | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| latency_fixture | 9 | 0 | 0 | 2 | 7 | N/A | N/A |
-| live_pubmed | 76 | 0 | 0 | 7 | 69 | N/A | N/A |
+| ime_environment | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
+| latency_fixture | 9 | 0 | 0 | 4 | 5 | N/A | N/A |
+| live_pubmed | 76 | 13 | 2 | 7 | 54 | 17.11 | 86.67 |
 | long_abstract_fixture | 5 | 0 | 0 | 0 | 5 | N/A | N/A |
 | long_answer_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | malformed_provider_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
@@ -104,7 +104,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | unsupported_gap_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | unsupported_number_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | untrusted_source_fixture | 5 | 0 | 0 | 0 | 5 | N/A | N/A |
-| upstream_fault | 7 | 0 | 0 | 0 | 7 | N/A | N/A |
+| upstream_fault | 7 | 0 | 0 | 1 | 6 | N/A | N/A |
 | working_provider | 23 | 0 | 0 | 0 | 23 | N/A | N/A |
 | wrong_language_fixture | 4 | 0 | 0 | 0 | 4 | N/A | N/A |
 | zero_result_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
@@ -112,5 +112,5 @@ Results below are computed exclusively from recorded rows in `results/all_result
 ## Core scenarios
 
 - Unique core scenarios: 365
-- At least one definitive variant: 28
-- All variants PASS: 27
+- At least one definitive variant: 39
+- All variants PASS: 36
