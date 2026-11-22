@@ -1,0 +1,1 @@
+Existing owned answer18 has an authentic retrieved PubMed source snapshot but no accepted claims. Appropriate for density/source preservation216, not accepted-answer226–230. No isolated no-provider or wrong-language provider fixture, approved generation budget, or current-account reauthentication credentials supplied.
