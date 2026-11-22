@@ -1,0 +1,1 @@
+Same synthetic evaluation account. Current home has2001-character invalid draft from410. No accountB/controlled source markup/latency/quota/provider failure/revision fixtures. Safe script-like question will include known unmapped Chinese term if submitted, avoiding model calls per fixed cost-boundary review. No app/test modifications.
