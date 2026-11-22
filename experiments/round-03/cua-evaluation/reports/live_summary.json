@@ -3,13 +3,13 @@
   "frozen_suite_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
   "total": {
     "total": 473,
-    "PASS": 57,
-    "FAIL": 4,
+    "PASS": 73,
+    "FAIL": 8,
     "BLOCKED": 49,
-    "NOT_RUN": 363,
-    "overall_pass_rate_pct": 12.05,
-    "executed_pass_rate_pct": 93.44,
-    "definitive_coverage_pct": 12.9
+    "NOT_RUN": 343,
+    "overall_pass_rate_pct": 15.43,
+    "executed_pass_rate_pct": 90.12,
+    "definitive_coverage_pct": 17.12
   },
   "by_difficulty": {
     "Easy": {
@@ -44,13 +44,13 @@
     },
     "Medium": {
       "total": 244,
-      "PASS": 12,
-      "FAIL": 2,
+      "PASS": 28,
+      "FAIL": 6,
       "BLOCKED": 23,
-      "NOT_RUN": 207,
-      "overall_pass_rate_pct": 4.92,
-      "executed_pass_rate_pct": 85.71,
-      "definitive_coverage_pct": 5.74
+      "NOT_RUN": 187,
+      "overall_pass_rate_pct": 11.48,
+      "executed_pass_rate_pct": 82.35,
+      "definitive_coverage_pct": 13.93
     }
   },
   "by_module": {
@@ -166,13 +166,13 @@
     },
     "PubMed lookup and publication details": {
       "total": 50,
-      "PASS": 11,
-      "FAIL": 2,
+      "PASS": 27,
+      "FAIL": 6,
       "BLOCKED": 0,
-      "NOT_RUN": 37,
-      "overall_pass_rate_pct": 22.0,
-      "executed_pass_rate_pct": 84.62,
-      "definitive_coverage_pct": 26.0
+      "NOT_RUN": 17,
+      "overall_pass_rate_pct": 54.0,
+      "executed_pass_rate_pct": 81.82,
+      "definitive_coverage_pct": 66.0
     },
     "Question composer and terminology": {
       "total": 38,
@@ -238,13 +238,13 @@
     },
     "desktop_pointer": {
       "total": 351,
-      "PASS": 36,
-      "FAIL": 2,
+      "PASS": 47,
+      "FAIL": 6,
       "BLOCKED": 36,
-      "NOT_RUN": 277,
-      "overall_pass_rate_pct": 10.26,
-      "executed_pass_rate_pct": 94.74,
-      "definitive_coverage_pct": 10.83
+      "NOT_RUN": 262,
+      "overall_pass_rate_pct": 13.39,
+      "executed_pass_rate_pct": 88.68,
+      "definitive_coverage_pct": 15.1
     },
     "mobile_keyboard_only": {
       "total": 2,
@@ -258,13 +258,13 @@
     },
     "mobile_pointer": {
       "total": 108,
-      "PASS": 18,
+      "PASS": 23,
       "FAIL": 2,
       "BLOCKED": 11,
-      "NOT_RUN": 77,
-      "overall_pass_rate_pct": 16.67,
-      "executed_pass_rate_pct": 90.0,
-      "definitive_coverage_pct": 18.52
+      "NOT_RUN": 72,
+      "overall_pass_rate_pct": 21.3,
+      "executed_pass_rate_pct": 92.0,
+      "definitive_coverage_pct": 23.15
     }
   },
   "by_fixture_gate": {
@@ -360,13 +360,13 @@
     },
     "date_fixture": {
       "total": 1,
-      "PASS": 0,
+      "PASS": 1,
       "FAIL": 0,
       "BLOCKED": 0,
-      "NOT_RUN": 1,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "NOT_RUN": 0,
+      "overall_pass_rate_pct": 100.0,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 100.0
     },
     "evidence_fixture": {
       "total": 43,
@@ -500,13 +500,13 @@
     },
     "live_pubmed": {
       "total": 76,
-      "PASS": 13,
-      "FAIL": 2,
+      "PASS": 24,
+      "FAIL": 5,
       "BLOCKED": 7,
-      "NOT_RUN": 54,
-      "overall_pass_rate_pct": 17.11,
-      "executed_pass_rate_pct": 86.67,
-      "definitive_coverage_pct": 19.74
+      "NOT_RUN": 40,
+      "overall_pass_rate_pct": 31.58,
+      "executed_pass_rate_pct": 82.76,
+      "definitive_coverage_pct": 38.16
     },
     "long_abstract_fixture": {
       "total": 5,
@@ -540,23 +540,23 @@
     },
     "missing_abstract_fixture": {
       "total": 3,
-      "PASS": 0,
+      "PASS": 2,
       "FAIL": 0,
       "BLOCKED": 0,
-      "NOT_RUN": 3,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "NOT_RUN": 1,
+      "overall_pass_rate_pct": 66.67,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 66.67
     },
     "missing_metadata_fixture": {
       "total": 3,
-      "PASS": 0,
-      "FAIL": 0,
+      "PASS": 2,
+      "FAIL": 1,
       "BLOCKED": 0,
-      "NOT_RUN": 3,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "NOT_RUN": 0,
+      "overall_pass_rate_pct": 66.67,
+      "executed_pass_rate_pct": 66.67,
+      "definitive_coverage_pct": 100.0
     },
     "multi_query_fixture": {
       "total": 3,
@@ -760,6 +760,6 @@
     }
   },
   "unique_core_scenarios": 365,
-  "core_with_definitive_execution": 39,
-  "core_all_variants_passed": 36
+  "core_with_definitive_execution": 54,
+  "core_all_variants_passed": 47
 }

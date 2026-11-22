@@ -7,13 +7,13 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Metric | Value |
 |---|---:|
 | total | 473 |
-| PASS | 57 |
-| FAIL | 4 |
+| PASS | 73 |
+| FAIL | 8 |
 | BLOCKED | 49 |
-| NOT_RUN | 363 |
-| overall_pass_rate_pct | 12.05 |
-| executed_pass_rate_pct | 93.44 |
-| definitive_coverage_pct | 12.9 |
+| NOT_RUN | 343 |
+| overall_pass_rate_pct | 15.43 |
+| executed_pass_rate_pct | 90.12 |
+| definitive_coverage_pct | 17.12 |
 
 ## Difficulty
 
@@ -22,7 +22,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Easy | 125 | 37 | 2 | 18 | 68 | 29.6 | 94.87 |
 | Expert | 13 | 1 | 0 | 2 | 10 | 7.69 | 100.0 |
 | Hard | 91 | 7 | 0 | 6 | 78 | 7.69 | 100.0 |
-| Medium | 244 | 12 | 2 | 23 | 207 | 4.92 | 85.71 |
+| Medium | 244 | 28 | 6 | 23 | 187 | 11.48 | 82.35 |
 
 ## Module
 
@@ -39,7 +39,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Ownership, input safety and throttling | 20 | 0 | 0 | 0 | 20 | N/A | N/A |
 | Product identity and navigation | 23 | 10 | 0 | 13 | 0 | 43.48 | 100.0 |
 | Provenance and follow-up context | 23 | 0 | 0 | 0 | 23 | N/A | N/A |
-| PubMed lookup and publication details | 50 | 11 | 2 | 0 | 37 | 22.0 | 84.62 |
+| PubMed lookup and publication details | 50 | 27 | 6 | 0 | 17 | 54.0 | 81.82 |
 | Question composer and terminology | 38 | 16 | 2 | 20 | 0 | 42.11 | 88.89 |
 | Regeneration and revision integrity | 18 | 0 | 0 | 0 | 18 | N/A | N/A |
 | Research copy and exports | 29 | 0 | 0 | 0 | 29 | N/A | N/A |
@@ -51,9 +51,9 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | desktop_keyboard_only | 12 | 3 | 0 | 2 | 7 | 25.0 | 100.0 |
-| desktop_pointer | 351 | 36 | 2 | 36 | 277 | 10.26 | 94.74 |
+| desktop_pointer | 351 | 47 | 6 | 36 | 262 | 13.39 | 88.68 |
 | mobile_keyboard_only | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| mobile_pointer | 108 | 18 | 2 | 11 | 77 | 16.67 | 90.0 |
+| mobile_pointer | 108 | 23 | 2 | 11 | 72 | 21.3 | 92.0 |
 
 ## Fixture Gate
 
@@ -68,7 +68,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | controlled_provider_failure | 14 | 0 | 0 | 0 | 14 | N/A | N/A |
 | csv_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | csv_formula_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
-| date_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
+| date_fixture | 1 | 1 | 0 | 0 | 0 | 100.0 | 100.0 |
 | evidence_fixture | 43 | 0 | 0 | 0 | 43 | N/A | N/A |
 | evidence_gap_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | global_quota_fixture | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
@@ -82,12 +82,12 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | hosted_unconfigured | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | ime_environment | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | latency_fixture | 9 | 0 | 0 | 4 | 5 | N/A | N/A |
-| live_pubmed | 76 | 13 | 2 | 7 | 54 | 17.11 | 86.67 |
+| live_pubmed | 76 | 24 | 5 | 7 | 40 | 31.58 | 82.76 |
 | long_abstract_fixture | 5 | 0 | 0 | 0 | 5 | N/A | N/A |
 | long_answer_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | malformed_provider_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
-| missing_abstract_fixture | 3 | 0 | 0 | 0 | 3 | N/A | N/A |
-| missing_metadata_fixture | 3 | 0 | 0 | 0 | 3 | N/A | N/A |
+| missing_abstract_fixture | 3 | 2 | 0 | 0 | 1 | 66.67 | 100.0 |
+| missing_metadata_fixture | 3 | 2 | 1 | 0 | 0 | 66.67 | 66.67 |
 | multi_query_fixture | 3 | 0 | 0 | 0 | 3 | N/A | N/A |
 | no_external_effects | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
 | no_limitations_fixture | 1 | 0 | 0 | 0 | 1 | N/A | N/A |
@@ -112,5 +112,5 @@ Results below are computed exclusively from recorded rows in `results/all_result
 ## Core scenarios
 
 - Unique core scenarios: 365
-- At least one definitive variant: 39
-- All variants PASS: 36
+- At least one definitive variant: 54
+- All variants PASS: 47

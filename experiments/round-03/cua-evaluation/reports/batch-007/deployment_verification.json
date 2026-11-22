@@ -1,0 +1,10 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[{\"commit\":{\"createdAt\":\"2026-11-16T08:30:05Z\",\"id\":\"c903b65ce3f8f49fe72416ca8948d215a0690a49\",\"message\":\"Protect public demo accounts and persist bounded AI allowances\"},\"createdAt\":\"2026-11-16T08:30:11.685814Z\",\"finishedAt\":\"2026-11-16T08:32:08.473934Z\",\"id\":\"dep-dbtbu4p9aqoc73akvgl0\",\"startedAt\":\"2026-11-16T08:30:34.048576Z\",\"status\":\"live\",\"trigger\":\"new_commit\",\"updatedAt\":\"2026-11-22T04:00:35.924102Z\"},{\"commit\":{\"createdAt\":\"2026-11-16T04:33:30Z\",\"id\":\"7d64a988fc1b1e27433aa96c90b743c6336baea5\",\"message\":\"Record live free deployment and 14 passing public checks [skip ci] [skip render]\"},\"createdAt\":\"2026-11-16T08:30:00.685409Z\",\"finishedAt\":\"2026-11-16T08:30:33.755136Z\",\"id\":\"dep-dbtbu25ckfvc73edg600\",\"startedAt\":\"2026-11-16T08:30:00.651713Z\",\"status\":\"deactivated\",\"trigger\":\"api\",\"updatedAt\":\"2026-11-16T08:32:08.47315Z\"},{\"commit\":{\"createdAt\":\"2026-11-16T04:33:30Z\",\"id\":\"7d64a988fc1b1e27433aa96c90b743c6336baea5\",\"message\":\"Record live free deployment and 14 passing public checks [skip ci] [skip render]\"},\"createdAt\":\"2026-11-16T04:46:13.931897Z\",\"finishedAt\":\"2026-11-16T04:46:44.955566Z\",\"id\":\"dep-dbt8l5ec6qcc73b290e0\",\"startedAt\":\"2026-11-16T04:46:13.905405Z\",\"status\":\"deactivated\",\"trigger\":\"service_updated\",\"updatedAt\":\"2026-11-16T08:30:33.754202Z\"}]\n\n cursor: udEejX64l8psNWVjNnFjYzczYjI5MGUw"
+    }
+  ],
+  "structuredContent": null,
+  "isError": false
+}

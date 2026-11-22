@@ -1,0 +1,1 @@
+15 immutable checksums verified (15 actual). All473 unique rows present; only111–130 changed. Canonical screenshots/actions and evidence paths exist. Score:73PASS8FAIL49BLOCKED343NOT_RUN. Application/frozen cases unchanged. Live Render commit c903b65ce3f8f49fe72416ca8948d215a0690a49 verified again after batch.

@@ -1,0 +1,29 @@
+{
+  "date_fixture": {
+    "pmid": "33713498",
+    "official_issue_date": "2021 Jul",
+    "official_epub_date": "2021 Mar 13",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33713498/",
+    "evidence": "evidence/ME3-CUA-0118/09_official_second_free_article_0.jpg",
+    "verification": "Visible official PubMed citation, prepared before test123"
+  },
+  "missing_epub_and_doi": {
+    "pmid": "6373426",
+    "official_issue_date": "1984 Jan",
+    "verification": "Official PubMed citation and identifier block have no electronic publication date or DOI; inspected before124/127",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/6373426/",
+    "evidence": "evidence/fixture-preparation/04_missing_doi_and_epub_fixture_0.jpg"
+  },
+  "missing_abstract": {
+    "pmid": "39219390",
+    "verification": "Official PubMed explicitly says No abstract available; prepared before125/126",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/39219390/",
+    "evidence": "evidence/fixture-preparation/06_missing_abstract_official_0.jpg"
+  },
+  "missing_authors": {
+    "pmid": "33551565",
+    "verification": "Official PubMed explicitly No authors listed; prepared before128",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33551565/",
+    "evidence": "evidence/fixture-preparation/11_missing_author_official_0.jpg"
+  }
+}
