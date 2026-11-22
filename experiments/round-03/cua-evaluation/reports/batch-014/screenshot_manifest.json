@@ -1,0 +1,322 @@
+[
+  {
+    "test_id": "ME3-CUA-0251",
+    "canonical": "before.png",
+    "source": "02_mobile_date_only_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "81b7b15b46155aa40ed27cb8412793a6dae3ddafdbaba8025655c533f1ca6eb3"
+  },
+  {
+    "test_id": "ME3-CUA-0251",
+    "canonical": "after.png",
+    "source": "03_mobile_hover_date_only_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "81b7b15b46155aa40ed27cb8412793a6dae3ddafdbaba8025655c533f1ca6eb3"
+  },
+  {
+    "test_id": "ME3-CUA-0252",
+    "canonical": "before.png",
+    "source": "02_gap_outcome_not_literature_only_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0252",
+    "canonical": "after.png",
+    "source": "02_gap_outcome_not_literature_only_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0253",
+    "canonical": "before.png",
+    "source": "02_mobile_no_literature_only_answer_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "81b7b15b46155aa40ed27cb8412793a6dae3ddafdbaba8025655c533f1ca6eb3"
+  },
+  {
+    "test_id": "ME3-CUA-0253",
+    "canonical": "after.png",
+    "source": "02_mobile_no_literature_only_answer_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "81b7b15b46155aa40ed27cb8412793a6dae3ddafdbaba8025655c533f1ca6eb3"
+  },
+  {
+    "test_id": "ME3-CUA-0254",
+    "canonical": "before.png",
+    "source": "02_copy_before_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0254",
+    "canonical": "after.png",
+    "source": "03_copy_feedback_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "f5e8e6859b50ae228988ff3597dcf5218e805196937251ee2df05dc835071b93"
+  },
+  {
+    "test_id": "ME3-CUA-0255",
+    "canonical": "before.png",
+    "source": "02_existing_one_source_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "b969203b8a288fcfdfb106ec36dc5777099107d7e035f2e32db26456ad9d081d"
+  },
+  {
+    "test_id": "ME3-CUA-0255",
+    "canonical": "after.png",
+    "source": "02_existing_one_source_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "b969203b8a288fcfdfb106ec36dc5777099107d7e035f2e32db26456ad9d081d"
+  },
+  {
+    "test_id": "ME3-CUA-0256",
+    "canonical": "before.png",
+    "source": "02_mobile_one_source_precondition_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "2e933a9dfa8b308de7a2fdf23a4a3b46cb9ed5ac4f7b3d43e2a29fefabfc94c4"
+  },
+  {
+    "test_id": "ME3-CUA-0256",
+    "canonical": "after.png",
+    "source": "02_mobile_one_source_precondition_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "2e933a9dfa8b308de7a2fdf23a4a3b46cb9ed5ac4f7b3d43e2a29fefabfc94c4"
+  },
+  {
+    "test_id": "ME3-CUA-0257",
+    "canonical": "before.png",
+    "source": "02_url_before_reload_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "c43d2008505a4d701c069f7aa2378b3689a9116a7f7ee3975bcbd76392d47ccd"
+  },
+  {
+    "test_id": "ME3-CUA-0257",
+    "canonical": "after.png",
+    "source": "11_retry_copy_result_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "f5e8e6859b50ae228988ff3597dcf5218e805196937251ee2df05dc835071b93"
+  },
+  {
+    "test_id": "ME3-CUA-0258",
+    "canonical": "before.png",
+    "source": "03_mobile_before_refresh_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "75cd2578fbfec684541e34e7f3f28576e41c000a6122304bb58807559eb28038"
+  },
+  {
+    "test_id": "ME3-CUA-0258",
+    "canonical": "after.png",
+    "source": "06_mobile_same_identity_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "75cd2578fbfec684541e34e7f3f28576e41c000a6122304bb58807559eb28038"
+  },
+  {
+    "test_id": "ME3-CUA-0259",
+    "canonical": "before.png",
+    "source": "02_configured_not_no_provider_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "16d15d64fd5dbbd0a89393bf9769c802e61c0c80710a4b4fe748a43c35f792c7"
+  },
+  {
+    "test_id": "ME3-CUA-0259",
+    "canonical": "after.png",
+    "source": "02_configured_not_no_provider_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "16d15d64fd5dbbd0a89393bf9769c802e61c0c80710a4b4fe748a43c35f792c7"
+  },
+  {
+    "test_id": "ME3-CUA-0260",
+    "canonical": "before.png",
+    "source": "02_table_control_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "a924b563957d104b2d7b256a3d0276120d5404e776c3c8cd214f356c076b2628"
+  },
+  {
+    "test_id": "ME3-CUA-0260",
+    "canonical": "after.png",
+    "source": "04_unextracted_limitations_column_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "bfc0672fe515e79718aa9f3f98b61e71636031a9c577fc529c37fdf122e83bd1"
+  },
+  {
+    "test_id": "ME3-CUA-0261",
+    "canonical": "before.png",
+    "source": "01_table_identity_before_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "bfc0672fe515e79718aa9f3f98b61e71636031a9c577fc529c37fdf122e83bd1"
+  },
+  {
+    "test_id": "ME3-CUA-0261",
+    "canonical": "after.png",
+    "source": "06_matching_table_identity_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "bfc0672fe515e79718aa9f3f98b61e71636031a9c577fc529c37fdf122e83bd1"
+  },
+  {
+    "test_id": "ME3-CUA-0262",
+    "canonical": "before.png",
+    "source": "03_unsaved_baseline_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "34162e8a9a854c78f64f8c422e8a9bc1c7b98302849e6dba69b76784f934df6e"
+  },
+  {
+    "test_id": "ME3-CUA-0262",
+    "canonical": "after.png",
+    "source": "07_exact_answer_reopened_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0263",
+    "canonical": "before.png",
+    "source": "03_mobile_unsaved_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "c5a00077e0d3dc68178b97dd00966126cd1e1f51e43ad19b2e5df15df67cb0eb"
+  },
+  {
+    "test_id": "ME3-CUA-0263",
+    "canonical": "after.png",
+    "source": "10_mobile_exact_answer_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "3c1b699f2e17e65085e95c3223956d2afff8827f6a30741f65bebe97b79c1b09"
+  },
+  {
+    "test_id": "ME3-CUA-0264",
+    "canonical": "before.png",
+    "source": "02_configured_outcome_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0264",
+    "canonical": "after.png",
+    "source": "02_configured_outcome_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0265",
+    "canonical": "before.png",
+    "source": "01_chinese_preference_source_before_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0c72909962e33ba1c9f7510b8e4fe15539924820118a6e83c9fd491035322171"
+  },
+  {
+    "test_id": "ME3-CUA-0265",
+    "canonical": "after.png",
+    "source": "03_original_english_abstract_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "d871f1634a3f66ac64f65c97bc6deb82b6c8ed558a6b078b131beb0f9c3be4ee"
+  },
+  {
+    "test_id": "ME3-CUA-0266",
+    "canonical": "before.png",
+    "source": "14_missing_abstract_answer_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "723be69c531f76f6a6b8db829c1d1d24316d08b8c25673108b227eb1c9fb0ed0"
+  },
+  {
+    "test_id": "ME3-CUA-0266",
+    "canonical": "after.png",
+    "source": "17_honest_abstract_fallback_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "8c6a046b87a7a1b5051e47c99b8862b86aadae79e034aa3257ac14a0f81fc231"
+  },
+  {
+    "test_id": "ME3-CUA-0267",
+    "canonical": "before.png",
+    "source": "02_answer_before_conversation_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  },
+  {
+    "test_id": "ME3-CUA-0267",
+    "canonical": "after.png",
+    "source": "03_correct_thread_and_position_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "6b8b6cfe9870da7b3b48e0781aa5aaddc61785833c874dd29581b075f917476c"
+  },
+  {
+    "test_id": "ME3-CUA-0268",
+    "canonical": "before.png",
+    "source": "02_mobile_backlink_before_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "75cd2578fbfec684541e34e7f3f28576e41c000a6122304bb58807559eb28038"
+  },
+  {
+    "test_id": "ME3-CUA-0268",
+    "canonical": "after.png",
+    "source": "03_mobile_correct_thread_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "8ab6255d63d4f51b29d87ddf5094219f6db7141a098a4324d4eac2ff20e12196"
+  },
+  {
+    "test_id": "ME3-CUA-0269",
+    "canonical": "before.png",
+    "source": "02_no_provider_failure_outcome_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  },
+  {
+    "test_id": "ME3-CUA-0269",
+    "canonical": "after.png",
+    "source": "02_no_provider_failure_outcome_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  },
+  {
+    "test_id": "ME3-CUA-0270",
+    "canonical": "before.png",
+    "source": "01_no_long_claim_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  },
+  {
+    "test_id": "ME3-CUA-0270",
+    "canonical": "after.png",
+    "source": "01_no_long_claim_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "50706916b70b4507e412d349f65c8bd7e8ed6758d84fd50bd866adfbe7f92d8c"
+  }
+]

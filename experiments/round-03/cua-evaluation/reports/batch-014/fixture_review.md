@@ -1,0 +1,1 @@
+Owned answer18 excluded-source snapshot and new answer19 missing-abstract snapshot available; each has1 publication. No accepted claim, true literature-only mode, multi-source stored result, controlled failed generation or multiple long claim excerpt fixture supplied. See fixture_preparation.md.

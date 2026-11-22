@@ -1,0 +1,1 @@
+257 provisional PASS was withdrawn immediately before finalization: capture08 reports clipboard unavailable, so existing clipboard may be stale and cannot prove post-reopen timestamp. Continuing verification; no committed result changed.
