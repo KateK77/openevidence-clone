@@ -7,22 +7,22 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Metric | Value |
 |---|---:|
 | total | 473 |
-| PASS | 187 |
-| FAIL | 14 |
-| BLOCKED | 229 |
-| NOT_RUN | 43 |
-| overall_pass_rate_pct | 39.53 |
-| executed_pass_rate_pct | 93.03 |
-| definitive_coverage_pct | 42.49 |
+| PASS | 201 |
+| FAIL | 16 |
+| BLOCKED | 233 |
+| NOT_RUN | 23 |
+| overall_pass_rate_pct | 42.49 |
+| executed_pass_rate_pct | 92.63 |
+| definitive_coverage_pct | 45.88 |
 
 ## Difficulty
 
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Easy | 125 | 69 | 7 | 41 | 8 | 55.2 | 90.79 |
+| Easy | 125 | 74 | 7 | 41 | 3 | 59.2 | 91.36 |
 | Expert | 13 | 1 | 0 | 12 | 0 | 7.69 | 100.0 |
 | Hard | 91 | 16 | 0 | 67 | 8 | 17.58 | 100.0 |
-| Medium | 244 | 101 | 7 | 109 | 27 | 41.39 | 93.52 |
+| Medium | 244 | 110 | 9 | 113 | 12 | 45.08 | 92.44 |
 
 ## Module
 
@@ -44,16 +44,16 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | Regeneration and revision integrity | 18 | 2 | 1 | 15 | 0 | 11.11 | 66.67 |
 | Research copy and exports | 29 | 0 | 0 | 29 | 0 | N/A | N/A |
 | Research pipeline and evidence persistence | 20 | 4 | 1 | 15 | 0 | 20.0 | 80.0 |
-| Responsive and keyboard accessibility | 28 | 1 | 0 | 0 | 27 | 3.57 | 100.0 |
+| Responsive and keyboard accessibility | 28 | 15 | 2 | 4 | 7 | 53.57 | 88.24 |
 
 ## Environment
 
 | Group | Total | PASS | FAIL | BLOCKED | NOT_RUN | Overall % | Executed % |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| desktop_keyboard_only | 12 | 3 | 0 | 2 | 7 | 25.0 | 100.0 |
-| desktop_pointer | 351 | 126 | 10 | 195 | 20 | 35.9 | 92.65 |
-| mobile_keyboard_only | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
-| mobile_pointer | 108 | 58 | 4 | 32 | 14 | 53.7 | 93.55 |
+| desktop_keyboard_only | 12 | 7 | 1 | 3 | 1 | 58.33 | 87.5 |
+| desktop_pointer | 351 | 130 | 11 | 196 | 14 | 37.04 | 92.2 |
+| mobile_keyboard_only | 2 | 1 | 0 | 0 | 1 | 50.0 | 100.0 |
+| mobile_pointer | 108 | 63 | 4 | 34 | 7 | 58.33 | 94.03 |
 
 ## Fixture Gate
 
@@ -62,18 +62,18 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | accepted_answer_fixture | 11 | 0 | 0 | 11 | 0 | N/A | N/A |
 | accepted_chinese_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | altered_quote_fixture | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
-| baseline | 116 | 64 | 0 | 38 | 14 | 55.17 | 100.0 |
+| baseline | 116 | 73 | 0 | 40 | 3 | 62.93 | 100.0 |
 | claim_reject_fixture | 4 | 0 | 0 | 4 | 0 | N/A | N/A |
 | configured_unchecked | 3 | 0 | 0 | 3 | 0 | N/A | N/A |
 | controlled_provider_failure | 14 | 0 | 0 | 13 | 1 | N/A | N/A |
 | csv_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | csv_formula_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | date_fixture | 1 | 1 | 0 | 0 | 0 | 100.0 | 100.0 |
-| evidence_fixture | 43 | 18 | 3 | 19 | 3 | 41.86 | 85.71 |
+| evidence_fixture | 43 | 18 | 3 | 21 | 1 | 41.86 | 85.71 |
 | evidence_gap_fixture | 2 | 2 | 0 | 0 | 0 | 100.0 | 100.0 |
 | global_quota_fixture | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | glossary_fixture | 3 | 1 | 2 | 0 | 0 | 33.33 | 33.33 |
-| history_fixture | 35 | 25 | 1 | 5 | 4 | 71.43 | 96.15 |
+| history_fixture | 35 | 25 | 3 | 5 | 2 | 71.43 | 89.29 |
 | hosted_docs | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | hosted_optional | 1 | 1 | 0 | 0 | 0 | 100.0 | 100.0 |
 | hosted_public | 10 | 0 | 0 | 0 | 10 | N/A | N/A |
@@ -82,8 +82,8 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | hosted_unconfigured | 2 | 0 | 0 | 0 | 2 | N/A | N/A |
 | ime_environment | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | latency_fixture | 9 | 0 | 0 | 9 | 0 | N/A | N/A |
-| live_pubmed | 76 | 45 | 6 | 22 | 3 | 59.21 | 88.24 |
-| long_abstract_fixture | 5 | 2 | 0 | 2 | 1 | 40.0 | 100.0 |
+| live_pubmed | 76 | 48 | 6 | 22 | 0 | 63.16 | 88.89 |
+| long_abstract_fixture | 5 | 3 | 0 | 2 | 0 | 60.0 | 100.0 |
 | long_answer_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | malformed_provider_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | missing_abstract_fixture | 3 | 3 | 0 | 0 | 0 | 100.0 | 100.0 |
@@ -97,7 +97,7 @@ Results below are computed exclusively from recorded rows in `results/all_result
 | persistence_fault | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | punctuation_fixture | 1 | 0 | 0 | 1 | 0 | N/A | N/A |
 | quota_fixture | 3 | 0 | 0 | 3 | 0 | N/A | N/A |
-| saved_fixture | 28 | 20 | 1 | 6 | 1 | 71.43 | 95.24 |
+| saved_fixture | 28 | 21 | 1 | 6 | 0 | 75.0 | 95.45 |
 | snapshot_update_fixture | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
 | unconfigured_mode | 25 | 0 | 0 | 25 | 0 | N/A | N/A |
 | unsupported_citation_fixture | 2 | 0 | 0 | 2 | 0 | N/A | N/A |
@@ -112,5 +112,5 @@ Results below are computed exclusively from recorded rows in `results/all_result
 ## Core scenarios
 
 - Unique core scenarios: 365
-- At least one definitive variant: 138
-- All variants PASS: 127
+- At least one definitive variant: 148
+- All variants PASS: 136
