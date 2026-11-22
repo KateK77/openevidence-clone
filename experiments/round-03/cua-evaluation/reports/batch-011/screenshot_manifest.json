@@ -1,0 +1,322 @@
+[
+  {
+    "test_id": "ME3-CUA-0191",
+    "canonical": "before.png",
+    "source": "02_no_passed_probe_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0191",
+    "canonical": "after.png",
+    "source": "02_no_passed_probe_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0192",
+    "canonical": "before.png",
+    "source": "01_no_failed_probe_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0192",
+    "canonical": "after.png",
+    "source": "01_no_failed_probe_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0193",
+    "canonical": "before.png",
+    "source": "01_signed_in_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0193",
+    "canonical": "after.png",
+    "source": "01_signed_in_precondition_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0194",
+    "canonical": "before.png",
+    "source": "01_missing_global_quota_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0194",
+    "canonical": "after.png",
+    "source": "01_missing_global_quota_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0195",
+    "canonical": "before.png",
+    "source": "01_no_approved_generation_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0195",
+    "canonical": "after.png",
+    "source": "01_no_approved_generation_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0196",
+    "canonical": "before.png",
+    "source": "01_configured_not_no_model_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0196",
+    "canonical": "after.png",
+    "source": "01_configured_not_no_model_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "83e0f558d240ca83fcdb04bd3ac0117c7609afa90d2df5e9b0cc12365d7c625d"
+  },
+  {
+    "test_id": "ME3-CUA-0197",
+    "canonical": "before.png",
+    "source": "02_language_current_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "a0f677420ef47c569dbfedf39c335f6f6adc08491a57a83e73a8e3084af881c9"
+  },
+  {
+    "test_id": "ME3-CUA-0197",
+    "canonical": "after.png",
+    "source": "05_chinese_available_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "0d04a2af1ae19a11a7a0b5627c6f2d783161321397d95c125b7db0ca15f4a9e4"
+  },
+  {
+    "test_id": "ME3-CUA-0198",
+    "canonical": "before.png",
+    "source": "02_mobile_language_current_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "74a55560d0a3ac2e4014817ad5f9917064b99ee4495490185ccf614ceda7ee64"
+  },
+  {
+    "test_id": "ME3-CUA-0198",
+    "canonical": "after.png",
+    "source": "04_mobile_english_selected_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "772d5f53ffbf6674e366b2c3085e49e1e087751b6dd31efd42c2bcdff1ae7b2c"
+  },
+  {
+    "test_id": "ME3-CUA-0199",
+    "canonical": "before.png",
+    "source": "02_detail_standard_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "951f8afa8ef50fd1b058716d8d9ff9b08c9125c33906ce7e67cadf51ea62ee2f"
+  },
+  {
+    "test_id": "ME3-CUA-0199",
+    "canonical": "after.png",
+    "source": "07_detailed_last_option_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "87141e63aedacae4134e707058e392da2742c6ff2737fcb8b86be0bb1a3f94d1"
+  },
+  {
+    "test_id": "ME3-CUA-0200",
+    "canonical": "before.png",
+    "source": "01_mobile_detail_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "b72b8ccf389e67a89c63b0d19587e42b204a8dcbe3c3c45429e67b2bb9f5f95e"
+  },
+  {
+    "test_id": "ME3-CUA-0200",
+    "canonical": "after.png",
+    "source": "06_mobile_last_detail_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "b72b8ccf389e67a89c63b0d19587e42b204a8dcbe3c3c45429e67b2bb9f5f95e"
+  },
+  {
+    "test_id": "ME3-CUA-0201",
+    "canonical": "before.png",
+    "source": "02_density_comfortable_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "a470c466272f4fc20a27da16850b1c7c4ed3d07a0a0c98239b691e2a063a22eb"
+  },
+  {
+    "test_id": "ME3-CUA-0201",
+    "canonical": "after.png",
+    "source": "03_compact_available_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "22f58f7ec36911eb21e6f5453be6bd655b9c627e5aba7933bfd5f53fccb68bd7"
+  },
+  {
+    "test_id": "ME3-CUA-0202",
+    "canonical": "before.png",
+    "source": "01_mobile_density_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "2ef08bf09877b6ca5c388c4258ccbdf8d0bee6084daacecaf25ba2b879a1ab38"
+  },
+  {
+    "test_id": "ME3-CUA-0202",
+    "canonical": "after.png",
+    "source": "03_mobile_comfortable_visible_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "47b956862ad35bb207c4bb7eb88349a30390e50bba99b9ecc6ebc81f0f2a11ec"
+  },
+  {
+    "test_id": "ME3-CUA-0203",
+    "canonical": "before.png",
+    "source": "02_choose_chinese_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "22e4936a764d0da55f83c01349adc295300d76cfad747e6900d921f408f15ab7"
+  },
+  {
+    "test_id": "ME3-CUA-0203",
+    "canonical": "after.png",
+    "source": "05_chinese_persisted_reload_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "6b5c37ce30874860f28bcf4d1d9582edb3a1d81bdb0a4d285d10e2289f7fc6ea"
+  },
+  {
+    "test_id": "ME3-CUA-0204",
+    "canonical": "before.png",
+    "source": "05_baseline_saved_choose_chinese_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "29027ea4a71b16d9a67d934ceab0b0db63896052e467932b908e8eb63fd353fd"
+  },
+  {
+    "test_id": "ME3-CUA-0204",
+    "canonical": "after.png",
+    "source": "08_mobile_chinese_persisted_0.jpg",
+    "width": 375,
+    "height": 812,
+    "sha256": "288434ff5440deab52f31ae0dc2e4a4377a953fb557c21392567e8edc883f273"
+  },
+  {
+    "test_id": "ME3-CUA-0205",
+    "canonical": "before.png",
+    "source": "02_standard_to_detailed_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "f2d72c63fd7a95406e9ab7a9714f65b568243a94eb40b00ed6ea3e778fc0b396"
+  },
+  {
+    "test_id": "ME3-CUA-0205",
+    "canonical": "after.png",
+    "source": "07_detailed_and_chinese_persist_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "a5f5b2182e782db0783cdd674c0c1080107eb50fec9beb2cd465e055c1781b45"
+  },
+  {
+    "test_id": "ME3-CUA-0206",
+    "canonical": "before.png",
+    "source": "02_comfortable_list_before_0.jpg",
+    "width": 1440,
+    "height": 900,
+    "sha256": "2337f15e649a2000ede4862afb044526a6fc4e652847d050953f066ba57f9599"
+  },
+  {
+    "test_id": "ME3-CUA-0206",
+    "canonical": "after.png",
+    "source": "09_compact_list_persisted_0.jpg",
+    "width": 1440,
+    "height": 900,
+    "sha256": "a764fd4c0a1e74c367ba8f9835e8db6f3f75ff0cd3591d2ed33dbbcf534ebef4"
+  },
+  {
+    "test_id": "ME3-CUA-0207",
+    "canonical": "before.png",
+    "source": "09_comfortable_mobile_list_0.jpg",
+    "width": 390,
+    "height": 844,
+    "sha256": "f269e114ea0ae11bfb35774e45ab14d924330e2a3fe8c876ec51a7c840166104"
+  },
+  {
+    "test_id": "ME3-CUA-0207",
+    "canonical": "after.png",
+    "source": "17_compact_list_persisted_0.jpg",
+    "width": 390,
+    "height": 844,
+    "sha256": "559b6ff31948c33e1141552ab976a53faa99aa278651caec735fafba804d9ca9"
+  },
+  {
+    "test_id": "ME3-CUA-0208",
+    "canonical": "before.png",
+    "source": "02_account_a_preferences_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "fd3b2c95f8cea003a396e1987196891c6095e4af79e49f123b51008bb5d48b68"
+  },
+  {
+    "test_id": "ME3-CUA-0208",
+    "canonical": "after.png",
+    "source": "02_account_a_preferences_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "fd3b2c95f8cea003a396e1987196891c6095e4af79e49f123b51008bb5d48b68"
+  },
+  {
+    "test_id": "ME3-CUA-0209",
+    "canonical": "before.png",
+    "source": "01_no_accepted_answer_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "01902e751d3cb34740f5b76634f398f966c7b4724212ade54cb987187b6bdcc4"
+  },
+  {
+    "test_id": "ME3-CUA-0209",
+    "canonical": "after.png",
+    "source": "01_no_accepted_answer_fixture_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "01902e751d3cb34740f5b76634f398f966c7b4724212ade54cb987187b6bdcc4"
+  },
+  {
+    "test_id": "ME3-CUA-0210",
+    "canonical": "before.png",
+    "source": "01_chinese_preference_before_source_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "01902e751d3cb34740f5b76634f398f966c7b4724212ade54cb987187b6bdcc4"
+  },
+  {
+    "test_id": "ME3-CUA-0210",
+    "canonical": "after.png",
+    "source": "06_english_source_details_0.jpg",
+    "width": 1425,
+    "height": 891,
+    "sha256": "6e3367dccf59b08c7c6e6375221ba135a72b1b67ac3f45938f43f28d5e490944"
+  }
+]

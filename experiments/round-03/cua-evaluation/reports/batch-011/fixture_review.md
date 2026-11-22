@@ -1,0 +1,1 @@
+Only shared configured public deployment available. Missing controlled provider/probe/global-quota states, approved generation budget, independent no-provider instance, accepted generated prose fixture, and second-account/current-account reauthentication credentials. No production configuration changed.
