@@ -1,0 +1,24 @@
+{"at":"2026-11-22T22:11:30.504Z","test_id":"ME3-CUA-0391","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:11:36.505Z","test_id":"ME3-CUA-0392","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:11:41.336Z","test_id":"ME3-CUA-0393","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:11:47.413Z","test_id":"ME3-CUA-0394","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:11:55.966Z","test_id":"ME3-CUA-0395","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:02.924Z","test_id":"ME3-CUA-0396","label":"01_mobile_precondition_setup","code":"await viewport.set({width:390,height:844}); await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:12.563Z","test_id":"ME3-CUA-0397","label":"01_desktop_precondition_setup","code":"await viewport.set({width:1440,height:900}); await activeTab.reload(); await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:34.277Z","test_id":"ME3-CUA-0397","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:39.184Z","test_id":"ME3-CUA-0398","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:47.039Z","test_id":"ME3-CUA-0399","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:52.158Z","test_id":"ME3-CUA-0400","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:12:56.301Z","test_id":"ME3-CUA-0401","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:02.096Z","test_id":"ME3-CUA-0402","label":"02_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:21.084Z","test_id":"ME3-CUA-0403","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:25.086Z","test_id":"ME3-CUA-0404","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:28.544Z","test_id":"ME3-CUA-0405","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:31.736Z","test_id":"ME3-CUA-0406","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:34.793Z","test_id":"ME3-CUA-0407","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:37.864Z","test_id":"ME3-CUA-0408","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:42.935Z","test_id":"ME3-CUA-0409","label":"01_precondition_only","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:13:52.668Z","test_id":"ME3-CUA-0410","label":"01_invalid_input_form","code":"await activeTab.cua.click({x:120,y:135}); await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:14:02.975Z","test_id":"ME3-CUA-0410","label":"02_overlimit_input","code":"await activeTab.cua.click({x:800,y:650}); await activeTab.cua.type({text:'x'.repeat(2001)}); await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:14:11.248Z","test_id":"ME3-CUA-0410","label":"03_actual_count_before_submit","code":"await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
+{"at":"2026-11-22T22:14:18.697Z","test_id":"ME3-CUA-0410","label":"04_invalid_error_inspection","code":"await activeTab.cua.click({x:1190,y:755}); await nodeRepl.write(await activeTab.screenshot({}));","isError":false,"text_output":[]}
