@@ -1,0 +1,1 @@
+278 uses pre-existing owned answer16/thread15 from150. Unsupported glossary input produces empty normalized query, no retrieval runs and0 PubMed records, as documented earlier. This is a genuine persisted no-source outcome, not accepted prose. Saved through normal UI before scored reload/control inspection. No new generation/configuration change.

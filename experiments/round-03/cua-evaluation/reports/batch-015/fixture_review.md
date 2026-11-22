@@ -1,0 +1,1 @@
+Existing no-source answer16 prepared via normal save/reload UI. Existing18/19 each have one real source but no accepted synthesis. No approved paid generation, controlled fault/latency, no-provider instance or second synthetic account credentials supplied. See individual blocked reasons.

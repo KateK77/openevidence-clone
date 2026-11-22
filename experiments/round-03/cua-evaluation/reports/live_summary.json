@@ -3,31 +3,31 @@
   "frozen_suite_sha256": "00cb1fb76cc7eeede32e0514c69e75cfc81a06f53bd94a5e65bcf26d945b5e13",
   "total": {
     "total": 473,
-    "PASS": 115,
-    "FAIL": 11,
-    "BLOCKED": 144,
-    "NOT_RUN": 203,
-    "overall_pass_rate_pct": 24.31,
-    "executed_pass_rate_pct": 91.27,
-    "definitive_coverage_pct": 26.64
+    "PASS": 117,
+    "FAIL": 12,
+    "BLOCKED": 161,
+    "NOT_RUN": 183,
+    "overall_pass_rate_pct": 24.74,
+    "executed_pass_rate_pct": 90.7,
+    "definitive_coverage_pct": 27.27
   },
   "by_difficulty": {
     "Easy": {
       "total": 125,
-      "PASS": 46,
-      "FAIL": 5,
+      "PASS": 47,
+      "FAIL": 6,
       "BLOCKED": 33,
-      "NOT_RUN": 41,
-      "overall_pass_rate_pct": 36.8,
-      "executed_pass_rate_pct": 90.2,
-      "definitive_coverage_pct": 40.8
+      "NOT_RUN": 39,
+      "overall_pass_rate_pct": 37.6,
+      "executed_pass_rate_pct": 88.68,
+      "definitive_coverage_pct": 42.4
     },
     "Expert": {
       "total": 13,
       "PASS": 1,
       "FAIL": 0,
-      "BLOCKED": 7,
-      "NOT_RUN": 5,
+      "BLOCKED": 8,
+      "NOT_RUN": 4,
       "overall_pass_rate_pct": 7.69,
       "executed_pass_rate_pct": 100.0,
       "definitive_coverage_pct": 7.69
@@ -36,21 +36,21 @@
       "total": 91,
       "PASS": 11,
       "FAIL": 0,
-      "BLOCKED": 36,
-      "NOT_RUN": 44,
+      "BLOCKED": 47,
+      "NOT_RUN": 33,
       "overall_pass_rate_pct": 12.09,
       "executed_pass_rate_pct": 100.0,
       "definitive_coverage_pct": 12.09
     },
     "Medium": {
       "total": 244,
-      "PASS": 57,
+      "PASS": 58,
       "FAIL": 6,
-      "BLOCKED": 68,
-      "NOT_RUN": 113,
-      "overall_pass_rate_pct": 23.36,
-      "executed_pass_rate_pct": 90.48,
-      "definitive_coverage_pct": 25.82
+      "BLOCKED": 73,
+      "NOT_RUN": 107,
+      "overall_pass_rate_pct": 23.77,
+      "executed_pass_rate_pct": 90.62,
+      "definitive_coverage_pct": 26.23
     }
   },
   "by_module": {
@@ -58,8 +58,8 @@
       "total": 24,
       "PASS": 11,
       "FAIL": 2,
-      "BLOCKED": 8,
-      "NOT_RUN": 3,
+      "BLOCKED": 11,
+      "NOT_RUN": 0,
       "overall_pass_rate_pct": 45.83,
       "executed_pass_rate_pct": 84.62,
       "definitive_coverage_pct": 54.17
@@ -186,13 +186,13 @@
     },
     "Regeneration and revision integrity": {
       "total": 18,
-      "PASS": 0,
-      "FAIL": 0,
-      "BLOCKED": 0,
-      "NOT_RUN": 18,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "PASS": 2,
+      "FAIL": 1,
+      "BLOCKED": 14,
+      "NOT_RUN": 1,
+      "overall_pass_rate_pct": 11.11,
+      "executed_pass_rate_pct": 66.67,
+      "definitive_coverage_pct": 16.67
     },
     "Research copy and exports": {
       "total": 29,
@@ -238,13 +238,13 @@
     },
     "desktop_pointer": {
       "total": 351,
-      "PASS": 74,
-      "FAIL": 8,
-      "BLOCKED": 117,
-      "NOT_RUN": 152,
-      "overall_pass_rate_pct": 21.08,
-      "executed_pass_rate_pct": 90.24,
-      "definitive_coverage_pct": 23.36
+      "PASS": 76,
+      "FAIL": 9,
+      "BLOCKED": 132,
+      "NOT_RUN": 134,
+      "overall_pass_rate_pct": 21.65,
+      "executed_pass_rate_pct": 89.41,
+      "definitive_coverage_pct": 24.22
     },
     "mobile_keyboard_only": {
       "total": 2,
@@ -260,8 +260,8 @@
       "total": 108,
       "PASS": 38,
       "FAIL": 3,
-      "BLOCKED": 25,
-      "NOT_RUN": 42,
+      "BLOCKED": 27,
+      "NOT_RUN": 40,
       "overall_pass_rate_pct": 35.19,
       "executed_pass_rate_pct": 92.68,
       "definitive_coverage_pct": 37.96
@@ -272,8 +272,8 @@
       "total": 11,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 8,
-      "NOT_RUN": 3,
+      "BLOCKED": 9,
+      "NOT_RUN": 2,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -332,8 +332,8 @@
       "total": 14,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 8,
-      "NOT_RUN": 6,
+      "BLOCKED": 10,
+      "NOT_RUN": 4,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -370,13 +370,13 @@
     },
     "evidence_fixture": {
       "total": 43,
-      "PASS": 11,
-      "FAIL": 2,
-      "BLOCKED": 2,
-      "NOT_RUN": 28,
-      "overall_pass_rate_pct": 25.58,
-      "executed_pass_rate_pct": 84.62,
-      "definitive_coverage_pct": 30.23
+      "PASS": 12,
+      "FAIL": 3,
+      "BLOCKED": 3,
+      "NOT_RUN": 25,
+      "overall_pass_rate_pct": 27.91,
+      "executed_pass_rate_pct": 80.0,
+      "definitive_coverage_pct": 34.88
     },
     "evidence_gap_fixture": {
       "total": 2,
@@ -492,8 +492,8 @@
       "total": 9,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 5,
-      "NOT_RUN": 4,
+      "BLOCKED": 7,
+      "NOT_RUN": 2,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -512,8 +512,8 @@
       "total": 5,
       "PASS": 2,
       "FAIL": 0,
-      "BLOCKED": 1,
-      "NOT_RUN": 2,
+      "BLOCKED": 2,
+      "NOT_RUN": 1,
       "overall_pass_rate_pct": 40.0,
       "executed_pass_rate_pct": 100.0,
       "definitive_coverage_pct": 40.0
@@ -590,13 +590,13 @@
     },
     "no_source_fixture": {
       "total": 1,
-      "PASS": 0,
+      "PASS": 1,
       "FAIL": 0,
       "BLOCKED": 0,
-      "NOT_RUN": 1,
-      "overall_pass_rate_pct": null,
-      "executed_pass_rate_pct": null,
-      "definitive_coverage_pct": 0.0
+      "NOT_RUN": 0,
+      "overall_pass_rate_pct": 100.0,
+      "executed_pass_rate_pct": 100.0,
+      "definitive_coverage_pct": 100.0
     },
     "numeric_answer_fixture": {
       "total": 1,
@@ -672,8 +672,8 @@
       "total": 25,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 20,
-      "NOT_RUN": 5,
+      "BLOCKED": 22,
+      "NOT_RUN": 3,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -732,8 +732,8 @@
       "total": 23,
       "PASS": 0,
       "FAIL": 0,
-      "BLOCKED": 10,
-      "NOT_RUN": 13,
+      "BLOCKED": 18,
+      "NOT_RUN": 5,
       "overall_pass_rate_pct": null,
       "executed_pass_rate_pct": null,
       "definitive_coverage_pct": 0.0
@@ -760,6 +760,6 @@
     }
   },
   "unique_core_scenarios": 365,
-  "core_with_definitive_execution": 83,
-  "core_all_variants_passed": 75
+  "core_with_definitive_execution": 86,
+  "core_all_variants_passed": 77
 }
